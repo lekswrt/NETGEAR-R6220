@@ -426,7 +426,7 @@ AddPortMapping(struct upnphttp * h, const char * action)
 		strncpy(lanip_fliter,pt,length);
 		lanip_fliter[length]='\0';
 	}
-    if (!int_ip || strstr(int_ip,lanip_fliter) == NULL)
+    if (!int_ip || strstr(int_ip,lanip_fliter) == NULL || strcmp(int_ip, pt) == 0)
     {
         ClearNameValueList(&data);
         SoapError(h, 402, "Invalid Args");

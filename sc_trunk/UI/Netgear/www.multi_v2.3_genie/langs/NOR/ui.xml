@@ -945,6 +945,10 @@
 <translation>Send logg</translation>
 </message>
 <message>
+<tag_code>308</tag_code>
+<translation>Slå av det trådløse signalet i henhold til tidsplan</translation>
+</message>
+<message>
 <tag_code>309</tag_code>
 <translation>Deaktiver  portutløsing</translation>
 </message>
@@ -5452,6 +5456,10 @@
 <translation>Bruk denne grensesnitt-ID-en</translation>
 </message>
 <message>
+<tag_code>4117</tag_code>
+<translation>6rd-tunnel</translation>
+</message>
+<message>
 <tag_code>4200</tag_code>
 <translation>Gå til &lt;a  style=text-decoration:underline;color:#0000ff; id=url_ac onclick=goto_formframe('AccessControl.htm&amp;todo=cfg_init')&gt;Tilgangskontroll&lt;/a&gt; for å tillate eller blokkere enheter.</translation>
 </message>
@@ -6009,5 +6017,37 @@
 <tag_code>10808</tag_code>
 <translation>Taiwan</translation>
 <variable>Taiwan</variable>
+</message>
+<message>
+<tag_code>10809</tag_code>
+<translation>&lt;font color="#000000"&gt;&lt;div&gt;&lt;xmp&gt;&lt;&lt;Viktig&gt;&gt; En ny OpenVPN-konfigurasjonspakke for ruteren er tilgjengelig og forbedrer ruterens sikkerhet. Du må oppdatere OpenVPN-konfigurasjonspakken for ruteren. Når OpenVPN-konfigurasjonspakken er oppdatert, må du oppdatere OpenVPN-konfigurasjonspakken på alle klientene, ellers kan ikke klientene få tilgang til ruteren ved hjelp av VPN-funksjonen.&lt;/xmp&gt;&lt;/div&gt;&lt;/font&gt;</translation>
+</message>
+<message>
+<tag_code>10810</tag_code>
+<translation>Fornye VPN-sertifikat</translation>
+</message>
+<message>
+<tag_code>10811</tag_code>
+<translation>Oppdatering</translation>
+</message>
+<message>
+<tag_code>10900</tag_code>
+<translation>Bruk standard NETGEAR NTP-server</translation>
+<variable>Use default NETGEAR NTP server</variable>
+</message>
+<message>
+<tag_code>10901</tag_code>
+<translation>Konfigurer din foretrukne NTP-server</translation>
+<variable>Set your preferred NTP server</variable>
+</message>
+<message>
+<tag_code>10902</tag_code>
+<translation>NTP-Server</translation>
+<variable>NTP Server</variable>
+</message>
+<message>
+<tag_code>10903</tag_code>
+<translation>NTP-innstillinger</translation>
+<variable>NTP Settings</variable>
 </message>
 </tag_msg>

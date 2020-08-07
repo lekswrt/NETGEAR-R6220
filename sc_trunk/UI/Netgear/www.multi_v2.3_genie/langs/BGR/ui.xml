@@ -941,6 +941,10 @@
 <translation>Send Log</translation>
 </message>
 <message>
+<tag_code>308</tag_code>
+<translation>Turn off wireless signal by schedule</translation>
+</message>
+<message>
 <tag_code>309</tag_code>
 <translation>Disable Port Triggering</translation>
 </message>
@@ -5443,6 +5447,11 @@
 <translation>Use This interface ID</translation>
 </message>
 <message>
+<tag_code>4117</tag_code>
+<translation>6rd Преход</translation>
+<variable>6rd Tunnel</variable>
+</message>
+<message>
 <tag_code>4200</tag_code>
 <translation>Отидете в &lt;a  style=text-decoration:underline;color:#0000ff; id=url_ac onclick=goto_formframe('AccessControl.htm&amp;todo=cfg_init')&gt;Управление на достъпа&lt;/a&gt;, за да разрешите или блокирате устройства.</translation>
 </message>
@@ -5996,5 +6005,37 @@
 <tag_code>10808</tag_code>
 <translation>Taiwan</translation>
 <variable>Taiwan</variable>
+</message>
+<message>
+<tag_code>10809</tag_code>
+<translation>&lt;font color="#000000"&gt;&lt;div&gt;&lt;xmp&gt;&lt;&lt;Внимание&gt;&gt; Наличен е нов пакет за конфигуриране OpenVPN за вашия рутер, който подобрява сигурността му. Трябва да актуализирате пакета за конфигуриране OpenVPN за вашия рутер. След като пакетът за конфигуриране OpenVPN е актуализиран, трябва да актуализирате пакета за конфигуриране OpenVPN за всички ваши клиенти иначе те няма да имат достъп до рутера чрез функцията VPN.&lt;/xmp&gt;&lt;/div&gt;&lt;/font&gt;</translation>
+</message>
+<message>
+<tag_code>10810</tag_code>
+<translation>Подновяване на сертификата VPN</translation>
+</message>
+<message>
+<tag_code>10811</tag_code>
+<translation>Update</translation>
+</message>
+<message>
+<tag_code>10900</tag_code>
+<translation>Използвайте сървъра NETGEAR NTP по подразбиране</translation>
+<variable>Use default NETGEAR NTP server</variable>
+</message>
+<message>
+<tag_code>10901</tag_code>
+<translation>Задайте вашия предпочитан NTP сървър</translation>
+<variable>Set your preferred NTP server</variable>
+</message>
+<message>
+<tag_code>10902</tag_code>
+<translation>NTP сървър</translation>
+<variable>NTP Server</variable>
+</message>
+<message>
+<tag_code>10903</tag_code>
+<translation>Настройки на NTP</translation>
+<variable>NTP Settings</variable>
 </message>
 </tag_msg>

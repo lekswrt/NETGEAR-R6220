@@ -941,6 +941,10 @@
 <translation>Pošlji dnevnik</translation>
 </message>
 <message>
+<tag_code>308</tag_code>
+<translation>Izklop brezžičnega signala po urniku</translation>
+</message>
+<message>
 <tag_code>309</tag_code>
 <translation>Onemogoči sprožitev vrat</translation>
 </message>
@@ -5457,6 +5461,10 @@
 <translation>Uporabi ta ID vmesnika</translation>
 </message>
 <message>
+<tag_code>4117</tag_code>
+<translation>Tunel 6rd</translation>
+</message>
+<message>
 <tag_code>4200</tag_code>
 <translation>Če želite napravam dovoliti ali blokirati dostop, si oglejte razdelek &lt;a  style=text-decoration:underline;color:#0000ff; id=url_ac onclick=goto_formframe('AccessControl.htm&amp;todo=cfg_init')&gt;Nadzor dostopa&lt;/a&gt;.</translation>
 </message>
@@ -6014,5 +6022,37 @@
 <tag_code>10808</tag_code>
 <translation>Tajvan</translation>
 <variable>Taiwan</variable>
+</message>
+<message>
+<tag_code>10809</tag_code>
+<translation>&lt;font color="#000000"&gt;&lt;div&gt;&lt;xmp&gt;&lt;&lt;Pozor&gt;&gt; Za usmerjevalnik je na voljo nov konfiguracijski paket OpenVPN, ki izboljšuje varnost usmerjevalnika. Posodobiti morate konfiguracijski paket OpenVPN za usmerjevalnik. Ko je konfiguracijski paket OpenVPN posodobljen, ga morate posodobiti v vseh odjemalcih, sicer odjemalci ne bodo mogli dostopati do usmerjevalnika s funkcijo VPN.&lt;/xmp&gt;&lt;/div&gt;&lt;/font&gt;</translation>
+</message>
+<message>
+<tag_code>10810</tag_code>
+<translation>Obnavljanje certifikata VPN</translation>
+</message>
+<message>
+<tag_code>10811</tag_code>
+<translation>Posodobitev</translation>
+</message>
+<message>
+<tag_code>10900</tag_code>
+<translation>Uporabi privzeti strežnik NETGEAR NTP</translation>
+<variable>Use default NETGEAR NTP server</variable>
+</message>
+<message>
+<tag_code>10901</tag_code>
+<translation>Nastavite želeni strežnik NTP</translation>
+<variable>Set your preferred NTP server</variable>
+</message>
+<message>
+<tag_code>10902</tag_code>
+<translation>Strežnik NTP</translation>
+<variable>NTP Server</variable>
+</message>
+<message>
+<tag_code>10903</tag_code>
+<translation>Nastavitve za NTP</translation>
+<variable>NTP Settings</variable>
 </message>
 </tag_msg>

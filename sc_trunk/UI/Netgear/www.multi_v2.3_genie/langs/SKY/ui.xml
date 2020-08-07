@@ -942,6 +942,10 @@
 <translation>Odoslať denník</translation>
 </message>
 <message>
+<tag_code>308</tag_code>
+<translation>Vypnúť bezdrôtový signál podľa harmonogramu</translation>
+</message>
+<message>
 <tag_code>309</tag_code>
 <translation>Vypnúť spúšťanie portov</translation>
 </message>
@@ -5440,7 +5444,10 @@
 <translation>Použiť toto ID rozhrania</translation>
 </message>
 <message>
-=======
+<tag_code>4117</tag_code>
+<translation>Tunel 6rd</translation>
+</message>
+<message>
 <tag_code>4200</tag_code>
 <translation>Ak chcete zariadenia povoliť alebo blokovať, prejdite do položky &lt;a  style=\"text-decoration:underline;color:#0000ff;\" href=\"setup.cgi?next_file=AccessControl.htm\"&gt;Riadenie prístupu&lt;/a&gt;.</translation>
 </message>
@@ -5999,5 +6006,37 @@
 <tag_code>10808</tag_code>
 <translation>Tajvan</translation>
 <variable>Taiwan</variable>
+</message>
+<message>
+<tag_code>10809</tag_code>
+<translation>&lt;font color="#000000"&gt;&lt;div&gt;&lt;xmp&gt;&lt;&lt;Upozornenie&gt;&gt; K dispozícii je nový konfiguračný balík aplikácie OpenVPN na zvýšenie zabezpečenia smerovača. Musíte aktualizovať konfiguračný balík aplikácie OpenVPN pre smerovač. Po aktualizácii konfiguračného balíka aplikácie OpenVPN musíte aktualizovať konfiguračný balík aplikácie OpenVPN všetkých zákazníkov. V opačnom prípade nebudú mať zákazníci prístup k smerovaču prostredníctvom funkcie VPN.&lt;/xmp&gt;&lt;/div&gt;&lt;/font&gt;</translation>
+</message>
+<message>
+<tag_code>10810</tag_code>
+<translation>Obnova certifikátu VPN</translation>
+</message>
+<message>
+<tag_code>10811</tag_code>
+<translation>Aktualizácia</translation>
+</message>
+<message>
+<tag_code>10900</tag_code>
+<translation>Použiť predvolený server NTP NETGEAR</translation>
+<variable>Use default NETGEAR NTP server</variable>
+</message>
+<message>
+<tag_code>10901</tag_code>
+<translation>Nastaviť preferovaný server NTP</translation>
+<variable>Set your preferred NTP server</variable>
+</message>
+<message>
+<tag_code>10902</tag_code>
+<translation>Server NTP</translation>
+<variable>NTP Server</variable>
+</message>
+<message>
+<tag_code>10903</tag_code>
+<translation>Nastavenia NTP</translation>
+<variable>NTP Settings</variable>
 </message>
 </tag_msg>

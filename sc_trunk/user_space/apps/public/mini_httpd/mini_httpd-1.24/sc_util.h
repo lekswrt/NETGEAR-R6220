@@ -25,6 +25,8 @@ enum {
 
 #define SC_CFPRINTF_SESSIONID(fmt, args...)    do{ if (access("/tmp/dbg_sessionid", F_OK) == 0) { FILE *fp=fopen("/dev/console", "a+"); if(fp) {fprintf(fp, "[%s::%s():%d] ", __FILE__, __FUNCTION__, __LINE__);fprintf(fp, fmt, ##args);fclose(fp);} } }while(0)
 
+#define SC_CFPRINTF_EXIT(fmt, args...)    do{ { FILE *fp=fopen("/dev/console", "a+"); if(fp) {fprintf(fp, "[%s::%s():%d] ", __FILE__, __FUNCTION__, __LINE__);fprintf(fp, fmt, ##args);fclose(fp);} } }while(0)
+
 enum {
 	LOGIN_FAIL,
 	LOGIN_SUCCESS

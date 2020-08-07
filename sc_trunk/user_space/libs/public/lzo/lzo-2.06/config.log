@@ -9701,7 +9701,7 @@ configure:12931: result: yes
 configure:12931: checking for alloca
 configure:12931: mipsel-linux-gcc -o conftest -I. -I.  conftest.c  >&5
 conftest.c:102:6: warning: conflicting types for built-in function 'alloca' [enabled by default]
-/tmp/cc1eD5rZ.o: In function `main':
+/tmp/cc7jBDoF.o: In function `main':
 conftest.c:(.text+0x1c): undefined reference to `alloca'
 conftest.c:(.text+0x28): undefined reference to `alloca'
 collect2: ld returned 1 exit status
@@ -9846,7 +9846,7 @@ configure:12931: $? = 0
 configure:12931: result: yes
 configure:12931: checking for clock_getcpuclockid
 configure:12931: mipsel-linux-gcc -o conftest -I. -I.  conftest.c  >&5
-/tmp/ccvJvlTw.o: In function `main':
+/tmp/ccMoFQH4.o: In function `main':
 conftest.c:(.text+0x1c): undefined reference to `clock_getcpuclockid'
 conftest.c:(.text+0x28): undefined reference to `clock_getcpuclockid'
 collect2: ld returned 1 exit status
@@ -10121,7 +10121,7 @@ configure:12931: $? = 0
 configure:12931: result: yes
 configure:12931: checking for stricmp
 configure:12931: mipsel-linux-gcc -o conftest -I. -I.  conftest.c  >&5
-/tmp/cccCxEhO.o: In function `main':
+/tmp/cc6HEblc.o: In function `main':
 conftest.c:(.text+0x1c): undefined reference to `stricmp'
 conftest.c:(.text+0x28): undefined reference to `stricmp'
 collect2: ld returned 1 exit status
@@ -10290,7 +10290,7 @@ configure:12931: $? = 0
 configure:12931: result: yes
 configure:12931: checking for strnicmp
 configure:12931: mipsel-linux-gcc -o conftest -I. -I.  conftest.c  >&5
-/tmp/ccWZB7y4.o: In function `main':
+/tmp/ccg5waSj.o: In function `main':
 conftest.c:(.text+0x1c): undefined reference to `strnicmp'
 conftest.c:(.text+0x28): undefined reference to `strnicmp'
 collect2: ld returned 1 exit status

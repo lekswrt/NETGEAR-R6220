@@ -941,6 +941,10 @@
 <translation>Lähetä loki</translation>
 </message>
 <message>
+<tag_code>308</tag_code>
+<translation>Poista langaton signaali käytöstä aikataulun mukaan</translation>
+</message>
+<message>
 <tag_code>309</tag_code>
 <translation>Poista portin laukaisu käytöstä</translation>
 </message>
@@ -5439,6 +5443,10 @@
 <translation>Käytä tätä liittymätunnusta</translation>
 </message>
 <message>
+<tag_code>4117</tag_code>
+<translation>6rd-tunneli</translation>
+</message>
+<message>
 <tag_code>4200</tag_code>
 <translation>Salli tai estä laitteita kohdassa &lt;a  style=text-decoration:underline;color:#0000ff; id=url_ac onclick=goto_formframe('AccessControl.htm&amp;todo=cfg_init')&gt;Käytön valvonta&lt;/a&gt;.</translation>
 </message>
@@ -5996,5 +6004,37 @@
 <tag_code>10808</tag_code>
 <translation>Taiwan</translation>
 <variable>Taiwan</variable>
+</message>
+<message>
+<tag_code>10809</tag_code>
+<translation>&lt;font color="#000000"&gt;&lt;div&gt;&lt;xmp&gt;&lt;&lt;Huomio&gt;&gt; Reitittimeesi on saatavilla uusi OpenVPN-määrityspaketti, joka parantee reitittimesi suojausta. Reitittimen OpenVPN-määrityspaketti on päivitettävä. Kun OpenVPN-määrityspaketti on päivitetty, se on päivitettävä kaikkiin työasemiin. Muussa tapauksessa työasemista ei saa yhteyttä reitittimeen VPN-toiminnon kautta.&lt;/xmp&gt;&lt;/div&gt;&lt;/font&gt;</translation>
+</message>
+<message>
+<tag_code>10810</tag_code>
+<translation>VPN-sertifikaatin uusiminen</translation>
+</message>
+<message>
+<tag_code>10811</tag_code>
+<translation>päivitys</translation>
+</message>
+<message>
+<tag_code>10900</tag_code>
+<translation>Käytä oletusarvoista NETGEAR NTP -palvelinta</translation>
+<variable>Use default NETGEAR NTP server</variable>
+</message>
+<message>
+<tag_code>10901</tag_code>
+<translation>Aseta ensisijainen NTP-palvelin</translation>
+<variable>Set your preferred NTP server</variable>
+</message>
+<message>
+<tag_code>10902</tag_code>
+<translation>NTP-palvelin</translation>
+<variable>NTP Server</variable>
+</message>
+<message>
+<tag_code>10903</tag_code>
+<translation>NTP-asetukset</translation>
+<variable>NTP Settings</variable>
 </message>
 </tag_msg>

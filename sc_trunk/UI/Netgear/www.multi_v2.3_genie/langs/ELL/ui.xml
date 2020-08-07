@@ -941,6 +941,10 @@
 <translation>Αποστολή αρχείου καταγραφής</translation>
 </message>
 <message>
+<tag_code>308</tag_code>
+<translation>Απενεργοποίηση ασύρματου σήματος βάσει προγράμματος</translation>
+</message>
+<message>
 <tag_code>309</tag_code>
 <translation>Απενεργοποίηση εναύσματος θύρας</translation>
 </message>
@@ -5441,6 +5445,10 @@
 <translation>Χρήση αυτού του αναγνωριστικού διεπαφής</translation>
 </message>
 <message>
+<tag_code>4117</tag_code>
+<translation>Διοχέτευση 6rd</translation>
+</message>
+<message>
 <tag_code>4200</tag_code>
 <translation>Μεταβείτε στον &lt;a  style=text-decoration:underline;color:#0000ff; id=url_ac onclick=goto_formframe('AccessControl.htm&amp;todo=cfg_init')&gt;Έλεγχο πρόσβασης&lt;/a&gt; για να επιτρέψετε ή να αποκλείσετε συσκευές.</translation>
 </message>
@@ -5998,5 +6006,37 @@
 <tag_code>10808</tag_code>
 <translation>Ταϊβάν</translation>
 <variable>Taiwan</variable>
+</message>
+<message>
+<tag_code>10809</tag_code>
+<translation>&lt;font color="#000000"&gt;&lt;div&gt;&lt;xmp&gt;&lt;&lt;Προσοχή&gt;&gt; Ένα νέο πακέτο διαμόρφωσης OpenVPN είναι διαθέσιμο για τον υπολογιστή σας προκειμένου να ενισχύσει την ασφάλεια του δρομολογητή σας. Πρέπει να ενημερώσετε το πακέτο διαμόρφωσης OpenVPN για το δρομολογητή σας. Μόλις ενημερώσετε το πακέτο διαμόρφωσης OpenVPN, πρέπει να ενημερώσετε το πακέτο διαμόρφωσης OpenVPN σε όλα τα προγράμματα-πελάτες, διαφορετικά δεν θα μπορούν να έχουν πρόσβαση στο δρομολογητή σας μέσω της λειτουργίας VPN.&lt;/xmp&gt;&lt;/div&gt;&lt;/font&gt;</translation>
+</message>
+<message>
+<tag_code>10810</tag_code>
+<translation>Ανανέωση πιστοποιητικού VPN</translation>
+</message>
+<message>
+<tag_code>10811</tag_code>
+<translation>Ενημέρωση</translation>
+</message>
+<message>
+<tag_code>10900</tag_code>
+<translation>Χρησιμοποιήστε τον προεπιλεγμένο διακομιστή NETGEAR NTP</translation>
+<variable>Use default NETGEAR NTP server</variable>
+</message>
+<message>
+<tag_code>10901</tag_code>
+<translation>Ορίστε το διακομιστή NTP που προτιμάτε</translation>
+<variable>Set your preferred NTP server</variable>
+</message>
+<message>
+<tag_code>10902</tag_code>
+<translation>Διακομιστής NTP</translation>
+<variable>NTP Server</variable>
+</message>
+<message>
+<tag_code>10903</tag_code>
+<translation>Ρυθμίσεις NTP</translation>
+<variable>NTP Settings</variable>
 </message>
 </tag_msg>

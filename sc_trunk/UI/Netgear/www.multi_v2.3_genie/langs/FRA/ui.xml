@@ -941,6 +941,10 @@
 <translation>Envoyer les Journaux</translation>
 </message>
 <message>
+<tag_code>308</tag_code>
+<translation>Programmer l'arrêt du signal sans fil</translation>
+</message>
+<message>
 <tag_code>309</tag_code>
 <translation>Désactiver le Déclenchement de port</translation>
 </message>
@@ -2953,7 +2957,7 @@
 </message>
 <message>
 <tag_code>1003</tag_code>
-<translation>Saisissez le code PIN du client :</translation>
+<translation>Saisissez le code PIN du client </translation>
 </message>
 <message>
 <tag_code>1005</tag_code>
@@ -5448,6 +5452,10 @@
 <translation>Utiliser cet ID d'interface</translation>
 </message>
 <message>
+<tag_code>4117</tag_code>
+<translation>Tunnel 6rd</translation>
+</message>
+<message>
 <tag_code>4200</tag_code>
 <translation>Pour autoriser ou bloquer des périphériques, accédez à la section &lt;a  style=text-decoration:underline;color:#0000ff; id=url_ac onclick=goto_formframe('AccessControl.htm&amp;todo=cfg_init')&gt;Contrôle d'accès&lt;/a&gt;.</translation>
 </message>
@@ -6011,5 +6019,37 @@
 <tag_code>10808</tag_code>
 <translation>Taiwan</translation>
 <variable>Taiwan</variable>
+</message>
+<message>
+<tag_code>10809</tag_code>
+<translation>&lt;font color="#000000"&gt;&lt;div&gt;&lt;xmp&gt;&lt;&lt;Attention&gt;&gt; Un nouveau package de configuration OpenVPN pour votre routeur est disponible. Il améliore la sécurité de votre routeur. Vous devez mettre à jour le package de configuration OpenVPN de votre routeur. Une fois le package de configuration OpenVPN mis à jour, vous devez mettre à jour le package de configuration OpenVPN pour tous les clients, sinon ils ne pourront pas accéder à votre routeur à l'aide de la fonctionnalité VPN.&lt;/xmp&gt;&lt;/div&gt;&lt;/font&gt;</translation>
+</message>
+<message>
+<tag_code>10810</tag_code>
+<translation>Renouvellement du certificat VPN</translation>
+</message>
+<message>
+<tag_code>10811</tag_code>
+<translation>Mise à jour</translation>
+</message>
+<message>
+<tag_code>10900</tag_code>
+<translation>Utiliser le serveur NTP NETGEAR par défaut</translation>
+<variable>Use default NETGEAR NTP server</variable>
+</message>
+<message>
+<tag_code>10901</tag_code>
+<translation>Définir votre serveur NTP préféré</translation>
+<variable>Set your preferred NTP server</variable>
+</message>
+<message>
+<tag_code>10902</tag_code>
+<translation>Serveur NTP</translation>
+<variable>NTP Server</variable>
+</message>
+<message>
+<tag_code>10903</tag_code>
+<translation>Paramètres NTP</translation>
+<variable>NTP Settings</variable>
 </message>
 </tag_msg>

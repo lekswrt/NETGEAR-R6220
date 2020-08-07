@@ -23,6 +23,7 @@ int region_isGR(void);
 int region_isPR(void);
 int region_isPE(void);
 int region_is_WW_JP(void);
+int region_is_KO(void);
 int region_supMIII(void);
 int l2tp_supported();
 char *get_region(void);

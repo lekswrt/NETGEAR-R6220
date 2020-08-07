@@ -941,6 +941,10 @@
 <translation>Logboek verzenden</translation>
 </message>
 <message>
+<tag_code>308</tag_code>
+<translation>Draadloos signaal uitschakelen volgens planning</translation>
+</message>
+<message>
 <tag_code>309</tag_code>
 <translation>Activeren van poort uitschakelen</translation>
 </message>
@@ -5441,6 +5445,10 @@
 <translation>Deze interface-id gebruiken</translation>
 </message>
 <message>
+<tag_code>4117</tag_code>
+<translation>6rd-tunnel</translation>
+</message>
+<message>
 <tag_code>4200</tag_code>
 <translation>Ga naar &lt;a  style=text-decoration:underline;color:#0000ff; id=url_ac onclick=goto_formframe('AccessControl.htm&amp;todo=cfg_init')&gt;Toegangscontrole&lt;/a&gt; om apparaten toe te staan of te blokkeren.</translation>
 </message>
@@ -5999,5 +6007,37 @@
 <tag_code>10808</tag_code>
 <translation>Taiwan</translation>
 <variable>Taiwan</variable>
+</message>
+<message>
+<tag_code>10809</tag_code>
+<translation>&lt;font color="#000000"&gt;&lt;div&gt;&lt;xmp&gt;&lt;&lt;Opgelet&gt;&gt; Een nieuwe OpenVPN-configuratiepakket voor uw router is beschikbaar waarmee de beveiliging van uw router wordt verbeterd. U dient het OpenVPN-configuratiepakket voor uw router bij te werken. Zodra het OpenVPN-configuratiepakket is bijgewerkt, dient u het OpenVPN-configuratiepakket op al uw clients bij te werken; anders hebben uw clients geen toegang meer tot uw router via de VPN-functie.&lt;/xmp&gt;&lt;/div&gt;&lt;/font&gt;</translation>
+</message>
+<message>
+<tag_code>10810</tag_code>
+<translation>Vernieuwing VPN certificaat</translation>
+</message>
+<message>
+<tag_code>10811</tag_code>
+<translation>bijwerken</translation>
+</message>
+<message>
+<tag_code>10900</tag_code>
+<translation>Gebruik standaard NETGEAR NTP-server</translation>
+<variable>Use default NETGEAR NTP server</variable>
+</message>
+<message>
+<tag_code>10901</tag_code>
+<translation>Stel uw gewenste NTP-server in</translation>
+<variable>Set your preferred NTP server</variable>
+</message>
+<message>
+<tag_code>10902</tag_code>
+<translation>NTP-server</translation>
+<variable>NTP Server</variable>
+</message>
+<message>
+<tag_code>10903</tag_code>
+<translation>NTP-instellingen</translation>
+<variable>NTP Settings</variable>
 </message>
 </tag_msg>

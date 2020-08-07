@@ -941,6 +941,10 @@
 <translation>发送日志</translation>
 </message>
 <message>
+<tag_code>308</tag_code>
+<translation>按时间安排关闭无线收发功能</translation>
+</message>
+<message>
 <tag_code>309</tag_code>
 <translation>停止端口触发</translation>
 </message>
@@ -2986,7 +2990,7 @@
 </message>
 <message>
 <tag_code>1003</tag_code>
-<translation>输入网卡的PIN代码:</translation>
+<translation>输入网卡的PIN代码</translation>
 </message>
 <message>
 <tag_code>1005</tag_code>
@@ -3234,7 +3238,7 @@
 </message>
 <message>
 <tag_code>1071</tag_code>
-<translation>Counting Period</translation>
+<translation>统计时间</translation>
 </message>
 <message>
 <tag_code>1072</tag_code>
@@ -5966,6 +5970,11 @@
 <translation>缺省IPv6网关</translation>
 </message>
 <message>
+<tag_code>4117</tag_code>
+<translation>6rd 隧道</translation>
+<variable>6rd Tunnel</variable>
+</message>
+<message>
 <tag_code>4200</tag_code>
 <translation>前往&lt;a  style=text-decoration:underline;color:#0000ff; id=url_ac onclick=goto_formframe('AccessControl.htm&amp;todo=cfg_init')&gt;访问控制&lt;/a&gt;来允许或阻止设备。</translation>
 </message>
@@ -6527,5 +6536,37 @@
 <tag_code>10808</tag_code>
 <translation>台湾</translation>
 <variable>Taiwan</variable>
+</message>
+<message>
+<tag_code>10809</tag_code>
+<translation>&lt;font color="#000000"&gt;&lt;div&gt;&lt;xmp&gt;&lt;&lt;注意&gt;&gt; 现已提供能提高您路由器安全性的新 OpenVPN 配置包。必须更新您路由器的 OpenVPN 配置包。一旦更新 OpenVPN 配置包，则必须更新您所有客户端上的 OpenVPN 配置包。否则，客户端将无法通过 VPN 功能访问您的路由器&lt;/xmp&gt;&lt;/div&gt;&lt;/font&gt;</translation>
+</message>
+<message>
+<tag_code>10810</tag_code>
+<translation>正在续订 VPN 证书</translation>
+</message>
+<message>
+<tag_code>10811</tag_code>
+<translation>更新</translation>
+</message>
+<message>
+<tag_code>10900</tag_code>
+<translation>使用默认 NETGEAR NTP 服务器</translation>
+<variable>Use default NETGEAR NTP server</variable>
+</message>
+<message>
+<tag_code>10901</tag_code>
+<translation>设置您的首选 NTP 服务器</translation>
+<variable>Set your preferred NTP server</variable>
+</message>
+<message>
+<tag_code>10902</tag_code>
+<translation>NTP 服务器</translation>
+<variable>NTP Server</variable>
+</message>
+<message>
+<tag_code>10903</tag_code>
+<translation>NTP 设置</translation>
+<variable>NTP Settings</variable>
 </message>
 </tag_msg>

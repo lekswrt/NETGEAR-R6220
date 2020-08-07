@@ -951,6 +951,10 @@
 <translation>Trimitere jurnal</translation>
 </message>
 <message>
+<tag_code>308</tag_code>
+<translation>Oprire programată semnal wireless</translation>
+</message>
+<message>
 <tag_code>309</tag_code>
 <translation>Dezactivare declanºare porturi</translation>
 </message>
@@ -5457,6 +5461,10 @@
 <translation>Utilizare ID interfaţă</translation>
 </message>
 <message>
+<tag_code>4117</tag_code>
+<translation>Tunel 6rd</translation>
+</message>
+<message>
 <tag_code>4200</tag_code>
 <translation>Accesaţi &lt;a  style=text-decoration:underline;color:#0000ff; id=url_ac onclick=goto_formframe('AccessControl.htm&amp;todo=cfg_init')&gt;Control acces&lt;/a&gt; pentru a permite sau a bloca accesul dispozitivelor.</translation>
 </message>
@@ -6015,5 +6023,37 @@
 <tag_code>10808</tag_code>
 <translation>Taiwan</translation>
 <variable>Taiwan</variable>
+</message>
+<message>
+<tag_code>10809</tag_code>
+<translation>&lt;font color="#000000"&gt;&lt;div&gt;&lt;xmp&gt;&lt;&lt;Atenţie&gt;&gt;Un nou pachet de configurare OpenVPN pentru routerul dvs. este disponibil pentru îmbunătăţirea securităţii routerului dvs. Trebuie să actualizaţi pachetul de configurare OpenVPN pentru routerul dvs. Odată ce pachetul de configurare OpenVPN este actualizat, trebuie să actualizaţi pachetul de configurare OpenVPN pentru toţi clienţii noştri; în caz contrar, clienţii dvs. nu vor putea accesa routerul dvs., utilizând funcţia VPN.&lt;/xmp&gt;&lt;/div&gt;&lt;/font&gt;</translation>
+</message>
+<message>
+<tag_code>10810</tag_code>
+<translation>Reînnoirea Certificatului VPN</translation>
+</message>
+<message>
+<tag_code>10811</tag_code>
+<translation>Actualizare</translation>
+</message>
+<message>
+<tag_code>10900</tag_code>
+<translation>Utilizaţi serverul NETGEAR NTP implicit</translation>
+<variable>Use default NETGEAR NTP server</variable>
+</message>
+<message>
+<tag_code>10901</tag_code>
+<translation>Setaţi-vă serverul NTP preferat</translation>
+<variable>Set your preferred NTP server</variable>
+</message>
+<message>
+<tag_code>10902</tag_code>
+<translation>Server NTP</translation>
+<variable>NTP Server</variable>
+</message>
+<message>
+<tag_code>10903</tag_code>
+<translation>Setări NTP</translation>
+<variable>NTP Settings</variable>
 </message>
 </tag_msg>

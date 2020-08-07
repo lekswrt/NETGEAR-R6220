@@ -32,6 +32,58 @@
 #include "ixmlmembuf.h"
 #include "ixmlparser.h"
 
+struct buf_transfer_s {
+    char ori;
+    char *transfer;
+};
+
+struct buf_transfer_s buf_transfer_char[] = {
+    {'<',       "&lt;"},
+    {'>',       "&gt;"},
+	{' ',       "&nbsp;"},
+	{'"',       "&quot;"},
+	{'\'',      "&apos;"}, /* ' */
+	{'&',       "&amp;"},
+	{'\0',      NULL}
+};	
+
+int is_p_leading_escaped_string(char *p)
+{
+	int ret = 0;
+	if (p)
+	{
+		int i = 0;
+		struct buf_transfer_s *k = buf_transfer_char;
+		for (i=0; k[i].transfer; i++)
+		{
+			if (strncmp(p, k[i].transfer, strlen(k[i].transfer)) == 0)
+			{
+				ret = 1;
+				break;	
+			}
+		}
+	
+		if (ret == 0)
+		{
+			// &#35;
+			if (strchr(p, '#') && strchr(p, ';'))
+			{
+				char buf_tmp[100];
+				for(i=0; i<128; i++)
+				{
+					sprintf(buf_tmp, "&#%d;", i);
+					if (strncmp(p, buf_tmp, strlen(buf_tmp)) == 0)
+					{
+						ret = 1;
+						break;
+					}
+				}
+			}
+		}
+	}
+	return ret;
+}
+
 /*================================================================
 *   copy_with_escape
 *
@@ -51,11 +103,13 @@ copy_with_escape( INOUT ixml_membuf * buf,
 
     for( i = 0; i < plen; i++ ) {
         switch ( p[i] ) {
+
+#if 0 
 /*
  * Due to eTEXT_NODE might return XML format value, so we remove first two
  * case to prevent parsering "<>". 
  * BTW, '&' must be parsered or else the response structure will be treat as invalid. --Bollen_Chen.
- 
+ */
             case '<':
                 ixml_membuf_append_str( buf, "&lt;" );
                 break;
@@ -63,9 +117,16 @@ copy_with_escape( INOUT ixml_membuf * buf,
             case '>':
                 ixml_membuf_append_str( buf, "&gt;" );
                 break;
- */
+#endif
+
             case '&':
-                ixml_membuf_append_str( buf, "&amp;" );
+                if (is_p_leading_escaped_string(&p[i]))
+                {
+                	ixml_membuf_append( buf, &p[i] );
+                } else
+                {
+                	ixml_membuf_append_str( buf, "&amp;" );
+                }
                 break;
 
             case '\'':

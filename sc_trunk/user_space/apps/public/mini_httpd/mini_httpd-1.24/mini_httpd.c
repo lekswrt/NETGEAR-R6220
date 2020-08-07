@@ -723,6 +723,7 @@ int main(int argc, char **argv)
 		{
 			syslog(LOG_CRIT, "unknown user - '%s'", user);
 			(void)fprintf(stderr, "%s: unknown user - '%s'\n", argv0, user);
+			SC_CFPRINTF_EXIT("exit, %d, %s\n", errno, strerror(errno));
 			exit(1);
 		}
 		uid = pwd->pw_uid;
@@ -760,6 +761,7 @@ int main(int argc, char **argv)
 			syslog(LOG_CRIT, "%s - %m", logfile);
 			perror(logfile);
 #endif
+			SC_CFPRINTF_EXIT("exit, %d, %s\n", errno, strerror(errno));
 			exit(1);
 		}
 		if (logfile[0] != '/')
@@ -793,6 +795,7 @@ int main(int argc, char **argv)
 		syslog(LOG_CRIT, "can't find any valid address");
 #endif
 		//(void)fprintf(stderr, "%s: can't find any valid address\n", argv0);
+		SC_CFPRINTF_EXIT("exit, %d, %s\n", errno, strerror(errno));
 		exit(1);
 	}
 
@@ -815,6 +818,7 @@ int main(int argc, char **argv)
 		syslog(LOG_CRIT, "can't bind to any address");
 #endif
 		//(void)fprintf(stderr, "%s: can't bind to any address\n", argv0);
+		SC_CFPRINTF_EXIT("exit, %d, %s\n", errno, strerror(errno));
 		exit(1);
 	}
 #ifdef USE_SSL
@@ -828,6 +832,7 @@ int main(int argc, char **argv)
 			if (SSL_CTX_use_certificate_file(ssl_ctx, certfile, SSL_FILETYPE_PEM) == 0 || SSL_CTX_use_PrivateKey_file(ssl_ctx, certfile, SSL_FILETYPE_PEM) == 0 || SSL_CTX_check_private_key(ssl_ctx) == 0)
 			{
 				//ERR_print_errors_fp(stderr);
+				SC_CFPRINTF_EXIT("exit, %d, %s\n", errno, strerror(errno));
 				exit(1);
 			}
 		if (cipher != (char *)0)
@@ -835,6 +840,7 @@ int main(int argc, char **argv)
 			if (SSL_CTX_set_cipher_list(ssl_ctx, cipher) == 0)
 			{
 				//ERR_print_errors_fp(stderr);
+				SC_CFPRINTF_EXIT("exit, %d, %s\n", errno, strerror(errno));
 				exit(1);
 			}
 		}
@@ -851,6 +857,7 @@ int main(int argc, char **argv)
 			syslog(LOG_CRIT, "daemon - %m");
 			perror("daemon");
 #endif
+			SC_CFPRINTF_EXIT("exit, %d, %s\n", errno, strerror(errno));
 			exit(1);
 		}
 #else
@@ -863,8 +870,10 @@ int main(int argc, char **argv)
 			syslog(LOG_CRIT, "fork - %m");
 			perror("fork");
 #endif
+			SC_CFPRINTF_EXIT("exit, %d, %s\n", errno, strerror(errno));
 			exit(1);
 		default:
+			SC_CFPRINTF_EXIT("exit, %d, %s\n", errno, strerror(errno));
 			exit(0);
 		}
 #ifdef HAVE_SETSID
@@ -891,6 +900,7 @@ int main(int argc, char **argv)
 			syslog(LOG_CRIT, "%s - %m", pidfile);
 			perror(pidfile);
 #endif
+			SC_CFPRINTF_EXIT("exit, %d, %s\n", errno, strerror(errno));
 			exit(1);
 		}
 		(void)fprintf(pidfp, "%d\n", (int)getpid());
@@ -910,6 +920,7 @@ int main(int argc, char **argv)
 			syslog(LOG_CRIT, "setgroups - %m");
 			perror("setgroups");
 #endif
+			SC_CFPRINTF_EXIT("exit, %d, %s\n", errno, strerror(errno));
 			exit(1);
 		}
 		/* Set primary group. */
@@ -919,6 +930,7 @@ int main(int argc, char **argv)
 			syslog(LOG_CRIT, "setgid - %m");
 			perror("setgid");
 #endif
+			SC_CFPRINTF_EXIT("exit, %d, %s\n", errno, strerror(errno));
 			exit(1);
 		}
 		/* Try setting aux groups correctly - not critical if this fails. */
@@ -942,6 +954,7 @@ int main(int argc, char **argv)
 			syslog(LOG_CRIT, "chdir - %m");
 			perror("chdir");
 #endif
+			SC_CFPRINTF_EXIT("exit, %d, %s\n", errno, strerror(errno));
 			exit(1);
 		}
 	}
@@ -960,6 +973,7 @@ int main(int argc, char **argv)
 			syslog(LOG_CRIT, "chroot - %m");
 			perror("chroot");
 #endif
+			SC_CFPRINTF_EXIT("exit, %d, %s\n", errno, strerror(errno));
 			exit(1);
 		}
 		/* If we're logging and the logfile's pathname begins with the
@@ -990,6 +1004,7 @@ int main(int argc, char **argv)
 			syslog(LOG_CRIT, "chroot chdir - %m");
 			perror("chroot chdir");
 #endif
+			SC_CFPRINTF_EXIT("exit, %d, %s\n", errno, strerror(errno));
 			exit(1);
 		}
 
@@ -1002,6 +1017,7 @@ int main(int argc, char **argv)
 		{
 			syslog(LOG_CRIT, "data_dir chdir - %m");
 			perror("data_dir chdir");
+			SC_CFPRINTF_EXIT("exit, %d, %s\n", errno, strerror(errno));
 			exit(1);
 		}
 	}
@@ -1016,6 +1032,7 @@ int main(int argc, char **argv)
 			syslog(LOG_CRIT, "setuid - %m");
 			perror("setuid");
 #endif
+			SC_CFPRINTF_EXIT("exit, %d, %s\n", errno, strerror(errno));
 			exit(1);
 		}
 		/* Check for unnecessary security exposure. */
@@ -1129,6 +1146,7 @@ int main(int argc, char **argv)
 			syslog(LOG_CRIT, "select - %m");
 			perror("select");
 #endif
+			SC_CFPRINTF_EXIT("exit, %d, %s\n", errno, strerror(errno));
 			exit(1);
 		}
 
@@ -1144,6 +1162,7 @@ int main(int argc, char **argv)
 			syslog(LOG_CRIT, "select failure");
 #endif
 			//(void)fprintf(stderr, "%s: select failure\n", argv0);
+			SC_CFPRINTF_EXIT("exit, %d, %s\n", errno, strerror(errno));
 			exit(1);
 		}
 		if (conn_fd < 0)
@@ -1158,6 +1177,7 @@ int main(int argc, char **argv)
 			syslog(LOG_CRIT, "accept - %m");
 			perror("accept");
 #endif
+			SC_CFPRINTF_EXIT("exit, %d, %s\n", errno, strerror(errno));
 			exit(1);
 		}
 
@@ -1210,6 +1230,17 @@ int main(int argc, char **argv)
 			syslog(LOG_CRIT, "fork - %m");
 			perror("fork");
 #endif
+			/* http 80 for lan/lanusb, https 8443 for remote management, https 443 for remote usb. 
+			 * now only do this for port 80.
+			 * another way is we not need exit when fork fail.
+			 */
+			if (port == DEFAULT_HTTP_PORT)
+			{
+				SC_CFPRINTF_EXIT("will start again\n");
+				sleep(1);
+				system("/usr/sbin/sleep 5 && /usr/sbin/rc httpd start_httpapp &");
+			}
+			SC_CFPRINTF_EXIT("exit, %d, %s\n", errno, strerror(errno));
 			exit(1);
 		} else 	if (r == 0)
 		{

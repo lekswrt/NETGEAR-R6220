@@ -6126,6 +6126,10 @@
 <translation>Default IPv6 Gateway</translation>
 </message>
 <message>
+<tag_code>4117</tag_code>
+<translation>6rd Tunnel</translation>
+</message>
+<message>
 <tag_code>4200</tag_code>
 <translation>Go to  &lt;a  style=text-decoration:underline;color:#0000ff; id=url_ac onclick=goto_formframe('AccessControl.htm&amp;todo=cfg_init')&gt;Access Control&lt;/a&gt; to allow or block devices.</translation>
 </message>
@@ -6699,5 +6703,37 @@
 <tag_code>10808</tag_code>
 <translation>Taiwan</translation>
 <variable>Taiwan</variable>
+</message>
+<message>
+<tag_code>10809</tag_code>
+<translation>&lt;font color="#000000"&gt;&lt;div&gt;&lt;xmp&gt;&lt;&lt;Attention&gt;&gt; A new OpenVPN configuration package for your router is available that enhances your router’s security. You must update the OpenVPN configuration package for your router. Once the OpenVPN configuration package is updated, you must update the OpenVPN configuration package on all your clients; otherwise, your clients won’t be able to access your router using the VPN feature.&lt;/xmp&gt;&lt;/div&gt;&lt;/font&gt;</translation>
+</message>
+<message>
+<tag_code>10810</tag_code>
+<translation>Renewing VPN Certificate</translation>
+</message>
+<message>
+<tag_code>10811</tag_code>
+<translation>Update</translation>
+</message>
+<message>
+<tag_code>10900</tag_code>
+<translation>Use default NETGEAR NTP server</translation>
+<variable>Use default NETGEAR NTP server</variable>
+</message>
+<message>
+<tag_code>10901</tag_code>
+<translation>Set your preferred NTP server</translation>
+<variable>Set your preferred NTP server</variable>
+</message>
+<message>
+<tag_code>10902</tag_code>
+<translation>NTP Server</translation>
+<variable>NTP Server</variable>
+</message>
+<message>
+<tag_code>10903</tag_code>
+<translation>NTP Settings</translation>
+<variable>NTP Settings</variable>
 </message>
 </tag_msg>

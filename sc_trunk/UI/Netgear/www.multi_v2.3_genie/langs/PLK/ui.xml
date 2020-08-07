@@ -5457,6 +5457,10 @@
 <translation>Użyj tego identyfikatora interfejsu</translation>
 </message>
 <message>
+<tag_code>4117</tag_code>
+<translation>Tunel 6rd</translation>
+</message>
+<message>
 <tag_code>4200</tag_code>
 <translation>Przejdź do strony &lt;a  style=text-decoration:underline;color:#0000ff; id=url_ac onclick=goto_formframe('AccessControl.htm&amp;todo=cfg_init')&gt;Kontrola dostępu&lt;/a&gt;, aby umożliwiać lub blokować dostęp do sieci różnym urządzeniom.</translation>
 </message>
@@ -6014,5 +6018,37 @@
 <tag_code>10808</tag_code>
 <translation>Tajwan</translation>
 <variable>Taiwan</variable>
+</message>
+<message>
+<tag_code>10809</tag_code>
+<translation>&lt;font color="#000000"&gt;&lt;div&gt;&lt;xmp&gt;&lt;&lt;Uwaga&gt;&gt; Dla Twojego routera dostępny jest pakiet konfiguracyjny OpenVPN rozszerzający zabezpieczenia urządzenia. Aktualizacja pakietu konfiguracyjnego OpenVPN jest wymagana. Po zakończeniu aktualizacji należy powtórzyć ten proces na wszystkich klientach, w przeciwnym razie klienty nie będą mogły uzyskać dostępu do routera za pomocą funkcji VPN.&lt;/xmp&gt;&lt;/div&gt;&lt;/font&gt;</translation>
+</message>
+<message>
+<tag_code>10810</tag_code>
+<translation>Odświeżanie certyfikatu VPN</translation>
+</message>
+<message>
+<tag_code>10811</tag_code>
+<translation>Aktualizacja</translation>
+</message>
+<message>
+<tag_code>10900</tag_code>
+<translation>Skorzystaj z domyślnego serwera NTP firmy NETGEAR</translation>
+<variable>Use default NETGEAR NTP server</variable>
+</message>
+<message>
+<tag_code>10901</tag_code>
+<translation>Ustaw preferowany serwer NTP</translation>
+<variable>Set your preferred NTP server</variable>
+</message>
+<message>
+<tag_code>10902</tag_code>
+<translation>Serwer NTP</translation>
+<variable>NTP Server</variable>
+</message>
+<message>
+<tag_code>10903</tag_code>
+<translation>Ustawienia NTP</translation>
+<variable>NTP Settings</variable>
 </message>
 </tag_msg>

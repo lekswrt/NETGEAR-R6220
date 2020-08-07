@@ -941,6 +941,10 @@
 <translation>Send Log</translation>
 </message>
 <message>
+<tag_code>308</tag_code>
+<translation>Turn off wireless signal by schedule</translation>
+</message>
+<message>
 <tag_code>309</tag_code>
 <translation>Disable Port Triggering</translation>
 </message>
@@ -5429,6 +5433,10 @@
 <translation>Use This interface ID</translation>
 </message>
 <message>
+<tag_code>4117</tag_code>
+<translation>6rd tunel</translation>
+</message>
+<message>
 <tag_code>4200</tag_code>
 <translation>Posjetite &lt;a  style=text-decoration:underline;color:#0000ff; id=url_ac onclick=goto_formframe('AccessControl.htm&amp;todo=cfg_init')&gt;Kontrolu pristupa&lt;/a&gt; za radi dopuštanja ili blokiranja pristupa uređajima.</translation>
 </message>
@@ -5961,12 +5969,12 @@
 </message>
 <message>
 <tag_code>10804</tag_code>
-<translation>Bliski istok (Turska/Egipat/Tunis/Kuvajt</translation>
+<translation>Bliski istok (Turska/Egipat/Tunis/Kuvajt)</translation>
 <variable>Middle East(Turkey/Egypt/Tunisia/Kuwait)</variable>
 </message>
 <message>
 <tag_code>10805</tag_code>
-<translation>Bliski istok (Saudijska Arabija</translation>
+<translation>Bliski istok (Saudijska Arabija)</translation>
 <variable>Middle East(Saudi Arabia)</variable>
 </message>
 <message>
@@ -5983,5 +5991,37 @@
 <tag_code>10808</tag_code>
 <translation>Taiwan</translation>
 <variable>Taiwan</variable>
+</message>
+<message>
+<tag_code>10809</tag_code>
+<translation>&lt;font color="#000000"&gt;&lt;div&gt;&lt;xmp&gt;&lt;&lt;Pozor&gt;&gt; Za vaš usmjerivač dostupan je novi OpenVPN konfiguracijski paket koji će poboljšati sigurnost usmjerivača Morate ažurirati OpenVPN konfiguracijski paket za svoj usmjerivač. Kad ažurirate OpenVPN konfiguracijski paket, morate ažurirati OpenVPN konfiguracijski paket na svim klijentima. U suprotnom klijenti neće moći pristupiti vašem usmjerivaču putem VPN-a &lt;/xmp&gt;&lt;/div&gt;&lt;/font&gt;</translation>
+</message>
+<message>
+<tag_code>10810</tag_code>
+<translation>Obnova VPN certifikata</translation>
+</message>
+<message>
+<tag_code>10811</tag_code>
+<translation>Update</translation>
+</message>
+<message>
+<tag_code>10900</tag_code>
+<translation>Upotrijebi zadani NETGEAR NTP poslužitelj</translation>
+<variable>Use default NETGEAR NTP server</variable>
+</message>
+<message>
+<tag_code>10901</tag_code>
+<translation>Postavite preferirani NTP poslužitelj</translation>
+<variable>Set your preferred NTP server</variable>
+</message>
+<message>
+<tag_code>10902</tag_code>
+<translation>NTP poslužitelj</translation>
+<variable>NTP Server</variable>
+</message>
+<message>
+<tag_code>10903</tag_code>
+<translation>NTP postavke</translation>
+<variable>NTP Settings</variable>
 </message>
 </tag_msg>

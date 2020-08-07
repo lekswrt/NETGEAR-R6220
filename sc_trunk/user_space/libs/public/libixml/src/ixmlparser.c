@@ -1117,7 +1117,7 @@ Parser_getChar( IN char *src,
         *cLen = strlen( QUOT );
         return '"';
     } else if( strncasecmp( src, LT, strlen( LT ) ) == 0 ) {
-        *cLen = strlen( LT );
+        *cLen = strlen( LT ); // debug.
         return '<';
     } else if( strncasecmp( src, GT, strlen( GT ) ) == 0 ) {
         *cLen = strlen( GT );

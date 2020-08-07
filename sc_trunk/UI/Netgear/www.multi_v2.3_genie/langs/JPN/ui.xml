@@ -941,6 +941,10 @@
 <translation>ログ送信</translation>
 </message>
 <message>
+<tag_code>308</tag_code>
+<translation>スケジュールに基づいてワイヤレス信号をオフにする</translation>
+</message>
+<message>
 <tag_code>309</tag_code>
 <translation>ポートトリガーを無効にする</translation>
 </message>
@@ -5396,7 +5400,7 @@
 </message>
 <message>
 <tag_code>4105</tag_code>
-<translation>고정</translation>
+<translation>固定</translation>
 </message>
 <message>
 <tag_code>4106</tag_code>
@@ -5437,6 +5441,10 @@
 <message>
 <tag_code>4115</tag_code>
 <translation>このインターフェイスIDを使う</translation>
+</message>
+<message>
+<tag_code>4117</tag_code>
+<translation>6rd トンネル</translation>
 </message>
 <message>
 <tag_code>4200</tag_code>
@@ -6002,5 +6010,37 @@
 <tag_code>10808</tag_code>
 <translation>台湾</translation>
 <variable>Taiwan</variable>
+</message>
+<message>
+<tag_code>10809</tag_code>
+<translation>&lt;font color="#000000"&gt;&lt;div&gt;&lt;xmp&gt;&lt;&lt;注意&gt;&gt; お使いのルーターのセキュリティを強化する新しいOpenVPN設定パッケージが利用可能です。お使いのルーターのOpenVPN設定パッケージを更新する必要があります。ルーターのOpenVPN設定パッケージを更新した場合、すべてのクライアントでOpenVPN設定パッケージを更新する必要があります。更新しない場合、クライアントはVPN機能を使用してルーターにアクセスできなくなります。&lt;/xmp&gt;&lt;/div&gt;&lt;/font&gt;</translation>
+</message>
+<message>
+<tag_code>10810</tag_code>
+<translation>VPN証明書の更新中</translation>
+</message>
+<message>
+<tag_code>10811</tag_code>
+<translation>更新</translation>
+</message>
+<message>
+<tag_code>10900</tag_code>
+<translation>NETGEAR NTPサーバーを使用する</translation>
+<variable>Use default NETGEAR NTP server</variable>
+</message>
+<message>
+<tag_code>10901</tag_code>
+<translation>NTPサーバーを自分で設定する</translation>
+<variable>Set your preferred NTP server</variable>
+</message>
+<message>
+<tag_code>10902</tag_code>
+<translation>NTPサーバー</translation>
+<variable>NTP Server</variable>
+</message>
+<message>
+<tag_code>10903</tag_code>
+<translation>NTP設定</translation>
+<variable>NTP Settings</variable>
 </message>
 </tag_msg>

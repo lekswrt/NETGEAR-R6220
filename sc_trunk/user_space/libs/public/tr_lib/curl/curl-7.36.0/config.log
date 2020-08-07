@@ -2808,7 +2808,7 @@ configure:21884: $? = 0
 configure:21884: result: yes
 configure:21884: checking for RAND_screen
 configure:21884: mipsel-linux-gcc -o conftest -O2 -Wno-system-headers  -I/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//include -I/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//include/openssl  -L/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//lib conftest.c -lssl -lcrypto  >&5
-/tmp/ccLp6Spe.o: In function `main':
+/tmp/cc1zeRgh.o: In function `main':
 conftest.c:(.text.startup+0x8): undefined reference to `RAND_screen'
 conftest.c:(.text.startup+0x18): undefined reference to `RAND_screen'
 collect2: ld returned 1 exit status
@@ -3038,7 +3038,7 @@ configure:21979: $? = 0
 configure:22038: result: unknown - 0x1000208fL
 configure:22047: checking for OpenSSL library version
 configure:22115: mipsel-linux-gcc -o conftest -O2 -Wno-system-headers  -I/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//include -I/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//include/openssl  -L/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//lib conftest.c -lssl -lcrypto  >&5
-/tmp/cckUNRKv.o: In function `main':
+/tmp/ccyXHHea.o: In function `main':
 conftest.c:(.text.startup+0x8): undefined reference to `SSL_CTX_set_not_resumable_session_callback'
 conftest.c:(.text.startup+0x18): undefined reference to `SSL_CTX_set_not_resumable_session_callback'
 collect2: ld returned 1 exit status
@@ -15775,7 +15775,7 @@ configure:28676: checking for socket.h
 configure:28676: result: no
 configure:28695: checking if closesocket can be linked
 configure:28715: mipsel-linux-gcc -o conftest -O2 -Wno-system-headers  -I/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//include -I/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//include/openssl  -L/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//lib conftest.c -lssl -lcrypto  >&5
-/tmp/ccz7UxG0.o: In function `main':
+/tmp/ccFLKjfK.o: In function `main':
 conftest.c:(.text.startup+0x8): undefined reference to `closesocket'
 conftest.c:(.text.startup+0x18): undefined reference to `closesocket'
 collect2: ld returned 1 exit status
@@ -16004,7 +16004,7 @@ configure:28810: checking if closesocket might be used
 configure:28825: result: no
 configure:28837: checking if CloseSocket can be linked
 configure:28856: mipsel-linux-gcc -o conftest -O2 -Wno-system-headers  -I/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//include -I/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//include/openssl  -L/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//lib conftest.c -lssl -lcrypto  >&5
-/tmp/cc2nDbUZ.o: In function `main':
+/tmp/ccmyrwKO.o: In function `main':
 conftest.c:(.text.startup+0x8): undefined reference to `CloseSocket'
 conftest.c:(.text.startup+0x18): undefined reference to `CloseSocket'
 collect2: ld returned 1 exit status
@@ -18828,7 +18828,7 @@ configure:33522: checking if ioctl SIOCGIFADDR might be used
 configure:33526: result: yes
 configure:33553: checking if ioctlsocket can be linked
 configure:33572: mipsel-linux-gcc -o conftest -O2 -Wno-system-headers  -I/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//include -I/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//include/openssl  -L/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//lib conftest.c -lssl -lcrypto  >&5
-/tmp/ccmvnP01.o: In function `main':
+/tmp/ccxMgyHc.o: In function `main':
 conftest.c:(.text.startup+0x8): undefined reference to `ioctlsocket'
 conftest.c:(.text.startup+0x20): undefined reference to `ioctlsocket'
 collect2: ld returned 1 exit status
@@ -19107,7 +19107,7 @@ configure:33665: checking if ioctlsocket might be used
 configure:33754: result: no
 configure:33766: checking if IoctlSocket can be linked
 configure:33795: mipsel-linux-gcc -o conftest -O2 -Wno-system-headers  -I/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//include -I/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//include/openssl  -L/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//lib conftest.c -lssl -lcrypto  >&5
-/tmp/ccO3zFm9.o: In function `main':
+/tmp/ccGUt1Zd.o: In function `main':
 conftest.c:(.text.startup+0x8): undefined reference to `IoctlSocket'
 conftest.c:(.text.startup+0x18): undefined reference to `IoctlSocket'
 collect2: ld returned 1 exit status
@@ -19772,7 +19772,7 @@ configure:35278: checking for setjmp.h
 configure:35278: result: yes
 configure:35298: checking if sigsetjmp can be linked
 configure:35327: mipsel-linux-gcc -o conftest -O2 -Wno-system-headers  -I/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//include -I/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//include/openssl  -L/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//lib conftest.c -lssl -lcrypto  >&5
-/tmp/ccoYGdIu.o: In function `main':
+/tmp/ccEqMhie.o: In function `main':
 conftest.c:(.text.startup+0x8): undefined reference to `sigsetjmp'
 conftest.c:(.text.startup+0x18): undefined reference to `sigsetjmp'
 collect2: ld returned 1 exit status
@@ -20111,7 +20111,7 @@ configure:35906: checking if strcasecmp might be used
 configure:35912: result: yes
 configure:35933: checking if strcmpi can be linked
 configure:35962: mipsel-linux-gcc -o conftest -O2 -Wno-system-headers  -I/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//include -I/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//include/openssl  -L/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//lib conftest.c -lssl -lcrypto  >&5
-/tmp/ccC3kIZs.o: In function `main':
+/tmp/cc3u2vUz.o: In function `main':
 conftest.c:(.text.startup+0x8): undefined reference to `strcmpi'
 conftest.c:(.text.startup+0x18): undefined reference to `strcmpi'
 collect2: ld returned 1 exit status
@@ -21294,7 +21294,7 @@ configure:36580: checking if strerror_r might be used
 configure:36586: result: yes
 configure:36643: checking if stricmp can be linked
 configure:36672: mipsel-linux-gcc -o conftest -O2 -Wno-system-headers  -I/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//include -I/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//include/openssl  -L/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//lib conftest.c -lssl -lcrypto  >&5
-/tmp/ccl3c1F3.o: In function `main':
+/tmp/ccB6ikP3.o: In function `main':
 conftest.c:(.text.startup+0x8): undefined reference to `stricmp'
 conftest.c:(.text.startup+0x18): undefined reference to `stricmp'
 collect2: ld returned 1 exit status
@@ -21603,7 +21603,7 @@ configure:36914: checking if strncasecmp might be used
 configure:36920: result: yes
 configure:36941: checking if strncmpi can be linked
 configure:36970: mipsel-linux-gcc -o conftest -O2 -Wno-system-headers  -I/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//include -I/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//include/openssl  -L/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//lib conftest.c -lssl -lcrypto  >&5
-/tmp/ccJwG36n.o: In function `main':
+/tmp/ccQKnvkd.o: In function `main':
 conftest.c:(.text.startup+0x8): undefined reference to `strncmpi'
 conftest.c:(.text.startup+0x18): undefined reference to `strncmpi'
 collect2: ld returned 1 exit status
@@ -21898,7 +21898,7 @@ configure:37063: checking if strncmpi might be used
 configure:37078: result: no
 configure:37090: checking if strnicmp can be linked
 configure:37119: mipsel-linux-gcc -o conftest -O2 -Wno-system-headers  -I/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//include -I/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//include/openssl  -L/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//lib conftest.c -lssl -lcrypto  >&5
-/tmp/cclYfMKv.o: In function `main':
+/tmp/cc672irb.o: In function `main':
 conftest.c:(.text.startup+0x8): undefined reference to `strnicmp'
 conftest.c:(.text.startup+0x18): undefined reference to `strnicmp'
 collect2: ld returned 1 exit status
@@ -22263,7 +22263,7 @@ configure:37882: $? = 0
 configure:37882: result: yes
 configure:37882: checking for getpass_r
 configure:37882: mipsel-linux-gcc -o conftest -O2 -Wno-system-headers  -I/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//include -I/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//include/openssl  -L/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//lib conftest.c -lssl -lcrypto  >&5
-/tmp/cc8IIZZz.o: In function `main':
+/tmp/ccwIMnVS.o: In function `main':
 conftest.c:(.text.startup+0x8): undefined reference to `getpass_r'
 conftest.c:(.text.startup+0x18): undefined reference to `getpass_r'
 collect2: ld returned 1 exit status
@@ -22562,7 +22562,7 @@ configure: failed program was:
 configure:37882: result: no
 configure:37894: checking deeper for getpass_r
 configure:37911: mipsel-linux-gcc -o conftest -O2 -Wno-system-headers  -I/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//include -I/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//include/openssl  -L/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//lib conftest.c -lssl -lcrypto  >&5
-/tmp/ccqSsanH.o: In function `main':
+/tmp/ccTJKcsX.o: In function `main':
 conftest.c:(.text.startup+0x8): undefined reference to `getpass_r'
 conftest.c:(.text.startup+0x18): undefined reference to `getpass_r'
 collect2: ld returned 1 exit status
@@ -22887,7 +22887,7 @@ configure:37882: $? = 0
 configure:37882: result: yes
 configure:37882: checking for setmode
 configure:37882: mipsel-linux-gcc -o conftest -O2 -Wno-system-headers  -I/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//include -I/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//include/openssl  -L/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//lib conftest.c -lssl -lcrypto  >&5
-/tmp/ccXS88eO.o: In function `main':
+/tmp/ccHFoGdY.o: In function `main':
 conftest.c:(.text.startup+0x8): undefined reference to `setmode'
 conftest.c:(.text.startup+0x18): undefined reference to `setmode'
 collect2: ld returned 1 exit status
@@ -23195,7 +23195,7 @@ configure: failed program was:
 configure:37882: result: no
 configure:37894: checking deeper for setmode
 configure:37911: mipsel-linux-gcc -o conftest -O2 -Wno-system-headers  -I/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//include -I/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//include/openssl  -L/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//lib conftest.c -lssl -lcrypto  >&5
-/tmp/ccaVnFZJ.o: In function `main':
+/tmp/cc9oCK33.o: In function `main':
 conftest.c:(.text.startup+0x8): undefined reference to `setmode'
 conftest.c:(.text.startup+0x18): undefined reference to `setmode'
 collect2: ld returned 1 exit status

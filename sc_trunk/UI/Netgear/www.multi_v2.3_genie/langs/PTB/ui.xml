@@ -941,6 +941,10 @@
 <translation>Enviar log</translation>
 </message>
 <message>
+<tag_code>308</tag_code>
+<translation>Desativar sinal sem fio por programação</translation>
+</message>
+<message>
 <tag_code>309</tag_code>
 <translation>Desabilitar acionamento de porta</translation>
 </message>
@@ -5598,6 +5602,10 @@
 <translation>Use esta ID de interface</translation>
 </message>
 <message>
+<tag_code>4117</tag_code>
+<translation>Túnel 6rd</translation>
+</message>
+<message>
 <tag_code>4200</tag_code>
 <translation>Vá para &lt;a  style=text-decoration:underline;color:#0000ff; id=url_ac onclick=goto_formframe('AccessControl.htm&amp;todo=cfg_init')&gt;Controle de acesso&lt;/a&gt; para permitir ou bloquear dispositivos.</translation>
 </message>
@@ -6155,5 +6163,37 @@
 <tag_code>10808</tag_code>
 <translation>Taiwan</translation>
 <variable>Taiwan</variable>
+</message>
+<message>
+<tag_code>10809</tag_code>
+<translation>&lt;font color="#000000"&gt;&lt;div&gt;&lt;xmp&gt;&lt;&lt;Atenção&gt;&gt; Está disponível um novo pacote de configuração OpenVPN para o seu router que melhora a segurança do mesmo. Tem de atualizar o pacote de configuração OpenVPN do seu router. Depois de atualizar o pacote de configuração OpenVPN, tem de atualizar o pacote de configuração OpenVPN de todos os seus clientes, caso contrário, não poderão aceder ao seu router através da funcionalidade de VPN.&lt;/xmp&gt;&lt;/div&gt;&lt;/font&gt;</translation>
+</message>
+<message>
+<tag_code>10810</tag_code>
+<translation>Renovar o certificado de VPN</translation>
+</message>
+<message>
+<tag_code>10811</tag_code>
+<translation>Atualização</translation>
+</message>
+<message>
+<tag_code>10900</tag_code>
+<translation>Utilize o servidor NTP NETGEAR predefinido</translation>
+<variable>Use default NETGEAR NTP server</variable>
+</message>
+<message>
+<tag_code>10901</tag_code>
+<translation>Selecione o seu servidor NTP predefinido</translation>
+<variable>Set your preferred NTP server</variable>
+</message>
+<message>
+<tag_code>10902</tag_code>
+<translation>Servidor NTP</translation>
+<variable>NTP Server</variable>
+</message>
+<message>
+<tag_code>10903</tag_code>
+<translation>Definições do NTP</translation>
+<variable>NTP Settings</variable>
 </message>
 </tag_msg>

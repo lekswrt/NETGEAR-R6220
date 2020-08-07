@@ -941,6 +941,10 @@
 <translation>Protokoll senden</translation>
 </message>
 <message>
+<tag_code>308</tag_code>
+<translation>WLAN-Signal nach Zeitplan abschalten</translation>
+</message>
+<message>
 <tag_code>309</tag_code>
 <translation>Port-Triggering deaktivieren</translation>
 </message>
@@ -1770,7 +1774,7 @@
 </message>
 <message>
 <tag_code>584</tag_code>
-<translation>MSN messenger</translation>
+<translation>MSN Messenger</translation>
 </message>
 <message>
 <tag_code>585</tag_code>
@@ -2986,7 +2990,7 @@
 </message>
 <message>
 <tag_code>1003</tag_code>
-<translation>Client-PIN eingeben:</translation>
+<translation>Client-PIN eingeben</translation>
 </message>
 <message>
 <tag_code>1005</tag_code>
@@ -5610,6 +5614,10 @@
 <translation>Standard-IPv6-Gateway</translation>
 </message>
 <message>
+<tag_code>4117</tag_code>
+<translation>6rd-Tunnel</translation>
+</message>
+<message>
 <tag_code>4200</tag_code>
 <translation>Greifen Sie auf die &lt;a  style=text-decoration:underline;color:#0000ff; id=url_ac onclick=goto_formframe('AccessControl.htm&amp;todo=cfg_init')&gt;Zugriffssteuerung&lt;/a&gt; zu, um den Zugriff für Geräte zuzulassen oder zu sperren.</translation>
 </message>
@@ -6179,5 +6187,37 @@
 <tag_code>10808</tag_code>
 <translation>Taiwan</translation>
 <variable>Taiwan</variable>
+</message>
+<message>
+<tag_code>10809</tag_code>
+<translation>&lt;font color="#000000"&gt;&lt;div&gt;&lt;xmp&gt;&lt;&lt;Achtung&gt;&gt; Für Ihren Router ist ein neues OpenVPN-Konfigurationspaket verfügbar, das die Sicherheit Ihres Routers verbessert. Sie müssen das OpenVPN-Konfigurationspaket für Ihren Router aktualisieren. Nachdem das OpenVPN-Konfigurationspaket aktualisiert wurde, müssen Sie das OpenVPN-Konfigurationspaket auf allen Ihren Clients aktualisieren. Andernfalls können Ihre Clients nicht mehr über die VPN-Funktion auf Ihren Router zugreifen.&lt;/xmp&gt;&lt;/div&gt;&lt;/font&gt;</translation>
+</message>
+<message>
+<tag_code>10810</tag_code>
+<translation>Erneuerung des VPN-Zertifikates</translation>
+</message>
+<message>
+<tag_code>10811</tag_code>
+<translation>aktualisieren</translation>
+</message>
+<message>
+<tag_code>10900</tag_code>
+<translation>Standardmäßigen NETGEAR NTP-Server verwenden</translation>
+<variable>Use default NETGEAR NTP server</variable>
+</message>
+<message>
+<tag_code>10901</tag_code>
+<translation>Persönlichen FTP-Server einrichten</translation>
+<variable>Set your preferred NTP server</variable>
+</message>
+<message>
+<tag_code>10902</tag_code>
+<translation>NTP-Server</translation>
+<variable>NTP Server</variable>
+</message>
+<message>
+<tag_code>10903</tag_code>
+<translation>NTP-Einstellungen</translation>
+<variable>NTP Settings</variable>
 </message>
 </tag_msg>

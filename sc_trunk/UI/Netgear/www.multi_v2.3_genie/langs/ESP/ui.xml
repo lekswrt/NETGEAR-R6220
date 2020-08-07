@@ -941,6 +941,10 @@
 <translation>Enviar registro</translation>
 </message>
 <message>
+<tag_code>308</tag_code>
+<translation>Desactivar señal inalámbrica según programación</translation>
+</message>
+<message>
 <tag_code>309</tag_code>
 <translation>Desactivar activación de puertos</translation>
 </message>
@@ -2958,7 +2962,7 @@
 </message>
 <message>
 <tag_code>1003</tag_code>
-<translation>Introducir PIN del cliente:</translation>
+<translation>Introducir PIN del cliente</translation>
 </message>
 <message>
 <tag_code>1005</tag_code>
@@ -5443,7 +5447,10 @@
 <translation>Usar esta ID de interfaz</translation>
 </message>
 <message>
-=======
+<tag_code>4117</tag_code>
+<translation>Túnel 6rd</translation>
+</message>
+<message>
 <tag_code>4200</tag_code>
 <translation>Vaya a &lt;a  style=\"text-decoration:underline;color:#0000ff;\" href=\"setup.cgi?next_file=AccessControl.htm\"&gt;Control de acceso&lt;/a&gt; para permitir o bloquear dispositivos.</translation>
 </message>
@@ -6008,5 +6015,37 @@
 <tag_code>10808</tag_code>
 <translation>Taiwán</translation>
 <variable>Taiwan</variable>
+</message>
+<message>
+<tag_code>10809</tag_code>
+<translation>&lt;font color="#000000"&gt;&lt;div&gt;&lt;xmp&gt;&lt;&lt;Atención&gt;&gt; Hay disponible un nuevo paquete de configuración de OpenVPN que mejora la seguridad de su router. Debe actualizar el paquete de configuración de OpenVPN del router. Una vez en lo haya actualizado, deberá actualizar el paquete de configuración de OpenVPN en todos sus clientes; de lo contrario, estos no podrán acceder a su router mediante la función de VPN.&lt;/xmp&gt;&lt;/div&gt;&lt;/font&gt;</translation>
+</message>
+<message>
+<tag_code>10810</tag_code>
+<translation>Renovación del certificado de VPN</translation>
+</message>
+<message>
+<tag_code>10811</tag_code>
+<translation>Actualización</translation>
+</message>
+<message>
+<tag_code>10900</tag_code>
+<translation>Usar servidor NTP NETGEAR predeterminado</translation>
+<variable>Use default NETGEAR NTP server</variable>
+</message>
+<message>
+<tag_code>10901</tag_code>
+<translation>Establecer servidor NTP preferido</translation>
+<variable>Set your preferred NTP server</variable>
+</message>
+<message>
+<tag_code>10902</tag_code>
+<translation>Servidor NTP</translation>
+<variable>NTP Server</variable>
+</message>
+<message>
+<tag_code>10903</tag_code>
+<translation>Configuración de NTP</translation>
+<variable>NTP Settings</variable>
 </message>
 </tag_msg>

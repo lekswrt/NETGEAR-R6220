@@ -697,7 +697,7 @@
 	</message>
 	<message>
 		<err_code>165</err_code>
-		<translation>No entry selected. [NEL]Click a radio button to select an entry</translation>
+		<translation>请选择一个项目</translation>
 		<variable>gsm_msg_fw_no_select</variable>
 	</message>
 	<message>
@@ -712,7 +712,7 @@
 	</message>
 	<message>
 		<err_code>168</err_code>
-		<translation>No entry selected. [NEL]Click a radio button to select an entry</translation>
+		<translation>请选择一个项目</translation>
 		<variable>gsm_msg_pfw_no_app_sel</variable>
 	</message>
 	<message>
@@ -977,7 +977,7 @@
 	</message>
 	<message>
 		<err_code>244</err_code>
-		<translation>No entry selected. [NEL]Click a radio button to select an entry</translation>
+		<translation>请选择一个项目</translation>
 		<variable>gsm_msg_usb_no_sel_radio</variable>
 	</message>
 	<message>

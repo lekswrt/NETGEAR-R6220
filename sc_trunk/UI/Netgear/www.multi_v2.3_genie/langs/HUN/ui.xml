@@ -941,6 +941,10 @@
 <translation>Napló küldése</translation>
 </message>
 <message>
+<tag_code>308</tag_code>
+<translation> A vezeték nélküli jel ütemezés szerinti kikapcsolása</translation>
+</message>
+<message>
 <tag_code>309</tag_code>
 <translation>Port triggering letiltása</translation>
 </message>
@@ -5447,6 +5451,10 @@
 <translation>A jelen interfész-azonosító használata</translation>
 </message>
 <message>
+<tag_code>4117</tag_code>
+<translation>6rd csatorna</translation>
+</message>
+<message>
 <tag_code>4200</tag_code>
 <translation>Az eszközök engedélyezéséhez és letiltásához lépjen a &lt;a  style=text-decoration:underline;color:#0000ff; id=url_ac onclick=goto_formframe('AccessControl.htm&amp;todo=cfg_init')&gt;Hozzáférés-vezérlés&lt;/a&gt; elemre.</translation>
 </message>
@@ -6004,5 +6012,37 @@
 <tag_code>10808</tag_code>
 <translation>Tajvan</translation>
 <variable>Taiwan</variable>
+</message>
+<message>
+<tag_code>10809</tag_code>
+<translation>&lt;font color="#000000"&gt;&lt;div&gt;&lt;xmp&gt;&lt;&lt;Figyelem!&gt;&gt; Új OpenVPN konfigurációs csomag vált elérhetővé routere számára, amely hozzájárul routere biztonságának növeléséhez. Gondoskodjon az OpenVPN konfigurációs csomag routere számára történő frissítéséről. Miután frissítette OpenVPN konfigurációs csomagját, minden klienseszközön frissítenie kell OpenVPN konfigurációs csomagját, ellenkező esetben kliensei nem érhetik el routerét a VPN funkció alkalmazásával.&lt;/xmp&gt;&lt;/div&gt;&lt;/font&gt;</translation>
+</message>
+<message>
+<tag_code>10810</tag_code>
+<translation>A VPN tanúsítvány megújítása</translation>
+</message>
+<message>
+<tag_code>10811</tag_code>
+<translation>frissítése</translation>
+</message>
+<message>
+<tag_code>10900</tag_code>
+<translation>Alapértelmezett NETGEAR NTP-szerver használata</translation>
+<variable>Use default NETGEAR NTP server</variable>
+</message>
+<message>
+<tag_code>10901</tag_code>
+<translation>Adja meg a preferált NTP-szervert</translation>
+<variable>Set your preferred NTP server</variable>
+</message>
+<message>
+<tag_code>10902</tag_code>
+<translation>NTP-szerver</translation>
+<variable>NTP Server</variable>
+</message>
+<message>
+<tag_code>10903</tag_code>
+<translation>NTP-beállítások</translation>
+<variable>NTP Settings</variable>
 </message>
 </tag_msg>

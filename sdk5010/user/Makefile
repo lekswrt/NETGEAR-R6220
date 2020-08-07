@@ -49,7 +49,11 @@ dir_$(CONFIG_USER_MTD_WRITE)         	    += mtd_write
 dir_y                 += mtd-utils-1.5.0
 
 ifeq ($(USB),1)
+ifeq ($(BUILD_SAMBA_ABOVE_4_6_4_UNDER_SDK),1)
+dir_y       += samba-4.6.4
+else
 dir_y	    += samba-3.0.2
+endif
 #dir_y	    += samba-3.0.37
 endif
 dir_y 		+= ppp-2.4.2

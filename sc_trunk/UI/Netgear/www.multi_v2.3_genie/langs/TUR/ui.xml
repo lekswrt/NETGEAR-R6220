@@ -946,6 +946,10 @@
 <translation>Günlüğü Gönder</translation>
 </message>
 <message>
+<tag_code>308</tag_code>
+<translation> Kablosuz sinyalini zamanlamaya göre kapat</translation>
+</message>
+<message>
 <tag_code>309</tag_code>
 <translation>Bağlantı Noktası Tetiklemeyi Devre Dışı Bırak</translation>
 </message>
@@ -5585,6 +5589,10 @@
 <translation>Bu Arabirim Kimliğini Kullan</translation>
 </message>
 <message>
+<tag_code>4117</tag_code>
+<translation>6rd Tünel</translation>
+</message>
+<message>
 <tag_code>4200</tag_code>
 <translation>Aygıtlara izin vermek veya engellemek için &lt;a  style=text-decoration:underline;color:#0000ff; id=url_ac onclick=goto_formframe('AccessControl.htm&amp;todo=cfg_init')&gt;Erişim Denetimi&lt;/a&gt;'ne gidin.</translation>
 </message>
@@ -6142,5 +6150,37 @@
 <tag_code>10808</tag_code>
 <translation>Tayvan</translation>
 <variable>Taiwan</variable>
+</message>
+<message>
+<tag_code>10809</tag_code>
+<translation>&lt;font color="#000000"&gt;&lt;div&gt;&lt;xmp&gt;&lt;&lt;Dikkat&gt;&gt; Router'ınızın güvenliğini artıracak yeni bir OpenVPN yapılandırma paketi mevcut. Router'ınız için OpenVPN yapılandırma paketini güncellemeniz gerekiyor. OpenVPN yapılandırma paketi güncellendiğinde OpenVPN yapılandırma paketini tüm istemcileriniz için güncellemeniz gerekir. Aksi takdirde, istemcileriniz VPN özelliğini kullanarak router'ınıza erişemez.&lt;/xmp&gt;&lt;/div&gt;&lt;/font&gt;</translation>
+</message>
+<message>
+<tag_code>10810</tag_code>
+<translation>VPN Sertifikası yenileniyor</translation>
+</message>
+<message>
+<tag_code>10811</tag_code>
+<translation>Güncelleştirmesi</translation>
+</message>
+<message>
+<tag_code>10900</tag_code>
+<translation>Varsayılan NETGEAR NTP sunucusunu kullan</translation>
+<variable>Use default NETGEAR NTP server</variable>
+</message>
+<message>
+<tag_code>10901</tag_code>
+<translation>Tercih ettiğiniz NTP sunucusunu ayarlayın</translation>
+<variable>Set your preferred NTP server</variable>
+</message>
+<message>
+<tag_code>10902</tag_code>
+<translation>NTP Sunucusu</translation>
+<variable>NTP Server</variable>
+</message>
+<message>
+<tag_code>10903</tag_code>
+<translation>NTP Ayarları</translation>
+<variable>NTP Settings</variable>
 </message>
 </tag_msg>

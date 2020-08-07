@@ -380,6 +380,7 @@
 #define FW_FORWARD_SRV_PG       "FW_forward_service.htm"
 #define FW_PT_PG                "FW_pt.htm"
 #define FW_PT_SRV_PG            "FW_pt_service.htm"
+#define FW_NTP_PG          	    "FW_ntp.htm" 
 
 #define STR_ROUTES_PG           "STR_routes.htm"
 #define STR_ADD_PG              "STR_add.htm"

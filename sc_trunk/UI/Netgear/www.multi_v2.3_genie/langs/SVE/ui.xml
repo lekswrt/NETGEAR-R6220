@@ -941,6 +941,10 @@
 <translation>Skicka logg</translation>
 </message>
 <message>
+<tag_code>308</tag_code>
+<translation>Stäng av den trådlösa radiodelen efter schema</translation>
+</message>
+<message>
 <tag_code>309</tag_code>
 <translation>Avaktivera portutlösning </translation>
 </message>
@@ -5446,6 +5450,10 @@
 <translation>Använd detta gränssnitts-ID</translation>
 </message>
 <message>
+<tag_code>4117</tag_code>
+<translation>6rd-tunnel</translation>
+</message>
+<message>
 <tag_code>4200</tag_code>
 <translation>Gå till &lt;a  style=text-decoration:underline;color:#0000ff; id=url_ac onclick=goto_formframe('AccessControl.htm&amp;todo=cfg_init')&gt;Åtkomstkontroll&lt;/a&gt; för att tillåta eller blockera enheter.</translation>
 </message>
@@ -6003,5 +6011,37 @@
 <tag_code>10808</tag_code>
 <translation>Taiwan</translation>
 <variable>Taiwan</variable>
+</message>
+<message>
+<tag_code>10809</tag_code>
+<translation>&lt;font color="#000000"&gt;&lt;div&gt;&lt;xmp&gt;&lt;&lt;OBS&gt;&gt; Ett nytt OpenVPN-konfigurationspaketet som förbättrar routerns säkerhetsinställningar är tillgängligt. Du måste uppdatera OpenVPN-konfigurationspaketet för routern. När OpenVPN-konfigurationspaketet uppdateras måste du uppdatera OpenVPN-konfigurationspaketen för alla dina kunder, om du inte gör det kan dina kunder inte få åtkomst till routern via VPN-funktionen.&lt;/xmp&gt;&lt;/div&gt;&lt;/font&gt;</translation>
+</message>
+<message>
+<tag_code>10810</tag_code>
+<translation>Förnya VPN-certifikat</translation>
+</message>
+<message>
+<tag_code>10811</tag_code>
+<translation>Uppdatering</translation>
+</message>
+<message>
+<tag_code>10900</tag_code>
+<translation>Använd NETGEAR NTP-standardserver</translation>
+<variable>Use default NETGEAR NTP server</variable>
+</message>
+<message>
+<tag_code>10901</tag_code>
+<translation>Ställ in önskad NTP-server</translation>
+<variable>Set your preferred NTP server</variable>
+</message>
+<message>
+<tag_code>10902</tag_code>
+<translation>NTP-server</translation>
+<variable>NTP Server</variable>
+</message>
+<message>
+<tag_code>10903</tag_code>
+<translation>NTP-inställningar</translation>
+<variable>NTP Settings</variable>
 </message>
 </tag_msg>
