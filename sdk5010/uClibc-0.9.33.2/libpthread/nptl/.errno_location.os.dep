@@ -4,9 +4,9 @@ libpthread/nptl/errno_location.os: libpthread/nptl/errno_location.c \
  libc/misc/internals/internal_errno.h include/features.h \
  include/bits/uClibc_config.h include/sys/cdefs.h include/libc-internal.h \
  include/errno.h include/bits/errno.h \
- /home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/linux/errno.h \
- /home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/asm/errno.h \
- /home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/asm-generic/errno-base.h \
+ /home/disk3/peter/R6260/sdk5010/linux-2.6.36.x/include/linux/errno.h \
+ /home/disk3/peter/R6260/sdk5010/linux-2.6.36.x/include/asm/errno.h \
+ /home/disk3/peter/R6260/sdk5010/linux-2.6.36.x/include/asm-generic/errno-base.h \
  include/netdb.h include/netinet/in.h include/stdint.h \
  include/bits/wchar.h include/bits/wordsize.h include/sys/socket.h \
  include/sys/uio.h include/sys/types.h include/bits/types.h \
@@ -20,14 +20,14 @@ libpthread/nptl/errno_location.os: libpthread/nptl/errno_location.c \
  include/bits/socket.h include/limits.h \
  /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/lib/gcc/mipsel-buildroot-linux-uclibc/4.6.3/include-fixed/limits.h \
  include/bits/posix1_lim.h include/bits/local_lim.h \
- /home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/linux/limits.h \
+ /home/disk3/peter/R6260/sdk5010/linux-2.6.36.x/include/linux/limits.h \
  include/bits/uClibc_local_lim.h include/bits/posix2_lim.h \
  include/bits/xopen_lim.h include/bits/stdio_lim.h \
  include/bits/sockaddr.h \
- /home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/asm/socket.h \
- /home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/asm/sockios.h \
- /home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/asm/ioctl.h \
- /home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/asm-generic/ioctl.h \
+ /home/disk3/peter/R6260/sdk5010/linux-2.6.36.x/include/asm/socket.h \
+ /home/disk3/peter/R6260/sdk5010/linux-2.6.36.x/include/asm/sockios.h \
+ /home/disk3/peter/R6260/sdk5010/linux-2.6.36.x/include/asm/ioctl.h \
+ /home/disk3/peter/R6260/sdk5010/linux-2.6.36.x/include/asm-generic/ioctl.h \
  include/bits/in.h include/rpc/netdb.h include/bits/siginfo.h \
  include/bits/netdb.h
 
@@ -51,11 +51,11 @@ include/errno.h:
 
 include/bits/errno.h:
 
-/home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/linux/errno.h:
+/home/disk3/peter/R6260/sdk5010/linux-2.6.36.x/include/linux/errno.h:
 
-/home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/asm/errno.h:
+/home/disk3/peter/R6260/sdk5010/linux-2.6.36.x/include/asm/errno.h:
 
-/home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/asm-generic/errno-base.h:
+/home/disk3/peter/R6260/sdk5010/linux-2.6.36.x/include/asm-generic/errno-base.h:
 
 include/netdb.h:
 
@@ -119,7 +119,7 @@ include/bits/posix1_lim.h:
 
 include/bits/local_lim.h:
 
-/home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/linux/limits.h:
+/home/disk3/peter/R6260/sdk5010/linux-2.6.36.x/include/linux/limits.h:
 
 include/bits/uClibc_local_lim.h:
 
@@ -131,13 +131,13 @@ include/bits/stdio_lim.h:
 
 include/bits/sockaddr.h:
 
-/home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/asm/socket.h:
+/home/disk3/peter/R6260/sdk5010/linux-2.6.36.x/include/asm/socket.h:
 
-/home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/asm/sockios.h:
+/home/disk3/peter/R6260/sdk5010/linux-2.6.36.x/include/asm/sockios.h:
 
-/home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/asm/ioctl.h:
+/home/disk3/peter/R6260/sdk5010/linux-2.6.36.x/include/asm/ioctl.h:
 
-/home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/asm-generic/ioctl.h:
+/home/disk3/peter/R6260/sdk5010/linux-2.6.36.x/include/asm-generic/ioctl.h:
 
 include/bits/in.h:
 
@@ -146,4 +146,4 @@ include/rpc/netdb.h:
 include/bits/siginfo.h:
 
 include/bits/netdb.h:
-cmd_libpthread_nptl_errno_location.os := /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/bin/mipsel-linux-gcc -c libpthread/nptl/errno_location.c -o libpthread/nptl/errno_location.os -include include/libc-symbols.h -Wstrict-prototypes -Wstrict-aliasing -funsigned-char -fno-builtin -fno-asm -std=gnu99 -march=mips32r2 -mtune=mips32r2 -mabi=32 -fno-stack-protector -nostdinc -Iinclude -Iinclude -I. -Ilibc/sysdeps/linux -Ilibc/sysdeps/linux/mips -Os -funit-at-a-time -fmerge-all-constants -fstrict-aliasing -fno-tree-loop-optimize -fno-tree-dominator-opts -fno-strength-reduce -mno-split-addresses -DHAVE_FORCED_UNWIND -Ilibpthread/nptl -Ilibpthread/nptl -Ilibpthread/nptl/sysdeps/unix/sysv/linux/mips/ -Ilibpthread/nptl/sysdeps/unix/sysv/linux/mips -Ilibpthread/nptl/sysdeps/mips -Ilibpthread/nptl/sysdeps/mips -Ilibpthread/nptl/sysdeps/unix/sysv/linux -Ilibpthread/nptl/sysdeps/unix/sysv/linux -Ilibpthread/nptl/sysdeps/pthread -Ilibpthread/nptl/sysdeps/pthread/bits -Ilibpthread/nptl/sysdeps/generic -Ildso/ldso/mips -Ildso/include -Ilibc/sysdeps/linux/common -I/home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/ -isystem /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/lib/gcc/mipsel-buildroot-linux-uclibc/4.6.3/include-fixed -isystem /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/lib/gcc/mipsel-buildroot-linux-uclibc/4.6.3/include -DNDEBUG -D__USE_STDIO_FUTEXES__ -fPIC -DNOT_IN_libc -DIS_IN_libpthread -MT libpthread/nptl/errno_location.os -MD -MP -MF libpthread/nptl/.errno_location.os.dep
+cmd_libpthread_nptl_errno_location.os := /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/bin/mipsel-linux-gcc -c libpthread/nptl/errno_location.c -o libpthread/nptl/errno_location.os -include include/libc-symbols.h -Wstrict-prototypes -Wstrict-aliasing -funsigned-char -fno-builtin -fno-asm -std=gnu99 -march=mips32r2 -mtune=mips32r2 -mabi=32 -fno-stack-protector -nostdinc -Iinclude -Iinclude -I. -Ilibc/sysdeps/linux -Ilibc/sysdeps/linux/mips -Os -funit-at-a-time -fmerge-all-constants -fstrict-aliasing -fno-tree-loop-optimize -fno-tree-dominator-opts -fno-strength-reduce -mno-split-addresses -DHAVE_FORCED_UNWIND -Ilibpthread/nptl -Ilibpthread/nptl -Ilibpthread/nptl/sysdeps/unix/sysv/linux/mips/ -Ilibpthread/nptl/sysdeps/unix/sysv/linux/mips -Ilibpthread/nptl/sysdeps/mips -Ilibpthread/nptl/sysdeps/mips -Ilibpthread/nptl/sysdeps/unix/sysv/linux -Ilibpthread/nptl/sysdeps/unix/sysv/linux -Ilibpthread/nptl/sysdeps/pthread -Ilibpthread/nptl/sysdeps/pthread/bits -Ilibpthread/nptl/sysdeps/generic -Ildso/ldso/mips -Ildso/include -Ilibc/sysdeps/linux/common -I/home/disk3/peter/R6260/sdk5010/linux-2.6.36.x/include/ -isystem /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/lib/gcc/mipsel-buildroot-linux-uclibc/4.6.3/include-fixed -isystem /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/lib/gcc/mipsel-buildroot-linux-uclibc/4.6.3/include -DNDEBUG -D__USE_STDIO_FUTEXES__ -fPIC -DNOT_IN_libc -DIS_IN_libpthread -MT libpthread/nptl/errno_location.os -MD -MP -MF libpthread/nptl/.errno_location.os.dep

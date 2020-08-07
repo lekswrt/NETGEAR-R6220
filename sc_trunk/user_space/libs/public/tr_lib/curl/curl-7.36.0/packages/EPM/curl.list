@@ -1,13 +1,13 @@
 # Directories...
-$prefix=/home/disk3/peter/release_r6260/sc_trunk/user_space/libs/public/tr_lib/curl/aaa
+$prefix=/home/disk3/peter/R6260/sc_trunk/user_space/libs/public/tr_lib/curl/aaa
 $exec_prefix=${prefix}
 $bindir=${exec_prefix}/bin
 $confdir=${prefix}/etc
-$docdir=/home/disk3/peter/release_r6260/sc_trunk/user_space/libs/public/tr_lib/curl/aaa/doc
+$docdir=/home/disk3/peter/R6260/sc_trunk/user_space/libs/public/tr_lib/curl/aaa/doc
 $mandir=${datarootdir}/man
-$libdir=/home/disk3/peter/release_r6260/sc_trunk/user_space/libs/public/tr_lib//lib
+$libdir=/home/disk3/peter/R6260/sc_trunk/user_space/libs/public/tr_lib//lib
 $srcdir=../..
-$includedir=/home/disk3/peter/release_r6260/sc_trunk/user_space/libs/public/tr_lib//include
+$includedir=/home/disk3/peter/R6260/sc_trunk/user_space/libs/public/tr_lib//include
 $datarootdir=${prefix}/share
 
 # Product information

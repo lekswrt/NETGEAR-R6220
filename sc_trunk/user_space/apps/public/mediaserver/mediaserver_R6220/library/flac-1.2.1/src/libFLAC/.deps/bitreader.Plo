@@ -1,13 +1,13 @@
 bitreader.lo: bitreader.c ../../config.h include/private/bitmath.h \
- /home/disk3/peter/release_r6260/sc_trunk/user_space/apps/public/mediaserver/mediaserver_R6220/library/flac-1.2.1/src/libFLAC/../../../..//library/flac-1.2.1/include/FLAC/ordinals.h \
+ /home/disk3/peter/R6260/sc_trunk/user_space/apps/public/mediaserver/mediaserver_R6220/library/flac-1.2.1/src/libFLAC/../../../..//library/flac-1.2.1/include/FLAC/ordinals.h \
  include/private/bitreader.h include/private/cpu.h include/private/crc.h \
- /home/disk3/peter/release_r6260/sc_trunk/user_space/apps/public/mediaserver/mediaserver_R6220/library/flac-1.2.1/src/libFLAC/../../../..//library/flac-1.2.1/include/FLAC/assert.h
+ /home/disk3/peter/R6260/sc_trunk/user_space/apps/public/mediaserver/mediaserver_R6220/library/flac-1.2.1/src/libFLAC/../../../..//library/flac-1.2.1/include/FLAC/assert.h
 
 ../../config.h:
 
 include/private/bitmath.h:
 
-/home/disk3/peter/release_r6260/sc_trunk/user_space/apps/public/mediaserver/mediaserver_R6220/library/flac-1.2.1/src/libFLAC/../../../..//library/flac-1.2.1/include/FLAC/ordinals.h:
+/home/disk3/peter/R6260/sc_trunk/user_space/apps/public/mediaserver/mediaserver_R6220/library/flac-1.2.1/src/libFLAC/../../../..//library/flac-1.2.1/include/FLAC/ordinals.h:
 
 include/private/bitreader.h:
 
@@ -15,4 +15,4 @@ include/private/cpu.h:
 
 include/private/crc.h:
 
-/home/disk3/peter/release_r6260/sc_trunk/user_space/apps/public/mediaserver/mediaserver_R6220/library/flac-1.2.1/src/libFLAC/../../../..//library/flac-1.2.1/include/FLAC/assert.h:
+/home/disk3/peter/R6260/sc_trunk/user_space/apps/public/mediaserver/mediaserver_R6220/library/flac-1.2.1/src/libFLAC/../../../..//library/flac-1.2.1/include/FLAC/assert.h:

@@ -55,6 +55,8 @@
 #ifdef VLAN_IPTV
 #include "ifgmap.h"
 #endif
+#define _SC_DEBUG_ENABLE_
+#include "sc_debug.h"
 
 #define SYSTEM_BUF_SIZE 1024
 
@@ -269,6 +271,24 @@ query_t *udp_handle_request()
     len = recvfrom(isock, msg, maxsize, 0,
 		   (struct sockaddr *)&from_addr, &addr_len);
 
+
+#if 0
+	SC_CFPRINTF("-------------%s\n", inet_ntoa(from_addr.sin_addr));
+	SC_CFPRINTF("-------------%s\n", inet_ntoa(recv_addr.sin_addr));
+	{
+		int i = 0;
+		for (i=0; i<len; i++)
+		{
+			SC_XCFPRINTF("%x ", (unsigned char)msg[i]);	
+			if (i>1 && (i%16==0))
+			{
+				SC_XCFPRINTF("\n");
+			}
+		}
+		SC_XCFPRINTF("\n");
+	}
+#endif	
+
 #ifdef OPENDNS
 
 	if(1 == opendns)
@@ -302,6 +322,26 @@ query_t *udp_handle_request()
 				snprintf(macaddr_buf,13,"%02x%02x%02x%02x%02x%02x",(unsigned char)*(funjsq_p+6),(unsigned char)*(funjsq_p+7),(unsigned char)*(funjsq_p+8),(unsigned char)*(funjsq_p+9),(unsigned char)*(funjsq_p+10),(unsigned char)*(funjsq_p+11));
 				get_deviceid_by_macaddr(macaddr_buf, deviceid);
 				trans_deviceid(deviceid, deviceid_b);
+				
+				// delete the dns OPT client mac in msg from funjsq_dnsmasq
+#if 1
+				if ((len-(funjsq_p-msg)) == 12)
+				{
+					if (len > 21)
+					{
+						len = len - 21; // EDNS0 
+						memset(msg+len, 0, 21);
+						pheader = msg+len;
+						
+						//SC_CFPRINTF("remove funjsq opt in dns\n");
+					}
+				} else
+				{
+					SC_CFPRINTF("not the last item in dns query?\n");
+				}
+#else				
+				add_rrs = add_rrs + 1; // from dns rfc, server should return error if it receive more than one opt.
+#endif
 			}
 		}
 #endif

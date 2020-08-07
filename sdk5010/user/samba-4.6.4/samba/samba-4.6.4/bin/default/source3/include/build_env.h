@@ -4,9 +4,9 @@
 #define _BUILD_ENV_H
 
 #define BUILD_ENV_UNAME "Linux localhost.localdomain 2.6.31.5-127.fc12.i686.PAE #1 SMP Sat Nov 7 21:25:57 EST 2009 i686 i686 i386 GNU/Linux"
-#define BUILD_ENV_DATE "Mon Dec 24 15:42:07 CST 2018"
-#define BUILD_ENV_SRCDIR "/home/disk3/peter/release_r6260/sdk5010/user/samba-4.6.4/samba/samba-4.6.4/source3"
-#define BUILD_ENV_BUILDDIR "/home/disk3/peter/release_r6260/sdk5010/user/samba-4.6.4/samba/samba-4.6.4/source3"
+#define BUILD_ENV_DATE "Mon Nov 11 17:10:25 CST 2019"
+#define BUILD_ENV_SRCDIR "/home/disk3/peter/R6260/sdk5010/user/samba-4.6.4/samba/samba-4.6.4/source3"
+#define BUILD_ENV_BUILDDIR "/home/disk3/peter/R6260/sdk5010/user/samba-4.6.4/samba/samba-4.6.4/source3"
 #define BUILD_ENV_USER "peter"
 #define BUILD_ENV_HOST "localhost.localdomain"
 #define BUILD_ENV_COMPILER "/opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/bin/mipsel-linux-gcc"

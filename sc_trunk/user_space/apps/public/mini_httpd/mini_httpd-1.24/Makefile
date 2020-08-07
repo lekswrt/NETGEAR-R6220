@@ -49,6 +49,11 @@ CFLAGS += -DUSB
 CFLAGS += -D_FILE_OFFSET_BITS=64
 endif
 
+ifeq ($(SECURITY_ENHANCE_0318),1)
+CFLAGS += -DSECURITY_ENHANCE_0318
+#CFLAGS += -L$(LIBS_DIR)/public/$(OPENSSL_USE) -lssl -lcrypto -I$(LIBS_DIR)/public/$(OPENSSL_USE)/include 
+endif
+
 ifeq ($(SECURITY_ENHANCE),1)
 CFLAGS += -DSECURITY_ENHANCE
 #CFLAGS += -L$(LIBS_DIR)/public/$(OPENSSL_USE) -lssl -lcrypto -I$(LIBS_DIR)/public/$(OPENSSL_USE)/include 
@@ -82,6 +87,10 @@ ifeq ($(XCLOUD),1)
 CFLAGS += -DXCLOUD
 endif
 
+ifeq ($(RAE),1)
+CFLAGS += -DRAE
+endif
+ 
 ifeq ($(HTTPD_IPV6_SUPPORT),1)
 CFLAGS += -DHTTPD_IPV6_SUPPORT
 endif
@@ -113,6 +122,13 @@ endif
 
 ifeq ($(PNPX), 1)
 	CFLAGS += -DPNPX
+endif
+ifeq ($(GENIE_IPV6), 1)
+        CFLAGS += -DGENIE_IPV6
+endif
+
+ifeq ($(ADS), 1)
+        CFLAGS += -DADS
 endif
 
 LDLIBS += -L../../nvram -lscnvram

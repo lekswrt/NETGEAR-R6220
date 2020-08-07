@@ -137,7 +137,7 @@ parsePADOTags(UINT16_t type, UINT16_t len, unsigned char *data,
 	    !strncmp((char *) data, conn->serviceName, len)) {
 	    pc->serviceNameOK = 1;
 	}
-	else if(conn->serviceName == NULL && len && (len = strlen((char *) data)) > 0){/*copy service name from PADO if PPPoE client service name is null and PPPoE server service name is not NULL*/
+	else if(conn->serviceName == NULL && (len = strlen((char *) data)) > 0){/*copy service name from PADO if PPPoE client service name is null and PPPoE server service name is not NULL*/
 		/* Due to service name value will end with 0x01 0x03, we should filter the end tag before copy to PPPoE client service name. */
 		strncpy(srvName, data, len - 2);
 		/* RFC2516 describes that ANY PPPoE service should be acceptable if PPPoE client service name length is zero.  */

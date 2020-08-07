@@ -1,4 +1,4 @@
-cmd_applets/usage := gcc -Wp,-MD,applets/.usage.d  -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer      -I/home/disk3/peter/release_r6260/sdk5010/user/busybox/include -o applets/usage applets/usage.c  
+cmd_applets/usage := gcc -Wp,-MD,applets/.usage.d  -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer      -I/home/disk3/peter/R6260/sdk5010/user/busybox/include -o applets/usage applets/usage.c  
 
 deps_applets/usage := \
   applets/usage.c \
@@ -41,7 +41,7 @@ deps_applets/usage := \
   /usr/lib/gcc/i686-redhat-linux/4.4.4/include/stddef.h \
   /usr/include/bits/confname.h \
   /usr/include/getopt.h \
-  /home/disk3/peter/release_r6260/sdk5010/user/busybox/include/usage.h \
+  /home/disk3/peter/R6260/sdk5010/user/busybox/include/usage.h \
     $(wildcard include/config/ture/adduser/to/group.h) \
     $(wildcard include/config/ture/brctl/show.h) \
     $(wildcard include/config/ture/brctl/fancy.h) \
@@ -195,7 +195,7 @@ deps_applets/usage := \
     $(wildcard include/config/ture/xargs/support/confirmation.h) \
     $(wildcard include/config/ture/xargs/support/zero/term.h) \
     $(wildcard include/config/ture/xargs/support/termopt.h) \
-  /home/disk3/peter/release_r6260/sdk5010/user/busybox/include/applets.h \
+  /home/disk3/peter/R6260/sdk5010/user/busybox/include/applets.h \
     $(wildcard include/config/feature/verbose/usage.h) \
     $(wildcard include/config/install/no/usr.h) \
     $(wildcard include/config/t.h) \

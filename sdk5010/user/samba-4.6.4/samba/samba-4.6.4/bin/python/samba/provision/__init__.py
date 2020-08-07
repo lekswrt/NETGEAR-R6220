@@ -1,1 +1,1 @@
-/home/disk3/peter/release_r6260/sdk5010/user/samba-4.6.4/samba/samba-4.6.4/python/samba/provision/__init__.py
+/home/disk3/peter/R6260/sdk5010/user/samba-4.6.4/samba/samba-4.6.4/python/samba/provision/__init__.py

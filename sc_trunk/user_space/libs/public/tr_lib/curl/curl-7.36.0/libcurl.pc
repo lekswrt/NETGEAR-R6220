@@ -23,10 +23,10 @@
 # This should most probably benefit from getting a "Requires:" field added
 # dynamically by configure.
 #
-prefix=/home/disk3/peter/release_r6260/sc_trunk/user_space/libs/public/tr_lib/curl/aaa
+prefix=/home/disk3/peter/R6260/sc_trunk/user_space/libs/public/tr_lib/curl/aaa
 exec_prefix=${prefix}
-libdir=/home/disk3/peter/release_r6260/sc_trunk/user_space/libs/public/tr_lib//lib
-includedir=/home/disk3/peter/release_r6260/sc_trunk/user_space/libs/public/tr_lib//include
+libdir=/home/disk3/peter/R6260/sc_trunk/user_space/libs/public/tr_lib//lib
+includedir=/home/disk3/peter/R6260/sc_trunk/user_space/libs/public/tr_lib//include
 supported_protocols="DICT FILE FTP FTPS GOPHER HTTP HTTPS IMAP IMAPS POP3 POP3S RTSP SMTP SMTPS TELNET TFTP"
 supported_features="SSL NTLM NTLM_WB TLS-SRP"
 

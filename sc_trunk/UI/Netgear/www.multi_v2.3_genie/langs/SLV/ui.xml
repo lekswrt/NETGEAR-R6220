@@ -6228,4 +6228,54 @@
 <translation>Preskoči</translation>
 <variable>Skip</variable>
 </message>
+<message>
+<tag_code>12001</tag_code>
+<translation>For the fastest set up, download the app.</translation>
+<variable>For the fastest set up, download the app.</variable>
+</message>
+<message>
+<tag_code>12002</tag_code>
+<translation>Ones set up you can access all advanced settings in the web interface here.</translation>
+<variable>Ones set up you can access all advanced settings in the web interface here.</variable>
+</message>
+<message>
+<tag_code>12003</tag_code>
+<translation>If you don’t have a compatible smartphone, click here</translation>
+<variable>If you don’t have a compatible smartphone, click here</variable>
+</message>
+<message>
+<tag_code>12004</tag_code>
+<translation>Speed up your experience by using the Nighthawk App.</translation>
+<variable>Speed up your experience by using the Nighthawk App.</variable>
+</message>
+<message>
+<tag_code>12005</tag_code>
+<translation>Download Now</translation>
+<variable>Download Now</variable>
+</message>
+<message>
+<tag_code>12006</tag_code>
+<translation>Install</translation>
+<variable>Install</variable>
+</message>
+<message>
+<tag_code>12007</tag_code>
+<translation>Learn more</translation>
+<variable>Learn more</variable>
+</message>
+<message>
+<tag_code>12008</tag_code>
+<translation>Fast and easy control from anywhere.</translation>
+<variable>Fast and easy control from anywhere.</variable>
+</message>
+<message>
+<tag_code>12009</tag_code>
+<translation>Download the app now.</translation>
+<variable>Download the app now.</variable>
+</message>
+<message>
+<tag_code>12010</tag_code>
+<translation>GET</translation>
+<variable>GET</variable>
+</message>
 </tag_msg>

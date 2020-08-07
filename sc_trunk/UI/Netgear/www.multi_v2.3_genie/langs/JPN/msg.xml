@@ -2061,6 +2061,11 @@
 		<variable>gsm_msg_wep_wpa_conflict_wps</variable>
 	</message>
 	<message>
+	        <err_code>13503</err_code>
+	        <translation>WPSの動作にはSSIDのブロードキャストが必要です。この変更を行うと、WPSにアクセスできなくなります。続けますか?</translation>
+	        <variable>gsm_msg_wps_need_ssid_broadcast</variable>
+	</message>
+	<message>
 		<err_code>13600</err_code>
 		<translation>無効なメディアサーバ名です。</translation>
 		<variable>gsm_msg_invalid_mediaserver_name</variable>

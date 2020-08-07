@@ -14,6 +14,9 @@ char *get_tuple_val(char *name, struct tuple_s *tuples);
 char *get_tuple_name(char *value, struct tuple_s *tuples);
 int myPipe(char *command, char **output);
 int COMMAND(const char *format, ...);
+#ifdef RAE
+	int COMMAND_RAE(const char *format, ...);
+#endif
 void get_all_assoc_wired_mac(char *assoc_wired_mac, int max_len);
 void get_all_brctl_filter_mac(char *filtered_mac, int max_len);
 int region_isNA(void);

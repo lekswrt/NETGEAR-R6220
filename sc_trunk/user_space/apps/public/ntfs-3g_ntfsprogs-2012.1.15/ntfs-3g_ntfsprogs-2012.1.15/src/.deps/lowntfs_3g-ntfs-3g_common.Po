@@ -42,9 +42,9 @@ lowntfs_3g-ntfs-3g_common.o: ntfs-3g_common.c ../config.h \
  /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/asm-generic/errno-base.h \
  /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/getopt.h \
  /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/getopt.h \
- /home/disk3/peter/release_r6260/sc_trunk/user_space/libs/public/fuse.2.7.4/include/fuse.h \
- /home/disk3/peter/release_r6260/sc_trunk/user_space/libs/public/fuse.2.7.4/include/fuse_common.h \
- /home/disk3/peter/release_r6260/sc_trunk/user_space/libs/public/fuse.2.7.4/include/fuse_opt.h \
+ /home/disk3/peter/R6260/sc_trunk/user_space/libs/public/fuse.2.7.4/include/fuse.h \
+ /home/disk3/peter/R6260/sc_trunk/user_space/libs/public/fuse.2.7.4/include/fuse_common.h \
+ /home/disk3/peter/R6260/sc_trunk/user_space/libs/public/fuse.2.7.4/include/fuse_opt.h \
  /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/lib/gcc/mipsel-buildroot-linux-uclibc/4.6.3/include/stdint.h \
  /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/stdint.h \
  /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/wchar.h \
@@ -184,11 +184,11 @@ lowntfs_3g-ntfs-3g_common.o: ntfs-3g_common.c ../config.h \
 
 /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/getopt.h:
 
-/home/disk3/peter/release_r6260/sc_trunk/user_space/libs/public/fuse.2.7.4/include/fuse.h:
+/home/disk3/peter/R6260/sc_trunk/user_space/libs/public/fuse.2.7.4/include/fuse.h:
 
-/home/disk3/peter/release_r6260/sc_trunk/user_space/libs/public/fuse.2.7.4/include/fuse_common.h:
+/home/disk3/peter/R6260/sc_trunk/user_space/libs/public/fuse.2.7.4/include/fuse_common.h:
 
-/home/disk3/peter/release_r6260/sc_trunk/user_space/libs/public/fuse.2.7.4/include/fuse_opt.h:
+/home/disk3/peter/R6260/sc_trunk/user_space/libs/public/fuse.2.7.4/include/fuse_opt.h:
 
 /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/lib/gcc/mipsel-buildroot-linux-uclibc/4.6.3/include/stdint.h:
 

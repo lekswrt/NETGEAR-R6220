@@ -26,7 +26,7 @@ top_srcdir = ..
 top_builddir = ..
 
 
-prefix = /home/disk3/peter/release_r6260/sc_trunk/user_space/apps/public/wol/src/wol-0.5.1
+prefix = /home/disk3/peter/R6260/sc_trunk/user_space/apps/public/wol/src/wol-0.5.1
 exec_prefix = ${prefix}
 transform = s,x,x,
 libdir = ${exec_prefix}/lib
@@ -54,8 +54,8 @@ YFLAGS = --name-prefix=__gettext
 DEFS = -DLOCALEDIR=\"$(localedir)\" -DLOCALE_ALIAS_PATH=\"$(aliaspath)\" \
 -DLIBDIR=\"$(libdir)\" -DHAVE_CONFIG_H
 CPPFLAGS = 
-CFLAGS = -I/home/disk3/peter/release_r6260/sc_trunk/user_space/apps/public/nvram -W -Wall -Wpointer-arith -Wimplicit-function-declaration
-LDFLAGS = -L/home/disk3/peter/release_r6260/sc_trunk/user_space/apps/public/nvram -lscnvram
+CFLAGS = -I/home/disk3/peter/R6260/sc_trunk/user_space/apps/public/nvram -W -Wall -Wpointer-arith -Wimplicit-function-declaration
+LDFLAGS = -L/home/disk3/peter/R6260/sc_trunk/user_space/apps/public/nvram -lscnvram
 
 COMPILE = $(CC) -c $(DEFS) $(INCLUDES) $(CPPFLAGS) $(CFLAGS) $(XCFLAGS)
 

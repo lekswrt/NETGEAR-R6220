@@ -20,7 +20,7 @@ srcdir = .
 top_srcdir = ..
 
 
-prefix = /home/disk3/peter/release_r6260/sc_trunk/user_space/apps/public/wol/src/wol-0.5.1
+prefix = /home/disk3/peter/R6260/sc_trunk/user_space/apps/public/wol/src/wol-0.5.1
 exec_prefix = ${prefix}
 datadir = ${prefix}/share
 localedir = $(datadir)/locale
@@ -38,7 +38,7 @@ XGETTEXT =
 MSGMERGE = msgmerge
 
 DEFS = -DHAVE_CONFIG_H
-CFLAGS = -I/home/disk3/peter/release_r6260/sc_trunk/user_space/apps/public/nvram -W -Wall -Wpointer-arith -Wimplicit-function-declaration
+CFLAGS = -I/home/disk3/peter/R6260/sc_trunk/user_space/apps/public/nvram -W -Wall -Wpointer-arith -Wimplicit-function-declaration
 CPPFLAGS = 
 
 INCLUDES = -I.. -I$(top_srcdir)/intl

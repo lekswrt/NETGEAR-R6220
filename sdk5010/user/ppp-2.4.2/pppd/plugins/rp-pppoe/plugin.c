@@ -90,10 +90,9 @@ static PPPoEConnection *conn = NULL;
 static char *set_PPPoE_option(char *opt_name)
 {
 	FILE *fp;
-	static char conf[1024] = "";
+	char conf[1024] = "";
 	char *pt1, *pt2;
-	
-	memset(conf, 0, sizeof(conf));
+
 	if((fp = fopen("/etc/option.pppoe", "r")) != NULL){
 		fread(conf, sizeof(conf), 1, fp);
 		if(pt1 = strstr(conf, opt_name)){

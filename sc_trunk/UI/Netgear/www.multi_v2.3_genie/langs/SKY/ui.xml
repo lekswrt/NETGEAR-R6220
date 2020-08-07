@@ -6212,4 +6212,9 @@
 <translation>Preskočiť</translation>
 <variable>Skip</variable>
 </message>
+<message>
+<tag_code>12010</tag_code>
+<translation>GET</translation>
+<variable>GET</variable>
+</message>
 </tag_msg>

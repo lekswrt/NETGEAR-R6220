@@ -73,6 +73,7 @@
 extern char *strcasestr(char *haystack, char *needle);
 extern int is_captive_detecting(char *request_host, char *request_agent);
 extern int is_apple_captive();
+
 #ifdef HAVE_SENDFILE
 # ifdef HAVE_LINUX_SENDFILE
 #  include <sys/sendfile.h>
@@ -829,8 +830,10 @@ int main(int argc, char **argv)
 	{
 		SSL_load_error_strings();
 		SSLeay_add_ssl_algorithms();
-		ssl_ctx = SSL_CTX_new(SSLv23_server_method());
+		//ssl_ctx = SSL_CTX_new(SSLv23_server_method());
+		ssl_ctx = SSL_CTX_new(TLSv1_2_server_method());
 		SSL_CTX_set_options(ssl_ctx, SSL_OP_NO_SSLv2 | SSL_OP_NO_SSLv3);
+		SSL_CTX_set_ecdh_auto(ssl_ctx, 1);
 		if (certfile[0] != '\0')
 			if (SSL_CTX_use_certificate_file(ssl_ctx, certfile, SSL_FILETYPE_PEM) == 0 || SSL_CTX_use_PrivateKey_file(ssl_ctx, certfile, SSL_FILETYPE_PEM) == 0 || SSL_CTX_check_private_key(ssl_ctx) == 0)
 			{
@@ -2131,7 +2134,11 @@ skip_it:
 					} else
 #endif
 					{
+#ifdef ADS
+						sprintf(fakepath, "/setup.cgi?next_file=%s HTTP/1.1", "App.html");
+#else
 						sprintf(fakepath, "/setup.cgi?next_file=%s HTTP/1.1", BRS_INDEX_PG);
+#endif
 					}
 				}
 				path = fakepath;
@@ -2163,7 +2170,10 @@ skip_it:
 #endif
 	    )
 	{
-		need_auth = 0;
+		if(strstr(path,"setup.cgi?todo=changelanguage&this_file=BRS_top.html"))
+			need_auth = 1;
+		else
+			need_auth = 0;
 		/* for hi-jack page, should allow 2 user access at same time. */
 		someone_in_use = 0;
 		if (strstr(path, "currentsetting.htm") != NULL)
@@ -2217,7 +2227,7 @@ skip_it:
 					send_error(302, "Found", location, "");
 				}
 			}			
-#ifdef SECURITY_ENHANCE
+#ifdef SECURITY_ENHANCE_0318
 			{
 
 				if ((*nvram_safe_get("weak_password_check") == '1') && (access("/tmp/no_security_page", F_OK) != 0)
@@ -3508,6 +3518,9 @@ static void auth_check(char *dirname)
 		{
 			system("/bin/echo genie from lan, ok > /dev/console");
 			{
+#ifdef GENIE_IPV6
+					system("/bin/echo genie ipv6, not drop request > /dev/console");	
+#else
 					if (strchr(current_remote_ip, ':'))
 					{
 						/* soap now get mac from /proc/net/arp for auth, 
@@ -3518,6 +3531,7 @@ static void auth_check(char *dirname)
 						SC_CFPRINTF_EXIT("current_remote_ip:%s\n", current_remote_ip);
 						exit(0);
 					}
+#endif					
 			}
 			return;	/*Do nothing */
 		}
@@ -3740,6 +3754,9 @@ static void auth_check(char *dirname)
 					if ( !match( "**MSIE**", useragent ) && !match( "**avast!**", useragent )){
 						nvram_set("auth_fail_times", "0");	
 					}
+#ifdef RAE
+                                        nvram_bcm_set("RAE_manageByGui", "1");
+#endif
 					goto _out;
 				} else
 				{

@@ -449,7 +449,7 @@ Copyright (C) 2010 Free Software Foundation, Inc.
 This config.status script is free software; the Free Software Foundation
 gives unlimited permission to copy, distribute and modify it."
 
-ac_pwd='/home/disk3/peter/release_r6260/sc_trunk/user_space/libs/public/lzo/lzo-2.06'
+ac_pwd='/home/disk3/peter/R6260/sc_trunk/user_space/libs/public/lzo/lzo-2.06'
 srcdir='.'
 INSTALL='/usr/bin/install -c'
 MKDIR_P='/bin/mkdir -p'
@@ -844,19 +844,19 @@ S["am__fastdepCC_TRUE"]=""
 S["CCDEPMODE"]="depmode=gcc3"
 S["am__untar"]="${AMTAR} xf -"
 S["am__tar"]="${AMTAR} chof - \"$$tardir\""
-S["AMTAR"]="${SHELL} /home/disk3/peter/release_r6260/sc_trunk/user_space/libs/public/lzo/lzo-2.06/autoconf/missing --run tar"
+S["AMTAR"]="${SHELL} /home/disk3/peter/R6260/sc_trunk/user_space/libs/public/lzo/lzo-2.06/autoconf/missing --run tar"
 S["SET_MAKE"]=""
 S["AWK"]="gawk"
 S["mkdir_p"]="/bin/mkdir -p"
 S["MKDIR_P"]="/bin/mkdir -p"
 S["INSTALL_STRIP_PROGRAM"]="$(install_sh) -c -s"
 S["STRIP"]="mipsel-linux-strip"
-S["install_sh"]="${SHELL} /home/disk3/peter/release_r6260/sc_trunk/user_space/libs/public/lzo/lzo-2.06/autoconf/install-sh"
-S["MAKEINFO"]="${SHELL} /home/disk3/peter/release_r6260/sc_trunk/user_space/libs/public/lzo/lzo-2.06/autoconf/missing --run makeinfo"
-S["AUTOHEADER"]="${SHELL} /home/disk3/peter/release_r6260/sc_trunk/user_space/libs/public/lzo/lzo-2.06/autoconf/missing --run autoheader"
-S["AUTOMAKE"]="${SHELL} /home/disk3/peter/release_r6260/sc_trunk/user_space/libs/public/lzo/lzo-2.06/autoconf/missing --run automake-1.11"
-S["AUTOCONF"]="${SHELL} /home/disk3/peter/release_r6260/sc_trunk/user_space/libs/public/lzo/lzo-2.06/autoconf/missing --run autoconf"
-S["ACLOCAL"]="${SHELL} /home/disk3/peter/release_r6260/sc_trunk/user_space/libs/public/lzo/lzo-2.06/autoconf/missing --run aclocal-1.11"
+S["install_sh"]="${SHELL} /home/disk3/peter/R6260/sc_trunk/user_space/libs/public/lzo/lzo-2.06/autoconf/install-sh"
+S["MAKEINFO"]="${SHELL} /home/disk3/peter/R6260/sc_trunk/user_space/libs/public/lzo/lzo-2.06/autoconf/missing --run makeinfo"
+S["AUTOHEADER"]="${SHELL} /home/disk3/peter/R6260/sc_trunk/user_space/libs/public/lzo/lzo-2.06/autoconf/missing --run autoheader"
+S["AUTOMAKE"]="${SHELL} /home/disk3/peter/R6260/sc_trunk/user_space/libs/public/lzo/lzo-2.06/autoconf/missing --run automake-1.11"
+S["AUTOCONF"]="${SHELL} /home/disk3/peter/R6260/sc_trunk/user_space/libs/public/lzo/lzo-2.06/autoconf/missing --run autoconf"
+S["ACLOCAL"]="${SHELL} /home/disk3/peter/R6260/sc_trunk/user_space/libs/public/lzo/lzo-2.06/autoconf/missing --run aclocal-1.11"
 S["VERSION"]="2.06"
 S["PACKAGE"]="lzo"
 S["CYGPATH_W"]="echo"

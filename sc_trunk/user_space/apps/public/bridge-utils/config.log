@@ -28,7 +28,7 @@ hostinfo               = unknown
 /bin/universe          = unknown
 
 PATH: /opt/buildroot-gcc463_NPTLSHAREDLIBGCC//usr/bin/
-PATH: /home/disk3/peter/release_r6260/sc_trunk/tools/
+PATH: /home/disk3/peter/R6260/sc_trunk/tools/
 PATH: /usr/lib/qt-3.3/bin
 PATH: /usr/kerberos/sbin
 PATH: /usr/kerberos/bin
@@ -39,7 +39,6 @@ PATH: /usr/bin
 PATH: /usr/local/sbin
 PATH: /usr/sbin
 PATH: /sbin
-PATH: /home/peter/bin
 
 
 ## ----------- ##
@@ -561,7 +560,7 @@ exec_prefix='${prefix}'
 host_alias='arm-linux-uclibc'
 includedir='${prefix}/include'
 infodir='${prefix}/info'
-install_sh='/home/disk3/peter/release_r6260/sc_trunk/user_space/apps/public/bridge-utils/src/install-sh'
+install_sh='/home/disk3/peter/R6260/sc_trunk/user_space/apps/public/bridge-utils/src/install-sh'
 libdir='${exec_prefix}/lib'
 libexecdir='${exec_prefix}/libexec'
 localstatedir='${prefix}/var'

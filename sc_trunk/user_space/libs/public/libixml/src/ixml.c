@@ -84,6 +84,8 @@ int is_p_leading_escaped_string(char *p)
 	return ret;
 }
 
+extern int soap_xml_encode_spec;
+extern int soap_not_do_encode_for_this_api_get_response;
 /*================================================================
 *   copy_with_escape
 *
@@ -96,12 +98,29 @@ copy_with_escape( INOUT ixml_membuf * buf,
     int i;
     int plen;
 
+/*
+        if (access("/tmp/soap_xml_encode_spec", F_OK) == 0)
+        {
+                soap_xml_encode_spec = 1;
+        } else
+        {
+                soap_xml_encode_spec = 0;       
+        }
+*/
+
     if( p == NULL )
         return;
 
     plen = strlen( p );
 
     for( i = 0; i < plen; i++ ) {
+
+          if (soap_xml_encode_spec || soap_not_do_encode_for_this_api_get_response)
+          {
+                ixml_membuf_append( buf, &p[i] );
+                continue;
+          }
+
         switch ( p[i] ) {
 
 #if 0 

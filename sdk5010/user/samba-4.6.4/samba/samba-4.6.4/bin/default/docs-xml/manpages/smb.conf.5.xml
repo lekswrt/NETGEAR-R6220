@@ -821,7 +821,7 @@ chmod 1770 /usr/local/samba/lib/usershares
 		<!-- WAF build places it in bin/default/docs-xml/smbdotconf/parameters.all.xml //-->
 		<!-- and we redirect there via use of XML_CATALOG_FILES, see docs-xml/build/catalog.xml.in //-->
 		
-	<section xml:base="file:///home/disk3/peter/release_r6260/sdk5010/user/samba-4.6.4/samba/samba-4.6.4/bin/default/docs-xml/smbdotconf/parameters.all.xml">
+	<section xml:base="file:///home/disk3/peter/R6260/sdk5010/user/samba-4.6.4/samba/samba-4.6.4/bin/default/docs-xml/smbdotconf/parameters.all.xml">
 <section><indexterm significance="preferred"><primary>bind interfaces only</primary></indexterm><anchor id="BINDINTERFACESONLY"/><title>
 
 bind interfaces only (G)
@@ -1586,7 +1586,7 @@ dns update command (G)
 		TSIG-GSS.
 	</para>
 
-<para>Default: <emphasis><parameter>dns update command</parameter> = <literal>/home/disk3/peter/release_r6260/sdk5010/user/samba-4.6.4/samba/samba-4.6.4/source4/scripting/bin/samba_dnsupdate</literal>
+<para>Default: <emphasis><parameter>dns update command</parameter> = <literal>/home/disk3/peter/R6260/sdk5010/user/samba-4.6.4/samba/samba-4.6.4/source4/scripting/bin/samba_dnsupdate</literal>
 </emphasis>
 </para>
 <para>Example: <emphasis><parameter>dns update command</parameter> = <literal>/usr/local/sbin/dnsupdate</literal>
@@ -1662,7 +1662,7 @@ spn update command (G)
 		servicePrincipalName names from <filename>spn_update_list</filename>.
 	</para>
 
-<para>Default: <emphasis><parameter>spn update command</parameter> = <literal>/home/disk3/peter/release_r6260/sdk5010/user/samba-4.6.4/samba/samba-4.6.4/source4/scripting/bin/samba_spnupdate</literal>
+<para>Default: <emphasis><parameter>spn update command</parameter> = <literal>/home/disk3/peter/R6260/sdk5010/user/samba-4.6.4/samba/samba-4.6.4/source4/scripting/bin/samba_spnupdate</literal>
 </emphasis>
 </para>
 <para>Example: <emphasis><parameter>spn update command</parameter> = <literal>/usr/local/sbin/spnupdate</literal>
@@ -10854,7 +10854,7 @@ samba kcc command (G)
 		was installed in a non-default location.
 	</para>
 
-<para>Default: <emphasis><parameter>samba kcc command</parameter> = <literal>/home/disk3/peter/release_r6260/sdk5010/user/samba-4.6.4/samba/samba-4.6.4/source4/scripting/bin/samba_kcc</literal>
+<para>Default: <emphasis><parameter>samba kcc command</parameter> = <literal>/home/disk3/peter/R6260/sdk5010/user/samba-4.6.4/samba/samba-4.6.4/source4/scripting/bin/samba_kcc</literal>
 </emphasis>
 </para>
 <para>Example: <emphasis><parameter>samba kcc command</parameter> = <literal>/usr/local/bin/kcc</literal>

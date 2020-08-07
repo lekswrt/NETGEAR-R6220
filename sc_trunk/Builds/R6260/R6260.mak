@@ -13,10 +13,10 @@
 #
 BOARD_ID=R6260
 HW_ID=CHJ
-VER=1.1.0.52
+VER=1.1.0.64
 SUB_VER=1.0.1
-GUI_VER=1.1.0.52
-NTGR_RAE_VER=1.0.0.8
+GUI_VER=1.1.0.64
+NTGR_RAE_VER=1.0.0.18
 HW_TYPE=R6260
 PRODUCT_ID=A001
 REGION=WW
@@ -153,6 +153,7 @@ MSSID=1
 WIZARD_LOG=1
 SETUPWIZARD=1
 SETUPWIZARD_USE=SetupWizard_3.0_spec_3.00
+GENIE_IPV6=1
 PORTTRIGGER=1
 PORTFORWARD=1
 HTTPS=1
@@ -266,6 +267,7 @@ NTGR_CLOUD=0
 #
 SOAP_V2=1
 SOAP_GUEST_WIFI=1
+SOAP_XML_ENCODEVER10=1
 #
 # -------------Facebook WiFi---------------
 #
@@ -373,7 +375,9 @@ AUTO_FORCE_UPGRADE_FW_ENABLE=1
 # Enable if need validate cgi post data
 # Netgear Security Enhancement spec v21
 SECURITY_ENHANCE=0
+SECURITY_ENHANCE_0318=1
 #Enable when U need make a ECC bin file
 ECC_BIN=0
 #--------------Fan You Jia Su Qi-------------------#
-FUNJSQ=0
+FUNJSQ=1
+ADS=1

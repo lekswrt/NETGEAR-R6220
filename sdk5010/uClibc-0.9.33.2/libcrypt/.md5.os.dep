@@ -22,23 +22,23 @@ libcrypt/md5.os: libcrypt/md5.c include/libc-symbols.h \
  include/sys/param.h include/limits.h \
  /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/lib/gcc/mipsel-buildroot-linux-uclibc/4.6.3/include-fixed/limits.h \
  include/bits/posix1_lim.h include/bits/local_lim.h \
- /home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/linux/limits.h \
+ /home/disk3/peter/R6260/sdk5010/linux-2.6.36.x/include/linux/limits.h \
  include/bits/uClibc_local_lim.h include/bits/posix2_lim.h \
  include/bits/xopen_lim.h include/bits/stdio_lim.h \
- /home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/linux/param.h \
- /home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/asm/param.h \
- /home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/asm-generic/param.h \
+ /home/disk3/peter/R6260/sdk5010/linux-2.6.36.x/include/linux/param.h \
+ /home/disk3/peter/R6260/sdk5010/linux-2.6.36.x/include/asm/param.h \
+ /home/disk3/peter/R6260/sdk5010/linux-2.6.36.x/include/asm-generic/param.h \
  include/atomic.h include/stdlib.h include/bits/waitflags.h \
  include/bits/waitstatus.h include/alloca.h include/bits/stackinfo.h \
  include/bits/atomic.h include/inttypes.h include/stdint.h \
  libc/sysdeps/linux/mips/sysdep.h libc/sysdeps/linux/common/sysdep.h \
  include/sys/syscall.h include/bits/sysnum.h include/bits/syscalls.h \
  include/errno.h include/bits/errno.h \
- /home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/linux/errno.h \
- /home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/asm/errno.h \
- /home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/asm-generic/errno-base.h \
+ /home/disk3/peter/R6260/sdk5010/linux-2.6.36.x/include/linux/errno.h \
+ /home/disk3/peter/R6260/sdk5010/linux-2.6.36.x/include/asm/errno.h \
+ /home/disk3/peter/R6260/sdk5010/linux-2.6.36.x/include/asm-generic/errno-base.h \
  include/bits/syscalls-common.h include/bits/kernel-features.h \
- /home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/linux/version.h \
+ /home/disk3/peter/R6260/sdk5010/linux-2.6.36.x/include/linux/version.h \
  include/tls.h libpthread/nptl/sysdeps/mips/tls.h \
  /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/lib/gcc/mipsel-buildroot-linux-uclibc/4.6.3/include/stdbool.h \
  libpthread/nptl/sysdeps/mips/../../descr.h include/setjmp.h \
@@ -50,10 +50,10 @@ libcrypt/md5.os: libcrypt/md5.c include/libc-symbols.h \
  include/resolv.h include/netinet/in.h include/sys/socket.h \
  include/sys/uio.h include/bits/uio.h include/bits/socket.h \
  include/bits/sockaddr.h \
- /home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/asm/socket.h \
- /home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/asm/sockios.h \
- /home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/asm/ioctl.h \
- /home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/asm-generic/ioctl.h \
+ /home/disk3/peter/R6260/sdk5010/linux-2.6.36.x/include/asm/socket.h \
+ /home/disk3/peter/R6260/sdk5010/linux-2.6.36.x/include/asm/sockios.h \
+ /home/disk3/peter/R6260/sdk5010/linux-2.6.36.x/include/asm/ioctl.h \
+ /home/disk3/peter/R6260/sdk5010/linux-2.6.36.x/include/asm-generic/ioctl.h \
  include/bits/in.h libpthread/nptl/sysdeps/pthread/uClibc-glue.h \
  libpthread/nptl/sysdeps/pthread/pthread-functions.h \
  libpthread/nptl/sysdeps/unix/sysv/linux/internaltypes.h \
@@ -168,7 +168,7 @@ include/bits/posix1_lim.h:
 
 include/bits/local_lim.h:
 
-/home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/linux/limits.h:
+/home/disk3/peter/R6260/sdk5010/linux-2.6.36.x/include/linux/limits.h:
 
 include/bits/uClibc_local_lim.h:
 
@@ -178,11 +178,11 @@ include/bits/xopen_lim.h:
 
 include/bits/stdio_lim.h:
 
-/home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/linux/param.h:
+/home/disk3/peter/R6260/sdk5010/linux-2.6.36.x/include/linux/param.h:
 
-/home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/asm/param.h:
+/home/disk3/peter/R6260/sdk5010/linux-2.6.36.x/include/asm/param.h:
 
-/home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/asm-generic/param.h:
+/home/disk3/peter/R6260/sdk5010/linux-2.6.36.x/include/asm-generic/param.h:
 
 include/atomic.h:
 
@@ -216,17 +216,17 @@ include/errno.h:
 
 include/bits/errno.h:
 
-/home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/linux/errno.h:
+/home/disk3/peter/R6260/sdk5010/linux-2.6.36.x/include/linux/errno.h:
 
-/home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/asm/errno.h:
+/home/disk3/peter/R6260/sdk5010/linux-2.6.36.x/include/asm/errno.h:
 
-/home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/asm-generic/errno-base.h:
+/home/disk3/peter/R6260/sdk5010/linux-2.6.36.x/include/asm-generic/errno-base.h:
 
 include/bits/syscalls-common.h:
 
 include/bits/kernel-features.h:
 
-/home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/linux/version.h:
+/home/disk3/peter/R6260/sdk5010/linux-2.6.36.x/include/linux/version.h:
 
 include/tls.h:
 
@@ -270,13 +270,13 @@ include/bits/socket.h:
 
 include/bits/sockaddr.h:
 
-/home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/asm/socket.h:
+/home/disk3/peter/R6260/sdk5010/linux-2.6.36.x/include/asm/socket.h:
 
-/home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/asm/sockios.h:
+/home/disk3/peter/R6260/sdk5010/linux-2.6.36.x/include/asm/sockios.h:
 
-/home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/asm/ioctl.h:
+/home/disk3/peter/R6260/sdk5010/linux-2.6.36.x/include/asm/ioctl.h:
 
-/home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/asm-generic/ioctl.h:
+/home/disk3/peter/R6260/sdk5010/linux-2.6.36.x/include/asm-generic/ioctl.h:
 
 include/bits/in.h:
 
@@ -291,4 +291,4 @@ libpthread/nptl/sysdeps/unix/sysv/linux/internaltypes.h:
 include/crypt.h:
 
 libcrypt/libcrypt.h:
-cmd_libcrypt_md5.os := /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/bin/mipsel-linux-gcc -c libcrypt/md5.c -o libcrypt/md5.os -include include/libc-symbols.h -Wstrict-prototypes -Wstrict-aliasing -funsigned-char -fno-builtin -fno-asm -std=gnu99 -march=mips32r2 -mtune=mips32r2 -mabi=32 -fno-stack-protector -nostdinc -Iinclude -Iinclude -I. -Ilibc/sysdeps/linux -Ilibc/sysdeps/linux/mips -Os -funit-at-a-time -fmerge-all-constants -fstrict-aliasing -fno-tree-loop-optimize -fno-tree-dominator-opts -fno-strength-reduce -mno-split-addresses -DHAVE_FORCED_UNWIND -Ilibpthread/nptl -Ilibpthread/nptl -Ilibpthread/nptl/sysdeps/unix/sysv/linux/mips/ -Ilibpthread/nptl/sysdeps/unix/sysv/linux/mips -Ilibpthread/nptl/sysdeps/mips -Ilibpthread/nptl/sysdeps/mips -Ilibpthread/nptl/sysdeps/unix/sysv/linux -Ilibpthread/nptl/sysdeps/unix/sysv/linux -Ilibpthread/nptl/sysdeps/pthread -Ilibpthread/nptl/sysdeps/pthread/bits -Ilibpthread/nptl/sysdeps/generic -Ildso/ldso/mips -Ildso/include -Ilibc/sysdeps/linux/common -I/home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/ -isystem /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/lib/gcc/mipsel-buildroot-linux-uclibc/4.6.3/include-fixed -isystem /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/lib/gcc/mipsel-buildroot-linux-uclibc/4.6.3/include -DNDEBUG -D__USE_STDIO_FUTEXES__ -fPIC -DNOT_IN_libc -DIS_IN_libcrypt -MT libcrypt/md5.os -MD -MP -MF libcrypt/.md5.os.dep
+cmd_libcrypt_md5.os := /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/bin/mipsel-linux-gcc -c libcrypt/md5.c -o libcrypt/md5.os -include include/libc-symbols.h -Wstrict-prototypes -Wstrict-aliasing -funsigned-char -fno-builtin -fno-asm -std=gnu99 -march=mips32r2 -mtune=mips32r2 -mabi=32 -fno-stack-protector -nostdinc -Iinclude -Iinclude -I. -Ilibc/sysdeps/linux -Ilibc/sysdeps/linux/mips -Os -funit-at-a-time -fmerge-all-constants -fstrict-aliasing -fno-tree-loop-optimize -fno-tree-dominator-opts -fno-strength-reduce -mno-split-addresses -DHAVE_FORCED_UNWIND -Ilibpthread/nptl -Ilibpthread/nptl -Ilibpthread/nptl/sysdeps/unix/sysv/linux/mips/ -Ilibpthread/nptl/sysdeps/unix/sysv/linux/mips -Ilibpthread/nptl/sysdeps/mips -Ilibpthread/nptl/sysdeps/mips -Ilibpthread/nptl/sysdeps/unix/sysv/linux -Ilibpthread/nptl/sysdeps/unix/sysv/linux -Ilibpthread/nptl/sysdeps/pthread -Ilibpthread/nptl/sysdeps/pthread/bits -Ilibpthread/nptl/sysdeps/generic -Ildso/ldso/mips -Ildso/include -Ilibc/sysdeps/linux/common -I/home/disk3/peter/R6260/sdk5010/linux-2.6.36.x/include/ -isystem /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/lib/gcc/mipsel-buildroot-linux-uclibc/4.6.3/include-fixed -isystem /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/lib/gcc/mipsel-buildroot-linux-uclibc/4.6.3/include -DNDEBUG -D__USE_STDIO_FUTEXES__ -fPIC -DNOT_IN_libc -DIS_IN_libcrypt -MT libcrypt/md5.os -MD -MP -MF libcrypt/.md5.os.dep

@@ -357,6 +357,10 @@
 #define TM_3G_REC_LED            "/tmp/rec_3g_led"
 #define TM_ALREADY_WARNING       "/tmp/tm_already_warning"
 
+/* RAE */
+#define RAE_IOT_APP "/tmp/RWFS/RAE/Netgear_aws_iot_app"
+//#define RAE_IOT_APP "/usr/sbin/Netgear_aws_iot_app"
+
 /*********************************************************
  *                   GUI Files names                     *
  *********************************************************/
