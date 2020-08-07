@@ -1,0 +1,12 @@
+diff -aNru src/src/openvpn/options.c src_new/src/openvpn/options.c
+--- src/src/openvpn/options.c	2017-09-26 19:10:20.000000000 +0800
++++ src_new/src/openvpn/options.c	2018-03-15 17:56:04.405125661 +0800
+@@ -783,7 +783,7 @@
+   o->ce.connect_retry_max = 0;
+   o->ce.local_port = o->ce.remote_port = OPENVPN_PORT;
+   o->verbosity = 1;
+-  o->status_file_update_freq = 60;
++  o->status_file_update_freq = 10; /*change freq from 60 to 10 in order to update status more frequently*/
+   o->status_file_version = 1;
+   o->ce.bind_local = true;
+   o->ce.tun_mtu = TUN_MTU_DEFAULT;

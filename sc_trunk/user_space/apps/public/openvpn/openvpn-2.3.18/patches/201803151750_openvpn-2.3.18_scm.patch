@@ -1,0 +1,886 @@
+diff -aNru src/config.h src_new/config.h
+--- src/config.h	2017-11-28 23:32:23.000000000 +0800
++++ src_new/config.h	2018-03-15 03:02:00.098125164 +0800
+@@ -170,7 +170,7 @@
+ 
+ /* Define to 1 if you have the declaration of `SO_MARK', and to 0 if you
+    don't. */
+-#define HAVE_DECL_SO_MARK 1
++#define HAVE_DECL_SO_MARK 0
+ 
+ /* Define to 1 if you have the declaration of `TUNSETPERSIST', and to 0 if you
+    don't. */
+@@ -462,7 +462,7 @@
+ #define HAVE_STRING_H 1
+ 
+ /* Define to 1 if you have the <stropts.h> header file. */
+-/* #undef HAVE_STROPTS_H */
++#define HAVE_STROPTS_H 1
+ 
+ /* Define to 1 if you have the `syslog' function. */
+ #define HAVE_SYSLOG 1
+diff -aNru src/Makefile src_new/Makefile
+--- src/Makefile	2018-03-15 03:02:00.128378035 +0800
++++ src_new/Makefile	2018-03-15 17:49:51.483362164 +0800
+@@ -41,6 +41,11 @@
+ #
+ 
+ 
++CURR_DIR := $(shell pwd)
++BUILD_DIR:=$(subst /user_space, /user_space,$(CURR_DIR))
++BUILD_DIR:=$(word 1, $(BUILD_DIR))
++ 
++include $(BUILD_DIR)/Rules.mak
+ 
+ am__is_gnu_make = test -n '$(MAKEFILE_LIST)' && test -n '$(MAKELEVEL)'
+ am__make_running_with_option = \
+@@ -269,17 +274,17 @@
+ ACLOCAL = ${SHELL} /home/disk2/alice/R6800/sc_trunk/user_space/apps/public/openvpn/openvpn-2.3.18/missing aclocal-1.14
+ AMTAR = $${TAR-tar}
+ AM_DEFAULT_VERBOSITY = 1
+-AR = ar
+-AS = as
++AR = $(CROSS)ar
++AS = $(CROSS)as
+ AUTOCONF = ${SHELL} /home/disk2/alice/R6800/sc_trunk/user_space/apps/public/openvpn/openvpn-2.3.18/missing autoconf
+ AUTOHEADER = ${SHELL} /home/disk2/alice/R6800/sc_trunk/user_space/apps/public/openvpn/openvpn-2.3.18/missing autoheader
+ AUTOMAKE = ${SHELL} /home/disk2/alice/R6800/sc_trunk/user_space/apps/public/openvpn/openvpn-2.3.18/missing automake-1.14
+ AWK = gawk
+-CC = gcc
++CC = $(CROSS)gcc
+ CCDEPMODE = depmode=gcc3
+ CFLAGS = -g -O2 -std=gnu89
+ CMAKE = cmake
+-CPP = gcc -E
++CPP = $(CROSS)gcc -E
+ CPPFLAGS = 
+ CYGPATH_W = echo
+ DEFS = -DHAVE_CONFIG_H
+@@ -303,7 +308,7 @@
+ INSTALL_SCRIPT = ${INSTALL}
+ INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
+ IPROUTE = /sbin/ip
+-LD = /usr/bin/ld
++LD = $(CROSS)ld
+ LDFLAGS = 
+ LIBOBJS = 
+ LIBPAM_CFLAGS = 
+@@ -358,7 +363,7 @@
+ PLUGIN_AUTH_PAM_LIBS = -lpam
+ POLARSSL_CFLAGS = 
+ POLARSSL_LIBS = 
+-RANLIB = ranlib
++RANLIB = $(CROSS)ranlib
+ RC = 
+ ROUTE = /sbin/route
+ SED = /bin/sed
+@@ -366,7 +371,7 @@
+ SET_MAKE = 
+ SHELL = /bin/sh
+ SOCKETS_LIBS =  -lnsl -lresolv
+-STRIP = strip
++STRIP = $(CROSS)strip
+ SYSTEMD_ASK_PASSWORD = 
+ TAP_CFLAGS = 
+ TAP_WIN_COMPONENT_ID = tap0901
+@@ -382,8 +387,8 @@
+ abs_srcdir = /home/disk2/alice/R6800/sc_trunk/user_space/apps/public/openvpn/openvpn-2.3.18
+ abs_top_builddir = /home/disk2/alice/R6800/sc_trunk/user_space/apps/public/openvpn/openvpn-2.3.18
+ abs_top_srcdir = /home/disk2/alice/R6800/sc_trunk/user_space/apps/public/openvpn/openvpn-2.3.18
+-ac_ct_AR = ar
+-ac_ct_CC = gcc
++ac_ct_AR = $(CROSS)ar
++ac_ct_CC = $(CROSS)gcc
+ ac_ct_DUMPBIN = 
+ am__include = include
+ am__leading_dot = .
+@@ -491,16 +496,16 @@
+ 	echo ' cd $(top_srcdir) && $(AUTOMAKE) --foreign Makefile'; \
+ 	$(am__cd) $(top_srcdir) && \
+ 	  $(AUTOMAKE) --foreign Makefile
+-.PRECIOUS: Makefile
+-Makefile: $(srcdir)/Makefile.in $(top_builddir)/config.status
+-	@case '$?' in \
+-	  *config.status*) \
+-	    echo ' $(SHELL) ./config.status'; \
+-	    $(SHELL) ./config.status;; \
+-	  *) \
+-	    echo ' cd $(top_builddir) && $(SHELL) ./config.status $@ $(am__depfiles_maybe)'; \
+-	    cd $(top_builddir) && $(SHELL) ./config.status $@ $(am__depfiles_maybe);; \
+-	esac;
++#.PRECIOUS: Makefile
++#Makefile: $(srcdir)/Makefile.in $(top_builddir)/config.status
++#	@case '$?' in \
++#	  *config.status*) \
++#	    echo ' $(SHELL) ./config.status'; \
++#	    $(SHELL) ./config.status;; \
++#	  *) \
++#	    echo ' cd $(top_builddir) && $(SHELL) ./config.status $@ $(am__depfiles_maybe)'; \
++#	    cd $(top_builddir) && $(SHELL) ./config.status $@ $(am__depfiles_maybe);; \
++#	esac;
+ 
+ $(top_builddir)/config.status: $(top_srcdir)/configure $(CONFIG_STATUS_DEPENDENCIES)
+ 	$(SHELL) ./config.status --recheck
+@@ -511,9 +516,9 @@
+ 	$(am__cd) $(srcdir) && $(ACLOCAL) $(ACLOCAL_AMFLAGS)
+ $(am__aclocal_m4_deps):
+ 
+-config.h: stamp-h1
+-	@test -f $@ || rm -f stamp-h1
+-	@test -f $@ || $(MAKE) $(AM_MAKEFLAGS) stamp-h1
++#config.h: stamp-h1
++#	@test -f $@ || rm -f stamp-h1
++#	@test -f $@ || $(MAKE) $(AM_MAKEFLAGS) stamp-h1
+ 
+ stamp-h1: $(srcdir)/config.h.in $(top_builddir)/config.status
+ 	@rm -f stamp-h1
+@@ -883,7 +888,23 @@
+ 	  test -z "$$dir" || $(MKDIR_P) "$$dir"; \
+ 	done
+ install: $(BUILT_SOURCES)
+-	$(MAKE) $(AM_MAKEFLAGS) install-recursive
++	#$(MAKE) $(AM_MAKEFLAGS) install-recursive
++	$(STRIP) src/openvpn/openvpn
++	cp src/openvpn/openvpn $(ROOT)/target/sbin
++	chmod +x easy-rsa/EasyRSA-2.2.2/*
++	cp -af easy-rsa/EasyRSA-2.2.2/keys/*  $(ROOT)/target/usr/etc/openvpn/.
++	cp -af easy-rsa/EasyRSA-2.2.2/openssl.cnf $(ROOT)/target/usr/etc/openvpn/.
++	cp -af easy-rsa/EasyRSA-2.2.2/vars $(ROOT)/target/usr/etc/openvpn/.
++	cp -af easy-rsa/EasyRSA-2.2.2/clean-all $(ROOT)/target/usr/sbin/.
++	cp -af easy-rsa/EasyRSA-2.2.2/build-ca $(ROOT)/target/usr/sbin/.
++	cp -af easy-rsa/EasyRSA-2.2.2/build-key-server $(ROOT)/target/usr/sbin/.
++	cp -af easy-rsa/EasyRSA-2.2.2/build-key $(ROOT)/target/usr/sbin/.
++	cp -af easy-rsa/EasyRSA-2.2.2/build-dh $(ROOT)/target/usr/sbin/.
++	cp -af easy-rsa/EasyRSA-2.2.2/pkitool $(ROOT)/target/usr/sbin/.
++	cp -af easy-rsa/EasyRSA-2.2.2/keys/dh1024.pem  $(ROOT)/target/usr/etc/openvpn/.
++#	cp -af easy-rsa/EasyRSA-2.2.2/keys/server ../../target/usr/etc/.
++#	cp -af easy-rsa/EasyRSA-2.2.2/keys/client ../../target/usr/etc/.
++
+ install-exec: install-exec-recursive
+ install-data: install-data-recursive
+ uninstall: uninstall-recursive
+diff -aNru src/src/compat/Makefile src_new/src/compat/Makefile
+--- src/src/compat/Makefile	2018-03-15 03:02:00.128378035 +0800
++++ src_new/src/compat/Makefile	2018-03-15 03:02:00.128378035 +0800
+@@ -24,6 +24,11 @@
+ #  Copyright (C) 2002-2017 OpenVPN Technologies, Inc. <sales@openvpn.net>
+ #  Copyright (C) 2006-2012 Alon Bar-Lev <alon.barlev@gmail.com>
+ #
++CURR_DIR := $(shell pwd)
++BUILD_DIR:=$(subst /user_space, /user_space,$(CURR_DIR))
++BUILD_DIR:=$(word 1, $(BUILD_DIR))
++ 
++include $(BUILD_DIR)/Rules.mak
+ 
+ 
+ am__is_gnu_make = test -n '$(MAKEFILE_LIST)' && test -n '$(MAKELEVEL)'
+@@ -180,17 +185,17 @@
+ ACLOCAL = ${SHELL} /home/disk2/alice/R6800/sc_trunk/user_space/apps/public/openvpn/openvpn-2.3.18/missing aclocal-1.14
+ AMTAR = $${TAR-tar}
+ AM_DEFAULT_VERBOSITY = 1
+-AR = ar
+-AS = as
++AR = $(CROSS)ar
++AS = $(CROSS)as
+ AUTOCONF = ${SHELL} /home/disk2/alice/R6800/sc_trunk/user_space/apps/public/openvpn/openvpn-2.3.18/missing autoconf
+ AUTOHEADER = ${SHELL} /home/disk2/alice/R6800/sc_trunk/user_space/apps/public/openvpn/openvpn-2.3.18/missing autoheader
+ AUTOMAKE = ${SHELL} /home/disk2/alice/R6800/sc_trunk/user_space/apps/public/openvpn/openvpn-2.3.18/missing automake-1.14
+ AWK = gawk
+-CC = gcc
++CC = $(CROSS)gcc
+ CCDEPMODE = depmode=gcc3
+ CFLAGS = -g -O2 -std=gnu89
+ CMAKE = cmake
+-CPP = gcc -E
++CPP = $(CROSS)gcc -E
+ CPPFLAGS = 
+ CYGPATH_W = echo
+ DEFS = -DHAVE_CONFIG_H
+@@ -214,7 +219,7 @@
+ INSTALL_SCRIPT = ${INSTALL}
+ INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
+ IPROUTE = /sbin/ip
+-LD = /usr/bin/ld
++LD = $(CROSS)ld
+ LDFLAGS = 
+ LIBOBJS = 
+ LIBPAM_CFLAGS = 
+@@ -269,7 +274,7 @@
+ PLUGIN_AUTH_PAM_LIBS = -lpam
+ POLARSSL_CFLAGS = 
+ POLARSSL_LIBS = 
+-RANLIB = ranlib
++RANLIB = $(CROSS)ranlib
+ RC = 
+ ROUTE = /sbin/route
+ SED = /bin/sed
+@@ -277,7 +282,7 @@
+ SET_MAKE = 
+ SHELL = /bin/sh
+ SOCKETS_LIBS =  -lnsl -lresolv
+-STRIP = strip
++STRIP = $(CROSS)strip
+ SYSTEMD_ASK_PASSWORD = 
+ TAP_CFLAGS = 
+ TAP_WIN_COMPONENT_ID = tap0901
+@@ -293,8 +298,8 @@
+ abs_srcdir = /home/disk2/alice/R6800/sc_trunk/user_space/apps/public/openvpn/openvpn-2.3.18/src/compat
+ abs_top_builddir = /home/disk2/alice/R6800/sc_trunk/user_space/apps/public/openvpn/openvpn-2.3.18
+ abs_top_srcdir = /home/disk2/alice/R6800/sc_trunk/user_space/apps/public/openvpn/openvpn-2.3.18
+-ac_ct_AR = ar
+-ac_ct_CC = gcc
++ac_ct_AR = $(CROSS)ar
++ac_ct_CC = $(CROSS)gcc
+ ac_ct_DUMPBIN = 
+ am__include = include
+ am__leading_dot = .
+diff -aNru src/src/Makefile src_new/src/Makefile
+--- src/src/Makefile	2018-03-15 03:02:00.128378035 +0800
++++ src_new/src/Makefile	2018-03-15 03:02:00.128378035 +0800
+@@ -24,6 +24,11 @@
+ #  Copyright (C) 2002-2017 OpenVPN Technologies, Inc. <sales@openvpn.net>
+ #  Copyright (C) 2006-2012 Alon Bar-Lev <alon.barlev@gmail.com>
+ #
++CURR_DIR := $(shell pwd)
++BUILD_DIR:=$(subst /user_space, /user_space,$(CURR_DIR))
++BUILD_DIR:=$(word 1, $(BUILD_DIR))
++
++include $(BUILD_DIR)/Rules.mak
+ 
+ am__is_gnu_make = test -n '$(MAKEFILE_LIST)' && test -n '$(MAKELEVEL)'
+ am__make_running_with_option = \
+@@ -188,17 +193,17 @@
+ ACLOCAL = ${SHELL} /home/disk2/alice/R6800/sc_trunk/user_space/apps/public/openvpn/openvpn-2.3.18/missing aclocal-1.14
+ AMTAR = $${TAR-tar}
+ AM_DEFAULT_VERBOSITY = 1
+-AR = ar
+-AS = as
++AR = $(CROSS)ar
++AS = $(CROSS)as
+ AUTOCONF = ${SHELL} /home/disk2/alice/R6800/sc_trunk/user_space/apps/public/openvpn/openvpn-2.3.18/missing autoconf
+ AUTOHEADER = ${SHELL} /home/disk2/alice/R6800/sc_trunk/user_space/apps/public/openvpn/openvpn-2.3.18/missing autoheader
+ AUTOMAKE = ${SHELL} /home/disk2/alice/R6800/sc_trunk/user_space/apps/public/openvpn/openvpn-2.3.18/missing automake-1.14
+ AWK = gawk
+-CC = gcc
++CC = $(CROSS)gcc
+ CCDEPMODE = depmode=gcc3
+ CFLAGS = -g -O2 -std=gnu89
+ CMAKE = cmake
+-CPP = gcc -E
++CPP = $(CROSS)gcc -E
+ CPPFLAGS = 
+ CYGPATH_W = echo
+ DEFS = -DHAVE_CONFIG_H
+@@ -222,7 +227,7 @@
+ INSTALL_SCRIPT = ${INSTALL}
+ INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
+ IPROUTE = /sbin/ip
+-LD = /usr/bin/ld
++LD = $(CROSS)ld
+ LDFLAGS = 
+ LIBOBJS = 
+ LIBPAM_CFLAGS = 
+@@ -277,7 +282,7 @@
+ PLUGIN_AUTH_PAM_LIBS = -lpam
+ POLARSSL_CFLAGS = 
+ POLARSSL_LIBS = 
+-RANLIB = ranlib
++RANLIB = $(CROSS)ranlib
+ RC = 
+ ROUTE = /sbin/route
+ SED = /bin/sed
+@@ -285,7 +290,7 @@
+ SET_MAKE = 
+ SHELL = /bin/sh
+ SOCKETS_LIBS =  -lnsl -lresolv
+-STRIP = strip
++STRIP = $(CROSS)strip
+ SYSTEMD_ASK_PASSWORD = 
+ TAP_CFLAGS = 
+ TAP_WIN_COMPONENT_ID = tap0901
+@@ -301,8 +306,8 @@
+ abs_srcdir = /home/disk2/alice/R6800/sc_trunk/user_space/apps/public/openvpn/openvpn-2.3.18/src
+ abs_top_builddir = /home/disk2/alice/R6800/sc_trunk/user_space/apps/public/openvpn/openvpn-2.3.18
+ abs_top_srcdir = /home/disk2/alice/R6800/sc_trunk/user_space/apps/public/openvpn/openvpn-2.3.18
+-ac_ct_AR = ar
+-ac_ct_CC = gcc
++ac_ct_AR = $(CROSS)ar
++ac_ct_CC = $(CROSS)gcc
+ ac_ct_DUMPBIN = 
+ am__include = include
+ am__leading_dot = .
+diff -aNru src/src/openvpn/forward.c src_new/src/openvpn/forward.c
+--- src/src/openvpn/forward.c	2017-09-26 19:10:20.000000000 +0800
++++ src_new/src/openvpn/forward.c	2018-03-15 03:02:00.108125852 +0800
+@@ -46,10 +46,113 @@
+ #include "occ-inline.h"
+ #include "ping-inline.h"
+ #include "mstats.h"
++#include "nvram.h"
++
++#include "../../../../../../../../../sc_trunk/shared/misc.h"
+ 
+ counter_type link_read_bytes_global;  /* GLOBAL */
+ counter_type link_write_bytes_global; /* GLOBAL */
+ 
++#define IPcountry_lookup "/tmp/IPcountry_lookup"
++#define Route_country_lookup "/tmp/Router_country_lookup"
++
++int
++route_country_lookup(void)
++{
++	char buff[256],debug[1024];
++	FILE *fp;
++
++	//sprintf(buff,"/usr/bin/geoiplookup -f /usr/share/GeoIP/GeoIP.dat %s >> /tmp/IPcountry_lookup",IPfrom);
++	sprintf(buff,"wget \"http://www.speedtest.net/api/country\" -O /tmp/Router_country_lookup");
++
++	sprintf(debug,"echo '##########%s(%d)buff=%s' > /dev/console",__func__,__LINE__,buff);
++	system(debug);
++
++	system(buff);
++	sleep(5);
++
++	fp = fopen(Route_country_lookup, "r");
++    if (fp)
++    {
++        fgets(buff, sizeof(buff), fp);
++		if(strcmp(buff,"") == 0){
++			sprintf(debug,"echo '[OpenVPN]route_country_lookup() failed' > /dev/console");
++			system(debug);
++		}
++			
++		//sprintf(debug,"echo '##########ip_country_lookup() %s' > /dev/console",buff);
++		//system(debug);
++        fclose(fp);
++    }else{
++    	sprintf(debug,"echo '[OpenVPN]route_country_lookup() connection failed' > /dev/console");
++		system(debug);
++    }
++
++	if(strstr(buff,"US") != 0){
++		//IP address from US
++		return 1;
++	}else if((strstr(buff,"EU") != 0) || (strstr(buff,"FR") != 0) || (strstr(buff,"GB") != 0) || (strstr(buff,"DE") != 0) || (strstr(buff,"IT") != 0)){
++		//IP address from Europe,France, UK, Germary
++		return 2;
++	}
++
++	//unlink(Route_country_lookup);
++
++	return 0;
++
++
++	
++}//allenwen Foxconn
++
++
++int
++ip_country_lookup(char *IPfrom)
++{
++	char buff[256],debug[1024];
++	FILE *fp;
++
++	//sprintf(buff,"/usr/bin/geoiplookup -f /usr/share/GeoIP/GeoIP.dat %s >> /tmp/IPcountry_lookup",IPfrom);
++	sprintf(buff,"wget \"http://www.speedtest.net/api/country?ip=%s\" -O /tmp/IPcountry_lookup",IPfrom);
++
++	sprintf(debug,"echo '##########%s(%d)buff=%s' > /dev/console",__func__,__LINE__,buff);
++	system(debug);
++
++	system(buff);
++	sleep(5);
++
++	fp = fopen(IPcountry_lookup, "r");
++    if (fp)
++    {
++        fgets(buff, sizeof(buff), fp);
++		if(strcmp(buff,"") == 0){
++			sprintf(debug,"echo '[OpenVPN]ip_country_lookup() failed' > /dev/console");
++			system(debug);
++		}
++			
++		//sprintf(debug,"echo '##########ip_country_lookup() %s' > /dev/console",buff);
++		//system(debug);
++        fclose(fp);
++    }else{
++    	sprintf(debug,"echo '[OpenVPN]ip_country_lookup() connection failed' > /dev/console");
++		system(debug);
++    }
++
++	if((strstr(buff,"US") != 0) || (strstr(buff,"CA") != 0)){
++		//IP address from US
++		return 1;
++	}else if((strstr(buff,"EU") != 0) || (strstr(buff,"FR") != 0) || (strstr(buff,"GB") != 0) || (strstr(buff,"DE") != 0) || (strstr(buff,"IT") != 0)){
++		//IP address from Europe,France, UK, Germary
++		return 2;
++	}
++
++	//unlink(IPcountry_lookup);
++
++	return 0;
++
++
++	
++}//allenwen Foxconn
++
+ /* show event wait debugging info */
+ 
+ #ifdef ENABLE_DEBUG
+@@ -505,6 +608,7 @@
+ static void
+ process_coarse_timers (struct context *c)
+ {
++	char c2addr[128] = "";
+ #ifdef ENABLE_CRYPTO
+   /* flush current packet-id to file once per 60
+      seconds if --replay-persist was specified */
+@@ -532,17 +636,29 @@
+   /* possibly exit due to --inactive */
+   check_inactivity_timeout (c);
+   if (c->sig->signal_received)
++  {/* For netgear openvpn log */
++	print_sockaddr_remote(&c->c2.from.dest, c2addr);
++	NETGEAR_SYSLOG("26 01[OpenVPN, connection drop]from remote IP address: %s", c2addr);
+     return;
++  }
+ 
+   /* restart if ping not received */
+   check_ping_restart (c);
+   if (c->sig->signal_received)
++  {/* For netgear openvpn log */
++	print_sockaddr_remote(&c->c2.from.dest, c2addr);
++	NETGEAR_SYSLOG("26 01[OpenVPN, connection drop]from remote IP address: %s", c2addr);
+     return;
++  }
+ 
+ #if P2MP
+   check_server_poll_timeout (c);
+   if (c->sig->signal_received)
++  {/* For netgear openvpn log */
++	print_sockaddr_remote(&c->c2.from.dest, c2addr);
++	NETGEAR_SYSLOG("26 01[OpenVPN, connection drop]from remote IP address: %s", c2addr);
+     return;
++  }
+ 
+   check_scheduled_exit (c);
+   if (c->sig->signal_received)
+diff -aNru src/src/openvpn/init.c src_new/src/openvpn/init.c
+--- src/src/openvpn/init.c	2017-09-26 19:10:20.000000000 +0800
++++ src_new/src/openvpn/init.c	2018-03-15 03:02:00.109125268 +0800
+@@ -48,6 +48,8 @@
+ 
+ #include "occ-inline.h"
+ 
++#include "../../../../../../../../../sc_trunk/shared/misc.h"
++
+ static struct context *static_context; /* GLOBAL */
+ 
+ /*
+@@ -2933,6 +2935,11 @@
+ static void
+ do_close_link_socket (struct context *c)
+ {
++	/* For netgear openvpn log */
++	char c2addr[128] = "";
++	print_sockaddr_remote(&c->c2.from.dest, c2addr);
++	NETGEAR_SYSLOG("26 01[OpenVPN, connection drop]from remote IP address: %s", c2addr);
++ 
+   if (c->c2.link_socket && c->c2.link_socket_owned)
+     {
+       link_socket_close (c->c2.link_socket);
+diff -aNru src/src/openvpn/Makefile src_new/src/openvpn/Makefile
+--- src/src/openvpn/Makefile	2018-03-15 03:02:00.128378035 +0800
++++ src_new/src/openvpn/Makefile	2018-03-15 03:02:00.128378035 +0800
+@@ -36,6 +36,11 @@
+ #
+ # Required to build Windows resource file
+ 
++CURR_DIR := $(shell pwd)
++BUILD_DIR:=$(subst /user_space, /user_space,$(CURR_DIR))
++BUILD_DIR:=$(word 1, $(BUILD_DIR))
++
++include $(BUILD_DIR)/Rules.mak
+ 
+ am__is_gnu_make = test -n '$(MAKEFILE_LIST)' && test -n '$(MAKELEVEL)'
+ am__make_running_with_option = \
+@@ -250,17 +255,17 @@
+ ACLOCAL = ${SHELL} /home/disk2/alice/R6800/sc_trunk/user_space/apps/public/openvpn/openvpn-2.3.18/missing aclocal-1.14
+ AMTAR = $${TAR-tar}
+ AM_DEFAULT_VERBOSITY = 1
+-AR = ar
+-AS = as
++AR = $(CROSS)ar
++AS = $(CROSS)as
+ AUTOCONF = ${SHELL} /home/disk2/alice/R6800/sc_trunk/user_space/apps/public/openvpn/openvpn-2.3.18/missing autoconf
+ AUTOHEADER = ${SHELL} /home/disk2/alice/R6800/sc_trunk/user_space/apps/public/openvpn/openvpn-2.3.18/missing autoheader
+ AUTOMAKE = ${SHELL} /home/disk2/alice/R6800/sc_trunk/user_space/apps/public/openvpn/openvpn-2.3.18/missing automake-1.14
+ AWK = gawk
+-CC = gcc
++CC = $(CROSS)gcc
+ CCDEPMODE = depmode=gcc3
+ CFLAGS = -g -O2 -std=gnu89
+ CMAKE = cmake
+-CPP = gcc -E
++CPP = $(CROSS)gcc -E
+ CPPFLAGS = 
+ CYGPATH_W = echo
+ DEFS = -DHAVE_CONFIG_H
+@@ -284,7 +289,7 @@
+ INSTALL_SCRIPT = ${INSTALL}
+ INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
+ IPROUTE = /sbin/ip
+-LD = /usr/bin/ld
++LD = $(CROSS)ld
+ LDFLAGS = 
+ LIBOBJS = 
+ LIBPAM_CFLAGS = 
+@@ -310,10 +315,11 @@
+ OPENSSL_SSL_CFLAGS =  
+ OPENSSL_SSL_LIBS = -lssl -lcrypto -ldl -lz  
+ OPTIONAL_CRYPTO_CFLAGS =     
+-OPTIONAL_CRYPTO_LIBS =  -lssl -lcrypto -ldl -lz   -lcrypto -ldl -lz  
++OPTIONAL_CRYPTO_LIBS = -L$(LIBS_DIR)/public/$(OPENSSL_USE) -lssl   -lcrypto
++OPTIONAL_NVRAM_LIBS = -L$(top_builddir)/../../../nvram -lscnvram  
+ OPTIONAL_DL_LIBS = -ldl
+ OPTIONAL_LZO_CFLAGS = 
+-OPTIONAL_LZO_LIBS = -llzo2
++OPTIONAL_LZO_LIBS =-L$(LIBS_DIR)/public/lzo -llzo2
+ OPTIONAL_PKCS11_HELPER_CFLAGS = 
+ OPTIONAL_PKCS11_HELPER_LIBS = 
+ OPTIONAL_SELINUX_LIBS = 
+@@ -339,7 +345,7 @@
+ PLUGIN_AUTH_PAM_LIBS = -lpam
+ POLARSSL_CFLAGS = 
+ POLARSSL_LIBS = 
+-RANLIB = ranlib
++RANLIB = $(CROSS)ranlib
+ RC = 
+ ROUTE = /sbin/route
+ SED = /bin/sed
+@@ -347,7 +353,7 @@
+ SET_MAKE = 
+ SHELL = /bin/sh
+ SOCKETS_LIBS =  -lnsl -lresolv
+-STRIP = strip
++STRIP = $(CROSS)strip
+ SYSTEMD_ASK_PASSWORD = 
+ TAP_CFLAGS = 
+ TAP_WIN_COMPONENT_ID = tap0901
+@@ -363,8 +369,8 @@
+ abs_srcdir = /home/disk2/alice/R6800/sc_trunk/user_space/apps/public/openvpn/openvpn-2.3.18/src/openvpn
+ abs_top_builddir = /home/disk2/alice/R6800/sc_trunk/user_space/apps/public/openvpn/openvpn-2.3.18
+ abs_top_srcdir = /home/disk2/alice/R6800/sc_trunk/user_space/apps/public/openvpn/openvpn-2.3.18
+-ac_ct_AR = ar
+-ac_ct_CC = gcc
++ac_ct_AR = $(CROSS)ar
++ac_ct_CC = $(CROSS)gcc
+ ac_ct_DUMPBIN = 
+ am__include = include
+ am__leading_dot = .
+@@ -428,7 +434,11 @@
+ 
+ INCLUDES = \
+ 	-I$(top_srcdir)/include \
+-	-I$(top_srcdir)/src/compat
++	-I$(top_srcdir)/src/compat\
++	-I $(LIBS_DIR)/public/$(OPENSSL_USE)/include\
++	-I $(LIBS_DIR)/public/lzo/lzo-2.06/include\
++	-I $(APPS_DIR)/public/nvram\
++	-I $(SHARED_DIR)
+ 
+ AM_CFLAGS = $(TAP_CFLAGS) $(OPTIONAL_CRYPTO_CFLAGS) \
+ 	$(OPTIONAL_LZO_CFLAGS) $(OPTIONAL_PKCS11_HELPER_CFLAGS) \
+@@ -462,7 +472,7 @@
+ 	cryptoapi.c $(am__append_2)
+ openvpn_LDADD = $(top_builddir)/src/compat/libcompat.la \
+ 	$(SOCKETS_LIBS) $(OPTIONAL_LZO_LIBS) \
+-	$(OPTIONAL_PKCS11_HELPER_LIBS) $(OPTIONAL_CRYPTO_LIBS) \
++	$(OPTIONAL_PKCS11_HELPER_LIBS) $(OPTIONAL_CRYPTO_LIBS) $(OPTIONAL_NVRAM_LIBS)\
+ 	$(OPTIONAL_SELINUX_LIBS) $(OPTIONAL_SYSTEMD_LIBS) \
+ 	$(OPTIONAL_DL_LIBS) $(am__append_3)
+ all: all-am
+@@ -481,16 +491,16 @@
+ 	echo ' cd $(top_srcdir) && $(AUTOMAKE) --foreign src/openvpn/Makefile'; \
+ 	$(am__cd) $(top_srcdir) && \
+ 	  $(AUTOMAKE) --foreign src/openvpn/Makefile
+-.PRECIOUS: Makefile
+-Makefile: $(srcdir)/Makefile.in $(top_builddir)/config.status
+-	@case '$?' in \
+-	  *config.status*) \
+-	    cd $(top_builddir) && $(MAKE) $(AM_MAKEFLAGS) am--refresh;; \
+-	  *) \
+-	    echo ' cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@ $(am__depfiles_maybe)'; \
+-	    cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@ $(am__depfiles_maybe);; \
+-	esac;
+-$(top_srcdir)/build/ltrc.inc:
++#.PRECIOUS: Makefile
++#Makefile: $(srcdir)/Makefile.in $(top_builddir)/config.status
++#	@case '$?' in \
++#	  *config.status*) \
++#	    cd $(top_builddir) && $(MAKE) $(AM_MAKEFLAGS) am--refresh;; \
++#	  *) \
++#	    echo ' cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@ $(am__depfiles_maybe)'; \
++#	    cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@ $(am__depfiles_maybe);; \
++#	esac;
++#$(top_srcdir)/build/ltrc.inc:
+ 
+ $(top_builddir)/config.status: $(top_srcdir)/configure $(CONFIG_STATUS_DEPENDENCIES)
+ 	cd $(top_builddir) && $(MAKE) $(AM_MAKEFLAGS) am--refresh
+diff -aNru src/src/openvpn/multi.c src_new/src/openvpn/multi.c
+--- src/src/openvpn/multi.c	2017-09-26 19:10:20.000000000 +0800
++++ src_new/src/openvpn/multi.c	2018-03-15 03:02:00.120126266 +0800
+@@ -44,6 +44,7 @@
+ #include "forward-inline.h"
+ #include "pf-inline.h"
+ 
++#include "../../../../../../../../../sc_trunk/shared/misc.h"
+ /*#define MULTI_DEBUG_EVENT_LOOP*/
+ 
+ #ifdef MULTI_DEBUG_EVENT_LOOP
+@@ -917,6 +918,7 @@
+   struct hash_bucket *bucket = hash_bucket (m->vhash, hv);
+   struct multi_route *oldroute = NULL;
+   struct multi_instance *owner = NULL;
++  char addr_buf[128];
+ 
+   /* if route currently exists, get the instance which owns it */
+   he = hash_lookup_fast (m->vhash, bucket, addr, hv);
+@@ -973,6 +975,8 @@
+ 
+ 	      /* add new route */
+ 	      hash_add_fast (m->vhash, bucket, &newroute->addr, hv, newroute);
++		sscanf(multi_instance_string(mi, false, &gc), "%[^:]:", addr_buf);
++		NETGEAR_SYSLOG("26 00[OpenVPN, connection successfully]from remote IP address: %s", addr_buf);
+ 	    }
+ 	}
+       
+diff -aNru src/src/openvpn/socket.c src_new/src/openvpn/socket.c
+--- src/src/openvpn/socket.c	2017-09-26 19:10:20.000000000 +0800
++++ src_new/src/openvpn/socket.c	2018-03-15 03:02:00.110125809 +0800
+@@ -2241,6 +2241,40 @@
+ #ifndef IF_NAMESIZE
+ #define IF_NAMESIZE 16
+ #endif
++/* For netgear openvpn log */
++
++void print_sockaddr_remote(const struct openvpn_sockaddr *addr,
++		char *out)
++{
++	bool addr_is_defined;
++	addr_is_defined = addr_defined(addr);
++	if(!addr_is_defined)
++	{
++		strcpy(out, "[undef]");
++		return;
++	}
++	switch(addr->addr.sa.sa_family)
++	{
++		case AF_INET:
++		{
++			sprintf(out, "%s", inet_ntoa(addr->addr.in4.sin_addr));
++			break;
++		}
++		case AF_INET6:
++		{
++			char buf[INET6_ADDRSTRLEN] = "";
++			if(addr_is_defined)
++			{
++				getnameinfo(&addr->addr.sa, sizeof(struct sockaddr_in6), buf, sizeof(buf), NULL, 0, NI_NUMERICHOST);
++				strcpy(out, buf);
++			}
++			break;
++		}
++		default:
++			ASSERT(0);
++	}
++}
++
+ 
+ const char *
+ print_link_socket_actual_ex (const struct link_socket_actual *act,
+diff -aNru src/src/openvpn/socket.h src_new/src/openvpn/socket.h
+--- src/src/openvpn/socket.h	2017-09-26 19:10:20.000000000 +0800
++++ src_new/src/openvpn/socket.h	2018-03-15 03:02:00.110125809 +0800
+@@ -358,6 +358,8 @@
+ 
+ const char *print_link_socket_actual (const struct link_socket_actual *act,
+ 				      struct gc_arena *gc);
++/* For netgear openvpn log */
++void print_sockaddr_remote(const struct openvpn_sockaddr *addr, char *out);
+ 
+ 
+ #define IA_EMPTY_IF_UNDEF (1<<0)
+diff -aNru src/src/openvpn/ssl.c src_new/src/openvpn/ssl.c
+--- src/src/openvpn/ssl.c	2017-09-26 19:10:20.000000000 +0800
++++ src_new/src/openvpn/ssl.c	2018-03-15 03:02:00.121133437 +0800
+@@ -68,6 +68,8 @@
+ 
+ #include "memdbg.h"
+ 
++#include "../../../../../../../../../sc_trunk/shared/misc.h"
++
+ #ifndef ENABLE_OCC
+ static const char ssl_default_options_string[] = "V0 UNDEF";
+ #endif
+@@ -2166,6 +2168,20 @@
+       verify_final_auth_checks(multi, session);
+     }
+ 
++	char c2addr[128] = "";
++  /* For netgear openvpn log */
++  print_sockaddr_remote(&ks->remote_addr.dest, c2addr);
++  if (ks->authenticated)
++  {
++	//NETGEAR_SYSLOG("26 00[OpenVPN, connection successfully]from remote IP address: %s", c2addr);
++  }
++  else
++  {
++  	print_sockaddr_remote(&ks->remote_addr.dest, c2addr);
++  	NETGEAR_SYSLOG("26 01[OpenVPN, connection failed]from remote IP address: %s", c2addr);
++  }
++
++
+ #ifdef ENABLE_OCC
+   /* check options consistency */
+   if (!session->opt->disable_occ &&
+@@ -2255,6 +2271,7 @@
+   bool active = false;
+   struct key_state *ks = &session->key[KS_PRIMARY]; 	   /* primary key */
+   struct key_state *ks_lame = &session->key[KS_LAME_DUCK]; /* retiring key */
++  char c2addr[128] = "";
+ 
+   /* Make sure we were initialized and that we're not in an error state */
+   ASSERT (ks->state != S_UNDEF);
+@@ -2625,6 +2642,9 @@
+ error:
+   tls_clear_error();
+   ks->state = S_ERROR;
++  /* For netgear openvpn log */
++  print_sockaddr_remote(&ks->remote_addr.dest, c2addr);
++  NETGEAR_SYSLOG("26 01[OpenVPN, connection failed]from remote IP address: %s", c2addr);
+   msg (D_TLS_ERRORS, "TLS Error: TLS handshake failed");
+   INCR_ERROR;
+   gc_free (&gc);
+diff -aNru src/src/plugins/auth-pam/Makefile src_new/src/plugins/auth-pam/Makefile
+--- src/src/plugins/auth-pam/Makefile	2018-03-15 03:02:00.128378035 +0800
++++ src_new/src/plugins/auth-pam/Makefile	2018-03-15 03:02:00.128378035 +0800
+@@ -20,6 +20,11 @@
+ #  Copyright (C) 2012      Alon Bar-Lev <alon.barlev@gmail.com>
+ #
+ 
++CURR_DIR := $(shell pwd)
++BUILD_DIR:=$(subst /user_space, /user_space,$(CURR_DIR))
++BUILD_DIR:=$(word 1, $(BUILD_DIR))
++ 
++include $(BUILD_DIR)/Rules.mak
+ 
+ 
+ am__is_gnu_make = test -n '$(MAKEFILE_LIST)' && test -n '$(MAKELEVEL)'
+@@ -220,7 +225,7 @@
+ AWK = gawk
+ CC = gcc
+ CCDEPMODE = depmode=gcc3
+-CFLAGS = -g -O2 -std=gnu89
++CFLAGS = -g -O2 -std=gnu89 -I $(LIBS_DIR)/public/$(OPENSSL_USE)/include 
+ CMAKE = cmake
+ CPP = gcc -E
+ CPPFLAGS = 
+diff -aNru src/src/plugins/down-root/Makefile src_new/src/plugins/down-root/Makefile
+--- src/src/plugins/down-root/Makefile	2018-03-15 03:02:00.128378035 +0800
++++ src_new/src/plugins/down-root/Makefile	2018-03-15 03:02:00.128378035 +0800
+@@ -20,6 +20,11 @@
+ #  Copyright (C) 2012      Alon Bar-Lev <alon.barlev@gmail.com>
+ #
+ 
++CURR_DIR := $(shell pwd)
++BUILD_DIR:=$(subst /user_space, /user_space,$(CURR_DIR))
++BUILD_DIR:=$(word 1, $(BUILD_DIR))
++ 
++include $(BUILD_DIR)/Rules.mak
+ 
+ 
+ am__is_gnu_make = test -n '$(MAKEFILE_LIST)' && test -n '$(MAKELEVEL)'
+@@ -219,7 +224,7 @@
+ AWK = gawk
+ CC = gcc
+ CCDEPMODE = depmode=gcc3
+-CFLAGS = -g -O2 -std=gnu89
++CFLAGS = -g -O2 -std=gnu89 -I $(LIBS_DIR)/public/$(OPENSSL_USE)/include 
+ CMAKE = cmake
+ CPP = gcc -E
+ CPPFLAGS = 
+diff -aNru src/src/plugins/Makefile src_new/src/plugins/Makefile
+--- src/src/plugins/Makefile	2018-03-15 03:02:00.128378035 +0800
++++ src_new/src/plugins/Makefile	2018-03-15 03:02:00.128378035 +0800
+@@ -24,6 +24,11 @@
+ #  Copyright (C) 2002-2017 OpenVPN Technologies, Inc. <sales@openvpn.net>
+ #  Copyright (C) 2006-2012 Alon Bar-Lev <alon.barlev@gmail.com>
+ #
++CURR_DIR := $(shell pwd)
++BUILD_DIR:=$(subst /user_space, /user_space,$(CURR_DIR))
++BUILD_DIR:=$(word 1, $(BUILD_DIR))
++
++include $(BUILD_DIR)/Rules.mak
+ 
+ am__is_gnu_make = test -n '$(MAKEFILE_LIST)' && test -n '$(MAKELEVEL)'
+ am__make_running_with_option = \
+@@ -188,17 +193,17 @@
+ ACLOCAL = ${SHELL} /home/disk2/alice/R6800/sc_trunk/user_space/apps/public/openvpn/openvpn-2.3.18/missing aclocal-1.14
+ AMTAR = $${TAR-tar}
+ AM_DEFAULT_VERBOSITY = 1
+-AR = ar
+-AS = as
++AR = $(CROSS)ar
++AS = $(CROSS)as
+ AUTOCONF = ${SHELL} /home/disk2/alice/R6800/sc_trunk/user_space/apps/public/openvpn/openvpn-2.3.18/missing autoconf
+ AUTOHEADER = ${SHELL} /home/disk2/alice/R6800/sc_trunk/user_space/apps/public/openvpn/openvpn-2.3.18/missing autoheader
+ AUTOMAKE = ${SHELL} /home/disk2/alice/R6800/sc_trunk/user_space/apps/public/openvpn/openvpn-2.3.18/missing automake-1.14
+ AWK = gawk
+-CC = gcc
++CC = $(CROSS)gcc
+ CCDEPMODE = depmode=gcc3
+ CFLAGS = -g -O2 -std=gnu89
+ CMAKE = cmake
+-CPP = gcc -E
++CPP = $(CROSS)gcc -E
+ CPPFLAGS = 
+ CYGPATH_W = echo
+ DEFS = -DHAVE_CONFIG_H
+@@ -222,7 +227,7 @@
+ INSTALL_SCRIPT = ${INSTALL}
+ INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
+ IPROUTE = /sbin/ip
+-LD = /usr/bin/ld
++LD = $(CROSS)ld
+ LDFLAGS = 
+ LIBOBJS = 
+ LIBPAM_CFLAGS = 
+@@ -277,7 +282,7 @@
+ PLUGIN_AUTH_PAM_LIBS = -lpam
+ POLARSSL_CFLAGS = 
+ POLARSSL_LIBS = 
+-RANLIB = ranlib
++RANLIB = $(CROSS)ranlib
+ RC = 
+ ROUTE = /sbin/route
+ SED = /bin/sed
+@@ -285,7 +290,7 @@
+ SET_MAKE = 
+ SHELL = /bin/sh
+ SOCKETS_LIBS =  -lnsl -lresolv
+-STRIP = strip
++STRIP = $(CROSS)strip
+ SYSTEMD_ASK_PASSWORD = 
+ TAP_CFLAGS = 
+ TAP_WIN_COMPONENT_ID = tap0901
+@@ -301,8 +306,8 @@
+ abs_srcdir = /home/disk2/alice/R6800/sc_trunk/user_space/apps/public/openvpn/openvpn-2.3.18/src/plugins
+ abs_top_builddir = /home/disk2/alice/R6800/sc_trunk/user_space/apps/public/openvpn/openvpn-2.3.18
+ abs_top_srcdir = /home/disk2/alice/R6800/sc_trunk/user_space/apps/public/openvpn/openvpn-2.3.18
+-ac_ct_AR = ar
+-ac_ct_CC = gcc
++ac_ct_AR = $(CROSS)ar
++ac_ct_CC = $(CROSS)gcc
+ ac_ct_DUMPBIN = 
+ am__include = include
+ am__leading_dot = .

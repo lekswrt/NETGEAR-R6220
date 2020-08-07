@@ -322,6 +322,7 @@ static struct udphdr *get_udphdr_from_ipv6(struct sk_buff *skb, struct ipv6hdr *
 	return (struct udphdr *)(skb_network_header(skb) + offset);
 }
 
+extern accessctl_listen_in_kernel accessctl_listen_forward_cb;
 
 static int dns_hijack_handle(struct sk_buff *skb)
 {
@@ -352,6 +353,8 @@ static int dns_hijack_handle(struct sk_buff *skb)
 	__wsum data_csum;
 
 	struct ipv6hdr *recv_ip6hdr = NULL;
+
+	int access_block = 0;
 
 	recv_ethhd = eth_hdr(skb);
 
@@ -385,11 +388,14 @@ static int dns_hijack_handle(struct sk_buff *skb)
 
 			br_port = br_port_get_rcu(skb->dev);
 
+			if(accessctl_listen_forward_cb)
+				access_block = accessctl_listen_forward_cb(skb);
+
 			if(
 #ifdef Amped			
 			strcmp(query_name, dns_match) == 0 || (br_port && strcmp(br_port->br->dev->name, "group1") == 0 && strstr(query_name, dns_match_apple))
 #else
-			(strcmp(query_name, dns_match_1) == 0 || strcmp(query_name, dns_match_2) == 0  || strcmp(query_name, dns_match_3) == 0 || strcmp(query_name, dns_match_4) == 0 || strcmp(query_name, dns_match_5) == 0 )
+			(access_block || strcmp(query_name, dns_match_1) == 0 || strcmp(query_name, dns_match_2) == 0  || strcmp(query_name, dns_match_3) == 0 || strcmp(query_name, dns_match_4) == 0 || strcmp(query_name, dns_match_5) == 0 )
 #endif			
 			) {
 				int i, found = 0;

@@ -13,9 +13,9 @@
 #
 BOARD_ID=R6260
 HW_ID=CHJ
-VER=1.1.0.34
+VER=1.1.0.38
 SUB_VER=1.0.1
-GUI_VER=1.1.0.34
+GUI_VER=1.1.0.38
 HW_TYPE=R6260
 PRODUCT_ID=A001
 REGION=WW
@@ -106,7 +106,7 @@ IPTABLES_USE=iptables-1.4.10
 LED_APP_USE=R6260
 LED_KERNEL_USE=R6260
 BFTPD_USE=bftpd-4.4
-OPENVPN_USE=openvpn-2.3.16
+OPENVPN_USE=openvpn-2.3.18
 IPROUTE_USE=iproute2-4.6.0
 RADVD_USE=radvd-2.13
 TOTD_USE=totd-1.5.3
@@ -261,7 +261,7 @@ NTGR_CLOUD=0
 # -------Follow Soap API spec 2.00---------
 #
 SOAP_V2=1
-SOAP_GUEST_WIFI=0
+SOAP_GUEST_WIFI=1
 #
 # -------------Facebook WiFi---------------
 #
@@ -290,7 +290,7 @@ DSL_WIZARD_LOG=0
 # -----------------SpeedTest-------------------
 #
 SPEEDTEST=1
-SPEEDTEST_OOKLA=0
+SPEEDTEST_OOKLA=1
 
 #
 # --------------Microsoft PNP-x Support--------
@@ -350,6 +350,6 @@ ENCRYPT_CFG=0
 GUEST_LEASE_TIME=0
 
 
-SUPPORT_UP21=0
+SUPPORT_UP21=1
 #Enable when U need make a ECC bin file
 ECC_BIN=1
