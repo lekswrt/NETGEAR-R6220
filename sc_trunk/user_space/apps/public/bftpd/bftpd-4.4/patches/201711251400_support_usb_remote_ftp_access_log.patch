@@ -1,0 +1,111 @@
+diff -uNr bftpd-4.4/bftpd/login.c bftpd-4.4/bftpd/login.c
+--- bftpd-4.4/bftpd/login.c	2017-11-25 11:34:16.000000000 +0800
++++ bftpd-4.4/bftpd/login.c	2017-11-25 14:07:56.000000000 +0800
+@@ -42,6 +42,7 @@
+ #include <time.h>
+ #endif
+ 
++#include <syslog.h>
+ #include "cwd.h"
+ #include "dirlist.h"
+ #include "mystring.h"
+@@ -51,6 +52,7 @@
+ #include "bftpdutmp.h"
+ #include "main.h"
+ #include "sc_debug.h"
++#include "misc.h"
+ #ifdef USB
+ #include "ftp_usb_api.h"
+ SHARE_LIST_T* shared_list = NULL;
+@@ -268,12 +270,13 @@
+           found_user = 1;
+    }
+ #else
+-	while ( (! found_user) && ( return_value != EOF) )
++	do
+ 	{
+ 		return_value = parse_str(my_file, user, group, home_dir, password);
+ 		if (! strcmp(user, my_username) )
+ 			found_user = 1;
+ 	}
++	while ( (! found_user) && ( return_value != EOF) );
+ #endif
+    fclose(my_file);
+    if(password[0] == '\1')
+@@ -300,6 +303,13 @@
+ extern int adminpwd_lan_protect ;
+ extern int adminpwd_wan_protect ;
+ extern int is_remote ;
++
++void netgear_remote_ftp_log(int success)
++{
++	if (is_remote)
++		NETGEAR_SYSLOG("20 00[USB remote access%s] from %s through FTP", success ? "": " rejected", remotehostname);
++}
++
+ #endif
+ 
+ /*
+@@ -351,6 +361,7 @@
+            #ifndef NO_GETPWNAM
+ 	   else if (!getpwnam(user)) {
+                 control_printf(SL_FAILURE, "530 Login incorrect.");
++		netgear_remote_ftp_log(0);
+ 		// exit(0);
+                 return -1;
+            }
+@@ -369,6 +380,7 @@
+                 {
+ 		    control_printf(SL_SUCCESS, "331 Password please.");
+                     //control_printf(SL_FAILURE, "530 Login incorrect.");
++		    netgear_remote_ftp_log(0);
+                     return -1;   
+                 }                
+             }         
+@@ -380,6 +392,7 @@
+ 			   if (check_admin_user_pass(file_auth, user, password) != NOT_ADMIN_USER) {
+                   bftpd_log_debug("user = <%s> password=<%s>, it is 'admin' user with wrong password.\n", user, password);
+ 		  control_printf(SL_SUCCESS, "331 Password please.");
++		  netgear_remote_ftp_log(0);
+                   return -1;
+ 			   }
+                if (password && *password == 0) /* for all directory are readable and writable */
+@@ -395,6 +408,7 @@
+                else
+                {
+                   control_printf(SL_FAILURE, "530 Anonymous user not allowed.");
++		  netgear_remote_ftp_log(0);
+                   //exit(0);
+                   return -1;
+                }
+@@ -412,6 +426,7 @@
+ 			else
+ 				control_printf(SL_FAILURE, "530 Login incorrect.");
+ 			bftpd_log("Login as user '%s' failed: Server disabled.\n", user);
++			netgear_remote_ftp_log(0);
+ 			exit(0);
+ 		}
+ 	}
+@@ -490,6 +505,7 @@
+ #ifdef USB
+ 		shared_list = SHARELIST_parse(USB_ADVANCED_CONF);
+ 		SHARE_LIST_print(shared_list);
++	netgear_remote_ftp_log(1); /* at this stage, login is ok. */
+ #endif
+         /* do these checks if logging in via normal methods */
+         if ( (! file_auth[0]) && (!anon_ok || (anon_ok && change_uid)) )
+@@ -863,12 +879,13 @@
+           found_user = 1;
+    }
+ #else
+-	while ( (! found_user) && ( return_value != EOF) )
++	do
+ 	{
+ 		return_value = parse_str(my_file, user, group, home_dir, password);
+ 		if (! strcmp(user, my_username) )
+ 			found_user = 1;
+ 	}
++	while ( (! found_user) && ( return_value != EOF) );
+ #endif
+    fclose(my_file);
+    if(password[0] == '\1')

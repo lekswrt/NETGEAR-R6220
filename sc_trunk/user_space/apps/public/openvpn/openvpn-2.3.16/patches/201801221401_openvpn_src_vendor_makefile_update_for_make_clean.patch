@@ -1,0 +1,13 @@
+--- src/vendor/Makefile	2018-01-22 11:31:33.000000000 +0800
++++ src/vendor/Makefile.new	2018-01-22 11:29:25.000000000 +0800
+@@ -490,8 +490,8 @@
+ check: libcmocka
+ 
+ clean:
+-	rm -rf $(cmockabuild)
+-	rm -rf $(cmockainstall)
++	if [ -e $(cmockabuild) ]; then rm -rf $(cmockabuild); fi
++	if [ -e $(cmockainstall) ]; then rm -rf $(cmockainstall); fi
+ 
+ # Tell versions [3.59,3.63) of GNU make to not export all variables.
+ # Otherwise a system limit (for SysV at least) may be exceeded.

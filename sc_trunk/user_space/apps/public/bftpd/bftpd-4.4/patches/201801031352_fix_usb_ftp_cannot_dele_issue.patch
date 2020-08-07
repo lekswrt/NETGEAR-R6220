@@ -1,0 +1,60 @@
+--- bftpd/commands.c	2018-01-03 21:55:04.912125541 +0800
++++ bftpd_new/commands.c	2018-01-03 19:16:17.257388649 +0800
+@@ -1545,8 +1545,41 @@
+ 	struct stat sbuf;
+ 	char *mapped = bftpd_cwd_mappath(filename);
+ 	int match_path = 0;
++
++	char *mapped_t = malloc(strlen(mapped)+1);
++	memset(mapped_t, 0, strlen(mapped)+1);
++ 
+ 	SHARE_LIST_T *share = shared_list;
++	int i = 0,n = 0,k = 0;
+ 	
++	if(! mapped_t)
++		return;
++	/*Make Share Name the same as Folder Name*/
++	for(i;mapped[i]!='\0';i++)
++	{
++			if(mapped[i]=='/')
++			{
++					n=n+1;
++			}
++			if(n!=2)
++			{
++					mapped_t[k]=mapped[i];
++					k++;
++			}
++			else
++			{
++					mapped_t[k]=mapped[i];
++					k=k+1;
++					i=i+1;
++					mapped_t[k]=mapped[i];
++					while(mapped[i]!='/')
++					{
++							i++;
++					}
++					i=i-1;
++					k=k+1;
++			}
++	}
+         if (! mapped)
+         {
+              control_printf(SL_FAILURE, "451 Error: Unable to perform delete..");
+@@ -1554,13 +1587,14 @@
+         }
+ 	/* Check mapped path if is available */
+ 	while(share != NULL){
+-		if(strstr(mapped, share->s.shared_name))
++		if(strstr(mapped_t, share->s.shared_name))
+ 		{
+ 			match_path = 1;
+ 			break;
+ 		}
+ 		share = share->next;
+ 	}
++	free(mapped_t);
+ #ifdef SC_BUILD
+     if (sc_check_writable(mapped) < 0) {
+         control_printf(SL_FAILURE,

@@ -1,0 +1,104 @@
+libntfs_3g_la-misc.lo: misc.c ../config.h \
+ /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/stdlib.h \
+ /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/features.h \
+ /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/uClibc_config.h \
+ /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/sys/cdefs.h \
+ /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/lib/gcc/mipsel-buildroot-linux-uclibc/4.6.3/include/stddef.h \
+ /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/waitflags.h \
+ /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/waitstatus.h \
+ /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/endian.h \
+ /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/endian.h \
+ /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/byteswap.h \
+ /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/byteswap.h \
+ /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/byteswap-common.h \
+ /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/sys/types.h \
+ /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/types.h \
+ /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/wordsize.h \
+ /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/typesizes.h \
+ /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/pthreadtypes.h \
+ /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/sgidefs.h \
+ /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/time.h \
+ /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/sys/select.h \
+ /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/select.h \
+ /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/sigset.h \
+ /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/time.h \
+ /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/sys/sysmacros.h \
+ /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/alloca.h \
+ /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/string.h \
+ ../include/ntfs-3g/types.h \
+ /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/lib/gcc/mipsel-buildroot-linux-uclibc/4.6.3/include/stdint.h \
+ /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/stdint.h \
+ /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/wchar.h \
+ ../include/ntfs-3g/misc.h ../include/ntfs-3g/logging.h \
+ /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/lib/gcc/mipsel-buildroot-linux-uclibc/4.6.3/include/stdarg.h \
+ ../include/ntfs-3g/types.h
+
+../config.h:
+
+/opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/stdlib.h:
+
+/opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/features.h:
+
+/opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/uClibc_config.h:
+
+/opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/sys/cdefs.h:
+
+/opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/lib/gcc/mipsel-buildroot-linux-uclibc/4.6.3/include/stddef.h:
+
+/opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/waitflags.h:
+
+/opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/waitstatus.h:
+
+/opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/endian.h:
+
+/opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/endian.h:
+
+/opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/byteswap.h:
+
+/opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/byteswap.h:
+
+/opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/byteswap-common.h:
+
+/opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/sys/types.h:
+
+/opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/types.h:
+
+/opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/wordsize.h:
+
+/opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/typesizes.h:
+
+/opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/pthreadtypes.h:
+
+/opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/sgidefs.h:
+
+/opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/time.h:
+
+/opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/sys/select.h:
+
+/opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/select.h:
+
+/opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/sigset.h:
+
+/opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/time.h:
+
+/opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/sys/sysmacros.h:
+
+/opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/alloca.h:
+
+/opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/string.h:
+
+../include/ntfs-3g/types.h:
+
+/opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/lib/gcc/mipsel-buildroot-linux-uclibc/4.6.3/include/stdint.h:
+
+/opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/stdint.h:
+
+/opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/wchar.h:
+
+../include/ntfs-3g/misc.h:
+
+../include/ntfs-3g/logging.h:
+
+/opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/lib/gcc/mipsel-buildroot-linux-uclibc/4.6.3/include/stdarg.h:
+
+../include/ntfs-3g/types.h:

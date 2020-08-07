@@ -1,0 +1,48 @@
+diff -rNu src/src/openvpn/multi.c src_new/src/openvpn/multi.c
+--- src/src/openvpn/multi.c	2017-05-19 04:53:23.000000000 +0800
++++ src_new/src/openvpn/multi.c	2017-11-30 18:18:19.837379488 +0800
+@@ -44,6 +44,7 @@
+ #include "forward-inline.h"
+ #include "pf-inline.h"
+ 
++#include "../../../../../../../../../sc_trunk/shared/misc.h"
+ /*#define MULTI_DEBUG_EVENT_LOOP*/
+ 
+ #ifdef MULTI_DEBUG_EVENT_LOOP
+@@ -917,6 +918,7 @@
+   struct hash_bucket *bucket = hash_bucket (m->vhash, hv);
+   struct multi_route *oldroute = NULL;
+   struct multi_instance *owner = NULL;
++  char addr_buf[128];
+ 
+   /* if route currently exists, get the instance which owns it */
+   he = hash_lookup_fast (m->vhash, bucket, addr, hv);
+@@ -973,6 +975,8 @@
+ 
+ 	      /* add new route */
+ 	      hash_add_fast (m->vhash, bucket, &newroute->addr, hv, newroute);
++		  sscanf(multi_instance_string(mi, false, &gc), "%[^:]:", addr_buf);
++		  NETGEAR_SYSLOG("26 00[OpenVPN, connection successfully]from remote IP address: %s", addr_buf);
+ 	    }
+ 	}
+       
+diff -rNu src/src/openvpn/ssl.c src_new/src/openvpn/ssl.c
+--- src/src/openvpn/ssl.c	2017-11-30 21:58:52.653126149 +0800
++++ src_new/src/openvpn/ssl.c	2017-11-30 17:56:25.456379272 +0800
+@@ -2147,14 +2147,13 @@
+ 
+ 	char c2addr[128] = "";
+   /* For netgear openvpn log */
++  print_sockaddr_remote(&ks->remote_addr.dest, c2addr);
+   if (ks->authenticated)
+   {
+-	print_sockaddr_remote(&ks->remote_addr.dest, c2addr);
+-	NETGEAR_SYSLOG("26 00[OpenVPN, connection successfully]from remote IP address: %s", c2addr);
++	//NETGEAR_SYSLOG("26 00[OpenVPN, connection successfully]from remote IP address: %s", c2addr);
+   }
+   else
+   {
+-  	print_sockaddr_remote(&ks->remote_addr.dest, c2addr);
+   	NETGEAR_SYSLOG("26 01[OpenVPN, connection failed]from remote IP address: %s", c2addr);
+   }
+ 

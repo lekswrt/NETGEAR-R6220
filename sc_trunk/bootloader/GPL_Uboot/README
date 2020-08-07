@@ -1,0 +1,17 @@
+How to build the toolchain which is used to compile the bootloader source
+1, Please get Bootloader Toolchain from below link.
+https://sourcery.mentor.com/GNUToolchain/package10389/public/mips-sde-elf/mips-2012.03-64-mips-sde-elf.src.tar.bz
+2. build the toolchain
+3. install the toolchain to /opt/
+
+
+How to compile bootloader source
+1. change directory to GPL_Uboot/
+2. unzip and change directory to GPL_Uboot/Uboot
+2, make 
+
+
+How to get and use the final bootloader binary
+1, change directory to GPL_Uboot/Uboot/mkbin/
+2, ./bb
+it will generate bootloader binary "R6260_boot.bin" (w/o ecc).
