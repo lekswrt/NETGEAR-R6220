@@ -41,6 +41,11 @@ ifeq ($(READY_SHARE_CLOUD),1)
 CFLAGS += -DREMOTE_SMB_CONF
 endif
 
+ifeq ($(SECURITY_ENHANCE),1)
+CFLAGS += -DSECURITY_ENHANCE -I$(LIBS_DIR)/public/$(OPENSSL_USE)/include 
+LDFLAGS += -L$(LIBS_DIR)/public/$(OPENSSL_USE) -lssl -lcrypto  
+endif
+
 all: bftpd
 
 bftpd: $(OBJS)

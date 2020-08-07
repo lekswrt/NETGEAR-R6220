@@ -31,7 +31,7 @@ struct dhcpOfferedAddr
 
 //#ifdef RONSCODE
     unsigned char hostname[MAXHOSTNAMELEN];
-    unsigned char cid[48];//change 16->48 to solution define MAX_CLIENT_LEN
+    unsigned char cid[256];//change 16->48 to solution define MAX_CLIENT_LEN
 //#endif
 
 };

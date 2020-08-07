@@ -30,6 +30,38 @@
 
 #include "libbb.h"
 
+#define SC_HACK
+#define SC_CFPRINTF(fmt, args...)    do{   FILE *fp=fopen("/dev/console", "a+"); if(fp) {fprintf(fp, "[%s::%s():%d] ", __FILE__, __FUNCTION__, __LINE__);fprintf(fp, fmt, ##args);fclose(fp);}}while(0)
+
+#ifdef SC_HACK
+static int pipe_buf(char *command, char *buf, int size)
+{
+  FILE *fp;
+  int len=0;
+  int ch;
+
+  if((fp=popen(command, "r"))==NULL)
+     return (-1);
+
+  while ((ch = fgetc(fp)) != EOF && len < size)
+        buf[len++] = ch;
+
+  buf[len-1] = 0;
+
+  pclose(fp);
+  return len;
+}
+
+//TODO: avoid command injection...
+static int password_hash(char *pass, char *hash, int size)
+{
+        char cmd[256];
+        sprintf(cmd, "/bin/echo -n '%s' | /bin/openssl dgst -sha256 2>/dev/null | /bin/cut -d' ' -f2", pass);
+        return pipe_buf(cmd, hash, size);
+}
+#endif
+
+
 /* Ask the user for a password.
  * Return 1 if the user gives the correct password for entry PW,
  * 0 if not.  Return 1 without asking if PW has an empty password.
@@ -45,6 +77,9 @@ int FAST_FUNC correct_password(const struct passwd *pw)
 	/* Using _r function to avoid pulling in static buffers */
 	struct spwd spw;
 	char buffer[256];
+#endif
+#ifdef SC_HACK
+	char hash_str[128];
 #endif
 
 	/* fake salt. crypt() can choke otherwise. */
@@ -72,14 +107,16 @@ int FAST_FUNC correct_password(const struct passwd *pw)
 	if (!unencrypted) {
 		return 0;
 	}
-#define SC_HACK
 #ifndef SC_HACK    	
 	encrypted = pw_encrypt(unencrypted, correct, 1);
 	r = (strcmp(encrypted, correct) == 0);
 	free(encrypted);
 	memset(unencrypted, 0, strlen(unencrypted));
 #else
-    r = (strcmp(unencrypted, correct) == 0);
+	memset(hash_str, 0, sizeof(hash_str));
+	password_hash(unencrypted, hash_str, sizeof(hash_str));
+	//SC_CFPRINTF("check user:%s, userhash: %s, local:%s\n", unencrypted, hash_str, correct);
+    r = (strcmp(unencrypted, correct) == 0); //r = (strncmp(hash_str, correct, 64) == 0);
 
 #endif
 	return r;

@@ -2830,11 +2830,11 @@
 	</message>
 	<message>
 		<tag_code>955</tag_code>
-		<translation>加密模式</translation>
+		<translation>加密模式:</translation>
 	</message>
 	<message>
 		<tag_code>959</tag_code>
-		<translation>群組金鑰更新間隔</translation>
+		<translation>群組金鑰更新間隔:</translation>
 	</message>
 	<message>
 		<tag_code>960</tag_code>
@@ -3416,6 +3416,10 @@
 	<message>
 		<tag_code>1304</tag_code>
 		<translation>在自動停用模式下，路由器的 WPS LED 將不斷緩慢閃爍</translation>
+	</message>
+	<message>
+		<tag_code>1305</tag_code>
+		<translation>在自動停用模式下，路由器的無線 LED 將不斷緩慢閃爍</translation>
 	</message>
 	<message>
 		<tag_code>1745</tag_code>
@@ -5913,7 +5917,8 @@
 	</message>
 	<message>
 		<tag_code>3931</tag_code>
-		<translation>提交此表單，表示我同意</translation>
+		<translation>提交此表單，表示本人同意 No-IP </translation>
+		<variable>By submitting this form I agree to No-IP </variable>
 	</message>
 	<message>
 		<tag_code>3932</tag_code>
@@ -5921,7 +5926,8 @@
 	</message>
 	<message>
 		<tag_code>3933</tag_code>
-		<translation>而且我只會建立一個免費帳戶。</translation>
+		<translation>和 </translation>
+		<variable>and</variable>
 	</message>
 	<message>
 		<tag_code>3934</tag_code>
@@ -6057,11 +6063,11 @@
 	</message>
 	<message>
 		<tag_code>4024</tag_code>
-		<translation>2.從 www.netgear.com/readyshare 下載軟體，安裝 ReadySHARE Vault 到每部電腦。</translation>
+		<translation>1.從 www.netgear.com/readyshare 下載軟體，安裝 ReadySHARE Vault 到每部電腦。</translation>
 	</message>
 	<message>
 		<tag_code>4025</tag_code>
-		<translation>3.啟動 ReadySHARE Vault： 在相關儀錶板或「備份」標籤中設定和執行備份。</translation>
+		<translation>2.啟動 ReadySHARE Vault： 在相關儀錶板或「備份」標籤中設定和執行備份。</translation>
 	</message>
 	<message>
 		<tag_code>4100</tag_code>
@@ -6137,7 +6143,7 @@
 	</message>
 	<message>
 		<tag_code>4200</tag_code>
-		<translation>前往存取控制來允許或封鎖裝置。</translation>
+		<translation>前往&lt;a  style=text-decoration:underline;color:#0000ff; id=url_ac onclick=goto_formframe('AccessControl.htm&amp;todo=cfg_init')&gt;存取控制&lt;/a&gt;來允許或封鎖裝置。</translation>
 	</message>
 	<message>
 		<tag_code>4201</tag_code>
@@ -6550,7 +6556,8 @@
 	</message>
 	<message>
 		<tag_code>10740</tag_code>
-		<translation>選擇一個無線網路。</translation>
+		<translation>選擇一個無線網路:</translation>
+	<variable>Choose a wireless network:</variable>
 	</message>
 	<message>
 		<tag_code>10741</tag_code>
@@ -6583,6 +6590,8 @@
 </message>
 	<message>
 		<tag_code>10900</tag_code>
+
+
 		<translation>使用預設的 NETGEAR NTP 伺服器</translation>
 	</message>
 	<message>
@@ -6721,6 +6730,96 @@
 		<tag_code>4421</tag_code>
 		<translation>關閉除電源 LED 之外的所有 LED</translation>
 	</message>
+<message>
+<tag_code>11030</tag_code>
+<translation>建議您的密碼能符合下列條件：</translation>
+<variable>We recommend that your password meets the following conditions:</variable>
+</message>
+<message>
+<tag_code>11031</tag_code>
+<translation>包含 6 到 32 個字元</translation>
+<variable>Contains 6 to 32 characters</variable>
+</message>
+<message>
+<tag_code>11032</tag_code>
+<translation>相同的字元不能連續出現兩個以上</translation>
+<variable>Contains no more than two identical characters in a row</variable>
+</message>
+<message>
+<tag_code>11033</tag_code>
+<translation>此外，建議您的密碼能符合下列四個條件的其中三項：</translation>
+<variable>In addition, we recommend that your password meets three of the following four conditions:</variable>
+</message>
+<message>
+<tag_code>11034</tag_code>
+<translation>至少一個大寫字元</translation>
+<variable>At least one uppercase character</variable>
+</message>
+<message>
+<tag_code>11035</tag_code>
+<translation>至少一個小寫字元</translation>
+<variable>At least one lowercase character</variable>
+</message>
+<message>
+<tag_code>11036</tag_code>
+<translation>至少一個數字</translation>
+<variable>At least one number</variable>
+</message>
+<message>
+<tag_code>11037</tag_code>
+<translation>至少一個特殊字元，例如 &#64;&#35;&amp;...</translation>
+<variable>At least one special character, such as &#64;&#35;&amp;...</variable>
+</message>
+<message>
+<tag_code>11038</tag_code>
+<translation>啟用密碼重設</translation>
+<variable>Enable Password Reset</variable>
+</message>
+<message>
+<tag_code>11039</tag_code>
+<translation>上次重設密碼：</translation>
+<variable>Last time password was reset</variable>
+</message>
+<message>
+<tag_code>11040</tag_code>
+<translation>保護您的密碼</translation>
+<variable>Secure Your Password</variable>
+</message>
+<message>
+<tag_code>11041</tag_code>
+<translation>路由器密碼重設</translation>
+<variable>Router Password Reset</variable>
+</message>
+<message>
+<tag_code>11042</tag_code>
+<translation>您的管理密碼不安全。建議您將密碼變更為能符合密碼要求的更強式密碼。更強式的密碼能保護您的網路，防止外部威脅。</translation>
+<variable>Your admin password is not secure. We recommend that you change your password to a stronger password that meets our password requirements. A stronger password protects your network against external threats.</variable>
+</message>
+<message>
+<tag_code>11043</tag_code>
+<translation>我們已確認您的密碼重設要求。請在下方輸入新密碼、填妥其他欄位，然後按&lt;b&gt;下一步&lt;/b&gt;按鈕。</translation>
+<variable>We verified your password reset request. Enter a new password below, complete the other fields, then click the &lt;b&gt;Next&lt;/b&gt; button.</variable>
+</message>
+<message>
+<tag_code>11044</tag_code>
+<translation>下次登入時，請使用您剛才建立的密碼。您的使用者名稱一律是 admin。</translation>
+<variable>The next time you log in, use the password that you just created. Your user name is always admin.</variable>
+</message>
+<message>
+<tag_code>11045</tag_code>
+<translation>我們可以協助您重設路由器的管理密碼。您需要取得路由器的序號，這可在路由器標籤上找到。在欄位中輸入路由器的序號，然後按一下&lt;b&gt;繼續&lt;/b&gt;按鈕。</translation>
+<variable>We can help you reset your router's admin password. You need your router's serial number, which can be found on the router label. Enter your router's serial number in the field and click the &lt;b&gt;Continue&lt;/b&gt; button.</variable>
+</message>
+<message>
+<tag_code>11046</tag_code>
+<translation>您已成功重設管理密碼。</translation>
+<variable>You successfully reset the admin password.</variable>
+</message>
+<message>
+<tag_code>11047</tag_code>
+<translation>跳過</translation>
+<variable>Skip</variable>
+</message>
 </tag_msg>
 
 	

@@ -155,4 +155,19 @@
 		<translation>Insira sua resposta para cada pergunta.</translation>
 		<variable>gsm_msg_pwd_sec_ans</variable>
 	</message>
+	<message>
+		<err_code>13740</err_code>
+		<translation>Não pode utilizar a palavra-passe de administrador predefinida. Tem de alterar a palavra-passe de administrador.</translation>
+		<variable>gsm_msg_change_default_password</variable>
+	</message>
+	<message>
+		<err_code>13741</err_code>
+		<translation>Tem de introduzir uma palavra-passe.</translation>
+		<variable>gsm_msg_enter_password</variable>
+	</message>
+	<message>
+		<err_code>13742</err_code>
+		<translation>A sua palavra-passe de administrador não é segura. Recomendamos que altere a palavra-passe para uma mais forte que satisfaça os nossos requisitos. Uma palavra-passe mais forte protege a sua rede contra ameaças externas.</translation>
+		<variable>gsm_msg_enter_secure_password</variable>
+	</message>
 </error_msg>

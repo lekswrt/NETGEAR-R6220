@@ -21,9 +21,9 @@
 #
 ###########################################################################
 
-prefix=/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib/curl/aaa
+prefix=/home/disk3/peter/release_r6260/sc_trunk/user_space/libs/public/tr_lib/curl/aaa
 exec_prefix=${prefix}
-includedir=/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//include
+includedir=/home/disk3/peter/release_r6260/sc_trunk/user_space/libs/public/tr_lib//include
 cppflag_curl_staticlib=
 
 usage()
@@ -134,16 +134,16 @@ while test $# -gt 0; do
         else
           CPPFLAG_CURL_STATICLIB=""
         fi
-        if test "X/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//include" = "X/usr/include"; then
+        if test "X/home/disk3/peter/release_r6260/sc_trunk/user_space/libs/public/tr_lib//include" = "X/usr/include"; then
           echo "$CPPFLAG_CURL_STATICLIB"
         else
-          echo "${CPPFLAG_CURL_STATICLIB}-I/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//include"
+          echo "${CPPFLAG_CURL_STATICLIB}-I/home/disk3/peter/release_r6260/sc_trunk/user_space/libs/public/tr_lib//include"
         fi
         ;;
 
     --libs)
-        if test "X/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//lib" != "X/usr/lib" -a "X/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//lib" != "X/usr/lib64"; then
-           CURLLIBDIR="-L/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//lib "
+        if test "X/home/disk3/peter/release_r6260/sc_trunk/user_space/libs/public/tr_lib//lib" != "X/usr/lib" -a "X/home/disk3/peter/release_r6260/sc_trunk/user_space/libs/public/tr_lib//lib" != "X/usr/lib64"; then
+           CURLLIBDIR="-L/home/disk3/peter/release_r6260/sc_trunk/user_space/libs/public/tr_lib//lib "
         else
            CURLLIBDIR=""
         fi
@@ -156,7 +156,7 @@ while test $# -gt 0; do
 
     --static-libs)
         if test "Xyes" != "Xno" ; then
-          echo /home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//lib/libcurl.a -L/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//lib -lssl -lcrypto
+          echo /home/disk3/peter/release_r6260/sc_trunk/user_space/libs/public/tr_lib//lib/libcurl.a -L/home/disk3/peter/release_r6260/sc_trunk/user_space/libs/public/tr_lib//lib -lssl -lcrypto
         else
           echo "curl was built with static libraries disabled" >&2
           exit 1
@@ -164,7 +164,7 @@ while test $# -gt 0; do
         ;;
 
     --configure)
-        echo " '--host=mipsel-linux' 'CC=mipsel-linux-gcc' 'PKG_CONFIG_PATH=/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib/' '--without-cyassl' '--with-ssl=/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib/' '--libdir=/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//lib/' '--includedir=/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//include' '-enable-shared=yes' '-enable-static=yes' '--prefix=/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib/curl/aaa/' 'host_alias=mipsel-linux' 'CPP=mipsel-linux-gcc -E'"
+        echo " '--host=mipsel-linux' 'CC=mipsel-linux-gcc' 'PKG_CONFIG_PATH=/home/disk3/peter/release_r6260/sc_trunk/user_space/libs/public/tr_lib/' '--without-cyassl' '--with-ssl=/home/disk3/peter/release_r6260/sc_trunk/user_space/libs/public/tr_lib/' '--libdir=/home/disk3/peter/release_r6260/sc_trunk/user_space/libs/public/tr_lib//lib/' '--includedir=/home/disk3/peter/release_r6260/sc_trunk/user_space/libs/public/tr_lib//include' '-enable-shared=yes' '-enable-static=yes' '--prefix=/home/disk3/peter/release_r6260/sc_trunk/user_space/libs/public/tr_lib/curl/aaa/' 'host_alias=mipsel-linux' 'CPP=mipsel-linux-gcc -E'"
         ;;
 
     *)

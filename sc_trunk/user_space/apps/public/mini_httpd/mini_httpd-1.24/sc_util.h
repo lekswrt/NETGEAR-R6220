@@ -49,5 +49,6 @@ void __restore_manager(void);
 void __save_manager(void);
 inline void restore_manager(void);
 inline void save_manager(void);
+int password_hash(const char *password, char *hash, int max_len);
 
 #endif

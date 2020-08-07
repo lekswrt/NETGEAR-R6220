@@ -20,6 +20,7 @@
 #endif
 #define _SC_DEBUG_ENABLE_
 #include "sc_debug.h"
+#include "filenames.h"
 
 #ifdef SMTP_SSL
 #include <openssl/ssl.h>
@@ -52,6 +53,7 @@ static SSL_CTX* ssl_ctx = NULL;
 #ifdef GREEN_DOWNLOAD
 static int green_download=0;	
 #endif
+static int g_option=0;	
 static int do_starttls=0;
 static int clear_syslog=0;  /* Should we clear syslog message after email sent? 1 -- Yes, 0 -- No. */
 static int	verbose=0;
@@ -65,6 +67,20 @@ static smtp_conf conf;
 #ifndef LOG_DAEMON
 #define LOG_DAEMON 0
 #endif
+
+void fancy_exit(int num)
+{
+	if (clear_syslog)
+	{
+		/* even not send successfully, still need clear log since this is requested by the sender, 
+		 * this is because if device in default config which is send log when full, and meantime user configure wrong username/password,
+		 * in this case, the smtpc will be called infinitely. */
+		SC_CFPRINTF("fancy exit clear log per send request\n");
+		system("killall -SIGUSR1 syslogd");
+		clear_syslog = 0;
+	}
+	exit(num);
+}
 
 /* date header */
 void smtp_date(char *timestamp,char *time_zone,int daylight)
@@ -100,12 +116,12 @@ void SSL_negotiate(int s)
 	SC_CFPRINTF("SSL_negotiate\n");
 	sfp = fopen("/tmp/smtp_s_tmp", "w+");
 	if(!sfp){
-		exit(1);
+		fancy_exit(1);
 	}
 	rfp = fopen("/tmp/smtp_r_tmp", "w+");
 	if(!rfp){
 		fclose(sfp);
-		exit(1);
+		fancy_exit(1);
 	}
 	SSL_library_init();
 	//ssl_method = TLSv1_client_method();
@@ -122,7 +138,7 @@ void SSL_negotiate(int s)
 		close(s);
 		fclose(sfp);
 		fclose(rfp);
-		exit(1);
+		fancy_exit(1);
 	}
 }
 
@@ -184,7 +200,7 @@ void get_response_ssl(void)
 					SSL_CTX_free(ssl_ctx);
 				fclose(sfp);
 					fclose(rfp);
-					exit(1);
+					fancy_exit(1); // xxx
 				}
 				/* check auth */
 				if (!(strncmp(&buf[4],"AUTH", 4)))
@@ -240,7 +256,7 @@ void get_response(void)
             //log("unexpected reply: %s", buf);
             	NETGEAR_SYSLOG("17 00[email failed] %s", pt1);
 	        fprintf(sfp,"QUIT\r\n");
-            	exit(1);
+            	fancy_exit(1); // xxx
         }
 	/* check auth */
 	if (!(strncmp(&buf[4],"AUTH", 4)))
@@ -472,7 +488,7 @@ void alarm_handler(int sig) {
 		fclose(rfp);
 	}
 #endif
-    exit(1);
+    fancy_exit(1);
 }
 
 void usage(void)
@@ -506,7 +522,8 @@ void usage(void)
 	char *time_zone=NULL;
 	int  daylight=0;
 	char timestamp[128]="";
-
+	int force_not_clear_syslog = 0;
+	
 #ifdef SMTP_SSL
 	do_ssl =  atoi(nvram_get("mail_ssl"));
 	SC_CFPRINTF("do ssl <%d>\n",do_ssl);
@@ -537,13 +554,13 @@ void usage(void)
     	/*  Parse options */
 	for (;;) {
 #ifdef NTGR_CLOUD
-#ifdef GREEN_DOWNLOAD
+#if 1 //def GREEN_DOWNLOAD
 		c = getopt( argc, argv, "mns:f:r:h:p:U:P:t:d:cvg");
 #else
 		c = getopt( argc, argv, "mns:f:r:h:p:U:P:t:d:cv");
 #endif
 #else
-#ifdef GREEN_DOWNLOAD
+#if 1 //def GREEN_DOWNLOAD
 		c = getopt( argc, argv, "ms:f:r:h:p:U:P:t:d:cvg");
 #else
 		c = getopt( argc, argv, "ms:f:r:h:p:U:P:t:d:cv");
@@ -594,14 +611,15 @@ void usage(void)
 			case 'd':
 				daylight=atoi(optarg);
 				break;
-#ifdef GREEN_DOWNLOAD
 			case 'g':
+#ifdef GREEN_DOWNLOAD
 				green_download=1;
-				break;
 #endif
+				g_option = 1;
+				break;
 			default:
 				usage();
-				exit(1);
+				fancy_exit(1);
 				break;
 		}
 	}
@@ -628,7 +646,7 @@ void usage(void)
 	/* check recipient and mailhost */
 	if(conf.recipient==NULL || conf.mailhost==NULL){
 		usage();
-		exit(1);
+		fancy_exit(1);
 	}
 
 	openlog("smtp",0,LOG_SYSLOG);
@@ -641,28 +659,33 @@ void usage(void)
         		conf.mailhost = strdup("localhost");
 	}
 
+	if (access(LOG_SENT_BY_CGI, F_OK) == 0)
+	{
+		force_not_clear_syslog = 1;	
+	}
+	
 	/*  Connect to smtp daemon on mailhost.  */
 	if ((hp = gethostbyname(conf.mailhost)) == NULL) {
         //log("%s: unknown host\n", conf.mailhost);
  	NETGEAR_SYSLOG("17 00[email failed] %s: unknown host", conf.mailhost);
-		exit(1);
+		fancy_exit(1);
 	}
 	if (hp->h_addrtype != AF_INET) {
         //log("unknown address family: %d", hp->h_addrtype);
         NETGEAR_SYSLOG("17 00[email failed] unknown address family: %d", hp->h_addrtype);
-		exit(1);
+		fancy_exit(1);
 	}
 	memset((char *)&sin, 0, sizeof(sin));
 	memcpy((char *)&sin.sin_addr, hp->h_addr, hp->h_length);
 	sin.sin_family = hp->h_addrtype;
 	sin.sin_port = htons(conf.mailport);
 	if ((s = socket(AF_INET, SOCK_STREAM, 0)) < 0) {
-		exit(1);
+		fancy_exit(1);
 	}
     SC_CFPRINTF("Start to connect...\n");
 	if (connect(s, (struct sockaddr *)&sin, sizeof(sin)) < 0) {
 	    NETGEAR_SYSLOG("17 00[email failed] Cannot connect to %s", conf.mailhost);
-        exit(1);
+        fancy_exit(1);
 	}
 	SC_CFPRINTF("Start to connect done...!!!!!!!!!!!!!\n");
 #ifdef SMTP_SSL
@@ -672,14 +695,14 @@ void usage(void)
 	else {
 #endif
 		if ((r = dup(s)) < 0) {
-        	exit(1);
+        	fancy_exit(1);
 		}
 		if ((sfp = fdopen(s, "w")) == 0) {
-        	exit(1);
+        	fancy_exit(1);
 		}
 
 		if ((rfp = fdopen(r, "r")) == 0) {
-        	exit(1);
+        	fancy_exit(1);
 		}
 #ifdef SMTP_SSL
 	}
@@ -835,14 +858,30 @@ void usage(void)
 	chat("QUIT\r\n");
 	//log("Send E-mail Success!");
 	clear_syslog = 1; //Send mail success, clear the log.
+	
+	if (force_not_clear_syslog)
+	{
+		 SC_CFPRINTF("==================force not clearlog=============\n");
+		clear_syslog = 0;
+	}
+	
 #ifdef GREEN_DOWNLOAD
 	if(green_download)
 		clear_syslog = 0;//green_download no need to clear the log.
 #endif
+	if (g_option)
+	{
+		SC_CFPRINTF("==================not clearlog g_option=============\n");
+		clear_syslog = 0;
+	} else
+	{
+		SC_CFPRINTF("==================no g_option=============\n");
+	}
     if(clear_syslog) {
         /* Clear syslog */
         SC_CFPRINTF("==================clearlog=============\n");
         system("killall -SIGUSR1 syslogd");
+        clear_syslog = 0;
     }
 
     SC_CFPRINTF("[email sent to: %s]\n", conf.recipient);
@@ -859,7 +898,9 @@ void usage(void)
 	}
 #endif
 	/*  Die gracefully ...  */
-	exit(0);
+	fancy_exit(0);
+	
+	return 0;
 }
 
 /*EOF*/

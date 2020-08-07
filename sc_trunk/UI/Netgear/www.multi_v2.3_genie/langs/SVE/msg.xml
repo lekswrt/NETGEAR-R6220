@@ -2371,4 +2371,19 @@
 		<translation>Varning: Routern kunde inte ansluta till NTP-servern. Kontrollera internetanslutningen eller prova med en annan NTP-server.</translation>
 		<variable>gsm_msg_ntp_sync_fail</variable>
 	</message>
+	<message>
+		<err_code>13740</err_code>
+		<translation>Du kan inte använda standardadministratörslösenordet. Du måste ändra administratörslösenordet.</translation>
+		<variable>gsm_msg_change_default_password</variable>
+	</message>
+	<message>
+		<err_code>13741</err_code>
+		<translation>Du måste ange ett lösenord.</translation>
+		<variable>gsm_msg_enter_password</variable>
+	</message>
+	<message>
+		<err_code>13742</err_code>
+		<translation>Administratörslösenordet är inte säkert. Vi rekommenderar att du ändrar lösenordet till ett starkare lösenord som uppfyller våra krav på lösenord. Ett starkare lösenord skyddar ditt nätverk mot externa hot.</translation>
+		<variable>gsm_msg_enter_secure_password</variable>
+	</message>
 </error_msg>

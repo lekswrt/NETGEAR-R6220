@@ -13,10 +13,10 @@
 #
 BOARD_ID=R6260
 HW_ID=CHJ
-VER=1.1.0.44
+VER=1.1.0.52
 SUB_VER=1.0.1
-GUI_VER=1.1.0.44
-NTGR_RAE_VER=1.0.0.4
+GUI_VER=1.1.0.52
+NTGR_RAE_VER=1.0.0.8
 HW_TYPE=R6260
 PRODUCT_ID=A001
 REGION=WW
@@ -356,8 +356,6 @@ GUEST_LEASE_TIME=0
 
 
 SUPPORT_UP21=1
-#Enable when U need make a ECC bin file
-ECC_BIN=0
 #support NTP other server support in spec 14
 NTP_OTHER_SERVER_SUPPORT=1
 #-----------traffic meter block https--------
@@ -366,10 +364,16 @@ HTTPSHJ_HTTPD=1
 #
 ##-----------TC for new wizard page----
 #
-TC_SUPPORT=0
+TC_SUPPORT=1
 # Netgear Router Analytics Engine (RA)
 # Refer user_space/apps/public/RAE/Readme.txt for more information about this feature!
-RAE=0
-AUTO_FORCE_UPGRADE_FW_ENABLE=0
+RAE=1
+AUTO_FORCE_UPGRADE_FW_ENABLE=1
 
 # Enable if need validate cgi post data
+# Netgear Security Enhancement spec v21
+SECURITY_ENHANCE=0
+#Enable when U need make a ECC bin file
+ECC_BIN=0
+#--------------Fan You Jia Su Qi-------------------#
+FUNJSQ=0

@@ -3987,6 +3987,7 @@
 <tag_code>3117</tag_code>
 <translation>Απαντήστε σε κάθε ερώτηση.</translation>
 </message>
+
 <message>
 <tag_code>3118</tag_code>
 <translation>Ελέγξτε τα παρακάτω στοιχεία:</translation>
@@ -5238,7 +5239,8 @@
 </message>
 <message>
 <tag_code>3931</tag_code>
-<translation>Με την υποβολή αυτής της φόρμας, δηλώνω ότι αποδέχομαι τους</translation>
+<translation>Με την υποβολή αυτής της φόρμας, δηλώνω ότι αποδέχομαι τη χωρίς διατήρηση IP </translation>
+<variable>By submitting this form I agree to No-IP </variable>
 </message>
 <message>
 <tag_code>3932</tag_code>
@@ -5246,7 +5248,8 @@
 </message>
 <message>
 <tag_code>3933</tag_code>
-<translation>και ότι θα δημιουργήσω μόνο ένα δωρεάν λογαριασμό.</translation>
+<translation>και</translation>
+<variable>and</variable>
 </message>
 <message>
 <tag_code>3934</tag_code>
@@ -5374,11 +5377,11 @@
 </message>
 <message>
 <tag_code>4024</tag_code>
-<translation>2. Εγκαταστήστε το ReadySHARE Vault σε κάθε υπολογιστή, κατεβάζοντας το λογισμικό από τη διεύθυνση  &lt;a class='linktype' target='_blank' href='http://www.netgear.com/readyshare'>www.netgear.com/readyshare&lt;/a&gt;.</translation>
+<translation>1. Εγκαταστήστε το ReadySHARE Vault σε κάθε υπολογιστή, κατεβάζοντας το λογισμικό από τη διεύθυνση  &lt;a class='linktype' target='_blank' href='http://www.netgear.com/readyshare'>www.netgear.com/readyshare&lt;/a&gt;.</translation>
 </message>
 <message>
 <tag_code>4025</tag_code>
-<translation>3. Εκκινήστε το ReadySHARE Vault. Χρησιμοποιήστε την καρτέλα Πίνακας εργαλείων ή Αντίγραφο ασφαλείας για να ρυθμίσετε και να δημιουργήσετε το εφεδρικό αντίγραφο.</translation>
+<translation>2. Εκκινήστε το ReadySHARE Vault. Χρησιμοποιήστε την καρτέλα Πίνακας εργαλείων ή Αντίγραφο ασφαλείας για να ρυθμίσετε και να δημιουργήσετε το εφεδρικό αντίγραφο.</translation>
 </message>
 <message>
 <tag_code>4100</tag_code>
@@ -6118,5 +6121,95 @@
 <tag_code>11024</tag_code>
 <translation>Για να ολοκληρώσετε τη διαδικασία εγκατάστασης, πρέπει να συμφωνήσετε με τους Όρους υπηρεσιών.&lt;br&gt;Εάν δεν αποδεχτείτε αυτούς τους Όρους υπηρεσιών, πρέπει να επιστρέψετε τη συσκευή NETGEAR.</translation>
 <variable>To complete the installation process, you must agree to the Terms of Services.&lt;br&gt;If you do not accept these Terms of Services, you must return Your NETGEAR device.</variable>
+</message>
+<message>
+<tag_code>11030</tag_code>
+<translation>Συνιστούμε ο κωδικός πρόσβασής σας να πληροί τις παρακάτω προϋποθέσεις:</translation>
+<variable>We recommend that your password meets the following conditions:</variable>
+</message>
+<message>
+<tag_code>11031</tag_code>
+<translation>Περιλαμβάνει 6 έως 32 χαρακτήρες</translation>
+<variable>Contains 6 to 32 characters</variable>
+</message>
+<message>
+<tag_code>11032</tag_code>
+<translation>Δεν περιλαμβάνει περισσότερους από δύο όμοιους χαρακτήρες στη σειρά</translation>
+<variable>Contains no more than two identical characters in a row</variable>
+</message>
+<message>
+<tag_code>11033</tag_code>
+<translation>Επίσης, συνιστούμε ο κωδικός πρόσβασής σας να πληροί τρεις από τις παρακάτω τέσσερις προϋποθέσεις:</translation>
+<variable>In addition, we recommend that your password meets three of the following four conditions:</variable>
+</message>
+<message>
+<tag_code>11034</tag_code>
+<translation>Τουλάχιστον ένα κεφαλαίο γράμμα</translation>
+<variable>At least one uppercase character</variable>
+</message>
+<message>
+<tag_code>11035</tag_code>
+<translation>Τουλάχιστον ένα πεζό γράμμα</translation>
+<variable>At least one lowercase character</variable>
+</message>
+<message>
+<tag_code>11036</tag_code>
+<translation>Τουλάχιστον ένας αριθμός</translation>
+<variable>At least one number</variable>
+</message>
+<message>
+<tag_code>11037</tag_code>
+<translation>Τουλάχιστον ένας ειδικός χαρακτήρας, όπως &#64;&#35;&amp;...</translation>
+<variable>At least one special character, such as &#64;&#35;&amp;...</variable>
+</message>
+<message>
+<tag_code>11038</tag_code>
+<translation>Ενεργοποίηση επαναφοράς κωδικού πρόσβασης</translation>
+<variable>Enable Password Reset</variable>
+</message>
+<message>
+<tag_code>11039</tag_code>
+<translation>Τελευταία επαναφορά κωδικού πρόσβασης</translation>
+<variable>Last time password was reset</variable>
+</message>
+<message>
+<tag_code>11040</tag_code>
+<translation>Ασφαλίστε τον κωδικό πρόσβασής σας</translation>
+<variable>Secure Your Password</variable>
+</message>
+<message>
+<tag_code>11041</tag_code>
+<translation>Επαναφορά κωδικού πρόσβασης δρομολογητή</translation>
+<variable>Router Password Reset</variable>
+</message>
+<message>
+<tag_code>11042</tag_code>
+<translation>Ο κωδικός πρόσβασής σας δεν είναι ασφαλής. Συνιστούμε να αλλάξετε τον κωδικό πρόσβασής σας σε ισχυρότερο κωδικό πρόσβασης που πληροί τις απαιτήσεις μας για τον κωδικό πρόσβασης. Ένας ισχυρότερος κωδικός πρόσβασης προστατεύει το δίκτυό σας από εξωτερικές απειλές.</translation>
+<variable>Your admin password is not secure. We recommend that you change your password to a stronger password that meets our password requirements. A stronger password protects your network against external threats.</variable>
+</message>
+<message>
+<tag_code>11043</tag_code>
+<translation>Επαληθεύσαμε το αίτημά επαναφοράς του κωδικού πρόσβασής σας. Εισαγάγετε έναν νέο κωδικό πρόσβασης παρακάτω, συμπληρώστε τα άλλα πεδία και, στη συνέχεια, κάντε κλικ στο κουμπί &lt;b&gt;Επόμενο&lt;/b&gt;.</translation>
+<variable>We verified your password reset request. Enter a new password below, complete the other fields, then click the &lt;b&gt;Next&lt;/b&gt; button.</variable>
+</message>
+<message>
+<tag_code>11044</tag_code>
+<translation>Την επόμενη φορά που θα κάνετε σύνδεση, χρησιμοποιήστε τον κωδικό πρόσβασης που μόλις δημιουργήσατε. Το όνομα χρήστη σας είναι πάντα admin.</translation>
+<variable>The next time you log in, use the password that you just created. Your user name is always admin.</variable>
+</message>
+<message>
+<tag_code>11045</tag_code>
+<translation>Μπορούμε να σας βοηθήσουμε να επαναφέρετε τον κωδικό πρόσβασης διαχείρισης του δρομολογητή. Χρειάζεστε το σειριακό αριθμό του δρομολογητή σας που βρίσκεται στην ετικέτα του δρομολογητή. Εισαγάγετε το σειριακό αριθμό του δρομολογητή σας στο πεδίο και πατήστε το κουμπί &lt;b&gt;Συνέχεια&lt;/b&gt;.</translation>
+<variable>We can help you reset your router's admin password. You need your router's serial number, which can be found on the router label. Enter your router's serial number in the field and click the &lt;b&gt;Continue&lt;/b&gt; button.</variable>
+</message>
+<message>
+<tag_code>11046</tag_code>
+<translation>Επαναφέρατε με επιτυχία τον κωδικό πρόσβασης διαχείρισης.</translation>
+<variable>You successfully reset the admin password.</variable>
+</message>
+<message>
+<tag_code>11047</tag_code>
+<translation>Παράλειψη</translation>
+<variable>Skip</variable>
 </message>
 </tag_msg>

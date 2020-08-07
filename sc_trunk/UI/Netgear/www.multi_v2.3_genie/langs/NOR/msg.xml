@@ -2361,4 +2361,19 @@
 		<translation>Advarsel: Ruteren kan ikke koble til NTP-serveren. Kontroller Internett-tilkoblingen, eller prøv en annen NTP-server.</translation>
 		<variable>gsm_msg_ntp_sync_fail</variable>
 	</message>
+	<message>
+		<err_code>13740</err_code>
+		<translation>Du kan ikke bruke standard admin-passord. Du må endre admin-passordet.</translation>
+		<variable>gsm_msg_change_default_password</variable>
+	</message>
+	<message>
+		<err_code>13741</err_code>
+		<translation>Du må skrive et passord.</translation>
+		<variable>gsm_msg_enter_password</variable>
+	</message>
+	<message>
+		<err_code>13742</err_code>
+		<translation>Admin-passordet ditt er ikke sikkert. Vi anbefaler at du endrer passordet til et sterkere passord som oppfyller passordkravene våre. Et sterkere passord beskytter nettverket ditt mot eksterne trusler.</translation>
+		<variable>gsm_msg_enter_secure_password</variable>
+	</message>
 </error_msg>

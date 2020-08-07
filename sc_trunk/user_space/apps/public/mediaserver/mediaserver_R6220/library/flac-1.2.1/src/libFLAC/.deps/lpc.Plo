@@ -1,25 +1,25 @@
 lpc.lo: lpc.c ../../config.h \
- /home/disk3/peter/RELEASE/sc_trunk/user_space/apps/public/mediaserver/mediaserver_R6220/library/flac-1.2.1/src/libFLAC/../../../..//library/flac-1.2.1/include/FLAC/assert.h \
- /home/disk3/peter/RELEASE/sc_trunk/user_space/apps/public/mediaserver/mediaserver_R6220/library/flac-1.2.1/src/libFLAC/../../../..//library/flac-1.2.1/include/FLAC/format.h \
- /home/disk3/peter/RELEASE/sc_trunk/user_space/apps/public/mediaserver/mediaserver_R6220/library/flac-1.2.1/src/libFLAC/../../../..//library/flac-1.2.1/include/FLAC/export.h \
- /home/disk3/peter/RELEASE/sc_trunk/user_space/apps/public/mediaserver/mediaserver_R6220/library/flac-1.2.1/src/libFLAC/../../../..//library/flac-1.2.1/include/FLAC/ordinals.h \
+ /home/disk3/peter/release_r6260/sc_trunk/user_space/apps/public/mediaserver/mediaserver_R6220/library/flac-1.2.1/src/libFLAC/../../../..//library/flac-1.2.1/include/FLAC/assert.h \
+ /home/disk3/peter/release_r6260/sc_trunk/user_space/apps/public/mediaserver/mediaserver_R6220/library/flac-1.2.1/src/libFLAC/../../../..//library/flac-1.2.1/include/FLAC/format.h \
+ /home/disk3/peter/release_r6260/sc_trunk/user_space/apps/public/mediaserver/mediaserver_R6220/library/flac-1.2.1/src/libFLAC/../../../..//library/flac-1.2.1/include/FLAC/export.h \
+ /home/disk3/peter/release_r6260/sc_trunk/user_space/apps/public/mediaserver/mediaserver_R6220/library/flac-1.2.1/src/libFLAC/../../../..//library/flac-1.2.1/include/FLAC/ordinals.h \
  include/private/bitmath.h \
- /home/disk3/peter/RELEASE/sc_trunk/user_space/apps/public/mediaserver/mediaserver_R6220/library/flac-1.2.1/src/libFLAC/../../../..//library/flac-1.2.1/include/FLAC/ordinals.h \
+ /home/disk3/peter/release_r6260/sc_trunk/user_space/apps/public/mediaserver/mediaserver_R6220/library/flac-1.2.1/src/libFLAC/../../../..//library/flac-1.2.1/include/FLAC/ordinals.h \
  include/private/lpc.h include/private/float.h
 
 ../../config.h:
 
-/home/disk3/peter/RELEASE/sc_trunk/user_space/apps/public/mediaserver/mediaserver_R6220/library/flac-1.2.1/src/libFLAC/../../../..//library/flac-1.2.1/include/FLAC/assert.h:
+/home/disk3/peter/release_r6260/sc_trunk/user_space/apps/public/mediaserver/mediaserver_R6220/library/flac-1.2.1/src/libFLAC/../../../..//library/flac-1.2.1/include/FLAC/assert.h:
 
-/home/disk3/peter/RELEASE/sc_trunk/user_space/apps/public/mediaserver/mediaserver_R6220/library/flac-1.2.1/src/libFLAC/../../../..//library/flac-1.2.1/include/FLAC/format.h:
+/home/disk3/peter/release_r6260/sc_trunk/user_space/apps/public/mediaserver/mediaserver_R6220/library/flac-1.2.1/src/libFLAC/../../../..//library/flac-1.2.1/include/FLAC/format.h:
 
-/home/disk3/peter/RELEASE/sc_trunk/user_space/apps/public/mediaserver/mediaserver_R6220/library/flac-1.2.1/src/libFLAC/../../../..//library/flac-1.2.1/include/FLAC/export.h:
+/home/disk3/peter/release_r6260/sc_trunk/user_space/apps/public/mediaserver/mediaserver_R6220/library/flac-1.2.1/src/libFLAC/../../../..//library/flac-1.2.1/include/FLAC/export.h:
 
-/home/disk3/peter/RELEASE/sc_trunk/user_space/apps/public/mediaserver/mediaserver_R6220/library/flac-1.2.1/src/libFLAC/../../../..//library/flac-1.2.1/include/FLAC/ordinals.h:
+/home/disk3/peter/release_r6260/sc_trunk/user_space/apps/public/mediaserver/mediaserver_R6220/library/flac-1.2.1/src/libFLAC/../../../..//library/flac-1.2.1/include/FLAC/ordinals.h:
 
 include/private/bitmath.h:
 
-/home/disk3/peter/RELEASE/sc_trunk/user_space/apps/public/mediaserver/mediaserver_R6220/library/flac-1.2.1/src/libFLAC/../../../..//library/flac-1.2.1/include/FLAC/ordinals.h:
+/home/disk3/peter/release_r6260/sc_trunk/user_space/apps/public/mediaserver/mediaserver_R6220/library/flac-1.2.1/src/libFLAC/../../../..//library/flac-1.2.1/include/FLAC/ordinals.h:
 
 include/private/lpc.h:
 

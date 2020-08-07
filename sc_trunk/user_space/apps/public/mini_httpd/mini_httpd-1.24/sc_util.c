@@ -624,6 +624,38 @@ int count_cgi()
 }
 
 
+#ifdef SECURITY_ENHANCE
+#include <openssl/evp.h>
+int password_hash(const char *password, char *hash, int max_len)
+{
+	unsigned char md_value[EVP_MAX_MD_SIZE];
+	unsigned int md_len, i, len = 0;
+	EVP_MD_CTX mdctx;
+	const EVP_MD *md;
+
+	if(!password || !hash)
+		return -1;
+
+	md = EVP_sha256();
+	if(!md) {
+		return -1;
+	}
+
+	EVP_MD_CTX_init(&mdctx);
+	EVP_DigestInit_ex(&mdctx, md, NULL);
+	EVP_DigestUpdate(&mdctx, password, strlen(password));
+	EVP_DigestFinal_ex(&mdctx, md_value, &md_len);
+	EVP_MD_CTX_cleanup(&mdctx);
+
+	for(i = 0; i < md_len && i < max_len/2; i++) 
+	{
+		len += sprintf((char*)hash + i*2, "%02x", md_value[i]);
+	}
+	hash[len] = '\0';
+
+	return 0;
+}
+#endif
 
 
 

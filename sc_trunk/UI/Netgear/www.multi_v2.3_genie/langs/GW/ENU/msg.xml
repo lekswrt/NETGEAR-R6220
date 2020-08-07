@@ -155,4 +155,19 @@
 		<translation>Please enter your answer for each question.</translation>
 		<variable>gsm_msg_pwd_sec_ans</variable>
 	</message>
+	<message>
+		<err_code>13740</err_code>
+		<translation>You cannot use the default admin password. You must change the admin password.</translation>
+		<variable>gsm_msg_change_default_password</variable>
+	</message>
+	<message>
+		<err_code>13741</err_code>
+		<translation>You must enter a password.</translation>
+		<variable>gsm_msg_enter_password</variable>
+	</message>
+	<message>
+		<err_code>13742</err_code>
+		<translation>Your admin password is not secure. We recommend that you change your password to a stronger password that meets our password requirements. A stronger password protects your network against external threats.</translation>
+		<variable>gsm_msg_enter_secure_password</variable>
+	</message>
 </error_msg>

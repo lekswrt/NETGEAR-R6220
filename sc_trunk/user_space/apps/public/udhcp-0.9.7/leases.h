@@ -5,7 +5,7 @@
 #include <asm/param.h>
 
 /* enlarge cid size, because some devices may have too long cid, and our udhcpd will crash down and can not offer IP address anymore. */
-#define MAX_CLIENT_LEN		48
+#define MAX_CLIENT_LEN		256
 
 struct dhcpOfferedAddr {
 	u_int8_t chaddr[16];

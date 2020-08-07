@@ -2258,4 +2258,19 @@
 		<translation>Предупреждение: Неуспешно свързване на рутера с NTP сървър, моля, проверете интернет връзката си или опитайте с друг NTP сървър</translation>
 		<variable>gsm_msg_ntp_sync_fail</variable>
 	</message>
+	<message>
+		<err_code>13740</err_code>
+		<translation>Не можете да използвате паролата на администратор по подразбиране. Трябва да промените паролата на администратор.</translation>
+		<variable>gsm_msg_change_default_password</variable>
+	</message>
+	<message>
+		<err_code>13741</err_code>
+		<translation>Трябва да въведете парола.</translation>
+		<variable>gsm_msg_enter_password</variable>
+	</message>
+	<message>
+		<err_code>13742</err_code>
+		<translation>Вашата парола на администратор не е защитена. Препоръчваме да смените паролата си с по-силна, отговаряща на нашите изисквания за паролите. По-силната парола защитава мрежата Ви от външни заплахи.</translation>
+		<variable>gsm_msg_enter_secure_password</variable>
+	</message>
 </error_msg>

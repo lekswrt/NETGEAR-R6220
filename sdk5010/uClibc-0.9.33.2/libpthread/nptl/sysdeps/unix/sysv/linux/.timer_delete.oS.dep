@@ -3,9 +3,9 @@ libpthread/nptl/sysdeps/unix/sysv/linux/timer_delete.oS: \
  include/libc-symbols.h include/bits/uClibc_arch_features.h \
  include/errno.h include/features.h include/bits/uClibc_config.h \
  include/sys/cdefs.h include/libc-internal.h include/bits/errno.h \
- /home/disk3/peter/RELEASE/sdk5010/linux-2.6.36.x/include/linux/errno.h \
- /home/disk3/peter/RELEASE/sdk5010/linux-2.6.36.x/include/asm/errno.h \
- /home/disk3/peter/RELEASE/sdk5010/linux-2.6.36.x/include/asm-generic/errno-base.h \
+ /home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/linux/errno.h \
+ /home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/asm/errno.h \
+ /home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/asm-generic/errno-base.h \
  include/stdlib.h \
  /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/lib/gcc/mipsel-buildroot-linux-uclibc/4.6.3/include/stddef.h \
  include/bits/waitflags.h include/bits/waitstatus.h include/endian.h \
@@ -19,7 +19,7 @@ libpthread/nptl/sysdeps/unix/sysv/linux/timer_delete.oS: \
  libc/sysdeps/linux/mips/sysdep.h libc/sysdeps/linux/common/sysdep.h \
  include/sys/syscall.h include/bits/sysnum.h include/bits/syscalls.h \
  include/bits/syscalls-common.h include/bits/kernel-features.h \
- /home/disk3/peter/RELEASE/sdk5010/linux-2.6.36.x/include/linux/version.h \
+ /home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/linux/version.h \
  libpthread/nptl/sysdeps/unix/sysv/linux/kernel-posix-timers.h \
  libpthread/nptl/sysdeps/unix/sysv/linux/../../../../../../librt/kernel-posix-timers.h \
  include/setjmp.h include/bits/setjmp.h include/signal.h \
@@ -44,11 +44,11 @@ include/libc-internal.h:
 
 include/bits/errno.h:
 
-/home/disk3/peter/RELEASE/sdk5010/linux-2.6.36.x/include/linux/errno.h:
+/home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/linux/errno.h:
 
-/home/disk3/peter/RELEASE/sdk5010/linux-2.6.36.x/include/asm/errno.h:
+/home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/asm/errno.h:
 
-/home/disk3/peter/RELEASE/sdk5010/linux-2.6.36.x/include/asm-generic/errno-base.h:
+/home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/asm-generic/errno-base.h:
 
 include/stdlib.h:
 
@@ -114,7 +114,7 @@ include/bits/syscalls-common.h:
 
 include/bits/kernel-features.h:
 
-/home/disk3/peter/RELEASE/sdk5010/linux-2.6.36.x/include/linux/version.h:
+/home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/linux/version.h:
 
 libpthread/nptl/sysdeps/unix/sysv/linux/kernel-posix-timers.h:
 
@@ -147,4 +147,4 @@ include/sched.h:
 include/bits/sched.h:
 
 include/bits/uClibc_pthread.h:
-cmd_libpthread_nptl_sysdeps_unix_sysv_linux_timer_delete.oS := /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/bin/mipsel-linux-gcc -c libpthread/nptl/sysdeps/unix/sysv/linux/timer_delete.c -o libpthread/nptl/sysdeps/unix/sysv/linux/timer_delete.oS -include include/libc-symbols.h -Wstrict-prototypes -Wstrict-aliasing -funsigned-char -fno-builtin -fno-asm -std=gnu99 -march=mips32r2 -mtune=mips32r2 -mabi=32 -fno-stack-protector -nostdinc -Iinclude -Iinclude -I. -Ilibc/sysdeps/linux -Ilibc/sysdeps/linux/mips -Os -funit-at-a-time -fmerge-all-constants -fstrict-aliasing -fno-tree-loop-optimize -fno-tree-dominator-opts -fno-strength-reduce -mno-split-addresses -DHAVE_FORCED_UNWIND -Ilibpthread/nptl -Ilibpthread/nptl -Ilibpthread/nptl/sysdeps/unix/sysv/linux/mips/ -Ilibpthread/nptl/sysdeps/unix/sysv/linux/mips -Ilibpthread/nptl/sysdeps/mips -Ilibpthread/nptl/sysdeps/mips -Ilibpthread/nptl/sysdeps/unix/sysv/linux -Ilibpthread/nptl/sysdeps/unix/sysv/linux -Ilibpthread/nptl/sysdeps/pthread -Ilibpthread/nptl/sysdeps/pthread/bits -Ilibpthread/nptl/sysdeps/generic -Ildso/ldso/mips -Ildso/include -Ilibc/sysdeps/linux/common -I/home/disk3/peter/RELEASE/sdk5010/linux-2.6.36.x/include/ -isystem /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/lib/gcc/mipsel-buildroot-linux-uclibc/4.6.3/include-fixed -isystem /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/lib/gcc/mipsel-buildroot-linux-uclibc/4.6.3/include -DNDEBUG -D__USE_STDIO_FUTEXES__ -fPIC -DSHARED -DNOT_IN_libc -Ilibrt -DIS_IN_librt -MT libpthread/nptl/sysdeps/unix/sysv/linux/timer_delete.oS -MD -MP -MF libpthread/nptl/sysdeps/unix/sysv/linux/.timer_delete.oS.dep
+cmd_libpthread_nptl_sysdeps_unix_sysv_linux_timer_delete.oS := /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/bin/mipsel-linux-gcc -c libpthread/nptl/sysdeps/unix/sysv/linux/timer_delete.c -o libpthread/nptl/sysdeps/unix/sysv/linux/timer_delete.oS -include include/libc-symbols.h -Wstrict-prototypes -Wstrict-aliasing -funsigned-char -fno-builtin -fno-asm -std=gnu99 -march=mips32r2 -mtune=mips32r2 -mabi=32 -fno-stack-protector -nostdinc -Iinclude -Iinclude -I. -Ilibc/sysdeps/linux -Ilibc/sysdeps/linux/mips -Os -funit-at-a-time -fmerge-all-constants -fstrict-aliasing -fno-tree-loop-optimize -fno-tree-dominator-opts -fno-strength-reduce -mno-split-addresses -DHAVE_FORCED_UNWIND -Ilibpthread/nptl -Ilibpthread/nptl -Ilibpthread/nptl/sysdeps/unix/sysv/linux/mips/ -Ilibpthread/nptl/sysdeps/unix/sysv/linux/mips -Ilibpthread/nptl/sysdeps/mips -Ilibpthread/nptl/sysdeps/mips -Ilibpthread/nptl/sysdeps/unix/sysv/linux -Ilibpthread/nptl/sysdeps/unix/sysv/linux -Ilibpthread/nptl/sysdeps/pthread -Ilibpthread/nptl/sysdeps/pthread/bits -Ilibpthread/nptl/sysdeps/generic -Ildso/ldso/mips -Ildso/include -Ilibc/sysdeps/linux/common -I/home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/ -isystem /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/lib/gcc/mipsel-buildroot-linux-uclibc/4.6.3/include-fixed -isystem /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/lib/gcc/mipsel-buildroot-linux-uclibc/4.6.3/include -DNDEBUG -D__USE_STDIO_FUTEXES__ -fPIC -DSHARED -DNOT_IN_libc -Ilibrt -DIS_IN_librt -MT libpthread/nptl/sysdeps/unix/sysv/linux/timer_delete.oS -MD -MP -MF libpthread/nptl/sysdeps/unix/sysv/linux/.timer_delete.oS.dep

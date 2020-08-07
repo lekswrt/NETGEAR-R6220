@@ -498,7 +498,7 @@ s,@AUTOMAKE@,automake-1.8,;t t
 s,@AUTOHEADER@,autoheader,;t t
 s,@MAKEINFO@,makeinfo,;t t
 s,@AMTAR@,tar,;t t
-s,@install_sh@,/home/disk3/peter/RELEASE/sc_trunk/user_space/apps/public/bridge-utils/src/install-sh,;t t
+s,@install_sh@,/home/disk3/peter/release_r6260/sc_trunk/user_space/apps/public/bridge-utils/src/install-sh,;t t
 s,@STRIP@,mipsel-linux-strip,;t t
 s,@ac_ct_STRIP@,,;t t
 s,@INSTALL_STRIP_PROGRAM@,${SHELL} $(install_sh) -c -s,;t t

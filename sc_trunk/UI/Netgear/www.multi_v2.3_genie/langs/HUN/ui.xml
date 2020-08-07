@@ -3646,6 +3646,7 @@
 <message>
 <tag_code>3031</tag_code>
 <translation>Folytatás</translation>
+
 </message>
 <message>
 <tag_code>3032</tag_code>
@@ -4693,6 +4694,7 @@
 </message>
 <message>
 <tag_code>3342</tag_code>
+
 <translation>Disable 3G/4G connection</translation>
 </message>
 <message>
@@ -5242,7 +5244,8 @@
 </message>
 <message>
 <tag_code>3931</tag_code>
-<translation>Az űrlap kitöltésével elfogadom a</translation>
+<translation>Ezen űrlap benyújtásával elfogadom a No-IP használati és adatvédelmi szabályzatát </translation>
+<variable>By submitting this form I agree to No-IP </variable>
 </message>
 <message>
 <tag_code>3932</tag_code>
@@ -5250,9 +5253,8 @@
 </message>
 <message>
 <tag_code>3933</tag_code>
-<translation>valamint, hogy csak egy ingyenes fiókot hozok létre.</translation>
-
-
+<translation>és</translation>
+<variable>and</variable>
 </message>
 <message>
 <tag_code>3934</tag_code>
@@ -5380,11 +5382,11 @@
 </message>
 <message>
 <tag_code>4024</tag_code>
-<translation>2. Töltse le a ReadySHARE Vault szoftvert a  &lt;a class='linktype' target='_blank' href='http://www.netgear.com/readyshare'>www.netgear.com/readyshare&lt;/a&gt; címről, majd telepítse a kívánt számítógépekre.</translation>
+<translation>1. Töltse le a ReadySHARE Vault szoftvert a  &lt;a class='linktype' target='_blank' href='http://www.netgear.com/readyshare'>www.netgear.com/readyshare&lt;/a&gt; címről, majd telepítse a kívánt számítógépekre.</translation>
 </message>
 <message>
 <tag_code>4025</tag_code>
-<translation>3. Indítsa el a ReadySHARE Vault alkalmazást. A biztonsági mentés beállítását és futtatását az Irányítópult vagy a Biztonsági mentés lapon végezheti el.</translation>
+<translation>2. Indítsa el a ReadySHARE Vault alkalmazást. A biztonsági mentés beállítását és futtatását az Irányítópult vagy a Biztonsági mentés lapon végezheti el.</translation>
 </message>
 <message>
 <tag_code>4100</tag_code>
@@ -5676,6 +5678,7 @@
 </message>
 <message>
 <tag_code>4508</tag_code>
+
 <translation>Adatvédelmi szabályzat</translation>
 </message>
 <message>
@@ -6124,5 +6127,95 @@
 <tag_code>11024</tag_code>
 <translation>A telepítési folyamat befejezéséhez el kell fogadnia a Használati feltételeket.&lt;br&gt;Ha a felhasználó a Használati feltételeket nem fogadja el, NETGEAR eszközét vissza kell adnia.</translation>
 <variable>To complete the installation process, you must agree to the Terms of Services.&lt;br&gt;If you do not accept these Terms of Services, you must return Your NETGEAR device.</variable>
+</message>
+<message>
+<tag_code>11030</tag_code>
+<translation>Javasolt, hogy a jelszó megfeleljen a következő feltételeknek:</translation>
+<variable>We recommend that your password meets the following conditions:</variable>
+</message>
+<message>
+<tag_code>11031</tag_code>
+<translation>6–32 karaktert tartalmaz</translation>
+<variable>Contains 6 to 32 characters</variable>
+</message>
+<message>
+<tag_code>11032</tag_code>
+<translation>Legfeljebb két egymást követő azonos karaktert tartalmaz</translation>
+<variable>Contains no more than two identical characters in a row</variable>
+</message>
+<message>
+<tag_code>11033</tag_code>
+<translation>Továbbá, javasolt, hogy a jelszó megfeleljen a következő négy feltétel közül legalább háromnak:</translation>
+<variable>In addition, we recommend that your password meets three of the following four conditions:</variable>
+</message>
+<message>
+<tag_code>11034</tag_code>
+<translation>Legalább egy nagybetűs karakter</translation>
+<variable>At least one uppercase character</variable>
+</message>
+<message>
+<tag_code>11035</tag_code>
+<translation>Legalább egy kisbetűs karakter</translation>
+<variable>At least one lowercase character</variable>
+</message>
+<message>
+<tag_code>11036</tag_code>
+<translation>Legalább egy szám</translation>
+<variable>At least one number</variable>
+</message>
+<message>
+<tag_code>11037</tag_code>
+<translation>Legalább egy speciális karakter, például &#64;&#35;&amp;...</translation>
+<variable>At least one special character, such as &#64;&#35;&amp;...</variable>
+</message>
+<message>
+<tag_code>11038</tag_code>
+<translation>Jelszó visszaállításának engedélyezése</translation>
+<variable>Enable Password Reset</variable>
+</message>
+<message>
+<tag_code>11039</tag_code>
+<translation>A legutóbbi jelszó visszaállításának ideje:</translation>
+<variable>Last time password was reset</variable>
+</message>
+<message>
+<tag_code>11040</tag_code>
+<translation>Tegye biztonságossá jelszavát</translation>
+<variable>Secure Your Password</variable>
+</message>
+<message>
+<tag_code>11041</tag_code>
+<translation>Router jelszavának visszaállítása</translation>
+<variable>Router Password Reset</variable>
+</message>
+<message>
+<tag_code>11042</tag_code>
+<translation>Rendszergazdai jelszava nem biztonságos. Javasoljuk, hogy változtassa jelszavát erősebb jelszóra, amely megfelel a jelszókövetelményeinknek. Az erősebb jelszó megvédi hálózatát a külső fenyegetésektől.</translation>
+<variable>Your admin password is not secure. We recommend that you change your password to a stronger password that meets our password requirements. A stronger password protects your network against external threats.</variable>
+</message>
+<message>
+<tag_code>11043</tag_code>
+<translation>Ellenőriztük jelszó-visszaállítási kérését. Adjon meg új jelszót alább, töltse ki a többi mezőt, majd kattintson a &lt;b&gt;Következő&lt;/b&gt; gombra.</translation>
+<variable>We verified your password reset request. Enter a new password below, complete the other fields, then click the &lt;b&gt;Next&lt;/b&gt; button.</variable>
+</message>
+<message>
+<tag_code>11044</tag_code>
+<translation>A következő bejelentkezéskor az imént létrehozott jelszót használja. Felhasználóneve mindig admin.</translation>
+<variable>The next time you log in, use the password that you just created. Your user name is always admin.</variable>
+</message>
+<message>
+<tag_code>11045</tag_code>
+<translation>Segíthetünk a router rendszergazdai jelszavának visszaállításában. Szükség van a router sorozatszámára, amely a router címkéjén található. Írja be a router sorozatszámát a mezőbe, majd kattintson a &lt;b&gt;Folytatás&lt;/b&gt; gombra.</translation>
+<variable>We can help you reset your router's admin password. You need your router's serial number, which can be found on the router label. Enter your router's serial number in the field and click the &lt;b&gt;Continue&lt;/b&gt; button.</variable>
+</message>
+<message>
+<tag_code>11046</tag_code>
+<translation>Sikeresen visszaállította a rendszergazdai jelszót.</translation>
+<variable>You successfully reset the admin password.</variable>
+</message>
+<message>
+<tag_code>11047</tag_code>
+<translation>Kihagyás</translation>
+<variable>Skip</variable>
 </message>
 </tag_msg>

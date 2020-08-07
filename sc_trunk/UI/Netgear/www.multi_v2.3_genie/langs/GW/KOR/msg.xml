@@ -155,4 +155,19 @@
 		<translation>각 질문에 대답을 입력하십시오.</translation>
 		<variable>gsm_msg_pwd_sec_ans</variable>
 	</message>
+	<message>
+		<err_code>13740</err_code>
+		<translation>기본 관리자 암호를 사용할 수 없습니다. 관리자 암호를 변경해야 합니다.</translation>
+		<variable>gsm_msg_change_default_password</variable>
+	</message>
+	<message>
+		<err_code>13741</err_code>
+		<translation>암호를 입력해야 합니다.</translation>
+		<variable>gsm_msg_enter_password</variable>
+	</message>
+	<message>
+		<err_code>13742</err_code>
+		<translation>관리자 암호가 안전하지 않습니다. 암호 요구 사항을 충족하는 강한 암호로 변경하는 것이 좋습니다. 강한 암호는 외부 위협으로부터 네트워크를 보호합니다.</translation>
+		<variable>gsm_msg_enter_secure_password</variable>
+	</message>
 </error_msg>

@@ -51,6 +51,9 @@ static struct option long_options[] =
     {"load-balance", 0, 0, 'b'},
     {"cache",        1, 0, 'c'},
     {"debug",        1, 0, 'd'},
+#ifdef FUNJSQ
+    {"funjsq_dns",   1, 0, 'f'},
+#endif
 #ifdef DNSHJ
     {"hack",         1, 0, 'g'},
 #endif
@@ -96,12 +99,18 @@ static struct option long_options[] =
 #else
 #define UIDPARM
 #endif
+
+#ifdef FUNJSQ
+#define FUNJSQPARM "f:"
+#else
+#define FUNJSQPARM
+#endif
  
 const char short_options[] = 
 #ifdef DNSHJ
-    "a:bc:d:g:hi" PIDPARM "l" MASTERPARM "M:r:R:P:s:t:" UIDPARM "vo:q:";
+    "a:bc:d:" FUNJSQPARM "g:hi" PIDPARM "l" MASTERPARM "M:r:R:P:s:t:" UIDPARM "vo:q:";
 #else
-    "a:bc:d:hi" PIDPARM "l" MASTERPARM "M:r:R:P:s:t:" UIDPARM "v";
+    "a:bc:d:" FUNJSQPARM "hi" PIDPARM "l" MASTERPARM "M:r:R:P:s:t:" UIDPARM "v";
 #endif
 
 /*
@@ -213,6 +222,9 @@ static void give_help()
  */
  extern int opendns;
 extern char PC_table[];
+#ifdef FUNJSQ
+extern int funjsq_dns;
+#endif
 int parse_args(int argc, char **argv)
 {
   static int load_balance = 0;
@@ -250,6 +262,13 @@ int parse_args(int argc, char **argv)
 	    opt_debug = atoi(optarg);
 	    break;
 	  }
+#ifdef FUNJSQ
+  	  case 'f':{
+		if(1==atoi(optarg))
+			funjsq_dns=1;
+	  	break;
+  	  	}	
+#endif
 #ifdef DNSHJ
 	  case 'g':{
               do_hack_dns=1;

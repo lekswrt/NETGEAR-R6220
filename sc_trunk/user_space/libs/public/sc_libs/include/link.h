@@ -159,5 +159,10 @@ void reset_lan_switch2(int sleeptime);
 void reset_lan_switch_DOWN();
 void reset_lan_switch_UP();
 int is_available_dongle_pluged(void);
+
+char *get_if_linklocal(const char *ifname, char *addrbuf, int buflen, int *plen);
+char *get_if_global(const char *ifname, char *addrbuf, int buflen, int *plen);
+char *get_if_addr_by_scope(const char *ifname, char *addrbuf, int buflen, int *plen, int scope);
+
 #endif  /* _LINK_H_ */
 

@@ -2363,4 +2363,19 @@
 		<translation>Opozorilo: Usmerjevalnik ni mogel vzpostaviti povezave s strežnikom NTP. Preverite internetno povezavo ali poskusite z drugim strežnikom NTP.</translation>
 		<variable>gsm_msg_ntp_sync_fail</variable>
 	</message>
+	<message>
+		<err_code>13740</err_code>
+		<translation>Ne morete uporabiti privzetega skrbniškega gesla. Skrbniško geslo morate spremeniti.</translation>
+		<variable>gsm_msg_change_default_password</variable>
+	</message>
+	<message>
+		<err_code>13741</err_code>
+		<translation>Vnesti morate geslo.</translation>
+		<variable>gsm_msg_enter_password</variable>
+	</message>
+	<message>
+		<err_code>13742</err_code>
+		<translation>Vaše skrbniško geslo ni varno. Priporočamo, da geslo zamenjate z močnejšim, ki izpolnjuje naše zahteve za varnostna gesla. Močnejše geslo varuje vaše omrežje pred zunanjimi grožnjami.</translation>
+		<variable>gsm_msg_enter_secure_password</variable>
+	</message>
 </error_msg>

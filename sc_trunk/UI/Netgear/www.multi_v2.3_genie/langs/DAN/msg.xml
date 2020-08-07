@@ -2366,4 +2366,19 @@
 		<translation>Advarsel: Routeren kunne ikke oprette forbindelse til NTP-serveren, kontroller internetforbindelsen eller prøv en anden NTP-server</translation>
 		<variable>gsm_msg_ntp_sync_fail</variable>
 	</message>
+	<message>
+		<err_code>13740</err_code>
+		<translation>Du kan ikke bruge standard-admin-adgangskoden. Du skal ændre admin-adgangskoden.</translation>
+		<variable>gsm_msg_change_default_password</variable>
+	</message>
+	<message>
+		<err_code>13741</err_code>
+		<translation>Du skal indtaste en adgangskode.</translation>
+		<variable>gsm_msg_enter_password</variable>
+	</message>
+	<message>
+		<err_code>13742</err_code>
+		<translation>Din admin-adgangskode er ikke sikker. Vi anbefaler, at du ændrer adgangskoden til en stærkere adgangskode, der opfylder vores krav til adgangskoder. En stærkere adgangskode beskytter dit netværk mod udefrakommende trusler.</translation>
+		<variable>gsm_msg_enter_secure_password</variable>
+	</message>
 </error_msg>

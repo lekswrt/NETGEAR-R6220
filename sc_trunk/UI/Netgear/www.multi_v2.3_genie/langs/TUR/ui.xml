@@ -5381,7 +5381,8 @@
 </message>
 <message>
 <tag_code>3931</tag_code>
-<translation>Bu formu göndererek</translation>
+<translation>Bu formu göndererek şunu kabul ediyorum: No-IP </translation>
+<variable>By submitting this form I agree to No-IP </variable>
 </message>
 <message>
 <tag_code>3932</tag_code>
@@ -5389,7 +5390,8 @@
 </message>
 <message>
 <tag_code>3933</tag_code>
-<translation>ve yalnızca bir ücretsiz hesap oluşturacağımı kabul ediyorum.</translation>
+<translation>ve</translation>
+<variable>and</variable>
 </message>
 <message>
 <tag_code>3934</tag_code>
@@ -5518,11 +5520,11 @@
 </message>
 <message>
 <tag_code>4024</tag_code>
-<translation>2. ReadySHARE Vault yazılımını her PC'ye  &lt;a class='linktype' target='_blank' href='http://www.netgear.com/readyshare'>www.netgear.com/readyshare&lt;/a&gt; adresinden indirerek yükleyin.</translation>
+<translation>1. ReadySHARE Vault yazılımını her PC'ye  &lt;a class='linktype' target='_blank' href='http://www.netgear.com/readyshare'>www.netgear.com/readyshare&lt;/a&gt; adresinden indirerek yükleyin.</translation>
 </message>
 <message>
 <tag_code>4025</tag_code>
-<translation>3. ReadySHARE Vault'u çalıştırın. Yedeklemenizi ayarlamak ve çalıştırmak için Gösterge Panosu veya Yedekle sekmesini kullanın.</translation>
+<translation>2. ReadySHARE Vault'u çalıştırın. Yedeklemenizi ayarlamak ve çalıştırmak için Gösterge Panosu veya Yedekle sekmesini kullanın.</translation>
 </message>
 <message>
 <tag_code>4100</tag_code>
@@ -6262,5 +6264,95 @@
 <tag_code>11024</tag_code>
 <translation>Kurulum işlemini tamamlamak için Hizmet Koşullarını kabul etmeniz gerekir.&lt;br&gt;Bu Hizmet Koşullarını kabul etmiyorsanız NETGEAR cihazınızı iade etmelisiniz.</translation>
 <variable>To complete the installation process, you must agree to the Terms of Services.&lt;br&gt;If you do not accept these Terms of Services, you must return Your NETGEAR device.</variable>
+</message>
+<message>
+<tag_code>11030</tag_code>
+<translation>Parolanızın aşağıdaki koşulları karşılamasını öneririz:</translation>
+<variable>We recommend that your password meets the following conditions:</variable>
+</message>
+<message>
+<tag_code>11031</tag_code>
+<translation>Parola, 6 ila 32 karakter içermelidir</translation>
+<variable>Contains 6 to 32 characters</variable>
+</message>
+<message>
+<tag_code>11032</tag_code>
+<translation>Bir karakter art arda en fazla iki kez kullanılabilir</translation>
+<variable>Contains no more than two identical characters in a row</variable>
+</message>
+<message>
+<tag_code>11033</tag_code>
+<translation>Buna ek olarak, parolanızın aşağıdaki dört koşuldan üçünü karşılamasını öneririz:</translation>
+<variable>In addition, we recommend that your password meets three of the following four conditions:</variable>
+</message>
+<message>
+<tag_code>11034</tag_code>
+<translation>En az bir büyük harf karakter</translation>
+<variable>At least one uppercase character</variable>
+</message>
+<message>
+<tag_code>11035</tag_code>
+<translation>En az bir küçük harf karakter</translation>
+<variable>At least one lowercase character</variable>
+</message>
+<message>
+<tag_code>11036</tag_code>
+<translation>En az bir rakam</translation>
+<variable>At least one number</variable>
+</message>
+<message>
+<tag_code>11037</tag_code>
+<translation>En az bir özel karakter (örn. &#64;&#35;&amp;)</translation>
+<variable>At least one special character, such as &#64;&#35;&amp;...</variable>
+</message>
+<message>
+<tag_code>11038</tag_code>
+<translation>Parola Sıfırlamayı Etkinleştirin</translation>
+<variable>Enable Password Reset</variable>
+</message>
+<message>
+<tag_code>11039</tag_code>
+<translation>Parolanızın en son sıfırlandığı zaman:</translation>
+<variable>Last time password was reset</variable>
+</message>
+<message>
+<tag_code>11040</tag_code>
+<translation>Parolanızın Güvenliğini Sağlayın</translation>
+<variable>Secure Your Password</variable>
+</message>
+<message>
+<tag_code>11041</tag_code>
+<translation>Router Parolası Sıfırlama</translation>
+<variable>Router Password Reset</variable>
+</message>
+<message>
+<tag_code>11042</tag_code>
+<translation>Yönetici parolanız güvenli değil. Parolanızı, parola gereksinimlerimizi karşılayan daha güçlü bir parolayla değiştirmenizi öneririz. Daha güçlü bir parola, ağınızı harici tehlikelere karşı korur.</translation>
+<variable>Your admin password is not secure. We recommend that you change your password to a stronger password that meets our password requirements. A stronger password protects your network against external threats.</variable>
+</message>
+<message>
+<tag_code>11043</tag_code>
+<translation>Parola sıfırlama isteğinizi doğruladık. Aşağıya yeni bir parola girin, diğer alanları tamamlayın ve &lt;b&gt;İleri&lt;/b&gt; düğmesine tıklayın.</translation>
+<variable>We verified your password reset request. Enter a new password below, complete the other fields, then click the &lt;b&gt;Next&lt;/b&gt; button.</variable>
+</message>
+<message>
+<tag_code>11044</tag_code>
+<translation>Bir sonraki oturum açışınızda yeni oluşturduğunuz parolayı kullanın. Kullanıcı adınız her zaman admin sözcüğüdür.</translation>
+<variable>The next time you log in, use the password that you just created. Your user name is always admin.</variable>
+</message>
+<message>
+<tag_code>11045</tag_code>
+<translation>Router'ınızın yönetici parolasını sıfırlamanıza yardım edebiliriz. Bu işlemi gerçekleştirmek için router etiketinde bulunan router seri numarası gerekir. Router'ınızın seri numarasını ilgili alana girin ve &lt;b&gt;Devam&lt;/b&gt; düğmesine tıklayın.</translation>
+<variable>We can help you reset your router's admin password. You need your router's serial number, which can be found on the router label. Enter your router's serial number in the field and click the &lt;b&gt;Continue&lt;/b&gt; button.</variable>
+</message>
+<message>
+<tag_code>11046</tag_code>
+<translation>Yönetici parolasını başarıyla sıfırladınız.</translation>
+<variable>You successfully reset the admin password.</variable>
+</message>
+<message>
+<tag_code>11047</tag_code>
+<translation>Atla</translation>
+<variable>Skip</variable>
 </message>
 </tag_msg>

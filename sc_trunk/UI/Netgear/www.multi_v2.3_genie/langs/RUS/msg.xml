@@ -2405,4 +2405,19 @@
 		<translation>Предупреждение. Роутеру Orbi не удалось подключиться к серверу NTP. Проверьте подключение к Интернету или попытайтесь подключиться к другому серверу NTP.</translation>
 		<variable>gsm_msg_ntp_sync_fail</variable>
 	</message>
+	<message>
+		<err_code>13740</err_code>
+		<translation>Использовать пароль администратора по умолчанию нельзя. Измените пароль администратора.</translation>
+		<variable>gsm_msg_change_default_password</variable>
+	</message>
+	<message>
+		<err_code>13741</err_code>
+		<translation>Введите пароль.</translation>
+		<variable>gsm_msg_enter_password</variable>
+	</message>
+	<message>
+		<err_code>13742</err_code>
+		<translation>Ваш пароль администратора не является надежным. Рекомендуется заменить текущий пароль более надежным паролем, который соответствует требованиям к паролям. Надежный пароль защищает вашу сеть от внешних угроз.</translation>
+		<variable>gsm_msg_enter_secure_password</variable>
+	</message>
 </error_msg>

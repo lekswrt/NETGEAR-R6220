@@ -14,7 +14,7 @@ struct leases_t {
     u_int32_t yiaddr;
     u_int32_t expires;
     char hostname[MAXHOSTNAMELEN];//(001)
-    unsigned char cid[48];//change 16->48 to solution define MAX_CLIENT_LEN
+    unsigned char cid[256];//change 16->48 to solution define MAX_CLIENT_LEN
 };
 /*
 #vlan support

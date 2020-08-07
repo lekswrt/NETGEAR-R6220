@@ -155,4 +155,19 @@
 		<translation>Zadajte odpoveď na každú otázku.</translation>
 		<variable>gsm_msg_pwd_sec_ans</variable>
 	</message>
+	<message>
+		<err_code>13740</err_code>
+		<translation>Nemôžete používať predvolené heslo správcu. Heslo správcu musíte zmeniť.</translation>
+		<variable>gsm_msg_change_default_password</variable>
+	</message>
+	<message>
+		<err_code>13741</err_code>
+		<translation>Musíte zadať heslo.</translation>
+		<variable>gsm_msg_enter_password</variable>
+	</message>
+	<message>
+		<err_code>13742</err_code>
+		<translation>Vaše heslo správcu nie je bezpečné. Odporúčame vám, aby ste heslo nahradili silnejším, ktoré by spĺňalo naše požiadavky na heslo. Silnejšie heslo chráni sieť pred externými hrozbami.</translation>
+		<variable>gsm_msg_enter_secure_password</variable>
+	</message>
 </error_msg>

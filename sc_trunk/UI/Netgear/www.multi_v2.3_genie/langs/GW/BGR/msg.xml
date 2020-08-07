@@ -115,4 +115,19 @@
 		<translation>Character is not allowed in passphrase.</translation>
 		<variable>gsm_msg_wls_wpa_key_forbid</variable>
 	</message>
+	<message>
+		<err_code>13740</err_code>
+		<translation>Не можете да използвате паролата на администратор по подразбиране. Трябва да промените паролата на администратор.</translation>
+		<variable>gsm_msg_change_default_password</variable>
+	</message>
+	<message>
+		<err_code>13741</err_code>
+		<translation>Трябва да въведете парола.</translation>
+		<variable>gsm_msg_enter_password</variable>
+	</message>
+	<message>
+		<err_code>13742</err_code>
+		<translation>Вашата парола на администратор не е защитена. Препоръчваме да смените паролата си с по-силна, отговаряща на нашите изисквания за паролите. По-силната парола защитава мрежата Ви от външни заплахи.</translation>
+		<variable>gsm_msg_enter_secure_password</variable>
+	</message>
 </error_msg>

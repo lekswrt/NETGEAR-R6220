@@ -102,6 +102,9 @@ CFLAGS += -DENABLE_TCP
 ifeq ($(OPENDNS),1)
 CFLAGS += -DOPENDNS
 endif
+ifeq ($(FUNJSQ),1)
+CFLAGS += -DFUNJSQ
+endif
 CFLAGS += -I$(SHARED_DIR)
 CFLAGS += -Werror
 CFLAGS += -I$(SC_LIBS_DIR)/include -I$(APPS_DIR)/public/nvram

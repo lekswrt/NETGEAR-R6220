@@ -155,4 +155,19 @@
 		<translation>Saisissez une réponse pour chaque question.</translation>
 		<variable>gsm_msg_pwd_sec_ans</variable>
 	</message>
+	<message>
+		<err_code>13740</err_code>
+		<translation>Vous ne pouvez pas utiliser le mot de passe administrateur par défaut. Vous devez modifier le mot de passe administrateur.</translation>
+		<variable>gsm_msg_change_default_password</variable>
+	</message>
+	<message>
+		<err_code>13741</err_code>
+		<translation>Vous devez entrer un mot de passe.</translation>
+		<variable>gsm_msg_enter_password</variable>
+	</message>
+	<message>
+		<err_code>13742</err_code>
+		<translation>Votre mot de passe administrateur n'est pas sécurisé. Nous vous recommandons de modifier votre mot de passe avec un mot de passe plus sûr, qui répond à nos exigences en matière de mots de passe. Un mot de passe plus sûr protège votre réseau contre les menaces externes.</translation>
+		<variable>gsm_msg_enter_secure_password</variable>
+	</message>
 </error_msg>

@@ -5248,7 +5248,8 @@
 </message>
 <message>
 <tag_code>3931</tag_code>
-<translation>Ved å sende inn dette skjemaet samtykker jeg i</translation>
+<translation>Ved å sende inn dette skjemaet godtar jeg No-IP </translation>
+<variable>By submitting this form I agree to No-IP </variable>
 </message>
 <message>
 <tag_code>3932</tag_code>
@@ -5256,7 +5257,8 @@
 </message>
 <message>
 <tag_code>3933</tag_code>
-<translation>og at jeg vil opprette bare én gratiskonto.</translation>
+<translation>og</translation>
+<variable>and</variable>
 </message>
 <message>
 <tag_code>3934</tag_code>
@@ -5385,11 +5387,11 @@
 </message>
 <message>
 <tag_code>4024</tag_code>
-<translation>2. Installer ReadySHARE Vault på hver PC ved å laste ned programvaren fra  &lt;a class='linktype' target='_blank' href='http://www.netgear.com/readyshare'>www.netgear.com/readyshare&lt;/a&gt;.</translation>
+<translation>1. Installer ReadySHARE Vault på hver PC ved å laste ned programvaren fra  &lt;a class='linktype' target='_blank' href='http://www.netgear.com/readyshare'>www.netgear.com/readyshare&lt;/a&gt;.</translation>
 </message>
 <message>
 <tag_code>4025</tag_code>
-<translation>3. Start ReadySHARE Vault. Bruk fanen Instrumentpanel eller Sikkerhetskopiering for å konfigurere og kjøre sikkerhetskopieringen.</translation>
+<translation>2. Start ReadySHARE Vault. Bruk fanen Instrumentpanel eller Sikkerhetskopiering for å konfigurere og kjøre sikkerhetskopieringen.</translation>
 </message>
 <message>
 <tag_code>4100</tag_code>
@@ -6129,5 +6131,95 @@
 <tag_code>11024</tag_code>
 <translation>For å fullføre installeringen må du godta tjenestevilkårene.&lt;br&gt;Hvis du ikke godtar disse tjenestevilkårene, må du returnere NETGEAR-enheten.</translation>
 <variable>To complete the installation process, you must agree to the Terms of Services.&lt;br&gt;If you do not accept these Terms of Services, you must return Your NETGEAR device.</variable>
+</message>
+<message>
+<tag_code>11030</tag_code>
+<translation>Vi anbefaler at passordet ditt oppfyller følgende krav:</translation>
+<variable>We recommend that your password meets the following conditions:</variable>
+</message>
+<message>
+<tag_code>11031</tag_code>
+<translation>Inneholder 6 til 32 tegn</translation>
+<variable>Contains 6 to 32 characters</variable>
+</message>
+<message>
+<tag_code>11032</tag_code>
+<translation>Inneholder ikke mer enn to like tegn etter hverandre</translation>
+<variable>Contains no more than two identical characters in a row</variable>
+</message>
+<message>
+<tag_code>11033</tag_code>
+<translation>I tillegg anbefaler vi at passordet oppfyller tre av følgende fire krav:</translation>
+<variable>In addition, we recommend that your password meets three of the following four conditions:</variable>
+</message>
+<message>
+<tag_code>11034</tag_code>
+<translation>Minst én stor bokstav</translation>
+<variable>At least one uppercase character</variable>
+</message>
+<message>
+<tag_code>11035</tag_code>
+<translation>Minst én liten bokstav</translation>
+<variable>At least one lowercase character</variable>
+</message>
+<message>
+<tag_code>11036</tag_code>
+<translation>Minst ett tall</translation>
+<variable>At least one number</variable>
+</message>
+<message>
+<tag_code>11037</tag_code>
+<translation>Minst ett spesialtegn, for eksempel &#64;&#35;&amp;...</translation>
+<variable>At least one special character, such as &#64;&#35;&amp;...</variable>
+</message>
+<message>
+<tag_code>11038</tag_code>
+<translation>Aktiver tilbakestilling av passord</translation>
+<variable>Enable Password Reset</variable>
+</message>
+<message>
+<tag_code>11039</tag_code>
+<translation>Forrige gang passordet ble tilbakestilt</translation>
+<variable>Last time password was reset</variable>
+</message>
+<message>
+<tag_code>11040</tag_code>
+<translation>Sikre passordet</translation>
+<variable>Secure Your Password</variable>
+</message>
+<message>
+<tag_code>11041</tag_code>
+<translation>Tilbakestilling av ruterpassord</translation>
+<variable>Router Password Reset</variable>
+</message>
+<message>
+<tag_code>11042</tag_code>
+<translation>Admin-passordet ditt er ikke sikkert. Vi anbefaler at du endrer passordet til et sterkere passord som oppfyller passordkravene våre. Et sterkere passord beskytter nettverket ditt mot eksterne trusler.</translation>
+<variable>Your admin password is not secure. We recommend that you change your password to a stronger password that meets our password requirements. A stronger password protects your network against external threats.</variable>
+</message>
+<message>
+<tag_code>11043</tag_code>
+<translation>Vi har bekreftet forespørselen din om tilbakestilling av passord. Angi et nytt passord nedenfor, fyll ut de andre feltene, og klikk på &lt;b&gt;Neste&lt;/b&gt;.</translation>
+<variable>We verified your password reset request. Enter a new password below, complete the other fields, then click the &lt;b&gt;Next&lt;/b&gt; button.</variable>
+</message>
+<message>
+<tag_code>11044</tag_code>
+<translation>Neste gang du logger på, kan du bruke passordet du nettopp har laget. Brukernavnet ditt er alltid admin.</translation>
+<variable>The next time you log in, use the password that you just created. Your user name is always admin.</variable>
+</message>
+<message>
+<tag_code>11045</tag_code>
+<translation>Vi kan hjelpe deg med å tilbakestille ruterens admin-passord. Du trenger serienummeret til ruteren, som du finner på ruterens etikett. Skriv inn ruterens serienummer i feltet, og klikk på &lt;b&gt;Fortsett&lt;/b&gt;.</translation>
+<variable>We can help you reset your router's admin password. You need your router's serial number, which can be found on the router label. Enter your router's serial number in the field and click the &lt;b&gt;Continue&lt;/b&gt; button.</variable>
+</message>
+<message>
+<tag_code>11046</tag_code>
+<translation>Du har tilbakestilt admin-passordet.</translation>
+<variable>You successfully reset the admin password.</variable>
+</message>
+<message>
+<tag_code>11047</tag_code>
+<translation>Hopp over</translation>
+<variable>Skip</variable>
 </message>
 </tag_msg>

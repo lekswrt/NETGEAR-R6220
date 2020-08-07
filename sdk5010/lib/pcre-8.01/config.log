@@ -28,9 +28,9 @@ uname -v = #1 SMP Sat Nov 7 21:25:57 EST 2009
 /bin/universe          = unknown
 
 PATH: /opt/buildroot-gcc463_NPTLSHAREDLIBGCC//usr/bin/
-PATH: /home/disk3/peter/RELEASE/GPL/R6260_V1.1.0.44_src/sc_trunk/tools/
+PATH: /home/disk3/peter/release_r6260/sc_trunk/GPL/R6260_V1.1.0.52_src/sc_trunk/tools/
 PATH: /opt/buildroot-gcc463_NPTLSHAREDLIBGCC//usr/bin/
-PATH: /home/disk3/peter/RELEASE/sc_trunk/tools/
+PATH: /home/disk3/peter/release_r6260/sc_trunk/tools/
 PATH: /usr/lib/qt-3.3/bin
 PATH: /usr/kerberos/sbin
 PATH: /usr/kerberos/bin
@@ -42,8 +42,8 @@ PATH: /usr/local/sbin
 PATH: /usr/sbin
 PATH: /sbin
 PATH: /home/peter/bin
-PATH: /home/disk3/peter/RELEASE/GPL/R6260_V1.1.0.44_src/sdk5010/tools
-PATH: /home/disk3/peter/RELEASE/GPL/R6260_V1.1.0.44_src/sdk5010/tools
+PATH: /home/disk3/peter/release_r6260/sc_trunk/GPL/R6260_V1.1.0.52_src/sdk5010/tools
+PATH: /home/disk3/peter/release_r6260/sc_trunk/GPL/R6260_V1.1.0.52_src/sdk5010/tools
 
 
 ## ----------- ##
@@ -1463,16 +1463,16 @@ lt_cv_sys_max_cmd_len=1966080
 ## Output variables. ##
 ## ----------------- ##
 
-ACLOCAL='${SHELL} /home/disk3/peter/RELEASE/GPL/R6260_V1.1.0.44_src/sdk5010/lib/pcre-8.01/missing --run aclocal-1.10'
+ACLOCAL='${SHELL} /home/disk3/peter/release_r6260/sc_trunk/GPL/R6260_V1.1.0.52_src/sdk5010/lib/pcre-8.01/missing --run aclocal-1.10'
 AMDEPBACKSLASH='\'
 AMDEP_FALSE='#'
 AMDEP_TRUE=''
-AMTAR='${SHELL} /home/disk3/peter/RELEASE/GPL/R6260_V1.1.0.44_src/sdk5010/lib/pcre-8.01/missing --run tar'
+AMTAR='${SHELL} /home/disk3/peter/release_r6260/sc_trunk/GPL/R6260_V1.1.0.52_src/sdk5010/lib/pcre-8.01/missing --run tar'
 AR='mipsel-linux-ar'
 AS='as'
-AUTOCONF='${SHELL} /home/disk3/peter/RELEASE/GPL/R6260_V1.1.0.44_src/sdk5010/lib/pcre-8.01/missing --run autoconf'
-AUTOHEADER='${SHELL} /home/disk3/peter/RELEASE/GPL/R6260_V1.1.0.44_src/sdk5010/lib/pcre-8.01/missing --run autoheader'
-AUTOMAKE='${SHELL} /home/disk3/peter/RELEASE/GPL/R6260_V1.1.0.44_src/sdk5010/lib/pcre-8.01/missing --run automake-1.10'
+AUTOCONF='${SHELL} /home/disk3/peter/release_r6260/sc_trunk/GPL/R6260_V1.1.0.52_src/sdk5010/lib/pcre-8.01/missing --run autoconf'
+AUTOHEADER='${SHELL} /home/disk3/peter/release_r6260/sc_trunk/GPL/R6260_V1.1.0.52_src/sdk5010/lib/pcre-8.01/missing --run autoheader'
+AUTOMAKE='${SHELL} /home/disk3/peter/release_r6260/sc_trunk/GPL/R6260_V1.1.0.52_src/sdk5010/lib/pcre-8.01/missing --run automake-1.10'
 AWK='gawk'
 CC='/opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/bin/mipsel-linux-gcc'
 CCDEPMODE='depmode=gcc3'
@@ -1515,7 +1515,7 @@ LIBZ=''
 LIPO=''
 LN_S='ln -s'
 LTLIBOBJS=''
-MAKEINFO='${SHELL} /home/disk3/peter/RELEASE/GPL/R6260_V1.1.0.44_src/sdk5010/lib/pcre-8.01/missing --run makeinfo'
+MAKEINFO='${SHELL} /home/disk3/peter/release_r6260/sc_trunk/GPL/R6260_V1.1.0.52_src/sdk5010/lib/pcre-8.01/missing --run makeinfo'
 MKDIR_P='/bin/mkdir -p'
 NM='/opt/buildroot-gcc463_NPTLSHAREDLIBGCC//usr/bin//mipsel-linux-nm -B'
 NMEDIT=''
@@ -1577,7 +1577,7 @@ host_vendor='unknown'
 htmldir='${docdir}/html'
 includedir='${prefix}/include'
 infodir='${datarootdir}/info'
-install_sh='$(SHELL) /home/disk3/peter/RELEASE/GPL/R6260_V1.1.0.44_src/sdk5010/lib/pcre-8.01/install-sh'
+install_sh='$(SHELL) /home/disk3/peter/release_r6260/sc_trunk/GPL/R6260_V1.1.0.52_src/sdk5010/lib/pcre-8.01/install-sh'
 libdir='${exec_prefix}/lib'
 libexecdir='${exec_prefix}/libexec'
 localedir='${datarootdir}/locale'

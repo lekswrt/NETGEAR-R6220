@@ -5249,7 +5249,8 @@
 </message>
 <message>
 <tag_code>3931</tag_code>
-<translation>Odesláním tohoto formuláře vyjadřuji souhlas s</translation>
+<translation>Odesláním tohoto formuláře souhlasím se službou No-IP </translation>
+<variable>By submitting this form I agree to No-IP </variable>
 </message>
 <message>
 <tag_code>3932</tag_code>
@@ -5257,7 +5258,8 @@
 </message>
 <message>
 <tag_code>3933</tag_code>
-<translation>a zavazuji se, že si vytvořím pouze jeden bezplatný účet.</translation>
+<translation>a</translation>
+<variable>and</variable>
 </message>
 <message>
 <tag_code>3934</tag_code>
@@ -5386,11 +5388,11 @@
 </message>
 <message>
 <tag_code>4024</tag_code>
-<translation>2. Nainstalujte aplikaci ReadySHARE Vault na každý počítač tak, že stáhnete software z webové stránky  &lt;a class='linktype' target='_blank' href='http://www.netgear.com/readyshare'>www.netgear.com/readyshare&lt;/a&gt;.</translation>
+<translation>1. Nainstalujte aplikaci ReadySHARE Vault na každý počítač tak, že stáhnete software z webové stránky  &lt;a class='linktype' target='_blank' href='http://www.netgear.com/readyshare'>www.netgear.com/readyshare&lt;/a&gt;.</translation>
 </message>
 <message>
 <tag_code>4025</tag_code>
-<translation>3. Spusťte aplikaci ReadySHARE Vault. Pomocí Dashboardu nebo záložky Záloha nastavte a spusťte zálohování.</translation>
+<translation>2. Spusťte aplikaci ReadySHARE Vault. Pomocí Dashboardu nebo záložky Záloha nastavte a spusťte zálohování.</translation>
 </message>
 <message>
 <tag_code>4100</tag_code>
@@ -6130,5 +6132,95 @@
 <tag_code>11024</tag_code>
 <translation>Abyste mohli dokončit proces instalace, musíte souhlasit s podmínkami použití.&lt;br&gt;Pokud tyto podmínky použití nepřijmete, musíte zařízení NETGEAR vrátit.</translation>
 <variable>To complete the installation process, you must agree to the Terms of Services.&lt;br&gt;If you do not accept these Terms of Services, you must return Your NETGEAR device.</variable>
+</message>
+<message>
+<tag_code>11030</tag_code>
+<translation>Doporučujeme, aby vaše heslo odpovídalo následujícím podmínkám:</translation>
+<variable>We recommend that your password meets the following conditions:</variable>
+</message>
+<message>
+<tag_code>11031</tag_code>
+<translation>Obsahuje 6 až 32 znaků</translation>
+<variable>Contains 6 to 32 characters</variable>
+</message>
+<message>
+<tag_code>11032</tag_code>
+<translation>Obsahuje maximálně dva stejné znaky za sebou</translation>
+<variable>Contains no more than two identical characters in a row</variable>
+</message>
+<message>
+<tag_code>11033</tag_code>
+<translation>Doporučujeme také, aby vaše heslo splňovalo alespoň tři z následujících podmínek:</translation>
+<variable>In addition, we recommend that your password meets three of the following four conditions:</variable>
+</message>
+<message>
+<tag_code>11034</tag_code>
+<translation>Alespoň jedno velké písmeno</translation>
+<variable>At least one uppercase character</variable>
+</message>
+<message>
+<tag_code>11035</tag_code>
+<translation>Alespoň jedno malé písmeno</translation>
+<variable>At least one lowercase character</variable>
+</message>
+<message>
+<tag_code>11036</tag_code>
+<translation>Alespoň jedno číslo</translation>
+<variable>At least one number</variable>
+</message>
+<message>
+<tag_code>11037</tag_code>
+<translation>Alespoň jeden speciální znak, například &#64;&#35;&amp;...</translation>
+<variable>At least one special character, such as &#64;&#35;&amp;...</variable>
+</message>
+<message>
+<tag_code>11038</tag_code>
+<translation>Povolení resetování hesla</translation>
+<variable>Enable Password Reset</variable>
+</message>
+<message>
+<tag_code>11039</tag_code>
+<translation>Doba posledního resetu hesla</translation>
+<variable>Last time password was reset</variable>
+</message>
+<message>
+<tag_code>11040</tag_code>
+<translation>Zabezpečte svoje heslo</translation>
+<variable>Secure Your Password</variable>
+</message>
+<message>
+<tag_code>11041</tag_code>
+<translation>Resetování hesla routeru</translation>
+<variable>Router Password Reset</variable>
+</message>
+<message>
+<tag_code>11042</tag_code>
+<translation>Vaše heslo správce není bezpečné. Doporučujeme, abyste své heslo změnili na silnější variantu, která bude odpovídat našim požadavkům na heslo. Silnější heslo chrání vaši síť před externími hrozbami.</translation>
+<variable>Your admin password is not secure. We recommend that you change your password to a stronger password that meets our password requirements. A stronger password protects your network against external threats.</variable>
+</message>
+<message>
+<tag_code>11043</tag_code>
+<translation>Ověřili jsme vaši žádost o resetování hesla routeru. Do kolonky níže zadejte nové heslo, vyplňte ostatní pole a poté klikněte na tlačítko &lt;b&gt;Další&lt;/b&gt;.</translation>
+<variable>We verified your password reset request. Enter a new password below, complete the other fields, then click the &lt;b&gt;Next&lt;/b&gt; button.</variable>
+</message>
+<message>
+<tag_code>11044</tag_code>
+<translation>Při příštím přihlášení použijte heslo, které jste právě vytvořili. Vaše uživatelské jméno je vždycky admin.</translation>
+<variable>The next time you log in, use the password that you just created. Your user name is always admin.</variable>
+</message>
+<message>
+<tag_code>11045</tag_code>
+<translation>Můžeme vám pomoci s resetováním hesla správce routeru. Budeme potřebovat sériové číslo vašeho routeru, které naleznete na štítku routeru. Do daného pole zadejte sériové číslo vašeho routeru a klikněte na tlačítko &lt;b&gt;Pokračovat&lt;/b&gt;.</translation>
+<variable>We can help you reset your router's admin password. You need your router's serial number, which can be found on the router label. Enter your router's serial number in the field and click the &lt;b&gt;Continue&lt;/b&gt; button.</variable>
+</message>
+<message>
+<tag_code>11046</tag_code>
+<translation>Úspěšně jste resetovali heslo správce.</translation>
+<variable>You successfully reset the admin password.</variable>
+</message>
+<message>
+<tag_code>11047</tag_code>
+<translation>Přeskočit</translation>
+<variable>Skip</variable>
 </message>
 </tag_msg>

@@ -1289,4 +1289,94 @@
 <translation>Para concluir o processo de instalação, tem de concordar com os Termos de Serviço.&lt;br&gt;Se não aceitar estes Termos de Serviço, tem de devolver o seu dispositivo NETGEAR.</translation>
 <variable>To complete the installation process, you must agree to the Terms of Services.&lt;br&gt;If you do not accept these Terms of Services, you must return Your NETGEAR device.</variable>
 </message>
+<message>
+<tag_code>11030</tag_code>
+<translation>Recomendamos que a palavra-passe satisfaça as condições seguintes:</translation>
+<variable>We recommend that your password meets the following conditions:</variable>
+</message>
+<message>
+<tag_code>11031</tag_code>
+<translation>Conter entre 6 e 32 carateres</translation>
+<variable>Contains 6 to 32 characters</variable>
+</message>
+<message>
+<tag_code>11032</tag_code>
+<translation>Não conter mais de dois carateres iguais seguidos</translation>
+<variable>Contains no more than two identical characters in a row</variable>
+</message>
+<message>
+<tag_code>11033</tag_code>
+<translation>Além disso, recomendamos que a palavra-passe satisfaça três das quatro condições seguintes:</translation>
+<variable>In addition, we recommend that your password meets three of the following four conditions:</variable>
+</message>
+<message>
+<tag_code>11034</tag_code>
+<translation>Pelo menos, uma letra maiúscula</translation>
+<variable>At least one uppercase character</variable>
+</message>
+<message>
+<tag_code>11035</tag_code>
+<translation>Pelo menos, uma letra minúscula</translation>
+<variable>At least one lowercase character</variable>
+</message>
+<message>
+<tag_code>11036</tag_code>
+<translation>Pelo menos, um número</translation>
+<variable>At least one number</variable>
+</message>
+<message>
+<tag_code>11037</tag_code>
+<translation>Pelo menos, um caráter especial como, por exemplo, &#64;&#35;&amp;...</translation>
+<variable>At least one special character, such as &#64;&#35;&amp;...</variable>
+</message>
+<message>
+<tag_code>11038</tag_code>
+<translation>Ativar reposição da palavra-passe</translation>
+<variable>Enable Password Reset</variable>
+</message>
+<message>
+<tag_code>11039</tag_code>
+<translation>Última vez que a palavra-passe foi reposta</translation>
+<variable>Last time password was reset</variable>
+</message>
+<message>
+<tag_code>11040</tag_code>
+<translation>Proteja a sua palavra-passe</translation>
+<variable>Secure Your Password</variable>
+</message>
+<message>
+<tag_code>11041</tag_code>
+<translation>Reposição da palavra-passe do router</translation>
+<variable>Router Password Reset</variable>
+</message>
+<message>
+<tag_code>11042</tag_code>
+<translation>A sua palavra-passe de administrador não é segura. Recomendamos que altere a palavra-passe para uma mais forte que satisfaça os nossos requisitos. Uma palavra-passe mais forte protege a sua rede contra ameaças externas.</translation>
+<variable>Your admin password is not secure. We recommend that you change your password to a stronger password that meets our password requirements. A stronger password protects your network against external threats.</variable>
+</message>
+<message>
+<tag_code>11043</tag_code>
+<translation>Verificámos o seu pedido de reposição da palavra-passe. Introduza uma palavra-passe nova abaixo, preencha os outros campos e, em seguida, clique no botão &lt;b&gt;Seguinte&lt;/b&gt;.</translation>
+<variable>We verified your password reset request. Enter a new password below, complete the other fields, then click the &lt;b&gt;Next&lt;/b&gt; button.</variable>
+</message>
+<message>
+<tag_code>11044</tag_code>
+<translation>Quando iniciar a sessão novamente, utilize a palavra-passe que acabou de criar. O seu nome de utilizador é sempre admin.</translation>
+<variable>The next time you log in, use the password that you just created. Your user name is always admin.</variable>
+</message>
+<message>
+<tag_code>11045</tag_code>
+<translation>Podemos ajudar a repor a sua palavra-passe de administrador do router. Vai precisar do número de série do router, que se encontra na etiqueta do router. Introduza o número de série do router no campo e clique no botão &lt;b&gt;Continuar&lt;/b&gt;.</translation>
+<variable>We can help you reset your router's admin password. You need your router's serial number, which can be found on the router label. Enter your router's serial number in the field and click the &lt;b&gt;Continue&lt;/b&gt; button.</variable>
+</message>
+<message>
+<tag_code>11046</tag_code>
+<translation>Repôs com êxito a palavra-passe de administrador.</translation>
+<variable>You successfully reset the admin password.</variable>
+</message>
+<message>
+<tag_code>11047</tag_code>
+<translation>Ignorar</translation>
+<variable>Skip</variable>
+</message>
 </tag_msg>

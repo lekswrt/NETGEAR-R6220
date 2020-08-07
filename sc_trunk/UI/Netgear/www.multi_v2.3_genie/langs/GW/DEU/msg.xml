@@ -155,4 +155,19 @@
 		<translation>Geben Sie Ihre Antwort zu jeder Frage ein.</translation>
 		<variable>gsm_msg_pwd_sec_ans</variable>
 	</message>
+	<message>
+		<err_code>13740</err_code>
+		<translation>Sie können nicht das standardmäßige Administratorpasswort verwenden. Sie müssen das Administratorpasswort ändern.</translation>
+		<variable>gsm_msg_change_default_password</variable>
+	</message>
+	<message>
+		<err_code>13741</err_code>
+		<translation>Sie müssen ein Passwort eingeben.</translation>
+		<variable>gsm_msg_enter_password</variable>
+	</message>
+	<message>
+		<err_code>13742</err_code>
+		<translation>Ihr Administratorpasswort ist nicht sicher Wir empfehlen Ihnen, ein sichereres Passwort zu wählen, das unseren Passwortanforderungen entspricht. Ein sichereres Passwort schützt Ihr Netzwerk vor externen Angriffen.</translation>
+		<variable>gsm_msg_enter_secure_password</variable>
+	</message>
 </error_msg>

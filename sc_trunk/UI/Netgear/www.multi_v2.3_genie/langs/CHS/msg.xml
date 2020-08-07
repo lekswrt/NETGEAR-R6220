@@ -2420,4 +2420,19 @@
 		<translation>警报：路由器无法连接到 NTP 服务器，请检查您的互联网连接或尝试其他 NTP 服务器</translation>
 		<variable>gsm_msg_ntp_sync_fail</variable>
 	</message>
+	<message>
+		<err_code>13740</err_code>
+		<translation>您不能使用默认管理员密码。您必须更改管理员密码。</translation>
+		<variable>gsm_msg_change_default_password</variable>
+	</message>
+	<message>
+		<err_code>13741</err_code>
+		<translation>必须输入密码。</translation>
+		<variable>gsm_msg_enter_password</variable>
+	</message>
+	<message>
+		<err_code>13742</err_code>
+		<translation>您的管理员密码不安全。建议更改密码以提高密码强度，从而符合我们的密码要求。高强度密码可以保护您的网络抵御外部威胁。</translation>
+		<variable>gsm_msg_enter_secure_password</variable>
+	</message>
 </error_msg>

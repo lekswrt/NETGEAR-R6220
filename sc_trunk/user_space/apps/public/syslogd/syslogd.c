@@ -148,6 +148,10 @@ static void show_log_message(int sig);
 #include "netgear_log.c"
 #endif // NETGEAR_LOG
 
+#ifdef GREEN_DOWNLOAD
+static int is_gd=0;
+#endif
+
 /* circular buffer variables/structures */
 #ifdef BB_FEATURE_IPC_SYSLOG
 #if __GNU_LIBRARY__ < 5
@@ -774,7 +778,7 @@ char *convert_names_all_special_char(char *name) {
  *
  * NOTE: smtpc will clean syslog(call killall -SIGUSR1 syslogd) if it send mail success and @clear_syslog is set.
  */
-static int send_mail(char *filename, int clear_syslog) {
+static int send_mail(char *filename, int clear_syslog, int with_g_option) {
     char cmd[1024]="";
     int len=0;
     int ret;
@@ -826,8 +830,17 @@ static int send_mail(char *filename, int clear_syslog) {
     if(clear_syslog) {
         len += sprintf(cmd+len, " -c");
     }
+	if(
+#ifdef GREEN_DOWNLOAD
+	strstr(filename,"gd_msg") || 
+#endif
+		with_g_option	
+	)
+	{
+		  len += sprintf(cmd+len, " -g");
+	}
+	
     len += sprintf(cmd+len, " <%s &", filename);
-
     ret = system(cmd);
     return ret;
 }
@@ -850,7 +863,23 @@ static int send_mail(char *filename, int clear_syslog) {
 static void do_send_mail(void)
 {
     int clear_syslog;
+#ifdef GREEN_DOWNLOAD
 
+	if(is_gd == 1)
+    {
+		clear_syslog = 0;
+		is_gd=0;
+        if(conf.mail_enable
+            && conf.mail_gd_notify
+            && (!access("/tmp/gd_msg", F_OK)))
+        {
+            clear_syslog = 0;
+            send_mail("/tmp/gd_msg", clear_syslog, 0);
+        }
+    }
+	else
+	{
+#endif
     if(!access(LOG_SENT_BY_CGI, F_OK)) {
         /*
          * File exist ==> Called by CGI ==> No need to clear syslog ==> 0;
@@ -861,7 +890,11 @@ static void do_send_mail(void)
         clear_syslog = 1;
     }
 
-    send_mail(MESSAGE_FILE, clear_syslog);
+    send_mail(MESSAGE_FILE, clear_syslog, 0);
+    if(access(LOG_SENT_BY_CGI, F_OK) == 0)
+    {
+    	sleep(3); // wait so that smtpc will notice it need force_not_clear_syslog 
+    }
     unlink(LOG_SENT_BY_CGI);
 #if 0
     sem_down(s_semid);
@@ -871,6 +904,9 @@ static void do_send_mail(void)
         buf->tail=0;
     }
     sem_up(s_semid);
+#endif
+#ifdef GREEN_DOWNLOAD
+    }
 #endif
     return;
 }
@@ -1174,7 +1210,9 @@ void logMessage (int pri, char *msg)
         if(fp) {
             fprintf(fp, "%s\n", msg);
             fclose(fp);
-            send_mail(ALERT_FILE, 0);
+
+		/* major event dos/blocksite/blockmac would have send email event, but all of these should not clear mail. */
+            send_mail(ALERT_FILE, 0, 1);
         }
     }
 
@@ -1438,6 +1476,9 @@ static void doSyslogd (void)
     signal (SIGTERM, quit_signal);
     signal (SIGQUIT, quit_signal);
     signal (SIGHUP,  send_mail_signal);
+#ifdef GREEN_DOWNLOAD
+    signal (SIGVTALRM, send_mail_signal);
+#endif
     signal (SIGUSR1, clear_signal);
     signal (SIGUSR2, reload_signal);
 #ifdef NETGEAR_LOG
@@ -1633,6 +1674,10 @@ static void reload_signal(int sig)
 static void send_mail_signal(int sig)
 {
     mail_flag = 1;
+#ifdef GREEN_DOWNLOAD
+	if(sig==SIGVTALRM)
+		is_gd=1;
+#endif
     notify_select_signal(sig);
 }
 
@@ -1776,6 +1821,9 @@ static void dump_config(void) {
     DUMP_CONF_INT(mail_enable);
     DUMP_CONF_INT(mail_enable_auth);
     DUMP_CONF_INT(mail_log_full);
+#ifdef GREEN_DOWNLOAD
+    DUMP_CONF_INT(mail_gd_notify);
+#endif
     DUMP_CONF_INT(log_event);
     DUMP_CONF_INT(log_minor_event);
     DUMP_CONF_INT(mail_event);
@@ -1817,7 +1865,9 @@ int parse_config(char *conf_path)
 
     if(strstr(buf,"mail_enable=1")) conf.mail_enable=1;
     if(strstr(buf,"mail_enable_auth=1")) conf.mail_enable_auth=1;
-
+#ifdef GREEN_DOWNLOAD
+    if(strstr(buf,"mail_gd_notify=1")) conf.mail_gd_notify=1;
+#endif
     strccpy2(conf.TZ,buf,"TZ=",'\n');
 
     unsetenv("TZ");

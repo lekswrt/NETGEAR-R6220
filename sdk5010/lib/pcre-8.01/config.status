@@ -363,7 +363,7 @@ Copyright (C) 2008 Free Software Foundation, Inc.
 This config.status script is free software; the Free Software Foundation
 gives unlimited permission to copy, distribute and modify it."
 
-ac_pwd='/home/disk3/peter/RELEASE/GPL/R6260_V1.1.0.44_src/sdk5010/lib/pcre-8.01'
+ac_pwd='/home/disk3/peter/release_r6260/sc_trunk/GPL/R6260_V1.1.0.52_src/sdk5010/lib/pcre-8.01'
 srcdir='.'
 INSTALL='/usr/bin/install -c'
 MKDIR_P='/bin/mkdir -p'
@@ -860,7 +860,7 @@ S["CFLAGS"]="-fPIC"
 S["CC"]="/opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/bin/mipsel-linux-gcc"
 S["am__untar"]="${AMTAR} xf -"
 S["am__tar"]="${AMTAR} chof - \"$$tardir\""
-S["AMTAR"]="${SHELL} /home/disk3/peter/RELEASE/GPL/R6260_V1.1.0.44_src/sdk5010/lib/pcre-8.01/missing --run tar"
+S["AMTAR"]="${SHELL} /home/disk3/peter/release_r6260/sc_trunk/GPL/R6260_V1.1.0.52_src/sdk5010/lib/pcre-8.01/missing --run tar"
 S["am__leading_dot"]="."
 S["SET_MAKE"]=""
 S["AWK"]="gawk"
@@ -868,12 +868,12 @@ S["mkdir_p"]="/bin/mkdir -p"
 S["MKDIR_P"]="/bin/mkdir -p"
 S["INSTALL_STRIP_PROGRAM"]="$(install_sh) -c -s"
 S["STRIP"]="mipsel-linux-strip"
-S["install_sh"]="$(SHELL) /home/disk3/peter/RELEASE/GPL/R6260_V1.1.0.44_src/sdk5010/lib/pcre-8.01/install-sh"
-S["MAKEINFO"]="${SHELL} /home/disk3/peter/RELEASE/GPL/R6260_V1.1.0.44_src/sdk5010/lib/pcre-8.01/missing --run makeinfo"
-S["AUTOHEADER"]="${SHELL} /home/disk3/peter/RELEASE/GPL/R6260_V1.1.0.44_src/sdk5010/lib/pcre-8.01/missing --run autoheader"
-S["AUTOMAKE"]="${SHELL} /home/disk3/peter/RELEASE/GPL/R6260_V1.1.0.44_src/sdk5010/lib/pcre-8.01/missing --run automake-1.10"
-S["AUTOCONF"]="${SHELL} /home/disk3/peter/RELEASE/GPL/R6260_V1.1.0.44_src/sdk5010/lib/pcre-8.01/missing --run autoconf"
-S["ACLOCAL"]="${SHELL} /home/disk3/peter/RELEASE/GPL/R6260_V1.1.0.44_src/sdk5010/lib/pcre-8.01/missing --run aclocal-1.10"
+S["install_sh"]="$(SHELL) /home/disk3/peter/release_r6260/sc_trunk/GPL/R6260_V1.1.0.52_src/sdk5010/lib/pcre-8.01/install-sh"
+S["MAKEINFO"]="${SHELL} /home/disk3/peter/release_r6260/sc_trunk/GPL/R6260_V1.1.0.52_src/sdk5010/lib/pcre-8.01/missing --run makeinfo"
+S["AUTOHEADER"]="${SHELL} /home/disk3/peter/release_r6260/sc_trunk/GPL/R6260_V1.1.0.52_src/sdk5010/lib/pcre-8.01/missing --run autoheader"
+S["AUTOMAKE"]="${SHELL} /home/disk3/peter/release_r6260/sc_trunk/GPL/R6260_V1.1.0.52_src/sdk5010/lib/pcre-8.01/missing --run automake-1.10"
+S["AUTOCONF"]="${SHELL} /home/disk3/peter/release_r6260/sc_trunk/GPL/R6260_V1.1.0.52_src/sdk5010/lib/pcre-8.01/missing --run autoconf"
+S["ACLOCAL"]="${SHELL} /home/disk3/peter/release_r6260/sc_trunk/GPL/R6260_V1.1.0.52_src/sdk5010/lib/pcre-8.01/missing --run aclocal-1.10"
 S["VERSION"]="8.01"
 S["PACKAGE"]="pcre"
 S["CYGPATH_W"]="echo"

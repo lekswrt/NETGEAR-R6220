@@ -2360,4 +2360,19 @@
 		<translation>Avertisment: Routerul nu s-a putut conecta la serverul NTP, verificaţi conexiunea la Internet sau încercaţi alt server NTP</translation>
 		<variable>gsm_msg_ntp_sync_fail</variable>
 	</message>
+	<message>
+		<err_code>13740</err_code>
+		<translation>Nu puteţi utiliza parola implicită de admin. Trebuie să modificaţi parola de admin.</translation>
+		<variable>gsm_msg_change_default_password</variable>
+	</message>
+	<message>
+		<err_code>13741</err_code>
+		<translation>Trebuie să introduceţi o parolă.</translation>
+		<variable>gsm_msg_enter_password</variable>
+	</message>
+	<message>
+		<err_code>13742</err_code>
+		<translation>Parola dvs. de admin nu este sigură. Vă recomandăm să vă modificaţi parola cu o parolă mai puternică care îndeplineşte cerinţele noastre privind parola. O parolă mai puternică vă protejează reţeaua de ameninţări externe.</translation>
+		<variable>gsm_msg_enter_secure_password</variable>
+	</message>
 </error_msg>

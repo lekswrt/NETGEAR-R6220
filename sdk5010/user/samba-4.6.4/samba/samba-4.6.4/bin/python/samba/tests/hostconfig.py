@@ -1,0 +1,1 @@
+/home/disk3/peter/release_r6260/sdk5010/user/samba-4.6.4/samba/samba-4.6.4/python/samba/tests/hostconfig.py

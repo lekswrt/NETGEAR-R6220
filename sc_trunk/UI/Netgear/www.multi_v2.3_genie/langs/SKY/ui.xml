@@ -298,6 +298,7 @@
 </message>
 <message>
 
+
 <tag_code>109</tag_code>
 <translation>Moja adresa IP</translation>
 </message>
@@ -5237,7 +5238,8 @@
 </message>
 <message>
 <tag_code>3931</tag_code>
-<translation>Odoslaním tohto formulára súhlasím s</translation>
+<translation>Odoslaním tohto formulára súhlasím s podmienkami spoločnosti No-IP </translation>
+<variable>By submitting this form I agree to No-IP </variable>
 </message>
 <message>
 <tag_code>3932</tag_code>
@@ -5245,7 +5247,8 @@
 </message>
 <message>
 <tag_code>3933</tag_code>
-<translation>a s tým, že si vytvorím iba jedno bezplatné konto.</translation>
+<translation> </translation>
+<variable>and</variable>
 </message>
 <message>
 <tag_code>3934</tag_code>
@@ -5373,11 +5376,11 @@
 </message>
 <message>
 <tag_code>4024</tag_code>
-<translation>2. Z lokality  &lt;a class='linktype' target='_blank' href='http://www.netgear.com/readyshare'>www.netgear.com/readyshare&lt;/a&gt; prevezmite softvér aplikácie ReadySHARE Vault a nainštalujte ju do každého počítača.</translation>
+<translation>1. Z lokality  &lt;a class='linktype' target='_blank' href='http://www.netgear.com/readyshare'>www.netgear.com/readyshare&lt;/a&gt; prevezmite softvér aplikácie ReadySHARE Vault a nainštalujte ju do každého počítača.</translation>
 </message>
 <message>
 <tag_code>4025</tag_code>
-<translation>3. Spustite aplikáciu ReadySHARE Vault. Pomocou karty Tabuľa alebo Zálohovanie nastavíte a spustíte zálohovanie.</translation>
+<translation>2. Spustite aplikáciu ReadySHARE Vault. Pomocou karty Tabuľa alebo Zálohovanie nastavíte a spustíte zálohovanie.</translation>
 </message>
 <message>
 <tag_code>4100</tag_code>
@@ -6118,5 +6121,95 @@
 <tag_code>11024</tag_code>
 <translation>Ak chcete dokončiť proces inštalácie, je potrebné, aby ste vyjadrili svoj súhlas s podmienkami používania.&lt;br&gt;Ak s týmito podmienkami používania nesúhlasíte, zariadenie od spoločnosti NETGEAR je potrebné vrátiť.</translation>
 <variable>To complete the installation process, you must agree to the Terms of Services.&lt;br&gt;If you do not accept these Terms of Services, you must return Your NETGEAR device.</variable>
+</message>
+<message>
+<tag_code>11030</tag_code>
+<translation>Odporúčame vám, aby heslo spĺňalo nasledujúce požiadavky:</translation>
+<variable>We recommend that your password meets the following conditions:</variable>
+</message>
+<message>
+<tag_code>11031</tag_code>
+<translation>Obsahuje 6 až 32 znakov</translation>
+<variable>Contains 6 to 32 characters</variable>
+</message>
+<message>
+<tag_code>11032</tag_code>
+<translation>Neobsahuje viac ako dva rovnaké znaky po sebe</translation>
+<variable>Contains no more than two identical characters in a row</variable>
+</message>
+<message>
+<tag_code>11033</tag_code>
+<translation>Navyše vám odporúčame, aby heslo spĺňalo tri z nasledujúcich štyroch požiadaviek:</translation>
+<variable>In addition, we recommend that your password meets three of the following four conditions:</variable>
+</message>
+<message>
+<tag_code>11034</tag_code>
+<translation>Aspoň jedno veľké písmeno</translation>
+<variable>At least one uppercase character</variable>
+</message>
+<message>
+<tag_code>11035</tag_code>
+<translation>Aspoň jedno malé písmeno</translation>
+<variable>At least one lowercase character</variable>
+</message>
+<message>
+<tag_code>11036</tag_code>
+<translation>Aspoň jedno číslo</translation>
+<variable>At least one number</variable>
+</message>
+<message>
+<tag_code>11037</tag_code>
+<translation>Aspoň jeden špeciálny znak, napríklad &#64;&#35;&amp;amp; ...</translation>
+<variable>At least one special character, such as &#64;&#35;&amp;...</variable>
+</message>
+<message>
+<tag_code>11038</tag_code>
+<translation>Povoliť vytvorenie nového hesla</translation>
+<variable>Enable Password Reset</variable>
+</message>
+<message>
+<tag_code>11039</tag_code>
+<translation>Naposledy bolo nové heslo vytvorené</translation>
+<variable>Last time password was reset</variable>
+</message>
+<message>
+<tag_code>11040</tag_code>
+<translation>Zabezpečte svoje heslo</translation>
+<variable>Secure Your Password</variable>
+</message>
+<message>
+<tag_code>11041</tag_code>
+<translation>Vytvorenie nového hesla smerovača</translation>
+<variable>Router Password Reset</variable>
+</message>
+<message>
+<tag_code>11042</tag_code>
+<translation>Vaše heslo správcu nie je bezpečné. Odporúčame vám, aby ste heslo nahradili silnejším, ktoré by spĺňalo naše požiadavky na heslo. Silnejšie heslo chráni sieť pred externými hrozbami.</translation>
+<variable>Your admin password is not secure. We recommend that you change your password to a stronger password that meets our password requirements. A stronger password protects your network against external threats.</variable>
+</message>
+<message>
+<tag_code>11043</tag_code>
+<translation>Overili sme vašu žiadosť o vytvorenie nového hesla smerovača. Nižšie zadajte nové heslo, vyplňte ostatné polia a kliknite na tlačidlo &lt;b&gt;Ďalej&lt;/b&gt;.</translation>
+<variable>We verified your password reset request. Enter a new password below, complete the other fields, then click the &lt;b&gt;Next&lt;/b&gt; button.</variable>
+</message>
+<message>
+<tag_code>11044</tag_code>
+<translation>Pri najbližšom prihlasovaní použite heslo, ktoré ste práve vytvorili. Vaše používateľské meno je stále admin.</translation>
+<variable>The next time you log in, use the password that you just created. Your user name is always admin.</variable>
+</message>
+<message>
+<tag_code>11045</tag_code>
+<translation>Môžeme vám pomôcť vytvoriť nové heslo správcu smerovača. Potrebujete sériové číslo smerovača, ktoré sa nachádza na štítku smerovača. Do poľa zadajte sériové číslo smerovača a kliknite na tlačidlo &lt;b&gt;Pokračovať&lt;/b&gt;.</translation>
+<variable>We can help you reset your router's admin password. You need your router's serial number, which can be found on the router label. Enter your router's serial number in the field and click the &lt;b&gt;Continue&lt;/b&gt; button.</variable>
+</message>
+<message>
+<tag_code>11046</tag_code>
+<translation>Úspešne sa vám podarilo vytvoriť nové heslo správcu.</translation>
+<variable>You successfully reset the admin password.</variable>
+</message>
+<message>
+<tag_code>11047</tag_code>
+<translation>Preskočiť</translation>
+<variable>Skip</variable>
 </message>
 </tag_msg>

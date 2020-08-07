@@ -8,12 +8,12 @@
 #  top_srcdir=../../..
 # but these are only set by autoconf 2.53, and thus not useful to us on
 # Mac OS X yet (as of 10.2):
-#  abs_srcdir=/home/disk3/peter/RELEASE/sdk5010/user/samba-4.6.4/krb5/krb5-1.9/src/lib/gssapi/generic
-#  abs_top_srcdir=/home/disk3/peter/RELEASE/sdk5010/user/samba-4.6.4/krb5/krb5-1.9/src/lib/gssapi/generic/../../..
+#  abs_srcdir=/home/disk3/peter/release_r6260/sdk5010/user/samba-4.6.4/krb5/krb5-1.9/src/lib/gssapi/generic
+#  abs_top_srcdir=/home/disk3/peter/release_r6260/sdk5010/user/samba-4.6.4/krb5/krb5-1.9/src/lib/gssapi/generic/../../..
 #  builddir=.
-#  abs_builddir=/home/disk3/peter/RELEASE/sdk5010/user/samba-4.6.4/krb5/krb5-1.9/src/lib/gssapi/generic
+#  abs_builddir=/home/disk3/peter/release_r6260/sdk5010/user/samba-4.6.4/krb5/krb5-1.9/src/lib/gssapi/generic
 #  top_builddir=../../../
-#  abs_top_builddir=/home/disk3/peter/RELEASE/sdk5010/user/samba-4.6.4/krb5/krb5-1.9/src/lib/gssapi/generic/../../../.
+#  abs_top_builddir=/home/disk3/peter/release_r6260/sdk5010/user/samba-4.6.4/krb5/krb5-1.9/src/lib/gssapi/generic/../../../.
 # The "top" variables refer to the directory with the configure (or
 # config.status) script.
 
@@ -161,8 +161,8 @@ ALL_CXXFLAGS = $(DEFS) $(DEFINES) $(KRB_INCLUDES) $(LOCALINCLUDES) \
 	-DKRB5_DEPRECATED=1 \
 	$(CPPFLAGS) $(CXXFLAGS) $(WARN_CXXFLAGS) $(PTHREAD_CFLAGS)
 
-CFLAGS = -O2 -fomit-frame-pointer -pipe  -Dlinux -D__linux__ -Dunix -DEMBED -I/home/disk3/peter/RELEASE/sdk5010/uClibc-0.9.33.2/app_headers/include -I/home/disk3/peter/RELEASE/sdk5010/lib/include -DCONFIG_UCLIBC_0_9_33_2  -I/home/disk3/peter/RELEASE/sdk5010 
-CXXFLAGS = -O2 -fomit-frame-pointer -pipe  -Dlinux -D__linux__ -Dunix -DEMBED -I/home/disk3/peter/RELEASE/sdk5010/uClibc-0.9.33.2/app_headers/include -I/home/disk3/peter/RELEASE/sdk5010/lib/include -DCONFIG_UCLIBC_0_9_33_2  -I/home/disk3/peter/RELEASE/sdk5010  
+CFLAGS = -O2 -fomit-frame-pointer -pipe  -Dlinux -D__linux__ -Dunix -DEMBED -I/home/disk3/peter/release_r6260/sdk5010/uClibc-0.9.33.2/app_headers/include -I/home/disk3/peter/release_r6260/sdk5010/lib/include -DCONFIG_UCLIBC_0_9_33_2  -I/home/disk3/peter/release_r6260/sdk5010 
+CXXFLAGS = -O2 -fomit-frame-pointer -pipe  -Dlinux -D__linux__ -Dunix -DEMBED -I/home/disk3/peter/release_r6260/sdk5010/uClibc-0.9.33.2/app_headers/include -I/home/disk3/peter/release_r6260/sdk5010/lib/include -DCONFIG_UCLIBC_0_9_33_2  -I/home/disk3/peter/release_r6260/sdk5010  
 WARN_CFLAGS =  -Wall -Wcast-align -Wshadow -Wmissing-prototypes -Wno-format-zero-length -Woverflow -Wstrict-overflow -Wmissing-format-attribute -Wmissing-prototypes -Wreturn-type -Wmissing-braces -Wparentheses -Wswitch -Wunused-function -Wunused-label -Wunused-variable -Wunused-value -Wunknown-pragmas -Wsign-compare -Werror=declaration-after-statement -Werror=variadic-macros -Werror-implicit-function-declaration
 WARN_CXXFLAGS =  -Wall -Wcast-align -Wshadow
 PTHREAD_CFLAGS = -pthread
@@ -175,7 +175,7 @@ CXX = /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/bin/mipsel-linux-g++
 LD = $(PURE) /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/bin/mipsel-linux-ld
 DEPLIBS = @DEPLIBS@
 KRB_INCLUDES = -I$(BUILDTOP)/include -I$(top_srcdir)/include
-LDFLAGS = -Wl,--fatal-warnings -L/home/disk3/peter/RELEASE/sdk5010/uClibc-0.9.33.2/lib -L/home/disk3/peter/RELEASE/sdk5010/lib/lib -Wl,--fatal-warnings -L/home/disk3/peter/RELEASE/sdk5010/uClibc-0.9.33.2/lib -L/home/disk3/peter/RELEASE/sdk5010/lib/lib
+LDFLAGS = -Wl,--fatal-warnings -L/home/disk3/peter/release_r6260/sdk5010/uClibc-0.9.33.2/lib -L/home/disk3/peter/release_r6260/sdk5010/lib/lib -Wl,--fatal-warnings -L/home/disk3/peter/release_r6260/sdk5010/uClibc-0.9.33.2/lib -L/home/disk3/peter/release_r6260/sdk5010/lib/lib
 LD_UNRESOLVED_PREFIX = @LD_UNRESOLVED_PREFIX@
 LD_SHLIBDIR_PREFIX = @LD_SHLIBDIR_PREFIX@
 LDARGS = @LDARGS@
@@ -190,7 +190,7 @@ INSTALL_SHLIB=$(INSTALL_DATA)
 INSTALL_SETUID=$(INSTALL) $(INSTALL_STRIP) -m 4755 -o root
 ## This is needed because autoconf will sometimes define ${prefix} to be
 ## ${prefix}.
-prefix=/home/disk3/peter/RELEASE/sdk5010/user/samba-4.6.4/krb5/krb5-1.9/src/../qqq
+prefix=/home/disk3/peter/release_r6260/sdk5010/user/samba-4.6.4/krb5/krb5-1.9/src/../qqq
 INSTALL_PREFIX=$(prefix)
 INSTALL_EXEC_PREFIX=${prefix}
 exec_prefix=${prefix}

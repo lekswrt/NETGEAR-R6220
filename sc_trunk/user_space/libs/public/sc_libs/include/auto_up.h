@@ -61,9 +61,9 @@
 #ifdef _MAJOR_UPDATE_
 /*we use Major1 as usual. 
 Normally, version level n1 would never be incremented*/
-#define MAJOR_NAME   "Major2"
+#define MAJOR_NAME   "Major"
 #else
-#define MAJOR_NAME   "Major1"
+#define MAJOR_NAME   "Major"
 #endif
 #define VERSION_FILE_STATIC "fileinfo.txt"
 #ifdef AUTOUPG_FILEINFO_IN_NV

@@ -18,6 +18,6 @@ use vars qw(
     $Cpreprocessor
     );
 
-$Cpreprocessor = 'mipsel-linux-gcc -E -I/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//include -I/home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/tr_lib//include/openssl';
+$Cpreprocessor = 'mipsel-linux-gcc -E -I/home/disk3/peter/release_r6260/sc_trunk/user_space/libs/public/tr_lib//include -I/home/disk3/peter/release_r6260/sc_trunk/user_space/libs/public/tr_lib//include/openssl';
 
 1;

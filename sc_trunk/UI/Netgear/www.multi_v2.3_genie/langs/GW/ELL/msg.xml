@@ -155,4 +155,19 @@
 		<translation>Απαντήστε σε κάθε ερώτηση.</translation>
 		<variable>gsm_msg_pwd_sec_ans</variable>
 	</message>
+	<message>
+		<err_code>13740</err_code>
+		<translation>Δεν μπορείτε να χρησιμοποιήσετε τον προεπιλεγμένο κωδικό πρόσβασης διαχείρισης. Πρέπει να αλλάξετε τον κωδικό πρόσβασης διαχείρισης.</translation>
+		<variable>gsm_msg_change_default_password</variable>
+	</message>
+	<message>
+		<err_code>13741</err_code>
+		<translation>Πρέπει να εισαγάγετε έναν κωδικό πρόσβασης.</translation>
+		<variable>gsm_msg_enter_password</variable>
+	</message>
+	<message>
+		<err_code>13742</err_code>
+		<translation>Ο κωδικός πρόσβασής σας δεν είναι ασφαλής. Συνιστούμε να αλλάξετε τον κωδικό πρόσβασής σας σε ισχυρότερο κωδικό πρόσβασης που πληροί τις απαιτήσεις μας για τον κωδικό πρόσβασης. Ένας ισχυρότερος κωδικός πρόσβασης προστατεύει το δίκτυό σας από εξωτερικές απειλές.</translation>
+		<variable>gsm_msg_enter_secure_password</variable>
+	</message>
 </error_msg>

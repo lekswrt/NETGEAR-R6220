@@ -49,7 +49,9 @@ static int is_writeable (const struct stat* st);
 static int user_groups_contain (gid_t file_gid);
 int opendns=0;
 char PC_table[PC_TABLE_MAX_SIZE];
-
+#ifdef FUNJSQ
+int funjsq_dns=0;
+#endif
 /*
  * main() - startup the program.
  *

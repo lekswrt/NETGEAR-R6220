@@ -155,4 +155,19 @@
 		<translation>Wprowadź odpowiedź na każde pytanie.</translation>
 		<variable>gsm_msg_pwd_sec_ans</variable>
 	</message>
+	<message>
+		<err_code>13740</err_code>
+		<translation>Nie można użyć domyślnego hasła administratora. Należy zmienić hasło administratora.</translation>
+		<variable>gsm_msg_change_default_password</variable>
+	</message>
+	<message>
+		<err_code>13741</err_code>
+		<translation>Należy wprowadzić hasło.</translation>
+		<variable>gsm_msg_enter_password</variable>
+	</message>
+	<message>
+		<err_code>13742</err_code>
+		<translation>Twoja hasło administratora nie jest bezpieczne. Zalecamy zmianę hasła na silniejsze, które spełnia nasze wymagania dotyczące hasła. Silniejsze hasło pozwala chronić sieć przed zewnętrznymi zagrożeniami.</translation>
+		<variable>gsm_msg_enter_secure_password</variable>
+	</message>
 </error_msg>

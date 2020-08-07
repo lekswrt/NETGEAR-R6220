@@ -155,4 +155,19 @@
 		<translation>Lütfen her bir soruya ilişkin yanıtınızı girin.</translation>
 		<variable>gsm_msg_pwd_sec_ans</variable>
 	</message>
+	<message>
+		<err_code>13740</err_code>
+		<translation>Varsayılan yönetici parolasını kullanamazsınız. Yönetici parolasını değiştirmeniz gerekiyor.</translation>
+		<variable>gsm_msg_change_default_password</variable>
+	</message>
+	<message>
+		<err_code>13741</err_code>
+		<translation>Bir parola girmelisiniz.</translation>
+		<variable>gsm_msg_enter_password</variable>
+	</message>
+	<message>
+		<err_code>13742</err_code>
+		<translation>Yönetici parolanız güvenli değil. Parolanızı, parola gereksinimlerimizi karşılayan daha güçlü bir parolayla değiştirmenizi öneririz. Daha güçlü bir parola, ağınızı harici tehlikelere karşı korur.</translation>
+		<variable>gsm_msg_enter_secure_password</variable>
+	</message>
 </error_msg>

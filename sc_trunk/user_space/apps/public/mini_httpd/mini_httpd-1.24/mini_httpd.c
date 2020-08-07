@@ -328,6 +328,7 @@ static void handle_logout(int sig)
 	/* remvoe config file cache when timeout */
 	system("rm -rf /tmp/NETGEAR*.cfg ");
 	nvram_set("start_in_blankstate", "0");
+    	unlink("/tmp/no_security_page");
 }
 
 static void handle_web_time(int sig)
@@ -382,6 +383,7 @@ static void handle_timeout_stat(int sig)
 	/* remvoe config file cache when user click logout  */
 	system("rm -rf /tmp/NETGEAR*.cfg ");
 	SC_CFPRINTF("enter\n");
+    	unlink("/tmp/no_security_page");
 }
 
 static void handle_chdir(int sig)
@@ -403,7 +405,7 @@ static char *no_check_passwd_paths[] = { "currentsetting.htm", "update_setting.h
 	"multi_login.html", "401_recovery.htm", "401_access_denied.htm",
 	"BRS_netgear_success.html", "BRS_top.html", "BRS_miiicasa_success.html",
 	"openvpn_confirm_update.htm",
-	"tc_exist_unit_hijack.htm","BRS_data_detail.htm","BRS_full_tcn.htm",
+	"tc_exist_unit_hijack.htm","BRS_data_detail.htm","BRS_full_tcn.htm", 
 	NULL
 };
 
@@ -1979,8 +1981,8 @@ static void handle_request(void)
 		send_error_body(403, "Forbidden", "Curl is forbidden");
 		send_error_tail();
 		send_response();
-		LOGOUT;
-		raise(SIGINT); /* send signal to parent */
+//		LOGOUT;
+//		raise(SIGINT); /* send signal to parent */
 		exit(1);
 		//send_error(403, "Forbidden", "", "It's curl client");
 	}
@@ -2215,6 +2217,26 @@ skip_it:
 					send_error(302, "Found", location, "");
 				}
 			}			
+#ifdef SECURITY_ENHANCE
+			{
+
+				if ((*nvram_safe_get("weak_password_check") == '1') && (access("/tmp/no_security_page", F_OK) != 0)
+					&& (*nvram_safe_get("user_ignore_weak_pw") != '1') 
+					&& (*nvram_safe_get("config_state") != 'b')
+					&& (!strstr(path, "PWD_secure.htm")) /* avoid loop */
+					&& (do_ssl==0) && /* mean it from lan */
+					(strcasecmp(method_str, get_method_str(METHOD_GET)) == 0) && (no_need_check_password_page == 0) &&
+					(strstr(path, ".gif") == NULL) && (strstr(path, ".css") == NULL) &&  (strstr(path, ".js") == NULL) && (strstr(path, ".xml") == NULL) && (strstr(path, ".png") == NULL) && (strstr(path, ".jpg") == NULL) &&
+					(strstr(path, "top.htm") == NULL) /* for R6260 RR-164 */&&
+					(for_setupwizard == 0))
+				{
+					char location[100];
+					protocol = protocol?:"HTTP/1.1";
+					(void)snprintf(location, sizeof(location), "Location: %s", "PWD_secure.htm");
+					send_error(302, "Found", location, "");
+				}
+			}
+#endif
 			
 		}
 	
@@ -3452,6 +3474,9 @@ static void auth_check(char *dirname)
 #ifdef GUEST_MANAGEMENT
 	struct guest_user_t *guest;
 #endif
+#ifdef SECURITY_ENHANCE
+	char hash_str[128];
+#endif
 
 	char *authname = NULL, *name = NULL;
 
@@ -3627,8 +3652,13 @@ static void auth_check(char *dirname)
 			(void)fclose(fp);
 			/* So is the password right? */
 /*Ron*/
+#ifdef SECURITY_ENHANCE
+				password_hash(authpass, hash_str, sizeof(hash_str));
+				if (strcmp(hash_str, cryp) == 0)
+#else
 				/* OK ! */
 				if (strcmp(authpass, cryp) == 0)
+#endif
 				{
 					remoteuser = line;
 #ifdef GUEST_MANAGEMENT
@@ -3775,8 +3805,13 @@ static void auth_check(char *dirname)
 				/* Yes. */
 				(void)fclose(fp);
 				/* So is the password right? */
+#ifdef SECURITY_ENHANCE
+				password_hash(authpass, hash_str, sizeof(hash_str));
+				if (strcmp(hash_str, cryp) == 0)
+#else
 				/* OK ! */
 				if (strcmp(authpass, cryp) == 0)
+#endif
 				{
 					remoteuser = line;
 					guest_user_load();

@@ -28,7 +28,7 @@ uname -v = #1 SMP Sat Nov 7 21:25:57 EST 2009
 /bin/universe          = unknown
 
 PATH: /opt/buildroot-gcc463_NPTLSHAREDLIBGCC//usr/bin/
-PATH: /home/disk3/peter/RELEASE/sc_trunk/tools/
+PATH: /home/disk3/peter/release_r6260/sc_trunk/tools/
 PATH: /usr/lib/qt-3.3/bin
 PATH: /usr/kerberos/sbin
 PATH: /usr/kerberos/bin
@@ -9701,7 +9701,7 @@ configure:12931: result: yes
 configure:12931: checking for alloca
 configure:12931: mipsel-linux-gcc -o conftest -I. -I.  conftest.c  >&5
 conftest.c:102:6: warning: conflicting types for built-in function 'alloca' [enabled by default]
-/tmp/cc4jPte8.o: In function `main':
+/tmp/ccbREdQM.o: In function `main':
 conftest.c:(.text+0x1c): undefined reference to `alloca'
 conftest.c:(.text+0x28): undefined reference to `alloca'
 collect2: ld returned 1 exit status
@@ -9846,7 +9846,7 @@ configure:12931: $? = 0
 configure:12931: result: yes
 configure:12931: checking for clock_getcpuclockid
 configure:12931: mipsel-linux-gcc -o conftest -I. -I.  conftest.c  >&5
-/tmp/ccHhVoSt.o: In function `main':
+/tmp/ccy3ogq7.o: In function `main':
 conftest.c:(.text+0x1c): undefined reference to `clock_getcpuclockid'
 conftest.c:(.text+0x28): undefined reference to `clock_getcpuclockid'
 collect2: ld returned 1 exit status
@@ -10121,7 +10121,7 @@ configure:12931: $? = 0
 configure:12931: result: yes
 configure:12931: checking for stricmp
 configure:12931: mipsel-linux-gcc -o conftest -I. -I.  conftest.c  >&5
-/tmp/ccRg2610.o: In function `main':
+/tmp/ccnp9slz.o: In function `main':
 conftest.c:(.text+0x1c): undefined reference to `stricmp'
 conftest.c:(.text+0x28): undefined reference to `stricmp'
 collect2: ld returned 1 exit status
@@ -10290,7 +10290,7 @@ configure:12931: $? = 0
 configure:12931: result: yes
 configure:12931: checking for strnicmp
 configure:12931: mipsel-linux-gcc -o conftest -I. -I.  conftest.c  >&5
-/tmp/ccVIQfw5.o: In function `main':
+/tmp/ccj0NxqH.o: In function `main':
 conftest.c:(.text+0x1c): undefined reference to `strnicmp'
 conftest.c:(.text+0x28): undefined reference to `strnicmp'
 collect2: ld returned 1 exit status
@@ -10700,17 +10700,17 @@ mfx_cv_header_sane_limits_h=yes
 ## Output variables. ##
 ## ----------------- ##
 
-ACLOCAL='${SHELL} /home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/lzo/lzo-2.06/autoconf/missing --run aclocal-1.11'
+ACLOCAL='${SHELL} /home/disk3/peter/release_r6260/sc_trunk/user_space/libs/public/lzo/lzo-2.06/autoconf/missing --run aclocal-1.11'
 AMDEPBACKSLASH='\'
 AMDEP_FALSE='#'
 AMDEP_TRUE=''
-AMTAR='${SHELL} /home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/lzo/lzo-2.06/autoconf/missing --run tar'
+AMTAR='${SHELL} /home/disk3/peter/release_r6260/sc_trunk/user_space/libs/public/lzo/lzo-2.06/autoconf/missing --run tar'
 AM_BACKSLASH='\'
 AM_DEFAULT_VERBOSITY='0'
 AR='mipsel-linux-ar'
-AUTOCONF='${SHELL} /home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/lzo/lzo-2.06/autoconf/missing --run autoconf'
-AUTOHEADER='${SHELL} /home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/lzo/lzo-2.06/autoconf/missing --run autoheader'
-AUTOMAKE='${SHELL} /home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/lzo/lzo-2.06/autoconf/missing --run automake-1.11'
+AUTOCONF='${SHELL} /home/disk3/peter/release_r6260/sc_trunk/user_space/libs/public/lzo/lzo-2.06/autoconf/missing --run autoconf'
+AUTOHEADER='${SHELL} /home/disk3/peter/release_r6260/sc_trunk/user_space/libs/public/lzo/lzo-2.06/autoconf/missing --run autoheader'
+AUTOMAKE='${SHELL} /home/disk3/peter/release_r6260/sc_trunk/user_space/libs/public/lzo/lzo-2.06/autoconf/missing --run automake-1.11'
 AWK='gawk'
 CC='mipsel-linux-gcc'
 CCAS='mipsel-linux-gcc'
@@ -10751,7 +10751,7 @@ LZO_USE_ASM_i386_src_gas_TRUE='#'
 MAINT='#'
 MAINTAINER_MODE_FALSE=''
 MAINTAINER_MODE_TRUE='#'
-MAKEINFO='${SHELL} /home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/lzo/lzo-2.06/autoconf/missing --run makeinfo'
+MAKEINFO='${SHELL} /home/disk3/peter/release_r6260/sc_trunk/user_space/libs/public/lzo/lzo-2.06/autoconf/missing --run makeinfo'
 MKDIR_P='/bin/mkdir -p'
 NM='nm'
 NMEDIT=''
@@ -10806,7 +10806,7 @@ host_vendor='unknown'
 htmldir='${docdir}'
 includedir='${prefix}/include'
 infodir='${datarootdir}/info'
-install_sh='${SHELL} /home/disk3/peter/RELEASE/sc_trunk/user_space/libs/public/lzo/lzo-2.06/autoconf/install-sh'
+install_sh='${SHELL} /home/disk3/peter/release_r6260/sc_trunk/user_space/libs/public/lzo/lzo-2.06/autoconf/install-sh'
 libdir='${exec_prefix}/lib'
 libexecdir='${exec_prefix}/libexec'
 localedir='${datarootdir}/locale'

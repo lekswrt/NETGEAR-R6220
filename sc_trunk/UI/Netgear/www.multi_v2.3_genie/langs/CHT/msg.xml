@@ -2451,4 +2451,19 @@
 		<translation>警告：路由器無法連線至 NTP 伺服器，請檢查您的網際網路連線，或嘗試其他 NTP 伺服器</translation>
 		<variable>gsm_msg_ntp_sync_fail</variable>
 	</message>
+	<message>
+		<err_code>13740</err_code>
+		<translation>您無法使用預設的管理密碼。您必須變更管理密碼。</translation>
+		<variable>gsm_msg_change_default_password</variable>
+	</message>
+	<message>
+		<err_code>13741</err_code>
+		<translation>您必須輸入密碼。</translation>
+		<variable>gsm_msg_enter_password</variable>
+	</message>
+	<message>
+		<err_code>13742</err_code>
+		<translation>您的管理密碼不安全。建議您將密碼變更為能符合密碼要求的更強式密碼。更強式的密碼能保護您的網路，防止外部威脅。</translation>
+		<variable>gsm_msg_enter_secure_password</variable>
+	</message>
 </error_msg>

@@ -2797,11 +2797,11 @@
 </message>
 <message>
 <tag_code>955</tag_code>
-<translation>Mode de chiffrement</translation>
+<translation>Mode de chiffrement :</translation>
 </message>
 <message>
 <tag_code>959</tag_code>
-<translation>Intervalle de mise à jour de la clé de groupe</translation>
+<translation>Intervalle de mise à jour de la clé de groupe :</translation>
 </message>
 <message>
 <tag_code>960</tag_code>
@@ -3058,6 +3058,9 @@
 </message>
 <message>
 <tag_code>1034</tag_code>
+
+
+
 <translation>3e</translation>
 </message>
 <message>
@@ -3452,7 +3455,7 @@
 </message>
 <message>
 <tag_code>2039</tag_code>
-<translation>Adresse IP du serveur Radius</translation>
+<translation>Adresse IP du serveur Radius :</translation>
 </message>
 <message>
 <tag_code>2040</tag_code>
@@ -3906,11 +3909,11 @@
 </message>
 <message>
 <tag_code>3098</tag_code>
-<translation>la clé réseau (mot de passe) suivants.</translation>
+<translation>la clé réseau (mot de passe) suivants</translation>
 </message>
 <message>
 <tag_code>3099</tag_code>
-<translation>la clé réseau (mot de passe) suivants.</translation>
+<translation>la clé réseau (mot de passe) suivants</translation>
 </message>
 <message>
 <tag_code>3100</tag_code>
@@ -4699,6 +4702,7 @@
 <tag_code>3345</tag_code>
 <translation>Nom du point d'accès 3G</translation>
 </message>
+
 <message>
 <tag_code>3346</tag_code>
 <translation>Type de PDP</translation>
@@ -5237,7 +5241,8 @@
 </message>
 <message>
 <tag_code>3931</tag_code>
-<translation>En envoyant ce formulaire, j'accepte les</translation>
+<translation>En envoyant ce formulaire, j'accepte les </translation>
+<variable>By submitting this form I agree to No-IP </variable>
 </message>
 <message>
 <tag_code>3932</tag_code>
@@ -5245,7 +5250,8 @@
 </message>
 <message>
 <tag_code>3933</tag_code>
-<translation>et je m'engage à créer un seul compte gratuit.</translation>
+<translation>et</translation>
+<variable>and</variable>
 </message>
 <message>
 <tag_code>3934</tag_code>
@@ -5381,11 +5387,11 @@
 </message>
 <message>
 <tag_code>4024</tag_code>
-<translation>2. Installez ReadySHARE Vault sur chaque PC en téléchargeant le logiciel depuis le site  &lt;a class='linktype' target='_blank' href='http://www.netgear.com/readyshare'>www.netgear.com/readyshare&lt;/a&gt;.</translation>
+<translation>1. Installez ReadySHARE Vault sur chaque PC en téléchargeant le logiciel depuis le site  &lt;a class='linktype' target='_blank' href='http://www.netgear.com/readyshare'>www.netgear.com/readyshare&lt;/a&gt;.</translation>
 </message>
 <message>
 <tag_code>4025</tag_code>
-<translation>3. Lancez ReadySHARE Vault. Utilisez le Tableau de bord ou l’onglet Sauvegarde pour configurer et exécuter votre sauvegarde.</translation>
+<translation>2. Lancez ReadySHARE Vault. Utilisez le Tableau de bord ou l’onglet Sauvegarde pour configurer et exécuter votre sauvegarde.</translation>
 </message>
 <message>
 <tag_code>4100</tag_code>
@@ -5472,6 +5478,7 @@
 <translation>Règle générale</translation>
 </message>
 <message>
+
 <tag_code>4300</tag_code>
 <translation>Facebook Wi-Fi est une application pour les petites entreprises. L'application transforme le routeur en point d'accès Wi-Fi, permettant à la clientèle de s'enregistrer et d'aimer votre page Facebook avant d'accéder gratuitement au Web.</translation>
 </message>
@@ -6131,5 +6138,95 @@
 <tag_code>11024</tag_code>
 <translation>Pour terminer la procédure d'installation, Vous devez accepter les Conditions de service.&lt;br&gt;Si Vous n'acceptez pas ces Conditions de service, Vous devez retourner Votre appareil NETGEAR.</translation>
 <variable>To complete the installation process, you must agree to the Terms of Services.&lt;br&gt;If you do not accept these Terms of Services, you must return Your NETGEAR device.</variable>
+</message>
+<message>
+<tag_code>11030</tag_code>
+<translation>Nous vous recommandons d'utiliser un mot de passe répondant aux conditions suivantes :</translation>
+<variable>We recommend that your password meets the following conditions:</variable>
+</message>
+<message>
+<tag_code>11031</tag_code>
+<translation>Comporte entre 6 et 32 caractères</translation>
+<variable>Contains 6 to 32 characters</variable>
+</message>
+<message>
+<tag_code>11032</tag_code>
+<translation>Ne comporte pas plus de deux caractères identiques à la suite</translation>
+<variable>Contains no more than two identical characters in a row</variable>
+</message>
+<message>
+<tag_code>11033</tag_code>
+<translation>En outre, nous vous recommandons d'utiliser un mot de passe répondant à trois des quatre conditions suivantes :</translation>
+<variable>In addition, we recommend that your password meets three of the following four conditions:</variable>
+</message>
+<message>
+<tag_code>11034</tag_code>
+<translation>Au moins un caractère majuscule</translation>
+<variable>At least one uppercase character</variable>
+</message>
+<message>
+<tag_code>11035</tag_code>
+<translation>Au moins un caractère minuscule</translation>
+<variable>At least one lowercase character</variable>
+</message>
+<message>
+<tag_code>11036</tag_code>
+<translation>Au moins un chiffre</translation>
+<variable>At least one number</variable>
+</message>
+<message>
+<tag_code>11037</tag_code>
+<translation>Au moins un caractère spécial, tel que &#64;&#35;&amp;...</translation>
+<variable>At least one special character, such as &#64;&#35;&amp;...</variable>
+</message>
+<message>
+<tag_code>11038</tag_code>
+<translation>Activer la réinitialisation du mot de passe</translation>
+<variable>Enable Password Reset</variable>
+</message>
+<message>
+<tag_code>11039</tag_code>
+<translation>Dernière fois que le mot de passe a été réinitialisé</translation>
+<variable>Last time password was reset</variable>
+</message>
+<message>
+<tag_code>11040</tag_code>
+<translation>Sécurisez votre mot de passe</translation>
+<variable>Secure Your Password</variable>
+</message>
+<message>
+<tag_code>11041</tag_code>
+<translation>Mot de passe du routeur réinitialisé</translation>
+<variable>Router Password Reset</variable>
+</message>
+<message>
+<tag_code>11042</tag_code>
+<translation>Votre mot de passe administrateur n'est pas sécurisé. Nous vous recommandons de modifier votre mot de passe avec un mot de passe plus sûr, qui répond à nos exigences en matière de mots de passe. Un mot de passe plus sûr protège votre réseau contre les menaces externes.</translation>
+<variable>Your admin password is not secure. We recommend that you change your password to a stronger password that meets our password requirements. A stronger password protects your network against external threats.</variable>
+</message>
+<message>
+<tag_code>11043</tag_code>
+<translation>Nous avons vérifié votre demande de réinitialisation du mot de passe. Saisissez un nouveau mot de passe ci-dessous, remplissez les autres champs, puis cliquez sur le bouton &lt;b&gt;Suivant&lt;/b&gt;.</translation>
+<variable>We verified your password reset request. Enter a new password below, complete the other fields, then click the &lt;b&gt;Next&lt;/b&gt; button.</variable>
+</message>
+<message>
+<tag_code>11044</tag_code>
+<translation>Lors de votre prochaine connexion, utilisez le mot de passe que vous venez de créer. Votre nom d'utilisateur est toujours admin.</translation>
+<variable>The next time you log in, use the password that you just created. Your user name is always admin.</variable>
+</message>
+<message>
+<tag_code>11045</tag_code>
+<translation>Nous pouvons vous aider à réinitialiser le mot de passe d'administration de votre routeur. Vous aurez besoin du numéro de série de votre routeur, qui se trouve sur l'étiquette du routeur. Saisissez le numéro de série de votre routeur dans le champ et cliquez sur le bouton &lt;b&gt;Continuer&lt;/b&gt;.</translation>
+<variable>We can help you reset your router's admin password. You need your router's serial number, which can be found on the router label. Enter your router's serial number in the field and click the &lt;b&gt;Continue&lt;/b&gt; button.</variable>
+</message>
+<message>
+<tag_code>11046</tag_code>
+<translation>Le mot de passe administrateur a été réinitialisé.</translation>
+<variable>You successfully reset the admin password.</variable>
+</message>
+<message>
+<tag_code>11047</tag_code>
+<translation>Ignorer</translation>
+<variable>Skip</variable>
 </message>
 </tag_msg>

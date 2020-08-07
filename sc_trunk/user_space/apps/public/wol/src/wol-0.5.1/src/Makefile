@@ -18,7 +18,7 @@ SHELL = /bin/sh
 srcdir = .
 top_srcdir = ..
 
-prefix = /home/disk3/peter/RELEASE/sc_trunk/user_space/apps/public/wol/src/wol-0.5.1
+prefix = /home/disk3/peter/release_r6260/sc_trunk/user_space/apps/public/wol/src/wol-0.5.1
 exec_prefix = ${prefix}
 
 bindir = ${exec_prefix}/bin
@@ -38,10 +38,10 @@ pkglibdir = $(libdir)/wol
 pkgincludedir = $(includedir)/wol
 top_builddir = ..
 
-ACLOCAL = ${SHELL} /home/disk3/peter/RELEASE/sc_trunk/user_space/apps/public/wol/src/wol-0.5.1/missing --run aclocal
-AUTOCONF = ${SHELL} /home/disk3/peter/RELEASE/sc_trunk/user_space/apps/public/wol/src/wol-0.5.1/missing --run autoconf
-AUTOMAKE = ${SHELL} /home/disk3/peter/RELEASE/sc_trunk/user_space/apps/public/wol/src/wol-0.5.1/missing --run automake
-AUTOHEADER = ${SHELL} /home/disk3/peter/RELEASE/sc_trunk/user_space/apps/public/wol/src/wol-0.5.1/missing --run autoheader
+ACLOCAL = ${SHELL} /home/disk3/peter/release_r6260/sc_trunk/user_space/apps/public/wol/src/wol-0.5.1/missing --run aclocal
+AUTOCONF = ${SHELL} /home/disk3/peter/release_r6260/sc_trunk/user_space/apps/public/wol/src/wol-0.5.1/missing --run autoconf
+AUTOMAKE = ${SHELL} /home/disk3/peter/release_r6260/sc_trunk/user_space/apps/public/wol/src/wol-0.5.1/missing --run automake
+AUTOHEADER = ${SHELL} /home/disk3/peter/release_r6260/sc_trunk/user_space/apps/public/wol/src/wol-0.5.1/missing --run autoheader
 
 INSTALL = /usr/bin/install -c
 INSTALL_PROGRAM = ${INSTALL}
@@ -57,7 +57,7 @@ PRE_UNINSTALL = :
 POST_UNINSTALL = :
 host_alias = mips-linux
 host_triplet = mips-mips-linux-gnu
-AMTAR = ${SHELL} /home/disk3/peter/RELEASE/sc_trunk/user_space/apps/public/wol/src/wol-0.5.1/missing --run tar
+AMTAR = ${SHELL} /home/disk3/peter/release_r6260/sc_trunk/user_space/apps/public/wol/src/wol-0.5.1/missing --run tar
 AWK = gawk
 BUILD_INCLUDED_LIBINTL = no
 CATALOGS = 
@@ -91,7 +91,7 @@ USE_NLS = no
 VERSION = 0.5.1
 am__include = include
 am__quote = 
-install_sh = /home/disk3/peter/RELEASE/sc_trunk/user_space/apps/public/wol/src/wol-0.5.1/install-sh
+install_sh = /home/disk3/peter/release_r6260/sc_trunk/user_space/apps/public/wol/src/wol-0.5.1/install-sh
 
 DEFS = -DLOCALEDIR=\"$(datadir)/locale\" -DHAVE_CONFIG_H
 INCLUDES = -I$(top_srcdir)/include -I$(top_srcdir)/lib -I$(top_srcdir)/intl
@@ -115,14 +115,14 @@ wol_DEPENDENCIES = $(top_builddir)/lib/libwrappers.a
 wol_LDFLAGS =
 DEFAULT_INCLUDES =  -I. -I$(srcdir) -I$(top_builddir)
 CPPFLAGS = 
-LDFLAGS = -L/home/disk3/peter/RELEASE/sc_trunk/user_space/apps/public/nvram -lscnvram
+LDFLAGS = -L/home/disk3/peter/release_r6260/sc_trunk/user_space/apps/public/nvram -lscnvram
 LIBS = 
 depcomp =
 COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \
 	$(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS)
 CCLD = $(CC)
 LINK = $(CCLD) $(AM_CFLAGS) $(CFLAGS) $(AM_LDFLAGS) $(LDFLAGS) -o $@
-CFLAGS = -I/home/disk3/peter/RELEASE/sc_trunk/user_space/apps/public/nvram -W -Wall -Wpointer-arith -Wimplicit-function-declaration
+CFLAGS = -I/home/disk3/peter/release_r6260/sc_trunk/user_space/apps/public/nvram -W -Wall -Wpointer-arith -Wimplicit-function-declaration
 DIST_SOURCES = $(wol_SOURCES)
 DIST_COMMON = Makefile.am Makefile.in
 SOURCES = $(wol_SOURCES)

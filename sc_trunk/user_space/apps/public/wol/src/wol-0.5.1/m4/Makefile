@@ -18,7 +18,7 @@ SHELL = /bin/sh
 srcdir = .
 top_srcdir = ..
 
-prefix = /home/disk3/peter/RELEASE/sc_trunk/user_space/apps/public/wol/src/wol-0.5.1
+prefix = /home/disk3/peter/release_r6260/sc_trunk/user_space/apps/public/wol/src/wol-0.5.1
 exec_prefix = ${prefix}
 
 bindir = ${exec_prefix}/bin
@@ -38,10 +38,10 @@ pkglibdir = $(libdir)/wol
 pkgincludedir = $(includedir)/wol
 top_builddir = ..
 
-ACLOCAL = ${SHELL} /home/disk3/peter/RELEASE/sc_trunk/user_space/apps/public/wol/src/wol-0.5.1/missing --run aclocal
-AUTOCONF = ${SHELL} /home/disk3/peter/RELEASE/sc_trunk/user_space/apps/public/wol/src/wol-0.5.1/missing --run autoconf
-AUTOMAKE = ${SHELL} /home/disk3/peter/RELEASE/sc_trunk/user_space/apps/public/wol/src/wol-0.5.1/missing --run automake
-AUTOHEADER = ${SHELL} /home/disk3/peter/RELEASE/sc_trunk/user_space/apps/public/wol/src/wol-0.5.1/missing --run autoheader
+ACLOCAL = ${SHELL} /home/disk3/peter/release_r6260/sc_trunk/user_space/apps/public/wol/src/wol-0.5.1/missing --run aclocal
+AUTOCONF = ${SHELL} /home/disk3/peter/release_r6260/sc_trunk/user_space/apps/public/wol/src/wol-0.5.1/missing --run autoconf
+AUTOMAKE = ${SHELL} /home/disk3/peter/release_r6260/sc_trunk/user_space/apps/public/wol/src/wol-0.5.1/missing --run automake
+AUTOHEADER = ${SHELL} /home/disk3/peter/release_r6260/sc_trunk/user_space/apps/public/wol/src/wol-0.5.1/missing --run autoheader
 
 INSTALL = /usr/bin/install -c
 INSTALL_PROGRAM = ${INSTALL}
@@ -57,7 +57,7 @@ PRE_UNINSTALL = :
 POST_UNINSTALL = :
 host_alias = mips-linux
 host_triplet = mips-mips-linux-gnu
-AMTAR = ${SHELL} /home/disk3/peter/RELEASE/sc_trunk/user_space/apps/public/wol/src/wol-0.5.1/missing --run tar
+AMTAR = ${SHELL} /home/disk3/peter/release_r6260/sc_trunk/user_space/apps/public/wol/src/wol-0.5.1/missing --run tar
 AWK = gawk
 BUILD_INCLUDED_LIBINTL = no
 CATALOGS = 
@@ -91,7 +91,7 @@ USE_NLS = no
 VERSION = 0.5.1
 am__include = include
 am__quote = 
-install_sh = /home/disk3/peter/RELEASE/sc_trunk/user_space/apps/public/wol/src/wol-0.5.1/install-sh
+install_sh = /home/disk3/peter/release_r6260/sc_trunk/user_space/apps/public/wol/src/wol-0.5.1/install-sh
 
 EXTRA_DIST = codeset.m4 gettext.m4 glibc21.m4 iconv.m4 isc-posix.m4 \
 lcmessage.m4 progtest.m4

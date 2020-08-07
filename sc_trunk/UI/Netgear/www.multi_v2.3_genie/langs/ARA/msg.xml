@@ -2263,4 +2263,19 @@
 		<translation>تحذير: فشِل الموجّه بالاتصال بخادم NTP، يُرجى التحقق من الاتصال بالإنترنت أو استخدام خادم NTP آخر.</translation>
 		<variable>gsm_msg_ntp_sync_fail</variable>
 	</message>
+	<message>
+		<err_code>13740</err_code>
+		<translation>لا يمكنك استخدام كلمة مرور المسؤول الافتراضية. يجب تغيير كلمة مرور المسؤول.</translation>
+		<variable>gsm_msg_change_default_password</variable>
+	</message>
+	<message>
+		<err_code>13741</err_code>
+		<translation>يجب إدخال كلمة مرور.</translation>
+		<variable>gsm_msg_enter_password</variable>
+	</message>
+	<message>
+		<err_code>13742</err_code>
+		<translation>كلمة مرور المسؤول غير آمنة. ننصحك بتغيير كلمة المرور وإنشاء كلمة مرور أقوى تتوافق مع متطلباتنا. تحمي كلمة المرور الأقوى شبكتك من التهديدات الخارجية.</translation>
+		<variable>gsm_msg_enter_secure_password</variable>
+	</message>
 </error_msg>

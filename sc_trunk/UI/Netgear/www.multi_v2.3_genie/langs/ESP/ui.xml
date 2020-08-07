@@ -1528,6 +1528,9 @@
 </message>
 <message>
 <tag_code>492</tag_code>
+
+
+
 <translation>Asistente de configuración</translation>
 </message>
 <message>
@@ -2174,6 +2177,7 @@
 </message>
 <message>
 <tag_code>760</tag_code>
+
 <translation>(en saltos)</translation>
 </message>
 <message>
@@ -2800,11 +2804,11 @@
 </message>
 <message>
 <tag_code>955</tag_code>
-<translation>Modo de cifrado</translation>
+<translation>Modo de cifrado:</translation>
 </message>
 <message>
 <tag_code>959</tag_code>
-<translation>Intervalo de actualización de clave de grupo</translation>
+<translation>Intervalo de actualización de clave de grupo:</translation>
 </message>
 <message>
 <tag_code>960</tag_code>
@@ -3414,6 +3418,7 @@
 <message>
 <tag_code>2027</tag_code>
 <translation>Gestor de descargas</translation>
+
 </message>
 <message>
 <tag_code>2028</tag_code>
@@ -3457,7 +3462,7 @@
 </message>
 <message>
 <tag_code>2039</tag_code>
-<translation>Dirección IP del servidor RADIUS (RADIUS server IP Address)</translation>
+<translation>Dirección IP del servidor RADIUS (RADIUS server IP Address):</translation>
 </message>
 <message>
 <tag_code>2040</tag_code>
@@ -5027,6 +5032,7 @@
 <translation>3G/4G Connection Mode</translation>
 </message>
 <message>
+
 <tag_code>3463</tag_code>
 <translation>Connection Protocol</translation>
 </message>
@@ -5240,7 +5246,8 @@
 </message>
 <message>
 <tag_code>3931</tag_code>
-<translation>Al enviar este formulario acepto los</translation>
+<translation>Al enviar este formulario acepto [la política de privacidad y los términos del servicio] sin IP.</translation>
+<variable>By submitting this form I agree to No-IP </variable>
 </message>
 <message>
 <tag_code>3932</tag_code>
@@ -5248,7 +5255,8 @@
 </message>
 <message>
 <tag_code>3933</tag_code>
-<translation>y me comprometo a crear solo una cuenta gratuita.</translation>
+<translation>y</translation>
+<variable>and</variable>
 </message>
 <message>
 <tag_code>3934</tag_code>
@@ -5376,11 +5384,11 @@
 </message>
 <message>
 <tag_code>4024</tag_code>
-<translation>2. Installer ReadySHARE Vault på PC'erne ved at downloade softwaren fra  &lt;a class='linktype' target='_blank' href='http://www.netgear.com/readyshare'>www.netgear.com/readyshare&lt;/a&gt;.</translation>
+<translation>1. Installer ReadySHARE Vault på PC'erne ved at downloade softwaren fra  &lt;a class='linktype' target='_blank' href='http://www.netgear.com/readyshare'>www.netgear.com/readyshare&lt;/a&gt;.</translation>
 </message>
 <message>
 <tag_code>4025</tag_code>
-<translation>3. Start ReadySHARE Vault. Brug Instrumentbrættet eller fanen Sikkerhedskopier til at konfigurere og køre din sikkerhedskopi.</translation>
+<translation>2. Start ReadySHARE Vault. Brug Instrumentbrættet eller fanen Sikkerhedskopier til at konfigurere og køre din sikkerhedskopi.</translation>
 </message>
 <message>
 <tag_code>4100</tag_code>
@@ -5452,7 +5460,7 @@
 </message>
 <message>
 <tag_code>4200</tag_code>
-<translation>Vaya a &lt;a  style=\"text-decoration:underline;color:#0000ff;\" href=\"setup.cgi?next_file=AccessControl.htm\"&gt;Control de acceso&lt;/a&gt; para permitir o bloquear dispositivos.</translation>
+<translation>Vaya a &lt;a  style=text-decoration:underline;color:#0000ff id=url_ac onclick=goto_formframe('AccessControl.htm&amp;todo=cfg_init')&gt;Control de acceso&lt;/a&gt; para permitir o bloquear dispositivos.</translation>
 </message>
 <message>
 <tag_code>4202</tag_code>
@@ -6127,5 +6135,95 @@
 <tag_code>11024</tag_code>
 <translation>Para completar el proceso de instalación, primero debe aceptar los Términos del servicio.&lt;br&gt;Si no acepta estos Términos del servicio, debe devolver el dispositivo a NETGEAR.</translation>
 <variable>To complete the installation process, you must agree to the Terms of Services.&lt;br&gt;If you do not accept these Terms of Services, you must return Your NETGEAR device.</variable>
+</message>
+<message>
+<tag_code>11030</tag_code>
+<translation>Le recomendamos que su contraseña cumpla las siguientes condiciones:</translation>
+<variable>We recommend that your password meets the following conditions:</variable>
+</message>
+<message>
+<tag_code>11031</tag_code>
+<translation>Tener entre 6 y 32 caracteres</translation>
+<variable>Contains 6 to 32 characters</variable>
+</message>
+<message>
+<tag_code>11032</tag_code>
+<translation>No tener más de dos caracteres idénticos seguidos</translation>
+<variable>Contains no more than two identical characters in a row</variable>
+</message>
+<message>
+<tag_code>11033</tag_code>
+<translation>Además, le recomendamos que la contraseña cumpla tres de estas cuatro condiciones:</translation>
+<variable>In addition, we recommend that your password meets three of the following four conditions:</variable>
+</message>
+<message>
+<tag_code>11034</tag_code>
+<translation>Al menos una mayúscula</translation>
+<variable>At least one uppercase character</variable>
+</message>
+<message>
+<tag_code>11035</tag_code>
+<translation>Al menos una minúscula</translation>
+<variable>At least one lowercase character</variable>
+</message>
+<message>
+<tag_code>11036</tag_code>
+<translation>Al menos un número</translation>
+<variable>At least one number</variable>
+</message>
+<message>
+<tag_code>11037</tag_code>
+<translation>Al menos un carácter especial, como &#64;&#35;&amp;...</translation>
+<variable>At least one special character, such as &#64;&#35;&amp;...</variable>
+</message>
+<message>
+<tag_code>11038</tag_code>
+<translation>Habilitar restablecimiento de contraseña</translation>
+<variable>Enable Password Reset</variable>
+</message>
+<message>
+<tag_code>11039</tag_code>
+<translation>Hora del último restablecimiento de contraseña</translation>
+<variable>Last time password was reset</variable>
+</message>
+<message>
+<tag_code>11040</tag_code>
+<translation>Proteja su contraseña</translation>
+<variable>Secure Your Password</variable>
+</message>
+<message>
+<tag_code>11041</tag_code>
+<translation>Restablecimiento de la contraseña del router</translation>
+<variable>Router Password Reset</variable>
+</message>
+<message>
+<tag_code>11042</tag_code>
+<translation>Su contraseña de administración no es segura. Le recomendamos que cambie la contraseña a una más segura que cumpla nuestros requisitos de contraseña. Las contraseñas seguras protegen su red frente a amenazas externas.</translation>
+<variable>Your admin password is not secure. We recommend that you change your password to a stronger password that meets our password requirements. A stronger password protects your network against external threats.</variable>
+</message>
+<message>
+<tag_code>11043</tag_code>
+<translation>Hemos comprobado su solicitud de restablecimiento de contraseña. Introduzca una nueva contraseña a continuación, complete el resto de campos y haga clic en el botón &lt;b&gt;Siguiente&lt;/b&gt;.</translation>
+<variable>We verified your password reset request. Enter a new password below, complete the other fields, then click the &lt;b&gt;Next&lt;/b&gt; button.</variable>
+</message>
+<message>
+<tag_code>11044</tag_code>
+<translation>La próxima vez que inicie una sesión, utilice la contraseña que acaba de crear. El nombre de usuario siempre es "admin".</translation>
+<variable>The next time you log in, use the password that you just created. Your user name is always admin.</variable>
+</message>
+<message>
+<tag_code>11045</tag_code>
+<translation>Podemos ayudarle a restablecer la contraseña de administración del router. Necesita el número de serie del router, ubicado en la etiqueta del producto. Introduzca el número de serie del router en el campo correspondiente y haga clic en el botón &lt;b&gt;Continuar&lt;/b&gt;.</translation>
+<variable>We can help you reset your router's admin password. You need your router's serial number, which can be found on the router label. Enter your router's serial number in the field and click the &lt;b&gt;Continue&lt;/b&gt; button.</variable>
+</message>
+<message>
+<tag_code>11046</tag_code>
+<translation>La contraseña de administración se ha restablecido correctamente.</translation>
+<variable>You successfully reset the admin password.</variable>
+</message>
+<message>
+<tag_code>11047</tag_code>
+<translation>Omitir</translation>
+<variable>Skip</variable>
 </message>
 </tag_msg>

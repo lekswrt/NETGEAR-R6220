@@ -1113,3 +1113,56 @@ void if_readlist_proc(struct interface *ife)
     }
     fclose(fh);
 }
+
+#define IPV6_ADDR_GLOBAL                0x0000U
+#define IPV6_ADDR_LOOPBACK      0x0010U
+#define IPV6_ADDR_LINKLOCAL     0x0020U
+#define IPV6_ADDR_SITELOCAL     0x0040U
+#define IPV6_ADDR_COMPATv4      0x0080U
+#define IPV6_ADDR_SCOPE_MASK    0x00f0U
+
+char *get_if_addr_by_scope(const char *ifname, char *addrbuf, int buflen,
+						int *addr_plen, int addr_scope)
+{
+	FILE *f;
+	char addr6[40], devname[20];
+	struct in6_addr sin6;
+	int plen, scope, dad_status, if_idx;
+	char addr6p[8][5];
+
+	if (!ifname || !*ifname)
+		return NULL;
+
+	if ((f = fopen("/proc/net/if_inet6", "r")) != NULL) {
+		while (fscanf
+			   (f, "%4s%4s%4s%4s%4s%4s%4s%4s %02x %02x %02x %02x %20s\n",
+				addr6p[0], addr6p[1], addr6p[2], addr6p[3], addr6p[4],
+				addr6p[5], addr6p[6], addr6p[7], &if_idx, &plen, &scope,
+				&dad_status, devname) != EOF) {
+			if (!strcmp(devname, ifname)) {
+				sprintf(addr6, "%s:%s:%s:%s:%s:%s:%s:%s",
+						addr6p[0], addr6p[1], addr6p[2], addr6p[3],
+						addr6p[4], addr6p[5], addr6p[6], addr6p[7]);
+				if ((scope & IPV6_ADDR_SCOPE_MASK) == addr_scope) {
+					inet_pton(AF_INET6, addr6, &sin6);
+					inet_ntop(AF_INET6, &sin6, addrbuf, buflen);
+					*addr_plen = plen;
+					fclose(f);
+					return addrbuf;
+				}
+			}
+		}
+		fclose(f);
+	}
+	return NULL;
+}
+
+char *get_if_linklocal(const char *ifname, char *addrbuf, int buflen, int *addr_plen)
+{
+	return get_if_addr_by_scope(ifname, addrbuf, buflen, addr_plen, IPV6_ADDR_LINKLOCAL);
+}
+
+char *get_if_global(const char *ifname, char *addrbuf, int buflen, int *addr_plen)
+{
+	return get_if_addr_by_scope(ifname, addrbuf, buflen, addr_plen, IPV6_ADDR_GLOBAL);
+}

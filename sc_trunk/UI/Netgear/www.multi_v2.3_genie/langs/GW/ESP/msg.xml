@@ -155,4 +155,19 @@
 		<translation>Responda a cada pregunta.</translation>
 		<variable>gsm_msg_pwd_sec_ans</variable>
 	</message>
+	<message>
+		<err_code>13740</err_code>
+		<translation>No puede utilizar la contraseña de administración predeterminada. Debe cambiar la contraseña de administración.</translation>
+		<variable>gsm_msg_change_default_password</variable>
+	</message>
+	<message>
+		<err_code>13741</err_code>
+		<translation>Debe introducir una contraseña.</translation>
+		<variable>gsm_msg_enter_password</variable>
+	</message>
+	<message>
+		<err_code>13742</err_code>
+		<translation>Su contraseña de administración no es segura. Le recomendamos que cambie la contraseña a una más segura que cumpla nuestros requisitos de contraseña. Las contraseñas seguras protegen su red frente a amenazas externas.</translation>
+		<variable>gsm_msg_enter_secure_password</variable>
+	</message>
 </error_msg>

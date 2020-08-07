@@ -2375,4 +2375,19 @@
 		<translation>Warnung: Der Router konnte sich nicht mit dem NTP-Server verbinden, bitte überprüfen Sie Ihre Internetverbindung oder versuchen Sie es mit einem anderen NTP-Server</translation>
 		<variable>gsm_msg_ntp_sync_fail</variable>
 	</message>
+	<message>
+		<err_code>13740</err_code>
+		<translation>Sie können nicht das standardmäßige Administratorpasswort verwenden. Sie müssen das Administratorpasswort ändern.</translation>
+		<variable>gsm_msg_change_default_password</variable>
+	</message>
+	<message>
+		<err_code>13741</err_code>
+		<translation>Sie müssen ein Passwort eingeben.</translation>
+		<variable>gsm_msg_enter_password</variable>
+	</message>
+	<message>
+		<err_code>13742</err_code>
+		<translation>Ihr Administratorpasswort ist nicht sicher Wir empfehlen Ihnen, ein sichereres Passwort zu wählen, das unseren Passwortanforderungen entspricht. Ein sichereres Passwort schützt Ihr Netzwerk vor externen Angriffen.</translation>
+		<variable>gsm_msg_enter_secure_password</variable>
+	</message>
 </error_msg>

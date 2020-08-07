@@ -223,36 +223,36 @@ static inline void initial_udphd(const struct udphdr *recv_udphd, struct udphdr 
 		dns_udphd->check = csum_tcpudp_magic(dns_iphd->saddr, dns_iphd->daddr, 
 			udplen, IPPROTO_UDP, data_csum);
 }
-
+/*
 static void cup_destroy(struct sk_buff *skb)
 {
 	dev_put(skb->dev);
 }
+*/
 
 static inline void initial_dns_skb(struct sk_buff *dns_skb, struct net_device *dev, __be16 protocol)
 {
 	dns_skb->dev = dev;
 	dns_skb->pkt_type = PACKET_OTHERHOST;
 	dns_skb->ip_summed = CHECKSUM_NONE;
-	dns_skb->destructor = cup_destroy;
+	//dns_skb->destructor = cup_destroy;
+	dns_skb->destructor = NULL;
 	dns_skb->priority = 0;
 	dns_skb->protocol = protocol; //htons(ETH_P_IP);
 }
 
 int deliver_dns_skb(struct sk_buff *dns_skb)
 {
-	int num;
-	struct net_device *dev;
-	
-	dev = dns_skb->dev;
-	if((num = dev_queue_xmit(dns_skb))<0) {
-		kfree(dns_skb);
-		dev_put(dev);
+	int ret;
+
+	if((ret = dev_queue_xmit(dns_skb)) != NET_XMIT_SUCCESS) {
+		//kfree(dns_skb);
+		//dev_put(dev);
 		printk("dev_xmit error\n");
 		return -1;
 		}
 		//printk("dev_ximt sucess\n");
-	return num;
+	return ret;
 }
 
 static int get_dev_ipv6_addr(struct net_device *dev, struct in6_addr *addr)
@@ -419,12 +419,15 @@ static int dns_hijack_handle(struct sk_buff *skb)
 				return 0;
 			}
 			
-			if (dns_srcip_for_attachdevice_reading)
+			if(recv_iphd)
 			{
-				printk(KERN_ALERT "dns srcip for attachdevice reading, not save for this packet\n");
-			} else
-			{
-				dns_srcip_for_attachdevice_save(ntohl(recv_iphd->saddr));
+				if (dns_srcip_for_attachdevice_reading)
+				{
+					printk(KERN_ALERT "dns srcip for attachdevice reading, not save for this packet\n");
+				} else
+				{
+					dns_srcip_for_attachdevice_save(ntohl(recv_iphd->saddr));
+				}
 			}
 
 			recv_data = (unsigned char *) recv_udphd + UDPHEAD_LEN;
@@ -514,9 +517,9 @@ static int dns_hijack_handle(struct sk_buff *skb)
 					for (i = 0; i < BRIDGE_NUM; i++)
 					{	
 						found = 0;
-						br_dev = br_port->br->dev;
+						br_dev = br_port?((br_port->br)?(br_port->br->dev):NULL):NULL;
 						dns_ans = in_aton(dns_setting[i].dns_ip);
-						if (strcmp(dns_setting[i].bridge_name, br_dev->name) == 0 && dns_ans != 0)
+						if (br_dev && strcmp(dns_setting[i].bridge_name, br_dev->name) == 0 && dns_ans != 0)
 						{
 							initial_dns_tail(dns_ans, &dns_tail);
 							found = 1;

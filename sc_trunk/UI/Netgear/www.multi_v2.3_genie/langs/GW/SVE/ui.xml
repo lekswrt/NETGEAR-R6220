@@ -1289,4 +1289,94 @@
 <translation>Du måste godkänna tjänstevillkoren för att slutföra installationen.&lt;br&gt;Om du inte godkänner tjänstevillkoren måste du lämna tillbaka NETGEAR-enheten.</translation>
 <variable>To complete the installation process, you must agree to the Terms of Services.&lt;br&gt;If you do not accept these Terms of Services, you must return Your NETGEAR device.</variable>
 </message>
+<message>
+<tag_code>11030</tag_code>
+<translation>Vi rekommenderar att ditt lösenord uppfyller följande villkor:</translation>
+<variable>We recommend that your password meets the following conditions:</variable>
+</message>
+<message>
+<tag_code>11031</tag_code>
+<translation>Det ska bestå av 6 till 32 tecken</translation>
+<variable>Contains 6 to 32 characters</variable>
+</message>
+<message>
+<tag_code>11032</tag_code>
+<translation>Det får innehålla högst två identiska tecken i rad</translation>
+<variable>Contains no more than two identical characters in a row</variable>
+</message>
+<message>
+<tag_code>11033</tag_code>
+<translation>Dessutom rekommenderar vi att lösenordet uppfyller tre av följande fyra villkor:</translation>
+<variable>In addition, we recommend that your password meets three of the following four conditions:</variable>
+</message>
+<message>
+<tag_code>11034</tag_code>
+<translation>Minst en versal</translation>
+<variable>At least one uppercase character</variable>
+</message>
+<message>
+<tag_code>11035</tag_code>
+<translation>Minst en gemen</translation>
+<variable>At least one lowercase character</variable>
+</message>
+<message>
+<tag_code>11036</tag_code>
+<translation>Minst en siffra</translation>
+<variable>At least one number</variable>
+</message>
+<message>
+<tag_code>11037</tag_code>
+<translation>Minst ett specialtecken, t.ex. &#64;&#35;&amp;...</translation>
+<variable>At least one special character, such as &#64;&#35;&amp;...</variable>
+</message>
+<message>
+<tag_code>11038</tag_code>
+<translation>Aktivera lösenordsåterställning</translation>
+<variable>Enable Password Reset</variable>
+</message>
+<message>
+<tag_code>11039</tag_code>
+<translation>Senaste lösenordsåterställning</translation>
+<variable>Last time password was reset</variable>
+</message>
+<message>
+<tag_code>11040</tag_code>
+<translation>Säkra ditt lösenord</translation>
+<variable>Secure Your Password</variable>
+</message>
+<message>
+<tag_code>11041</tag_code>
+<translation>Återställning av routerns lösenord</translation>
+<variable>Router Password Reset</variable>
+</message>
+<message>
+<tag_code>11042</tag_code>
+<translation>Administratörslösenordet är inte säkert. Vi rekommenderar att du ändrar lösenordet till ett starkare lösenord som uppfyller våra krav på lösenord. Ett starkare lösenord skyddar ditt nätverk mot externa hot.</translation>
+<variable>Your admin password is not secure. We recommend that you change your password to a stronger password that meets our password requirements. A stronger password protects your network against external threats.</variable>
+</message>
+<message>
+<tag_code>11043</tag_code>
+<translation>Vi har verifierat din begäran om återställning av lösenord. Ange ett nytt lösenord nedan, fyll i övriga fält och klicka sedan på knappen &lt;b&gt;Nästa&lt;/b&gt;.</translation>
+<variable>We verified your password reset request. Enter a new password below, complete the other fields, then click the &lt;b&gt;Next&lt;/b&gt; button.</variable>
+</message>
+<message>
+<tag_code>11044</tag_code>
+<translation>Nästa gång du loggar in använder du lösenordet du just har skapat. Användarnamnet är alltid admin.</translation>
+<variable>The next time you log in, use the password that you just created. Your user name is always admin.</variable>
+</message>
+<message>
+<tag_code>11045</tag_code>
+<translation>Vi kan hjälpa dig återställa routerns administratörslösenord. Du behöver routerns serienummer, som finns på routeretiketten. Ange routerns serienummer i fältet och klicka på knappen &lt;b&gt;Fortsätt&lt;/b&gt;.</translation>
+<variable>We can help you reset your router's admin password. You need your router's serial number, which can be found on the router label. Enter your router's serial number in the field and click the &lt;b&gt;Continue&lt;/b&gt; button.</variable>
+</message>
+<message>
+<tag_code>11046</tag_code>
+<translation>Du har nu återställt administratörslösenordet.</translation>
+<variable>You successfully reset the admin password.</variable>
+</message>
+<message>
+<tag_code>11047</tag_code>
+<translation>Hoppa över</translation>
+<variable>Skip</variable>
+</message>
 </tag_msg>

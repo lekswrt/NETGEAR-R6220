@@ -1,0 +1,171 @@
+diff -uNr bftpd/login.c bftpd_new/login.c
+--- bftpd/login.c	2018-09-19 16:35:54.000000000 +0800
++++ bftpd_new/login.c	2018-11-01 15:11:30.000000000 +0800
+@@ -104,6 +104,40 @@
+ 	return from_readysharecloud;
+ }
+ #endif
++#ifdef SECURITY_ENHANCE
++#include <openssl/evp.h>
++#define SC_CFPRINTF(fmt, args...)    do{    FILE *fp=fopen("/dev/console", "a+"); if(fp) {fprintf(fp, "[%s::%s():%d] ", __FILE__, __FUNCTION__, __LINE__);fprintf(fp, fmt, ##args);fclose(fp);}}while(0)
++int password_hash(const char *password, char *hash, int max_len)
++{
++	unsigned char md_value[EVP_MAX_MD_SIZE];
++	unsigned int md_len, i, len = 0;
++	EVP_MD_CTX mdctx;
++	const EVP_MD *md;
++
++	if(!password || !hash)
++		return -1;
++
++	md = EVP_sha256();
++	if(!md) {
++		return -1;
++	}
++
++	EVP_MD_CTX_init(&mdctx);
++	EVP_DigestInit_ex(&mdctx, md, NULL);
++	EVP_DigestUpdate(&mdctx, password, strlen(password));
++	EVP_DigestFinal_ex(&mdctx, md_value, &md_len);
++	EVP_MD_CTX_cleanup(&mdctx);
++
++	for(i = 0; i < md_len && i < max_len/2; i++) 
++	{
++		len += sprintf((char*)hash + i*2, "%02x", md_value[i]);
++	}
++	hash[len] = '\0';
++
++	return 0;
++}
++
++#endif
+ 
+ char *mygetpwuid(int uid, FILE * file, char *name)
+ {
+@@ -251,8 +285,12 @@
+ {
+    FILE *my_file;
+    int found_user = 0;
+-   char user[33], password[33], group[33], home_dir[33];
++   char user[128], password[128], group[128], home_dir[128];
+    int return_value;
++#ifdef SECURITY_ENHANCE
++   char hash_str[128];
++
++#endif
+ 
+    my_file = fopen(my_filename, "r");
+    if (! my_file)
+@@ -283,12 +321,20 @@
+       password[0]='\0';
+    if (found_user)
+    {
++#ifdef SECURITY_ENHANCE
++      password_hash(my_password, hash_str, sizeof(hash_str));
++      //SC_CFPRINTF("DEBUG: my_pass: %s, hash: %s, correct: %s\n", my_password, hash_str, password);
++#endif
+       /* check password */
+       if (! strcmp(password, "*") )
+       {
+       	 return ADMIN_WITH_CORRECT_PASS;
+       }
++#ifdef SECURITY_ENHANCE
++      else if ( strcmp(password, hash_str) )
++#else
+       else if ( strcmp(password, my_password) )
++#endif
+          return ADMIN_WITH_WRONG_PASS;
+       else
+          return ADMIN_WITH_CORRECT_PASS;
+@@ -674,6 +720,9 @@
+ */
+ int checkpass_pwd(char *password)
+ {
++#ifdef SECURITY_ENHANCE
++	char hash_str[128];
++#endif
+    char *crypt_value = NULL;
+ #ifdef HAVE_SHADOW_H
+    char *shadow_value = NULL;
+@@ -681,14 +730,24 @@
+ #ifdef HAVE_SHADOW_H
+ 	struct spwd *shd;
+ #endif
++#ifdef SECURITY_ENHANCE
++      password_hash(password, hash_str, sizeof(hash_str));
++      crypt_value = crypt(hash_str, userinfo.pw_passwd);
++#else
+         crypt_value = crypt(password, userinfo.pw_passwd);
++#endif
+ 	// if (strcmp(userinfo.pw_passwd, (char *) crypt(password, userinfo.pw_passwd))) {
+         if (!crypt_value || strcmp(userinfo.pw_passwd, crypt_value) )
+         {
+ #ifdef HAVE_SHADOW_H
+ 		if (!(shd = getspnam(user)))
+ 			return 1;
++#ifdef SECURITY_ENHANCE
++		password_hash(password, hash_str, sizeof(hash_str));
++                shadow_value = crypt(hash_str, shd->sp_pwdp);
++#else
+                 shadow_value = crypt(password, shd->sp_pwdp);
++#endif
+                 if (! shadow_value)
+                    return 1;
+ 		// if (strcmp(shd->sp_pwdp, (char *) crypt(password, shd->sp_pwdp)))
+@@ -809,7 +868,7 @@
+ {
+ 	int i =0, str_i = 0;
+ 	signed char ch;
+-	char str_tmp[4][33];
++	char str_tmp[4][128];
+ 
+ 	while((ch = getc(my_file)) != EOF )
+ 	{
+@@ -850,9 +909,12 @@
+ {
+    FILE *my_file;
+    int found_user = 0;
+-   char user[33], password[33], group[33], home_dir[65];
++   char user[128], password[128], group[128], home_dir[65];
+    char *my_home_dir = NULL;
+    int return_value;
++#ifdef SECURITY_ENHANCE
++	char hash_str[128];
++#endif
+ 
+ #ifdef REMOTE_SMB_CONF
+ 	if (ftp_request_from_readysharecloud())
+@@ -892,11 +954,18 @@
+       password[0]='\0';
+    if (found_user)
+    {
++#ifdef SECURITY_ENHANCE
++      password_hash(my_password, hash_str, sizeof(hash_str));
++#endif
+       /* check password */
+       if (! strcmp(password, "*") )
+       {
+       }
++#ifdef SECURITY_ENHANCE
++      else if ( strcmp(password, hash_str) )
++#else
+       else if ( strcmp(password, my_password) )
++#endif
+          return NULL;
+ 
+       my_home_dir = calloc( strlen(home_dir) + 1, sizeof(char) );
+diff -uNr bftpd/Makefile bftpd_new/Makefile
+--- bftpd/Makefile	2018-09-19 16:35:54.000000000 +0800
++++ bftpd_new/Makefile	2018-10-26 16:57:51.000000000 +0800
+@@ -41,6 +41,11 @@
+ CFLAGS += -DREMOTE_SMB_CONF
+ endif
+ 
++ifeq ($(SECURITY_ENHANCE),1)
++CFLAGS += -DSECURITY_ENHANCE -I$(LIBS_DIR)/public/$(OPENSSL_USE)/include 
++LDFLAGS += -L$(LIBS_DIR)/public/$(OPENSSL_USE) -lssl -lcrypto  
++endif
++
+ all: bftpd
+ 
+ bftpd: $(OBJS)

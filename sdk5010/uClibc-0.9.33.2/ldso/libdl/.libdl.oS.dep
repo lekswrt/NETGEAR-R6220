@@ -17,17 +17,17 @@ ldso/libdl/libdl.oS: ldso/libdl/libdl.c include/libc-symbols.h \
  include/sys/param.h include/limits.h \
  /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/lib/gcc/mipsel-buildroot-linux-uclibc/4.6.3/include-fixed/limits.h \
  include/bits/posix1_lim.h include/bits/local_lim.h \
- /home/disk3/peter/RELEASE/sdk5010/linux-2.6.36.x/include/linux/limits.h \
+ /home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/linux/limits.h \
  include/bits/uClibc_local_lim.h include/bits/posix2_lim.h \
  include/bits/xopen_lim.h include/bits/stdio_lim.h \
- /home/disk3/peter/RELEASE/sdk5010/linux-2.6.36.x/include/linux/param.h \
- /home/disk3/peter/RELEASE/sdk5010/linux-2.6.36.x/include/asm/param.h \
- /home/disk3/peter/RELEASE/sdk5010/linux-2.6.36.x/include/asm-generic/param.h \
+ /home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/linux/param.h \
+ /home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/asm/param.h \
+ /home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/asm-generic/param.h \
  ldso/include/dl-syscall.h include/sys/syscall.h include/bits/sysnum.h \
  include/bits/syscalls.h include/errno.h include/bits/errno.h \
- /home/disk3/peter/RELEASE/sdk5010/linux-2.6.36.x/include/linux/errno.h \
- /home/disk3/peter/RELEASE/sdk5010/linux-2.6.36.x/include/asm/errno.h \
- /home/disk3/peter/RELEASE/sdk5010/linux-2.6.36.x/include/asm-generic/errno-base.h \
+ /home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/linux/errno.h \
+ /home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/asm/errno.h \
+ /home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/asm-generic/errno-base.h \
  include/bits/syscalls-common.h ldso/ldso/mips/dl-syscalls.h \
  include/bits/mman.h include/bits/kernel_stat.h ldso/include/dl-string.h \
  ldso/ldso/mips/dl-sysdep.h include/elf.h include/stdint.h \
@@ -40,7 +40,7 @@ ldso/libdl/libdl.oS: ldso/libdl/libdl.c include/libc-symbols.h \
  libpthread/nptl/sysdeps/unix/sysv/linux/mips/lowlevellock.h \
  include/bits/uClibc_clk_tck.h include/atomic.h include/bits/atomic.h \
  include/inttypes.h include/bits/kernel-features.h \
- /home/disk3/peter/RELEASE/sdk5010/linux-2.6.36.x/include/linux/version.h \
+ /home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/linux/version.h \
  libpthread/nptl/sysdeps/mips/pthreaddef.h \
  libpthread/nptl/sysdeps/mips/../../../nptl_db/thread_db.h \
  include/pthread.h include/signal.h include/bits/uClibc_pthread.h \
@@ -48,10 +48,10 @@ ldso/libdl/libdl.oS: ldso/libdl/libdl.c include/libc-symbols.h \
  libc/sysdeps/linux/common/unwind.h include/resolv.h include/netinet/in.h \
  include/sys/socket.h include/sys/uio.h include/bits/socket.h \
  include/bits/sockaddr.h \
- /home/disk3/peter/RELEASE/sdk5010/linux-2.6.36.x/include/asm/socket.h \
- /home/disk3/peter/RELEASE/sdk5010/linux-2.6.36.x/include/asm/sockios.h \
- /home/disk3/peter/RELEASE/sdk5010/linux-2.6.36.x/include/asm/ioctl.h \
- /home/disk3/peter/RELEASE/sdk5010/linux-2.6.36.x/include/asm-generic/ioctl.h \
+ /home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/asm/socket.h \
+ /home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/asm/sockios.h \
+ /home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/asm/ioctl.h \
+ /home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/asm-generic/ioctl.h \
  include/bits/in.h libpthread/nptl/sysdeps/pthread/uClibc-glue.h \
  include/bits/elfclass.h ldso/include/dl-elf.h ldso/include/dl-defs.h \
  ldso/include/dl-hash.h include/assert.h include/stdio.h \
@@ -144,7 +144,7 @@ include/bits/posix1_lim.h:
 
 include/bits/local_lim.h:
 
-/home/disk3/peter/RELEASE/sdk5010/linux-2.6.36.x/include/linux/limits.h:
+/home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/linux/limits.h:
 
 include/bits/uClibc_local_lim.h:
 
@@ -154,11 +154,11 @@ include/bits/xopen_lim.h:
 
 include/bits/stdio_lim.h:
 
-/home/disk3/peter/RELEASE/sdk5010/linux-2.6.36.x/include/linux/param.h:
+/home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/linux/param.h:
 
-/home/disk3/peter/RELEASE/sdk5010/linux-2.6.36.x/include/asm/param.h:
+/home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/asm/param.h:
 
-/home/disk3/peter/RELEASE/sdk5010/linux-2.6.36.x/include/asm-generic/param.h:
+/home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/asm-generic/param.h:
 
 ldso/include/dl-syscall.h:
 
@@ -172,11 +172,11 @@ include/errno.h:
 
 include/bits/errno.h:
 
-/home/disk3/peter/RELEASE/sdk5010/linux-2.6.36.x/include/linux/errno.h:
+/home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/linux/errno.h:
 
-/home/disk3/peter/RELEASE/sdk5010/linux-2.6.36.x/include/asm/errno.h:
+/home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/asm/errno.h:
 
-/home/disk3/peter/RELEASE/sdk5010/linux-2.6.36.x/include/asm-generic/errno-base.h:
+/home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/asm-generic/errno-base.h:
 
 include/bits/syscalls-common.h:
 
@@ -236,7 +236,7 @@ include/inttypes.h:
 
 include/bits/kernel-features.h:
 
-/home/disk3/peter/RELEASE/sdk5010/linux-2.6.36.x/include/linux/version.h:
+/home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/linux/version.h:
 
 libpthread/nptl/sysdeps/mips/pthreaddef.h:
 
@@ -268,13 +268,13 @@ include/bits/socket.h:
 
 include/bits/sockaddr.h:
 
-/home/disk3/peter/RELEASE/sdk5010/linux-2.6.36.x/include/asm/socket.h:
+/home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/asm/socket.h:
 
-/home/disk3/peter/RELEASE/sdk5010/linux-2.6.36.x/include/asm/sockios.h:
+/home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/asm/sockios.h:
 
-/home/disk3/peter/RELEASE/sdk5010/linux-2.6.36.x/include/asm/ioctl.h:
+/home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/asm/ioctl.h:
 
-/home/disk3/peter/RELEASE/sdk5010/linux-2.6.36.x/include/asm-generic/ioctl.h:
+/home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/asm-generic/ioctl.h:
 
 include/bits/in.h:
 
@@ -313,4 +313,4 @@ include/string.h:
 ldso/include/ldsodefs.h:
 
 libpthread/nptl/sysdeps/mips/dl-tls.h:
-cmd_ldso_libdl_libdl.oS := /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/bin/mipsel-linux-gcc -c ldso/libdl/libdl.c -o ldso/libdl/libdl.oS -include include/libc-symbols.h -Wstrict-prototypes -Wstrict-aliasing -funsigned-char -fno-builtin -fno-asm -std=gnu99 -march=mips32r2 -mtune=mips32r2 -mabi=32 -fno-stack-protector -nostdinc -Iinclude -Iinclude -I. -Ilibc/sysdeps/linux -Ilibc/sysdeps/linux/mips -Os -funit-at-a-time -fmerge-all-constants -fstrict-aliasing -fno-tree-loop-optimize -fno-tree-dominator-opts -fno-strength-reduce -mno-split-addresses -DHAVE_FORCED_UNWIND -Ilibpthread/nptl -Ilibpthread/nptl -Ilibpthread/nptl/sysdeps/unix/sysv/linux/mips/ -Ilibpthread/nptl/sysdeps/unix/sysv/linux/mips -Ilibpthread/nptl/sysdeps/mips -Ilibpthread/nptl/sysdeps/mips -Ilibpthread/nptl/sysdeps/unix/sysv/linux -Ilibpthread/nptl/sysdeps/unix/sysv/linux -Ilibpthread/nptl/sysdeps/pthread -Ilibpthread/nptl/sysdeps/pthread/bits -Ilibpthread/nptl/sysdeps/generic -Ildso/ldso/mips -Ildso/include -Ilibc/sysdeps/linux/common -I/home/disk3/peter/RELEASE/sdk5010/linux-2.6.36.x/include/ -isystem /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/lib/gcc/mipsel-buildroot-linux-uclibc/4.6.3/include-fixed -isystem /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/lib/gcc/mipsel-buildroot-linux-uclibc/4.6.3/include -DNDEBUG -D__USE_STDIO_FUTEXES__ -fPIC -DSHARED -DNOT_IN_libc -DIS_IN_libdl -Ildso/ldso/mips -Ildso/include -Ildso/ldso -DUCLIBC_RUNTIME_PREFIX=\"/home/disk3/peter/RELEASE/sdk5010/.sc_trunk/target/\" -DLDSO_ELFINTERP=\"mips/elfinterp.c\" -MT ldso/libdl/libdl.oS -MD -MP -MF ldso/libdl/.libdl.oS.dep
+cmd_ldso_libdl_libdl.oS := /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/bin/mipsel-linux-gcc -c ldso/libdl/libdl.c -o ldso/libdl/libdl.oS -include include/libc-symbols.h -Wstrict-prototypes -Wstrict-aliasing -funsigned-char -fno-builtin -fno-asm -std=gnu99 -march=mips32r2 -mtune=mips32r2 -mabi=32 -fno-stack-protector -nostdinc -Iinclude -Iinclude -I. -Ilibc/sysdeps/linux -Ilibc/sysdeps/linux/mips -Os -funit-at-a-time -fmerge-all-constants -fstrict-aliasing -fno-tree-loop-optimize -fno-tree-dominator-opts -fno-strength-reduce -mno-split-addresses -DHAVE_FORCED_UNWIND -Ilibpthread/nptl -Ilibpthread/nptl -Ilibpthread/nptl/sysdeps/unix/sysv/linux/mips/ -Ilibpthread/nptl/sysdeps/unix/sysv/linux/mips -Ilibpthread/nptl/sysdeps/mips -Ilibpthread/nptl/sysdeps/mips -Ilibpthread/nptl/sysdeps/unix/sysv/linux -Ilibpthread/nptl/sysdeps/unix/sysv/linux -Ilibpthread/nptl/sysdeps/pthread -Ilibpthread/nptl/sysdeps/pthread/bits -Ilibpthread/nptl/sysdeps/generic -Ildso/ldso/mips -Ildso/include -Ilibc/sysdeps/linux/common -I/home/disk3/peter/release_r6260/sdk5010/linux-2.6.36.x/include/ -isystem /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/lib/gcc/mipsel-buildroot-linux-uclibc/4.6.3/include-fixed -isystem /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/lib/gcc/mipsel-buildroot-linux-uclibc/4.6.3/include -DNDEBUG -D__USE_STDIO_FUTEXES__ -fPIC -DSHARED -DNOT_IN_libc -DIS_IN_libdl -Ildso/ldso/mips -Ildso/include -Ildso/ldso -DUCLIBC_RUNTIME_PREFIX=\"/home/disk3/peter/release_r6260/sdk5010/.sc_trunk/target/\" -DLDSO_ELFINTERP=\"mips/elfinterp.c\" -MT ldso/libdl/libdl.oS -MD -MP -MF ldso/libdl/.libdl.oS.dep

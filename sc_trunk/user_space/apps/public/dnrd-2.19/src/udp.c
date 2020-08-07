@@ -238,6 +238,9 @@ unsigned short getshort(char *addr)
  */
   extern int opendns;
   extern char PC_table[];
+#ifdef FUNJSQ
+  extern int funjsq_dns;
+#endif
 query_t *udp_handle_request()
 {
     unsigned           addr_len;
@@ -280,6 +283,28 @@ query_t *udp_handle_request()
 				trans_deviceid(deviceid, deviceid_b);
 			}
 		}
+#ifdef FUNJSQ
+		else if(funjsq_dns == 1 && strcmp(inet_ntoa(from_addr.sin_addr), inet_ntoa(recv_addr.sin_addr)) == 0)
+		{
+			/*
+			 * funjsq_dns will change DNS packet's src IP to LAN IP. But it will add EDNS0 option for us to get MAC address.
+			 * EDNS0 Option 65001 is for --add-mac, 
+			 * [00,0a] is Option len=10
+			 * [fd,e9] is 65001
+			 * [00 06] is MAC data len=6
+			 */
+			unsigned char EDNS0_option_prefix[6] = { 0x00, 0x0a, 0xfd, 0xe9, 0x00, 0x06};
+			unsigned char macaddr_buf[13] = {0};
+			char *funjsq_p = NULL;
+			funjsq_p = memmem(msg,len,EDNS0_option_prefix,6);
+			if(funjsq_p != NULL)
+			{
+				snprintf(macaddr_buf,13,"%02x%02x%02x%02x%02x%02x",(unsigned char)*(funjsq_p+6),(unsigned char)*(funjsq_p+7),(unsigned char)*(funjsq_p+8),(unsigned char)*(funjsq_p+9),(unsigned char)*(funjsq_p+10),(unsigned char)*(funjsq_p+11));
+				get_deviceid_by_macaddr(macaddr_buf, deviceid);
+				trans_deviceid(deviceid, deviceid_b);
+			}
+		}
+#endif
 		putshort(add_rrs, msg + 10);
 
 		memcpy(msg+len, fixed, sizeof(fixed));

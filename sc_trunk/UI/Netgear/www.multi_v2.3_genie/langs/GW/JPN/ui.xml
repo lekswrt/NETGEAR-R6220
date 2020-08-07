@@ -1289,4 +1289,94 @@
 <translation>インストールを完了するには、サービス利用規約に同意する必要があります。&lt;br&gt;これらのサービス利用規約に同意されない場合は、NETGEARデバイスをご返送いただく必要があります。</translation>
 <variable>To complete the installation process, you must agree to the Terms of Services.&lt;br&gt;If you do not accept these Terms of Services, you must return Your NETGEAR device.</variable>
 </message>
+<message>
+<tag_code>11030</tag_code>
+<translation>次の条件に適合するパスワードを使用することを推奨します。</translation>
+<variable>We recommend that your password meets the following conditions:</variable>
+</message>
+<message>
+<tag_code>11031</tag_code>
+<translation>6文字以上32文字以内</translation>
+<variable>Contains 6 to 32 characters</variable>
+</message>
+<message>
+<tag_code>11032</tag_code>
+<translation>同一文字が3文字以上連続していない</translation>
+<variable>Contains no more than two identical characters in a row</variable>
+</message>
+<message>
+<tag_code>11033</tag_code>
+<translation>さらに、次の4つの条件のうちの3つに適合するパスワードを使用することを推奨します。</translation>
+<variable>In addition, we recommend that your password meets three of the following four conditions:</variable>
+</message>
+<message>
+<tag_code>11034</tag_code>
+<translation>1つ以上の大文字を含む</translation>
+<variable>At least one uppercase character</variable>
+</message>
+<message>
+<tag_code>11035</tag_code>
+<translation>1つ以上の小文字を含む</translation>
+<variable>At least one lowercase character</variable>
+</message>
+<message>
+<tag_code>11036</tag_code>
+<translation>1つ以上の数字を含む</translation>
+<variable>At least one number</variable>
+</message>
+<message>
+<tag_code>11037</tag_code>
+<translation>1つ以上の特殊文字 (&#64;&#35;&amp;など) を含む</translation>
+<variable>At least one special character, such as &#64;&#35;&amp;...</variable>
+</message>
+<message>
+<tag_code>11038</tag_code>
+<translation>パスワードのリセットを有効にする</translation>
+<variable>Enable Password Reset</variable>
+</message>
+<message>
+<tag_code>11039</tag_code>
+<translation>前回のパスワードのリセット</translation>
+<variable>Last time password was reset</variable>
+</message>
+<message>
+<tag_code>11040</tag_code>
+<translation>パスワードのセキュリティを高める</translation>
+<variable>Secure Your Password</variable>
+</message>
+<message>
+<tag_code>11041</tag_code>
+<translation>ルーターのパスワードリセット</translation>
+<variable>Router Password Reset</variable>
+</message>
+<message>
+<tag_code>11042</tag_code>
+<translation>お使いの管理パスワードは安全ではありません。パスワードの要件に適合するより安全なパスワードに変更することを推奨します。より安全なパスワードを使用することで、外部の脅威からネットワークが保護されます。</translation>
+<variable>Your admin password is not secure. We recommend that you change your password to a stronger password that meets our password requirements. A stronger password protects your network against external threats.</variable>
+</message>
+<message>
+<tag_code>11043</tag_code>
+<translation>パスワードリセットの要求を確認しました。新しいパスワードを入力し、その他のフィールドを入力して、&lt;b&gt;[次へ]&lt;/b&gt; ボタンをクリックしてください。</translation>
+<variable>We verified your password reset request. Enter a new password below, complete the other fields, then click the &lt;b&gt;Next&lt;/b&gt; button.</variable>
+</message>
+<message>
+<tag_code>11044</tag_code>
+<translation>次回のログイン時には、作成したパスワードを使用してください。ユーザー名は常に「admin」です。</translation>
+<variable>The next time you log in, use the password that you just created. Your user name is always admin.</variable>
+</message>
+<message>
+<tag_code>11045</tag_code>
+<translation>管理者パスワードをリセットします。ルーターのシリアル番号が必要です。シリアル番号は、ルーターのラベルに記載されています。ルーターのシリアル番号をフィールドに入力して、&lt;b&gt;[続ける]&lt;/b&gt; をクリックします。</translation>
+<variable>We can help you reset your router's admin password. You need your router's serial number, which can be found on the router label. Enter your router's serial number in the field and click the &lt;b&gt;Continue&lt;/b&gt; button.</variable>
+</message>
+<message>
+<tag_code>11046</tag_code>
+<translation>管理者パスワードのリセットが完了しました。</translation>
+<variable>You successfully reset the admin password.</variable>
+</message>
+<message>
+<tag_code>11047</tag_code>
+<translation>スキップ</translation>
+<variable>Skip</variable>
+</message>
 </tag_msg>

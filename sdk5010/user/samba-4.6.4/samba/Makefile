@@ -27,6 +27,7 @@ patch_samba:
 	cp -af patch/gse.c $(SAMBA_DIRECTORY)/source3/librpc/crypto/gse.c
 	cp -af patch/wscript_configure_system_mitkrb5 $(SAMBA_DIRECTORY)/wscript_configure_system_mitkrb5
 	cp -af patch/wscript $(SAMBA_DIRECTORY)/third_party/wscript
+	cp -af patch/secrets.c $(SAMBA_DIRECTORY)/source3/passdb/secrets.c
 	@echo patch done
 
 configure_samba:

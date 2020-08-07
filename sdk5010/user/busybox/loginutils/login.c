@@ -237,7 +237,7 @@ int login_main(int argc UNUSED_PARAM, char **argv)
 #else
 #define SC_HACK
 #ifdef SC_HACK
-    char name[32],passwd[32];
+    char name[32],passwd[128];
     struct passwd  pw_copy;
 #endif
 #endif
@@ -364,8 +364,8 @@ int login_main(int argc UNUSED_PARAM, char **argv)
 #ifdef SC_HACK
     {
                 FILE *fp;
-                char name[32],passwd[32];
-                char buffer[128]="";
+                char name[32],passwd[128];
+                char buffer[256]="";
             struct passwd  pw_copy;
             
             pw = &pw_copy;              
@@ -378,7 +378,7 @@ int login_main(int argc UNUSED_PARAM, char **argv)
                         break;
                 }
                 fp=fopen("/etc/htpasswd","r");
-                fread(buffer,1,128,fp);
+                fread(buffer,1,256,fp);
                 sscanf(buffer,"%[^:]:%s",name,passwd);
                 fclose(fp);
                 pw->pw_name     = name;

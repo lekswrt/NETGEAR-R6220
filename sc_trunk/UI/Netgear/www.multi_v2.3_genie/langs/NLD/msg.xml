@@ -2361,4 +2361,19 @@
 		<translation>Waarschuwing: De router kan geen verbinding maken met de NTP-server. Controleer uw internetverbinding of probeer een andere NTP-server</translation>
 		<variable>gsm_msg_ntp_sync_fail</variable>
 	</message>
+	<message>
+		<err_code>13740</err_code>
+		<translation>U kunt geen standaardbeheerderswachtwoord gebruiken. U moet het beheerderswachtwoord wijzigen.</translation>
+		<variable>gsm_msg_change_default_password</variable>
+	</message>
+	<message>
+		<err_code>13741</err_code>
+		<translation>U moet een wachtwoord invoeren.</translation>
+		<variable>gsm_msg_enter_password</variable>
+	</message>
+	<message>
+		<err_code>13742</err_code>
+		<translation>Uw beheerderswachtwoord is niet veilig. We raden u aan uw wachtwoord naar een sterker wachtwoord te wijzigen dat aan onze veiligheidsvereisten voldoet. Door een sterker wachtwoord is uw netwerk tegen externe dreigingen beveiligd.</translation>
+		<variable>gsm_msg_enter_secure_password</variable>
+	</message>
 </error_msg>

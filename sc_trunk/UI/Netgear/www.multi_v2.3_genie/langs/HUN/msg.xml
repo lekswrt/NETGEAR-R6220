@@ -2404,4 +2404,19 @@
 		<translation>Figyelmeztetés: A router csatlakoztatása az NTP-szerverhez sikertelen volt. Kérjük, ellenőrizze internetkapcsolatát vagy próbálja meg újra a csatlakoztatást egy másik NTP-szerverrel.</translation>
 		<variable>gsm_msg_ntp_sync_fail</variable>
 	</message>
+	<message>
+		<err_code>13740</err_code>
+		<translation>Nem használhatja az alapértelmezett rendszergazdai jelszót. Meg kell változtatnia a rendszergazdai jelszót.</translation>
+		<variable>gsm_msg_change_default_password</variable>
+	</message>
+	<message>
+		<err_code>13741</err_code>
+		<translation>Meg kell adnia egy jelszót.</translation>
+		<variable>gsm_msg_enter_password</variable>
+	</message>
+	<message>
+		<err_code>13742</err_code>
+		<translation>Rendszergazdai jelszava nem biztonságos. Javasoljuk, hogy változtassa jelszavát erősebb jelszóra, amely megfelel a jelszókövetelményeinknek. Az erősebb jelszó megvédi hálózatát a külső fenyegetésektől.</translation>
+		<variable>gsm_msg_enter_secure_password</variable>
+	</message>
 </error_msg>

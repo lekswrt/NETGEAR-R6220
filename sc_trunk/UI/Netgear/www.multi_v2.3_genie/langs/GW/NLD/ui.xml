@@ -1289,4 +1289,94 @@
 <translation>Om het installatieproces te voltooien, dient u akkoord te gaan met de Servicevoorwaarden.&lt;br&gt;Als u niet akkoord gaat met deze Servicevoorwaarden, dient u uw NETGEAR-apparaat te retourneren.</translation>
 <variable>To complete the installation process, you must agree to the Terms of Services.&lt;br&gt;If you do not accept these Terms of Services, you must return Your NETGEAR device.</variable>
 </message>
+<message>
+<tag_code>11030</tag_code>
+<translation>Wij raden u aan dat uw wachtwoord aan de volgende voorwaarden voldoet:</translation>
+<variable>We recommend that your password meets the following conditions:</variable>
+</message>
+<message>
+<tag_code>11031</tag_code>
+<translation>Bevat 6 tot 32 tekens</translation>
+<variable>Contains 6 to 32 characters</variable>
+</message>
+<message>
+<tag_code>11032</tag_code>
+<translation>Bevat niet meer dan twee identieke tekens achter elkaar</translation>
+<variable>Contains no more than two identical characters in a row</variable>
+</message>
+<message>
+<tag_code>11033</tag_code>
+<translation>We raden u daarnaast aan dat uw wachtwoord voldoet aan drie van de vier volgende voorwaarden:</translation>
+<variable>In addition, we recommend that your password meets three of the following four conditions:</variable>
+</message>
+<message>
+<tag_code>11034</tag_code>
+<translation>Ten minste één hoofdletter</translation>
+<variable>At least one uppercase character</variable>
+</message>
+<message>
+<tag_code>11035</tag_code>
+<translation>Ten minste één kleine letter</translation>
+<variable>At least one lowercase character</variable>
+</message>
+<message>
+<tag_code>11036</tag_code>
+<translation>Ten minste één cijfer</translation>
+<variable>At least one number</variable>
+</message>
+<message>
+<tag_code>11037</tag_code>
+<translation>Ten minste één speciaal teken zoals &#64;&#35;&amp;...</translation>
+<variable>At least one special character, such as &#64;&#35;&amp;...</variable>
+</message>
+<message>
+<tag_code>11038</tag_code>
+<translation>Wachtwoordherstel inschakelen</translation>
+<variable>Enable Password Reset</variable>
+</message>
+<message>
+<tag_code>11039</tag_code>
+<translation>Laatste keer dat wachtwoord is hersteld</translation>
+<variable>Last time password was reset</variable>
+</message>
+<message>
+<tag_code>11040</tag_code>
+<translation>Houd uw wachtwoord veilig</translation>
+<variable>Secure Your Password</variable>
+</message>
+<message>
+<tag_code>11041</tag_code>
+<translation>Wachtwoord router herstellen</translation>
+<variable>Router Password Reset</variable>
+</message>
+<message>
+<tag_code>11042</tag_code>
+<translation>Uw beheerderswachtwoord is niet veilig. We raden u aan uw wachtwoord naar een sterker wachtwoord te wijzigen dat aan onze veiligheidsvereisten voldoet. Door een sterker wachtwoord is uw netwerk tegen externe dreigingen beveiligd.</translation>
+<variable>Your admin password is not secure. We recommend that you change your password to a stronger password that meets our password requirements. A stronger password protects your network against external threats.</variable>
+</message>
+<message>
+<tag_code>11043</tag_code>
+<translation>We hebben uw verzoek tot herstellen van het wachtwoord geverifieerd. Voer een nieuw wachtwoord in, vul de overige velden in en klik vervolgens op de knop &lt;b&gt;Volgende&lt;/b&gt;.</translation>
+<variable>We verified your password reset request. Enter a new password below, complete the other fields, then click the &lt;b&gt;Next&lt;/b&gt; button.</variable>
+</message>
+<message>
+<tag_code>11044</tag_code>
+<translation>De volgende keer dat u zich aanmeldt, gebruikt u het wachtwoord dat u zojuist hebt gemaakt. Uw gebruikersnaam is altijd admin.</translation>
+<variable>The next time you log in, use the password that you just created. Your user name is always admin.</variable>
+</message>
+<message>
+<tag_code>11045</tag_code>
+<translation>We kunnen u helpen het beheerderswachtwoord van de router te herstellen. We hebben het serienummer van uw router nodig. Dit vindt u op het routerlabel. Voer het serienummer van uw router in het veld in en klik op de knop &lt;b&gt;Doorgaan&lt;/b&gt;.</translation>
+<variable>We can help you reset your router's admin password. You need your router's serial number, which can be found on the router label. Enter your router's serial number in the field and click the &lt;b&gt;Continue&lt;/b&gt; button.</variable>
+</message>
+<message>
+<tag_code>11046</tag_code>
+<translation>Het beheerderswachtwoord is hersteld.</translation>
+<variable>You successfully reset the admin password.</variable>
+</message>
+<message>
+<tag_code>11047</tag_code>
+<translation>Overslaan</translation>
+<variable>Skip</variable>
+</message>
 </tag_msg>

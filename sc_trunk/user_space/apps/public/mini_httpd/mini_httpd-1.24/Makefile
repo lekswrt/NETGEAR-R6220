@@ -49,6 +49,11 @@ CFLAGS += -DUSB
 CFLAGS += -D_FILE_OFFSET_BITS=64
 endif
 
+ifeq ($(SECURITY_ENHANCE),1)
+CFLAGS += -DSECURITY_ENHANCE
+#CFLAGS += -L$(LIBS_DIR)/public/$(OPENSSL_USE) -lssl -lcrypto -I$(LIBS_DIR)/public/$(OPENSSL_USE)/include 
+endif
+
 ifeq ($(VLAN_SUPPORT),1)
 CFLAGS += -DVLAN_SUPPORT
 endif

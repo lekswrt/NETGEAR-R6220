@@ -115,4 +115,19 @@
 		<translation>Character is not allowed in passphrase.</translation>
 		<variable>gsm_msg_wls_wpa_key_forbid</variable>
 	</message>
+	<message>
+		<err_code>13740</err_code>
+		<translation>Ne možete upotrijebiti zadanu administratorsku lozinku. Morate promijeniti administratorsku lozinku.</translation>
+		<variable>gsm_msg_change_default_password</variable>
+	</message>
+	<message>
+		<err_code>13741</err_code>
+		<translation>Morate unijeti lozinku.</translation>
+		<variable>gsm_msg_enter_password</variable>
+	</message>
+	<message>
+		<err_code>13742</err_code>
+		<translation>Vaša administratorska lozinka nije sigurna. Preporučujemo da promijenite lozinku i odaberete sigurniju lozinku koja ispunjava naše uvjete za lozinke. Sigurnija lozinka zaštitit će vašu mrežu od vanjskih prijetnji.</translation>
+		<variable>gsm_msg_enter_secure_password</variable>
+	</message>
 </error_msg>

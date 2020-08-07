@@ -1,8 +1,8 @@
 memory.lo: memory.c ../../config.h include/private/memory.h \
  include/private/float.h \
- /home/disk3/peter/RELEASE/sc_trunk/user_space/apps/public/mediaserver/mediaserver_R6220/library/flac-1.2.1/src/libFLAC/../../../..//library/flac-1.2.1/include/FLAC/ordinals.h \
- /home/disk3/peter/RELEASE/sc_trunk/user_space/apps/public/mediaserver/mediaserver_R6220/library/flac-1.2.1/src/libFLAC/../../../..//library/flac-1.2.1/include/FLAC/assert.h \
- /home/disk3/peter/RELEASE/sc_trunk/user_space/apps/public/mediaserver/mediaserver_R6220/library/flac-1.2.1/src/libFLAC/../../../..//library/flac-1.2.1/include/share/alloc.h
+ /home/disk3/peter/release_r6260/sc_trunk/user_space/apps/public/mediaserver/mediaserver_R6220/library/flac-1.2.1/src/libFLAC/../../../..//library/flac-1.2.1/include/FLAC/ordinals.h \
+ /home/disk3/peter/release_r6260/sc_trunk/user_space/apps/public/mediaserver/mediaserver_R6220/library/flac-1.2.1/src/libFLAC/../../../..//library/flac-1.2.1/include/FLAC/assert.h \
+ /home/disk3/peter/release_r6260/sc_trunk/user_space/apps/public/mediaserver/mediaserver_R6220/library/flac-1.2.1/src/libFLAC/../../../..//library/flac-1.2.1/include/share/alloc.h
 
 ../../config.h:
 
@@ -10,8 +10,8 @@ include/private/memory.h:
 
 include/private/float.h:
 
-/home/disk3/peter/RELEASE/sc_trunk/user_space/apps/public/mediaserver/mediaserver_R6220/library/flac-1.2.1/src/libFLAC/../../../..//library/flac-1.2.1/include/FLAC/ordinals.h:
+/home/disk3/peter/release_r6260/sc_trunk/user_space/apps/public/mediaserver/mediaserver_R6220/library/flac-1.2.1/src/libFLAC/../../../..//library/flac-1.2.1/include/FLAC/ordinals.h:
 
-/home/disk3/peter/RELEASE/sc_trunk/user_space/apps/public/mediaserver/mediaserver_R6220/library/flac-1.2.1/src/libFLAC/../../../..//library/flac-1.2.1/include/FLAC/assert.h:
+/home/disk3/peter/release_r6260/sc_trunk/user_space/apps/public/mediaserver/mediaserver_R6220/library/flac-1.2.1/src/libFLAC/../../../..//library/flac-1.2.1/include/FLAC/assert.h:
 
-/home/disk3/peter/RELEASE/sc_trunk/user_space/apps/public/mediaserver/mediaserver_R6220/library/flac-1.2.1/src/libFLAC/../../../..//library/flac-1.2.1/include/share/alloc.h:
+/home/disk3/peter/release_r6260/sc_trunk/user_space/apps/public/mediaserver/mediaserver_R6220/library/flac-1.2.1/src/libFLAC/../../../..//library/flac-1.2.1/include/share/alloc.h:
