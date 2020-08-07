@@ -6569,4 +6569,84 @@
 <translation>NTP 设置</translation>
 <variable>NTP Settings</variable>
 </message>
+<message>
+<tag_code>11000</tag_code>
+<translation>Downloader 设置</translation>
+<variable>Downloader Settings </variable>
+</message>
+<message>
+<tag_code>11010</tag_code>
+<translation>路由器自动固件升级</translation>
+<variable>Router Auto Firmware Update</variable>
+</message>
+<message>
+<tag_code>11011</tag_code>
+<translation>启用路由器在将来自动升级固件。此操作可使您的路由器保持最新，具备最新的功能和安全补丁。</translation>
+<variable>Enable router to automatically update to future firmware. This keeps your router up to date with the latest features and security fixes.</variable>
+</message>
+<message>
+<tag_code>11012</tag_code>
+<translation>选择下面的某个选项：</translation>
+<variable>Select one of the following options:</variable>
+</message>
+<message>
+<tag_code>11013</tag_code>
+<translation>路由器分析数据收集 </translation>
+<variable>Router Analytics Data Collection</variable>
+</message>
+<message>
+<tag_code>11014</tag_code>
+<translation>启用收集&lt;a href="#" onclick="window.open('BRS_data_detail.htm','name','width=600,height=400,scrollbars=1,resizable=1','blank')" style="color: rgb(000,000,255);text-decoration:underline"&gt;&lt;font size=""&gt;路由器分析数据&lt;/font&gt;&lt;/a&gt;，有助于 NETGEAR 改进我们的服务和产品。</translation>
+<variable>Enable collection of router analytics data that will help NETGEAR improve our services and products.</variable>
+</message>
+<message>
+<tag_code>11015</tag_code>
+<translation>隐私政策</translation>
+<variable>Privacy Policy</variable>
+</message>
+<message>
+<tag_code>11016</tag_code>
+<translation>服务条款</translation>
+<variable>Terms of Services</variable>
+</message>
+<message>
+<tag_code>11017</tag_code>
+<translation>请对上述两个功能进行选择以继续。</translation>
+<variable>Please make your selection for both features above to continue.</variable>
+</message>
+<message>
+<tag_code>11018</tag_code>
+<translation>我同意</translation>
+<variable>I Agree</variable>
+</message>
+<message>
+<tag_code>11019</tag_code>
+<translation>我不同意</translation>
+<variable>I Disagree</variable>
+</message>
+<message>
+<tag_code>11020</tag_code>
+<translation>有关我们路由器及其 WiFi 网络的功能和使用情况的技术数据，能帮助我们更迅速地隔离和排除一般技术问题、改善路由器特性和功能以及改善路由器的性能及可用性。   该等数据可能包括涉及以下内容的信息：路由器的运行状态、连接到路由器的设备数量、连接类型、LAN/WAN 状态、WiFi 频段和信道、IP 地址、MAC 地址、序列号以及与关于路由器及其 WiFi 网络的功能和使用情况的类似技术数据。</translation>
+<variable>Technical data about the functioning and use of our routers and their WiFi network can help us to more quickly isolate and debug general technical issues, improve router features and functionality, and  improve the performance and usability of our routers.   Such data may include information regarding the router’s running status, number of devices connected to the router, types of connections, LAN/WAN status, WiFi bands and channels, IP address, MAC address, serial number, and similar technical data about the functioning and use of the router and its WiFi network.</variable>
+</message>
+<message>
+<tag_code>11021</tag_code>
+<translation>点击“我同意”，即表示您同意您的路由器在安装后可向 NETGEAR 传输上述数据，且 NETGEAR 可使用该等信息来提供和改善其产品和服务。请查看 NETGEAR 隐私政策，了解有关您的传输数据的保护以及该传输数据的使用方式的其他信息。  NETGEAR 不会使用该信息向您推销产品或服务，亦不会追踪或收集您访问的网站或收集您网络中任何流量的内容。  您可以随时进入 routerlogin.net 高级>管理>路由器升级，撤销上述同意选项。</translation>
+<variable>By clicking "I Agree" you agree that upon installation, your router may transmit the data described above to NETGEAR, which may use the information to provide and improve its products and services. For additional information about the protection of your transmitted data and how it may be used see the NETGEAR Privacy Policy.  NETGEAR does not use this information to market products or services to you or to track or collect the websites you visit or collect the content of any traffic on your network.  You may withdraw this consent at any time by going to the routerlogin.net Advanced>Administration>Router Update.</variable>
+</message>
+<message>
+<tag_code>11022</tag_code>
+<translation>此外，无论是否获得事先许可，某些基本信息（如路由器固件版本号和型号）仍可能被收集并用于监控 NETGEAR 产品和固件版本的部署情况。   我们不会将该等信息链接到您的路由器序列号、MAC 地址、您的名字或其他个人信息。</translation>
+<variable>In addition, with or without the prior consent,  some basic information, such as the router’s firmware version number and model number, may still be collected and used to monitor deployment of  NETGEAR products and firmware versions.   We will not link such information to your router’s serial number or MAC address or your name or other personal information.</variable>
+</message>
+<message>
+<tag_code>11023</tag_code>
+<translation>2017 年 3 月 13 日 1.0 版</translation>
+<variable>2017.03.13 Version 1.0</variable>
+</message>
+<message>
+<tag_code>11024</tag_code>
+<translation>您必须同意本服务条款才能完成安装。&lt;br&gt;如果您不同意本服务条款，您必须退回 NETGEAR 设备。</translation>
+<variable>To complete the installation process, you must agree to the Terms of Services.&lt;br&gt;If you do not accept these Terms of Services, you must return Your NETGEAR device.</variable>
+</message>
 </tag_msg>

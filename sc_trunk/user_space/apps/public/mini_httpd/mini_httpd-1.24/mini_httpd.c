@@ -403,6 +403,7 @@ static char *no_check_passwd_paths[] = { "currentsetting.htm", "update_setting.h
 	"multi_login.html", "401_recovery.htm", "401_access_denied.htm",
 	"BRS_netgear_success.html", "BRS_top.html", "BRS_miiicasa_success.html",
 	"openvpn_confirm_update.htm",
+	"tc_exist_unit_hijack.htm","BRS_data_detail.htm","BRS_full_tcn.htm",
 	NULL
 };
 
@@ -428,8 +429,8 @@ static size_t request_size, request_len, request_idx;
 static int method;
 char *path;
 #ifdef SC_BUILD
-static char fakepath[128] = "";
-static char firstdir[128] = "";	//david
+static char fakepath[512] = "";
+static char firstdir[512] = "";	//david
 static char soapServiceName[128] = "";
 static char soapActionName[128] = "";
 static char soap_token[17] = "";
@@ -1223,6 +1224,25 @@ int main(int argc, char **argv)
 /* Ron */
 #endif
 
+		{
+			static int cginum_noaccurate = 0;
+			cginum_noaccurate++;
+			
+#define MAX_CGI_NUM 50
+			if (cginum_noaccurate > MAX_CGI_NUM)
+			{
+				int cginum = count_cgi();
+				cginum_noaccurate = cginum;
+				SC_CFPRINTF_EXIT("cgi number %d\n", cginum);
+				if (cginum > MAX_CGI_NUM)
+				{
+					SC_CFPRINTF_EXIT("over %d cgi running %d, not handle this request\n", MAX_CGI_NUM, cginum);
+					(void)close(conn_fd);
+					continue;
+				}
+			}
+		}
+			
 		r = fork();
 		if (r < 0)
 		{
@@ -1230,6 +1250,7 @@ int main(int argc, char **argv)
 			syslog(LOG_CRIT, "fork - %m");
 			perror("fork");
 #endif
+			SC_CFPRINTF_EXIT("exit, %d, %s\n", errno, strerror(errno));
 			/* http 80 for lan/lanusb, https 8443 for remote management, https 443 for remote usb. 
 			 * now only do this for port 80.
 			 * another way is we not need exit when fork fail.
@@ -1240,7 +1261,6 @@ int main(int argc, char **argv)
 				sleep(1);
 				system("/usr/sbin/sleep 5 && /usr/sbin/rc httpd start_httpapp &");
 			}
-			SC_CFPRINTF_EXIT("exit, %d, %s\n", errno, strerror(errno));
 			exit(1);
 		} else 	if (r == 0)
 		{
@@ -2040,7 +2060,7 @@ skip_it:
 		}
 		if (!strcmp(host, "www.msftconnecttest.com") && strstr(path, "connecttest.txt"))
 		{
-			SC_CFPRINTF("Ignore msftconnecttest packet!\n");
+			SC_CFPRINTF("Ignore Microsoft NCSI packet!\n");
 			protocol = "HTTP/1.0";
 			send_error(404, "Not Found", "", "File not found.");
 			//send_response();
@@ -2181,6 +2201,21 @@ skip_it:
 					send_error(302, "Found", location, "");
 				}
 			}
+
+			{
+				if ((*nvram_safe_get("tc_from_old") == '1') && 
+					(do_ssl==0) && /* mean it from lan */
+					(strcasecmp(method_str, get_method_str(METHOD_GET)) == 0) && (no_need_check_password_page == 0) &&
+					(strstr(path, ".gif") == NULL) && (strstr(path, ".css") == NULL) &&  (strstr(path, ".js") == NULL) && (strstr(path, ".xml") == NULL) && (strstr(path, ".png") == NULL) && (strstr(path, ".jpg") == NULL) &&
+					(for_setupwizard == 0))
+				{
+					char location[100];
+					protocol = protocol?:"HTTP/1.1";
+					(void)snprintf(location, sizeof(location), "Location: %s", "tc_exist_unit_hijack.htm");
+					send_error(302, "Found", location, "");
+				}
+			}			
+			
 		}
 	
 	
@@ -2189,7 +2224,14 @@ skip_it:
 	if (strstr(path, ".cgi") == NULL && strstr(path, ".htm") && strstr(path, "shares") == NULL)
 	{
 		char *pt;
-		strncpy(fakepath, path, strlen(path) - 8);
+		if (strlen(path) > (sizeof(fakepath)-30-1))
+		{
+			/* for now, device not have file/resource that more than 128 in query string (uri). 30 mean we need add setup.cgi?next_file= in the path. */
+			send_error(404, "Not Found", "", "No such file.");
+		} else
+		{
+			strncpy(fakepath, path, strlen(path) - 8);
+		}
 		pt = strrchr(fakepath, '/');
 		strncpy(firstdir, fakepath, pt - fakepath);
 
@@ -2197,7 +2239,7 @@ skip_it:
 			path += strlen(firstdir) + 1;
 //path++;
 		//if(*firstdir=='/') firstdir++;
-		sprintf(fakepath, "%s/setup.cgi?next_file=%s", firstdir, path);
+		snprintf(fakepath, sizeof(fakepath),"%s/setup.cgi?next_file=%s", firstdir, path);
 		path = fakepath;
 	}
 	path += strspn(path, " \t\n\r");
@@ -3440,6 +3482,18 @@ static void auth_check(char *dirname)
 		} else
 		{
 			system("/bin/echo genie from lan, ok > /dev/console");
+			{
+					if (strchr(current_remote_ip, ':'))
+					{
+						/* soap now get mac from /proc/net/arp for auth, 
+						 * so this is not ok for request from ipv6.
+						 * after soap support get mac from both /proc/net/arp and ip -6 neigh, this will be removed. 
+						 */
+						system("/bin/echo genie ipv6, drop request > /dev/console");	
+						SC_CFPRINTF_EXIT("current_remote_ip:%s\n", current_remote_ip);
+						exit(0);
+					}
+			}
 			return;	/*Do nothing */
 		}
 	}

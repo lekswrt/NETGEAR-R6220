@@ -6051,4 +6051,84 @@
 <translation>Nastavení NTP</translation>
 <variable>NTP Settings</variable>
 </message>
+<message>
+<tag_code>11000</tag_code>
+<translation>Nastavení aplikace Downloader</translation>
+<variable>Downloader Settings </variable>
+</message>
+<message>
+<tag_code>11010</tag_code>
+<translation>Automatická aktualizace firmwaru routeru</translation>
+<variable>Router Auto Firmware Update</variable>
+</message>
+<message>
+<tag_code>11011</tag_code>
+<translation>Povolit routeru automaticky aktualizovat na budoucí firmware. Díky tomu bude router neustále aktuální a bude využívat nejnovější funkce a bezpečnostní opravy.</translation>
+<variable>Enable router to automatically update to future firmware. This keeps your router up to date with the latest features and security fixes.</variable>
+</message>
+<message>
+<tag_code>11012</tag_code>
+<translation>Vyberte jednu z následujících možností:</translation>
+<variable>Select one of the following options:</variable>
+</message>
+<message>
+<tag_code>11013</tag_code>
+<translation>Shromažďování analytických dat routeru </translation>
+<variable>Router Analytics Data Collection</variable>
+</message>
+<message>
+<tag_code>11014</tag_code>
+<translation>ovolit shromažďování &lt;a href="#" onclick="window.open('BRS_data_detail.htm','name','width=600,height=400,scrollbars=1,resizable=1','blank')" style="color: rgb(000,000,255);text-decoration:underline"&gt; &lt;font size=""&gt;analytických dat routeru&lt;/font&gt;&lt;/a&gt;, které společnosti NETGEAR pomohou zlepšit naše služby a produkty.</translation>
+<variable>Enable collection of router analytics data that will help NETGEAR improve our services and products.</variable>
+</message>
+<message>
+<tag_code>11015</tag_code>
+<translation>Zásady ochrany soukromí</translation>
+<variable>Privacy Policy</variable>
+</message>
+<message>
+<tag_code>11016</tag_code>
+<translation>Podmínky použití</translation>
+<variable>Terms of Services</variable>
+</message>
+<message>
+<tag_code>11017</tag_code>
+<translation>Chcete-li pokračovat, proveďte volbu pro obě funkce uvedené výše.</translation>
+<variable>Please make your selection for both features above to continue.</variable>
+</message>
+<message>
+<tag_code>11018</tag_code>
+<translation>Souhlasím</translation>
+<variable>I Agree</variable>
+</message>
+<message>
+<tag_code>11019</tag_code>
+<translation>Nesouhlasím</translation>
+<variable>I Disagree</variable>
+</message>
+<message>
+<tag_code>11020</tag_code>
+<translation>Technická data o fungování a používání našich routerů a jejich sítě WiFi nám může pomoci rychleji identifikovat a opravit obecné technické závady, vylepšit funkce a fungování našich routerů a zlepšit jejich výkon a možnosti využití.   Taková data mohou zahrnovat informace týkající se stavu spuštění routeru, počet zařízení připojených k routeru, typ připojení, stav sítě LAN/WAN, pásma a kanály WiFi, IP adresu, MAC adresu, sériové číslo a podobné technické údaje o fungování a použití routeru a jeho sítě WiFi.</translation>
+<variable>Technical data about the functioning and use of our routers and their WiFi network can help us to more quickly isolate and debug general technical issues, improve router features and functionality, and  improve the performance and usability of our routers.   Such data may include information regarding the router’s running status, number of devices connected to the router, types of connections, LAN/WAN status, WiFi bands and channels, IP address, MAC address, serial number, and similar technical data about the functioning and use of the router and its WiFi network.</variable>
+</message>
+<message>
+<tag_code>11021</tag_code>
+<translation>Kliknutím na možnost "Souhlasím" souhlasíte s tím, že při instalaci může router data popsaná výše odeslat společnosti NETGEAR, která může tyto informace využít k poskytování a vylepšování svých produktů a služeb. Podrobnější informace o ochraně svých přenášených dat a způsobech, jak mohou být využita, najdete v Zásadách ochrany osobních údajů společnosti NETGEAR.  Společnost NETGEAR tyto informace nevyužívá k tomu, aby vám prodávala produkty či služby, aby sledovala či zaznamenávala webové stránky, které navštívíte, nebo zaznamenávala obsah jakéhokoli provozu ve vaší síti.  Tento souhlas můžete kdykoli zrušit na stránce routerlogin.net v nabídce Pokročilé>Správa>Aktualizace routeru.</translation>
+<variable>By clicking "I Agree" you agree that upon installation, your router may transmit the data described above to NETGEAR, which may use the information to provide and improve its products and services. For additional information about the protection of your transmitted data and how it may be used see the NETGEAR Privacy Policy.  NETGEAR does not use this information to market products or services to you or to track or collect the websites you visit or collect the content of any traffic on your network.  You may withdraw this consent at any time by going to the routerlogin.net Advanced>Administration>Router Update.</variable>
+</message>
+<message>
+<tag_code>11022</tag_code>
+<translation>Kromě toho, ať k tomu předem dáte nebo nedáte souhlas, některé základní informace, například číslo verze firmwaru routeru a číslo modelu, mohou být stále shromažďovány a využívány ke sledování zavedení produktů společnosti NETGEAR a verzí firmwaru.   Takové informace nebudeme spojovat se sériovým číslem ani adresou MAC vašeho routeru, s vaším jménem ani jinými osobními údaji.</translation>
+<variable>In addition, with or without the prior consent,  some basic information, such as the router’s firmware version number and model number, may still be collected and used to monitor deployment of  NETGEAR products and firmware versions.   We will not link such information to your router’s serial number or MAC address or your name or other personal information.</variable>
+</message>
+<message>
+<tag_code>11023</tag_code>
+<translation>13. 3. 2017 Verze 1.0</translation>
+<variable>2017.03.13 Version 1.0</variable>
+</message>
+<message>
+<tag_code>11024</tag_code>
+<translation>Abyste mohli dokončit proces instalace, musíte souhlasit s podmínkami použití.&lt;br&gt;Pokud tyto podmínky použití nepřijmete, musíte zařízení NETGEAR vrátit.</translation>
+<variable>To complete the installation process, you must agree to the Terms of Services.&lt;br&gt;If you do not accept these Terms of Services, you must return Your NETGEAR device.</variable>
+</message>
 </tag_msg>

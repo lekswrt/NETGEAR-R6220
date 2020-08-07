@@ -1218,4 +1218,79 @@
 <translation>Si vous disposez des connaissances nécessaires et que vous savez comment configurer votre passerelle pour prendre en charge certaines de ces fonctions avancées, vous pouvez cliquer sur le bouton &lt;b&gt;Retour&lt;/b&gt; et configurer le routeur NETGEAR en mode Routeur.</translation>
 <variable>If you are advanced user and know how to configure your gateway to support some of these advanced functions, you can click the &lt;b&gt;Back&lt;/b&gt; button and configure the NETGEAR router in router mode.</variable>
 </message>
+<message>
+<tag_code>11010</tag_code>
+<translation>Mise à jour automatique du micrologiciel (firmware) du routeur</translation>
+<variable>Router Auto Firmware Update</variable>
+</message>
+<message>
+<tag_code>11011</tag_code>
+<translation>Autorisez le routeur à effectuer automatiquement la mise à jour avec le micrologiciel (firmware) à venir. Cela permet à Votre routeur de rester à jour avec les dernières fonctionnalités et les derniers correctifs de sécurité.</translation>
+<variable>Enable router to automatically update to future firmware. This keeps your router up to date with the latest features and security fixes.</variable>
+</message>
+<message>
+<tag_code>11012</tag_code>
+<translation>Sélectionnez l'une des options suivantes :</translation>
+<variable>Select one of the following options:</variable>
+</message>
+<message>
+<tag_code>11013</tag_code>
+<translation>Collecte de données statistiques du routeur </translation>
+<variable>Router Analytics Data Collection</variable>
+</message>
+<message>
+<tag_code>11014</tag_code>
+<translation>Autorisez la collecte de &lt;a href="#" onclick="window.open('BRS_data_detail.htm','name','width=600,height=400,scrollbars=1,resizable=1','blank')" style="color: rgb(000,000,255);text-decoration:underline"&gt; &lt;font size=""&gt;données statistiques du routeur&lt;/font&gt;&lt;/a&gt; qui permettront à NETGEAR d'améliorer nos services et produits.</translation>
+<variable>Enable collection of router analytics data that will help NETGEAR improve our services and products.</variable>
+</message>
+<message>
+<tag_code>11015</tag_code>
+<translation>Politique de confidentialité</translation>
+<variable>Privacy Policy</variable>
+</message>
+<message>
+<tag_code>11016</tag_code>
+<translation>Conditions d'utilisation</translation>
+<variable>Terms of Services</variable>
+</message>
+<message>
+<tag_code>11017</tag_code>
+<translation>Faites votre sélection pour les deux fonctions ci-dessus pour continuer.</translation>
+<variable>Please make your selection for both features above to continue.</variable>
+</message>
+<message>
+<tag_code>11018</tag_code>
+<translation>J'accepte</translation>
+<variable>I Agree</variable>
+</message>
+<message>
+<tag_code>11019</tag_code>
+<translation>Je refuse</translation>
+<variable>I Disagree</variable>
+</message>
+<message>
+<tag_code>11020</tag_code>
+<translation>Les données techniques sur le fonctionnement et l'utilisation de nos routeurs et de leur réseau Wifi peuvent nous aider à isoler et résoudre plus rapidement les problèmes techniques généraux, améliorer les fonctionnalités du routeur et améliorer les performances et l'utilisation de nos routeurs.   Ces données peuvent inclure des informations relatives à l'état de fonctionnement du routeur, au nombre d'appareils connectés au routeur, aux types de connexions, à l'état LAN/WAN, aux bandes et canaux Wifi, à l'adresse IP, à l'adresse MAC, au numéro de série et des données techniques similaires relatives au fonctionnement et à l'utilisation du routeur et de son réseau Wifi.</translation>
+<variable>Technical data about the functioning and use of our routers and their WiFi network can help us to more quickly isolate and debug general technical issues, improve router features and functionality, and  improve the performance and usability of our routers.   Such data may include information regarding the router’s running status, number of devices connected to the router, types of connections, LAN/WAN status, WiFi bands and channels, IP address, MAC address, serial number, and similar technical data about the functioning and use of the router and its WiFi network.</variable>
+</message>
+<message>
+<tag_code>11021</tag_code>
+<translation>En cliquant sur « J'accepte », Vous acceptez que Votre routeur puisse transmettre, lors de l'installation, les données décrites ci-dessus à NETGEAR, qui pourra utiliser les informations pour fournir et améliorer ses produits et services. Pour plus d'informations sur la protection de Vos données transmises et sur la façon dont elles peuvent être utilisées, reportez-vous à la Politique de confidentialité NETGEAR.  NETGEAR n'utilise pas ces informations à des fins de promotion de produits et services ni pour suivre ou collecter les sites Web que Vous consultez ni pour collecter le contenu du trafic de Votre réseau.  Vous pouvez Vous rétracter à tout moment en Vous rendant sur routerlogin.net Avancé > Administration >Mise à jour du routeur.</translation>
+<variable>By clicking "I Agree" you agree that upon installation, your router may transmit the data described above to NETGEAR, which may use the information to provide and improve its products and services. For additional information about the protection of your transmitted data and how it may be used see the NETGEAR Privacy Policy.  NETGEAR does not use this information to market products or services to you or to track or collect the websites you visit or collect the content of any traffic on your network.  You may withdraw this consent at any time by going to the routerlogin.net Advanced>Administration>Router Update.</variable>
+</message>
+<message>
+<tag_code>11022</tag_code>
+<translation>De plus, avec ou sans l'accord préalable, certaines informations de base, telles que le numéro de version du micrologiciel (firmware) du routeur et son numéro de modèle, peuvent toujours être collectées et utilisées pour contrôler le déploiement des produits et des versions de micrologiciel (firmware) NETGEAR.   Nous n'associerons pas ces informations au numéro de série de Votre routeur, à son adresse MAC, à Votre nom ou à d'autres informations personnelles.</translation>
+<variable>In addition, with or without the prior consent,  some basic information, such as the router’s firmware version number and model number, may still be collected and used to monitor deployment of  NETGEAR products and firmware versions.   We will not link such information to your router’s serial number or MAC address or your name or other personal information.</variable>
+</message>
+<message>
+<tag_code>11023</tag_code>
+<translation>2017.03.13 Version 1.0</translation>
+<variable>2017.03.13 Version 1.0</variable>
+</message>
+<message>
+<tag_code>11024</tag_code>
+<translation>Pour terminer la procédure d'installation, Vous devez accepter les Conditions de service.&lt;br&gt;Si Vous n'acceptez pas ces Conditions de service, Vous devez retourner Votre appareil NETGEAR.</translation>
+<variable>To complete the installation process, you must agree to the Terms of Services.&lt;br&gt;If you do not accept these Terms of Services, you must return Your NETGEAR device.</variable>
+</message>
 </tag_msg>

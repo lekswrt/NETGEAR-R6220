@@ -11,6 +11,7 @@ enum
 	APCLI_IN_CGI,
 	APCLI_IN_RC,
 	APCLI_IN_RC_DEBUG,
+	APCLI_IN_RAE,/* Router Analytics Engine*/
 };
 
 struct ap_info

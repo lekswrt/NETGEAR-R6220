@@ -6024,4 +6024,84 @@
 <translation>NTP postavke</translation>
 <variable>NTP Settings</variable>
 </message>
+<message>
+<tag_code>11000</tag_code>
+<translation>postavke za downloader</translation>
+<variable>downloader settings </variable>
+</message>
+<message>
+<tag_code>11010</tag_code>
+<translation>automatsko ažuriranje programskih datoteka usmjerivača</translation>
+<variable>router auto firmware update</variable>
+</message>
+<message>
+<tag_code>11011</tag_code>
+<translation>omogućite usmjerivaču da automatski ažurira programske datoteke. time ćete osigurati da vaš usmjerivač uvijek upotrebljava najnoviju verziju značajki i sigurnosnih ispravaka.</translation>
+<variable>enable router to automatically update to future firmware. this keeps your router up to date with the latest features and security fixes.</variable>
+</message>
+<message>
+<tag_code>11012</tag_code>
+<translation>odaberite jednu od sljedećih opcija:</translation>
+<variable>select one of the following options:</variable>
+</message>
+<message>
+<tag_code>11013</tag_code>
+<translation>prikupljanje analitičkih podataka o usmjerivaču</translation>
+<variable>router analytics data collection</variable>
+</message>
+<message>
+<tag_code>11014</tag_code>
+<translation>omogućite prikupljanje &lt;a href="#" onclick="window.open('brs_data_detail.htm','name','width=600,height=400,scrollbars=1,resizable=1','blank')" style="color: rgb(000,000,255);text-decoration:underline"&gt; &lt;font size=""&gt;analitičkih podataka o usmjerivaču&lt;/font&gt;&lt;/a&gt; koje će tvrtki netgear omogućiti da poboljša svoje usluge i proizvode.</translation>
+<variable>enable collection of router analytics data that will help netgear improve our services and products.</variable>
+</message>
+<message>
+<tag_code>11015</tag_code>
+<translation>pravila zaštite privatnosti</translation>
+<variable>privacy policy</variable>
+</message>
+<message>
+<tag_code>11016</tag_code>
+<translation>uvjeti pružanja usluga</translation>
+<variable>terms of services</variable>
+</message>
+<message>
+<tag_code>11017</tag_code>
+<translation>prije no što nastavite, odaberite vrijednost za obje gornje značajke.</translation>
+<variable>please make your selection for both features above to continue.</variable>
+</message>
+<message>
+<tag_code>11018</tag_code>
+<translation>prihvaćam</translation>
+<variable>i agree</variable>
+</message>
+<message>
+<tag_code>11019</tag_code>
+<translation>ne prihvaćam</translation>
+<variable>i disagree</variable>
+</message>
+<message>
+<tag_code>11020</tag_code>
+<translation>tehnički podaci o funkcioniranju i upotrebi naših usmjerivača i njihove wi-fi mreže mogu nam pomoći da brže izoliramo i riješimo općenite tehničke probleme, poboljšamo značajke i funkcije usmjerivača te poboljšamo izvedbu i upotrebu usmjerivača.   ti podaci mogu obuhvaćati informacije o statusu rada usmjerivača, broju uređaja koji su povezani s usmjerivačem, vrstama veza, statusu lan/wan mreže, wi-fi pojasima i kanalima, ip adresi, mac adresi, serijskom broju te ostale tehničke podatke o radu i upotrebi usmjerivača i wi-fi mreže.</translation>
+<variable>technical data about the functioning and use of our routers and their wifi network can help us to more quickly isolate and debug general technical issues, improve router features and functionality, and  improve the performance and usability of our routers.   such data may include information regarding the router’s running status, number of devices connected to the router, types of connections, lan/wan status, wifi bands and channels, ip address, mac address, serial number, and similar technical data about the functioning and use of the router and its wifi network.</variable>
+</message>
+<message>
+<tag_code>11021</tag_code>
+<translation>ako pritisnete "prihvaćam", prihvaćate da vaš usmjerivač nakon instalacije može gore opisane podatke slati tvrtki netgear koja zatim te podatke može upotrijebiti za pružanje i poboljšavanje svojih proizvoda i usluga. dodatne informacije o zaštiti poslanih podataka i načinu njihove upotrebe potražite u netgear pravilima zaštite privatnosti.  netgear te podatke ne upotrebljava kako bi vam oglašavao proizvode ili usluge, za praćenje ili prikupljanje web-mjesta koja posjećujete niti za prikupljanje sadržaja koji se razmjenjuje putem vaše mreže.  pristanak u bilo kojem trenutku možete povući tako da otvorite routerlogin.net i odaberete advanced (napredno) > administration (administriranje) > router update (ažuriranje usmjerivača).</translation>
+<variable>by clicking "i agree" you agree that upon installation, your router may transmit the data described above to netgear, which may use the information to provide and improve its products and services. for additional information about the protection of your transmitted data and how it may be used see the netgear privacy policy.  netgear does not use this information to market products or services to you or to track or collect the websites you visit or collect the content of any traffic on your network.  you may withdraw this consent at any time by going to the routerlogin.net advanced>administration>router update.</variable>
+</message>
+<message>
+<tag_code>11022</tag_code>
+<translation>nadalje, uz prethodni pristanak ili bez njega, određene osnovne informacije, primjerice broj verzije programskih datoteka i broj modela, mogu se svejedno prikupljati i upotrijebiti za nadzor implementacije netgear proizvoda i verzija programskih datoteka.   te informacije nećemo povezivati sa serijskim brojem vašeg usmjerivača, mac adresom, vašim imenom ni drugim osobnim podacima.</translation>
+<variable>in addition, with or without the prior consent,  some basic information, such as the router’s firmware version number and model number, may still be collected and used to monitor deployment of  netgear products and firmware versions.   we will not link such information to your router’s serial number or mac address or your name or other personal information.</variable>
+</message>
+<message>
+<tag_code>11023</tag_code>
+<translation>2017.03.13, verzija 1.0</translation>
+<variable>2017.03.13 version 1.0</variable>
+</message>
+<message>
+<tag_code>11024</tag_code>
+<translation>kako biste dovršili postupak instalacije, morate prihvatiti uvjete pružanja usluga.&lt;br&gt;ako ne prihvatite uvjete pružanja usluga, morate vratiti netgear uređaj.</translation>
+<variable>to complete the installation process, you must agree to the terms of services.&lt;br&gt;if you do not accept these terms of services, you must return your netgear device.</variable>
+</message>
 </tag_msg>

@@ -27,6 +27,10 @@ config SCM_SUPPORT
         bool
         default y
 
+config SC_KERNEL_WD
+        bool
+        default y
+
 config EXPERIMENTAL
 	bool "Prompt for development and/or incomplete code/drivers"
 	default y

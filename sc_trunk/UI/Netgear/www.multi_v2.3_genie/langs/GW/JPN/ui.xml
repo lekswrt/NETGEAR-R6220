@@ -1214,4 +1214,79 @@
 <translation>ネットワークに関する知識をお持ちで、ゲートウェイこれらの高度な機能に対応する設定方法をご存じの場合は、 &lt;b&gt;戻る&lt;/b&gt;ボタンをクリックしてルーターをルーターモードで設定できます。</translation>
 <variable>If you are advanced user and know how to configure your gateway to support some of these advanced functions, you can click the &lt;b&gt;Back&lt;/b&gt; button and configure the NETGEAR router in router mode.</variable>
 </message>
+<message>
+<tag_code>11010</tag_code>
+<translation>ルーターファームウェア自動更新</translation>
+<variable>Router Auto Firmware Update</variable>
+</message>
+<message>
+<tag_code>11011</tag_code>
+<translation>最新版のルーターファームウェアへの自動更新を有効にします。これにより、ルーターの機能とセキュリティを最新の状態に維持することができます。</translation>
+<variable>Enable router to automatically update to future firmware. This keeps your router up to date with the latest features and security fixes.</variable>
+</message>
+<message>
+<tag_code>11012</tag_code>
+<translation>次のメニューオプションのいずれかを選択します。</translation>
+<variable>Select one of the following options:</variable>
+</message>
+<message>
+<tag_code>11013</tag_code>
+<translation>ルーター分析データの収集 </translation>
+<variable>Router Analytics Data Collection</variable>
+</message>
+<message>
+<tag_code>11014</tag_code>
+<translation>NETGEARによる当社のサービスと製品の機能向上に役立つ &lt;a href="#" onclick="window.open('BRS_data_detail.htm','name','width=600,height=400,scrollbars=1,resizable=1','blank')" style="color: rgb(000,000,255);text-decoration:underline"&gt; &lt;font size=""&gt;ルーター分析データ&lt;/font&gt;&lt;/a&gt; の収集を有効にします。</translation>
+<variable>Enable collection of router analytics data that will help NETGEAR improve our services and products.</variable>
+</message>
+<message>
+<tag_code>11015</tag_code>
+<translation>ルプライバシーポリシー</translation>
+<variable>Privacy Policy</variable>
+</message>
+<message>
+<tag_code>11016</tag_code>
+<translation>サービス規約</translation>
+<variable>Terms of Services</variable>
+</message>
+<message>
+<tag_code>11017</tag_code>
+<translation>続行するには各機能の設定を選択してください。</translation>
+<variable>Please make your selection for both features above to continue.</variable>
+</message>
+<message>
+<tag_code>11018</tag_code>
+<translation>同意する</translation>
+<variable>I Agree</variable>
+</message>
+<message>
+<tag_code>11019</tag_code>
+<translation>同意しない</translation>
+<variable>I Disagree</variable>
+</message>
+<message>
+<tag_code>11020</tag_code>
+<translation>ルーターと無線LANネットワークの機能と使用に関する技術データは、一般的な技術的問題をすばやく切り分けてデバッグし、ルーターの特性と機能を向上させ、ルーターのパフォーマンスと操作性を改善するのに役立ちます。   これらのデータには、ルーターの実行状態、ルーターに接続されたデバイス数、接続タイプ、LAN/WANステータス、無線LANの帯域とチャンネル、IPアドレス、MACアドレス、シリアル番号、およびルーターと無線LANネットワークの機能と使用に関する類似の技術データに関する情報が含まれます。</translation>
+<variable>Technical data about the functioning and use of our routers and their WiFi network can help us to more quickly isolate and debug general technical issues, improve router features and functionality, and  improve the performance and usability of our routers.   Such data may include information regarding the router’s running status, number of devices connected to the router, types of connections, LAN/WAN status, WiFi bands and channels, IP address, MAC address, serial number, and similar technical data about the functioning and use of the router and its WiFi network.</variable>
+</message>
+<message>
+<tag_code>11021</tag_code>
+<translation>[同意する] をクリックしてインストールを完了すると、ルーターでは上記のデータがNETGEARに転送されます。NETGEARは、製品とサービスを提供し、機能を向上させるために、この情報を使用できるものとします。転送されたデータの保護および使用方法に関する詳細は、NETGEARのプライバシーポリシーをご覧ください。  NETGEARは、お客様への製品またはサービスのマーケティング、お客様がアクセスするWEBサイトの追跡または収集、またはお客様のネットワークにおけるトラフィックのコンテンツの収集のために、これらの情報を使用することはありません。  お客様は、routerlogin.net にアクセスし、[高度] > [管理者] > [ルーターの更新] から、いつでもこの同意を取り消すことができます。</translation>
+<variable>By clicking "I Agree" you agree that upon installation, your router may transmit the data described above to NETGEAR, which may use the information to provide and improve its products and services. For additional information about the protection of your transmitted data and how it may be used see the NETGEAR Privacy Policy.  NETGEAR does not use this information to market products or services to you or to track or collect the websites you visit or collect the content of any traffic on your network.  You may withdraw this consent at any time by going to the routerlogin.net Advanced>Administration>Router Update.</variable>
+</message>
+<message>
+<tag_code>11022</tag_code>
+<translation>また、事前同意の有無にかかわらず、NETGEAR製品とファームウェアバージョンの導入を監視するために、ルーターのファームウェアのバージョン番号とモデル番号など、いくつかの基本情報が収集され、使用される場合があります。   弊社は、これらの情報を、お客様のルーターのシリアル番号、MACアドレス、お名前、またはその他の個人情報にリンクさせることはありません。</translation>
+<variable>In addition, with or without the prior consent,  some basic information, such as the router’s firmware version number and model number, may still be collected and used to monitor deployment of  NETGEAR products and firmware versions.   We will not link such information to your router’s serial number or MAC address or your name or other personal information.</variable>
+</message>
+<message>
+<tag_code>11023</tag_code>
+<translation>2017年3月13日 バージョン1.0</translation>
+<variable>2017.03.13 Version 1.0</variable>
+</message>
+<message>
+<tag_code>11024</tag_code>
+<translation>インストールを完了するには、サービス利用規約に同意する必要があります。&lt;br&gt;これらのサービス利用規約に同意されない場合は、NETGEARデバイスをご返送いただく必要があります。</translation>
+<variable>To complete the installation process, you must agree to the Terms of Services.&lt;br&gt;If you do not accept these Terms of Services, you must return Your NETGEAR device.</variable>
+</message>
 </tag_msg>

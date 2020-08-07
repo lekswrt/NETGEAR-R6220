@@ -6183,4 +6183,84 @@
 <translation>NTP Ayarları</translation>
 <variable>NTP Settings</variable>
 </message>
+<message>
+<tag_code>11000</tag_code>
+<translation>Yükleyici Ayarları</translation>
+<variable>Downloader Settings </variable>
+</message>
+<message>
+<tag_code>11010</tag_code>
+<translation>Router İçin Otomatik Ürün Yazılımı Güncellemesi</translation>
+<variable>Router Auto Firmware Update</variable>
+</message>
+<message>
+<tag_code>11011</tag_code>
+<translation>Router'ın gelecekte ürün yazılımını otomatik olarak güncellemesine izin verin. Bu ayar sayesinde, en yeni özellikler ve güvenlik düzeltmeleriyle router'ınız güncel kalır.</translation>
+<variable>Enable router to automatically update to future firmware. This keeps your router up to date with the latest features and security fixes.</variable>
+</message>
+<message>
+<tag_code>11012</tag_code>
+<translation>Şu seçeneklerden birini seçin:</translation>
+<variable>Select one of the following options:</variable>
+</message>
+<message>
+<tag_code>11013</tag_code>
+<translation>Router İçin Analiz Verilerinin Toplanması </translation>
+<variable>Router Analytics Data Collection</variable>
+</message>
+<message>
+<tag_code>11014</tag_code>
+<translation>NETGEAR'ın hizmetlerini ve ürünlerini iyileştirmesine yardımcı olacak &lt;a href="#" onclick="window.open('BRS_data_detail.htm','name','width=600,height=400,scrollbars=1,resizable=1','blank')" style="color: rgb(000,000,255);text-decoration:underline"&gt;&lt;font size=""&gt;router için analiz verilerinin&lt;/font&gt;&lt;/a&gt; toplanmasına izin verin.</translation>
+<variable>Enable collection of router analytics data that will help NETGEAR improve our services and products.</variable>
+</message>
+<message>
+<tag_code>11015</tag_code>
+<translation>Gizlilik Politikası</translation>
+<variable>Privacy Policy</variable>
+</message>
+<message>
+<tag_code>11016</tag_code>
+<translation>Hizmet Koşulları</translation>
+<variable>Terms of Services</variable>
+</message>
+<message>
+<tag_code>11017</tag_code>
+<translation>Devam etmek için lütfen yukarıdaki her iki özellik için de seçimde bulunun.</translation>
+<variable>Please make your selection for both features above to continue.</variable>
+</message>
+<message>
+<tag_code>11018</tag_code>
+<translation>Kabul Ediyorum</translation>
+<variable>I Agree</variable>
+</message>
+<message>
+<tag_code>11019</tag_code>
+<translation>Kabul Etmiyorum</translation>
+<variable>I Disagree</variable>
+</message>
+<message>
+<tag_code>11020</tag_code>
+<translation>Router'larımızın çalışması ve kullanımı ve bunların WiFi ağı hakkında teknik veriler, genel teknik sorunları daha hızlı bir şekilde ayırarak hata gidermemize, router özelliklerini ve işlevlerini iyileştirmemize ve router'larımızın daha iyi performans gösterip daha rahat kullanılmasını sağlamamıza yardımcı olabilir.   Bu tür veriler router'ın çalışma durumu, router'a bağlı cihaz sayısı, bağlantı türleri, LAN/WAN durumu, WiFi bantları ve kanalları, IP adresi, MAC adresi, seri numarası ve router'ın çalışması ve kullanımı ile router'ın WiFi ağı hakkında benzer teknik verilerle ilgili bilgiler içerebilir.</translation>
+<variable>Technical data about the functioning and use of our routers and their WiFi network can help us to more quickly isolate and debug general technical issues, improve router features and functionality, and  improve the performance and usability of our routers.   Such data may include information regarding the router’s running status, number of devices connected to the router, types of connections, LAN/WAN status, WiFi bands and channels, IP address, MAC address, serial number, and similar technical data about the functioning and use of the router and its WiFi network.</variable>
+</message>
+<message>
+<tag_code>11021</tag_code>
+<translation>"Kabul Ediyorum" öğesine tıklayarak kurulumdan sonra router'ınızın NETGEAR'a, yukarıda belirtilen verileri iletebileceğini kabul etmiş olursunuz; NETGEAR bu bilgileri ürünlerini ve hizmetlerini sunmak ve iyileştirmek için kullanabilir. İletilen verilerinizin korunması ve bunların nasıl kullanılabileceği hakkında daha fazla bilgi için NETGEAR Gizlilik Politikası'na bakın.  NETGEAR bu bilgileri, size ürünler veya hizmetler pazarlamak ya da ziyaret ettiğiniz web sitelerini takip etmek veya toplamak ya da ağınızdaki herhangi bir trafiğin içeriğini toplamak amacıyla kullanmaz.  routerlogin.net adresinden Gelişmiş > Yönetim > Router Güncellemesi bölümüne giderek dilediğiniz zaman bu onayı geri çekebilirsiniz.</translation>
+<variable>By clicking "I Agree" you agree that upon installation, your router may transmit the data described above to NETGEAR, which may use the information to provide and improve its products and services. For additional information about the protection of your transmitted data and how it may be used see the NETGEAR Privacy Policy.  NETGEAR does not use this information to market products or services to you or to track or collect the websites you visit or collect the content of any traffic on your network.  You may withdraw this consent at any time by going to the routerlogin.net Advanced>Administration>Router Update.</variable>
+</message>
+<message>
+<tag_code>11022</tag_code>
+<translation>Ayrıca, önceden onay olsun veya olmasın, router'ın ürün yazılımı sürüm numarası ve model numarası gibi bazı temel bilgiler NETGEAR ürünlerinin kullanımını ve ürün yazılımı sürümlerini takip etmek amacıyla toplanabilir ve kullanılabilir.   Bu tür bilgileri router'ınızın seri numarası veya MAC adresi ya da adınız veya diğer kişisel bilgilerinizle ilişkilendirmeyeceğiz.</translation>
+<variable>In addition, with or without the prior consent,  some basic information, such as the router’s firmware version number and model number, may still be collected and used to monitor deployment of  NETGEAR products and firmware versions.   We will not link such information to your router’s serial number or MAC address or your name or other personal information.</variable>
+</message>
+<message>
+<tag_code>11023</tag_code>
+<translation>2017.03.13 Sürüm 1.0</translation>
+<variable>2017.03.13 Version 1.0</variable>
+</message>
+<message>
+<tag_code>11024</tag_code>
+<translation>Kurulum işlemini tamamlamak için Hizmet Koşullarını kabul etmeniz gerekir.&lt;br&gt;Bu Hizmet Koşullarını kabul etmiyorsanız NETGEAR cihazınızı iade etmelisiniz.</translation>
+<variable>To complete the installation process, you must agree to the Terms of Services.&lt;br&gt;If you do not accept these Terms of Services, you must return Your NETGEAR device.</variable>
+</message>
 </tag_msg>

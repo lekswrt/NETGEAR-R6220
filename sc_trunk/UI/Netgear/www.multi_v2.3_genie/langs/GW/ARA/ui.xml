@@ -1222,4 +1222,79 @@
 <translation>إذا كنت مستخدمًا متقدمًا وتعلم كيفية تكوين البوابة لدعم بعض هذه الوظائف المتقدمة، يمكنك النقر فوق الزر&lt;b&gt;السابق&lt;/b&gt; وتكوين موجه NETGEAR في وضع الموجه.</translation>
 <variable>If you are advanced user and know how to configure your gateway to support some of these advanced functions, you can click the &lt;b&gt;Back&lt;/b&gt; button and configure the NETGEAR router in router mode.</variable>
 </message>
+<message>
+<tag_code>11010</tag_code>
+<translation>تحديث البرنامج الثابت للموجّه تلقائيًا</translation>
+<variable>Router Auto Firmware Update</variable>
+</message>
+<message>
+<tag_code>11011</tag_code>
+<translation>تمكين الموجّه للتحديث تلقائيًا إلى البرامج الثابتة المستقبلية. يتيح هذا إبقاء موجّهك محدّثًا بأحدث الميزات وإصلاحات الأمان.</translation>
+<variable>Enable router to automatically update to future firmware. This keeps your router up to date with the latest features and security fixes.</variable>
+</message>
+<message>
+<tag_code>11012</tag_code>
+<translation>حدد أحد الخيارات التالية:</translation>
+<variable>Select one of the following options:</variable>
+</message>
+<message>
+<tag_code>11013</tag_code>
+<translation>جمع بيانات الموجّه التحليلية</translation>
+<variable>Router Analytics Data Collection</variable>
+</message>
+<message>
+<tag_code>11014</tag_code>
+<translation>تمكين جمع &lt;a href="#" onclick="window.open('BRS_data_detail.htm','name','width=600,height=400,scrollbars=1,resizable=1','blank')" style="color: rgb(000,000,255);text-decoration:underline"&gt; &lt;font size=""&gt;>بيانات الموجّه التحليلية&lt;/font&gt;&lt;/a&gt;> التي ستساعد NETGEAR في تحسين خدماتنا ومنتجاتنا.</translation>
+<variable>Enable collection of router analytics data that will help NETGEAR improve our services and products.</variable>
+</message>
+<message>
+<tag_code>11015</tag_code>
+<translation>سياسة الخصوصية</translation>
+<variable>Privacy Policy</variable>
+</message>
+<message>
+<tag_code>11016</tag_code>
+<translation>بندود الخدمات</translation>
+<variable>Terms of Services</variable>
+</message>
+<message>
+<tag_code>11017</tag_code>
+<translation>يُرجى تحديد الميزتين أعلاه للمتابعة.</translation>
+<variable>Please make your selection for both features above to continue.</variable>
+</message>
+<message>
+<tag_code>11018</tag_code>
+<translation>أوافق</translation>
+<variable>I Agree</variable>
+</message>
+<message>
+<tag_code>11019</tag_code>
+<translation>لا أوافق</translation>
+<variable>I Disagree</variable>
+</message>
+<message>
+<tag_code>11020</tag_code>
+<translation>قد تساعدنا البيانات الفنية المتعلقة بتشغيل موجّهاتنا واستخدامها وشبكة WiFi التابعة لها في عزل المشاكل الفنية العامة وتصحيحها بسرعة أكبر، وفي تحسين ميزات الموجّه ووظائفه بالإضافة إلى تحسين أداء موجّهاتنا وقابلية استخدامها.   قد تتضمن هذه البيانات معلومات متعلقة بحالة تشغيل الموجّه وعدد الأجهزة المتصلة بالموجّه وأنواع الاتصالات وحالة LAN/WAN ونطاقات WiFi وقنواتها وعنوان IP وعنوان MAC والرقم التسلسلي وبيانات فنية مشابهة حول تشغيل الموجّه واستخدامه وشبكة WiFi التابعة له.</translation>
+<variable>Technical data about the functioning and use of our routers and their WiFi network can help us to more quickly isolate and debug general technical issues, improve router features and functionality, and  improve the performance and usability of our routers.   Such data may include information regarding the router’s running status, number of devices connected to the router, types of connections, LAN/WAN status, WiFi bands and channels, IP address, MAC address, serial number, and similar technical data about the functioning and use of the router and its WiFi network.</variable>
+</message>
+<message>
+<tag_code>11021</tag_code>
+<translation>بالنقر فوق الزر "أوافق"؛ أنت توافق على أن يرسل موجّهك البيانات المذكورة أعلاه أثناء التثبيت إلى NETGEAR، التي يمكنها استخدام المعلومات لتوفير منتجاتها وخدماتها وتحسينها. للحصول على معلومات إضافية عن حماية البيانات المرسلة وكيفية استخدامها، يُرجى الاطلاع على سياسة الخصوصية التابعة لـ NETGEAR.  لا تستخدم NETGEAR هذه المعلومات لتسويق المنتجات أو الخدمات لك أو لتتبّع مواقع الويب التي تزورها أو جمعها أو جمع محتوى أي حركة بيانات على شبكتك.  يمكنك سحب موافقتك في أي وقت عبر الانتقال إلى routerlogin.net متقدّم>الإدارة>تحديث الموجّه.</translation>
+<variable>By clicking "I Agree" you agree that upon installation, your router may transmit the data described above to NETGEAR, which may use the information to provide and improve its products and services. For additional information about the protection of your transmitted data and how it may be used see the NETGEAR Privacy Policy.  NETGEAR does not use this information to market products or services to you or to track or collect the websites you visit or collect the content of any traffic on your network.  You may withdraw this consent at any time by going to the routerlogin.net Advanced>Administration>Router Update.</variable>
+</message>
+<message>
+<tag_code>11022</tag_code>
+<translation>فضلاً عن ذلك، مع الموافقة المسبقة أو بدونها،  يمكن جمع بعض المعلومات الأساسية كرقم إصدار البرنامج الثابت للموجّه ورقم الطراز واستخدامها لمراقبة نشر منتجات NETGEAR وإصدارات البرامج الثابتة.   لن نربط هذه المعلومات بالرقم التسلسلي لموجّهك أو عنوان MAC أو اسمك أو معلومات شخصية أخرى.</translation>
+<variable>In addition, with or without the prior consent,  some basic information, such as the router’s firmware version number and model number, may still be collected and used to monitor deployment of  NETGEAR products and firmware versions.   We will not link such information to your router’s serial number or MAC address or your name or other personal information.</variable>
+</message>
+<message>
+<tag_code>11023</tag_code>
+<translation>2017.03.13 الإصدار 1.0</translation>
+<variable>2017.03.13 Version 1.0</variable>
+</message>
+<message>
+<tag_code>11024</tag_code>
+<translation>لإكمال عملية التثبيت، عليك الموافقة على شروط الخدمات.&lt;br&gt;>إذا لم توافق على شروط الخدمات هذه، فعليك إعادة جهاز NETGEAR.</translation>
+<variable>To complete the installation process, you must agree to the Terms of Services.&lt;br&gt;If you do not accept these Terms of Services, you must return Your NETGEAR device.</variable>
+</message>
 </tag_msg>

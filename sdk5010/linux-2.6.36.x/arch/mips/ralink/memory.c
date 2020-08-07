@@ -46,7 +46,9 @@
 
 #include <asm/mach-ralink/prom.h>
 //#define DEBUG
-
+#ifdef CONFIG_SC_KERNEL_WD
+#include <linux/hal_wd.h>
+#endif
 enum surfboard_memtypes {
 	surfboard_dontuse,
 	surfboard_rom,
@@ -102,7 +104,13 @@ void __init prom_meminit()
 	if(ramsize >= 512) {
 		add_memory_region(0x00000000, ramsize*1024*1024 + 64*1024*1024,  BOOT_MEM_RAM);
 	} else {
+#ifdef CONFIG_SC_KERNEL_WD
+		add_memory_region(0x00000000, ramsize*1024*1024 - 0x400000,  BOOT_MEM_RAM);
+		add_memory_region(ramsize*1024*1024 - 0x400000, MEM_RESERVED_SIZE,  BOOT_MEM_RESERVED);
+		add_memory_region(ramsize*1024*1024 - 0x400000 + MEM_RESERVED_SIZE, 0x400000 - MEM_RESERVED_SIZE,  BOOT_MEM_RAM);
+#else
 		add_memory_region(0x00000000, ramsize*1024*1024,  BOOT_MEM_RAM);
+#endif
 	}
 }
 

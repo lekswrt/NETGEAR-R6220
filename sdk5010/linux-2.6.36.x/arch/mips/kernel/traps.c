@@ -53,6 +53,9 @@
 #include <asm/stacktrace.h>
 #include <asm/irq.h>
 #include <asm/uasm.h>
+#ifdef CONFIG_SC_KERNEL_WD
+#include <linux/hal_wd.h>
+#endif
 
 extern void check_wait(void);
 extern asmlinkage void r4k_wait(void);
@@ -81,6 +84,11 @@ extern asmlinkage void handle_dsp(void);
 extern asmlinkage void handle_mcheck(void);
 extern asmlinkage void handle_reserved(void);
 
+#ifdef CONFIG_SC_KERNEL_WD
+char stack_log_buff[SC_STACK_LOG_SIZE] = {0};
+unsigned stack_buff_len = 0;
+#endif
+
 extern int fpu_emulator_cop1Handler(struct pt_regs *xcp,
 	struct mips_fpu_struct *ctx, int has_fpu);
 
@@ -97,20 +105,35 @@ static void show_raw_backtrace(unsigned long reg29)
 	unsigned long addr;
 
 	printk("Call Trace:");
+#ifdef CONFIG_SC_KERNEL_WD
+	SC_LOG_MSG_TO_BUFF("Call Trace:");
+#endif
 #ifdef CONFIG_KALLSYMS
 	printk("\n");
+#ifdef CONFIG_SC_KERNEL_WD
+	SC_LOG_MSG_TO_BUFF("\n");
+#endif
 #endif
 	while (!kstack_end(sp)) {
 		unsigned long __user *p =
 			(unsigned long __user *)(unsigned long)sp++;
 		if (__get_user(addr, p)) {
 			printk(" (Bad stack address)");
+#ifdef CONFIG_SC_KERNEL_WD
+			SC_LOG_MSG_TO_BUFF(" (Bad stack address)");
+#endif
 			break;
 		}
 		if (__kernel_text_address(addr))
 			print_ip_sym(addr);
+#ifdef CONFIG_SC_KERNEL_WD
+			SC_LOG_MSG_TO_BUFF("[<%p>] %pS\n", (void *) addr, (void *) addr);
+#endif
 	}
 	printk("\n");
+#ifdef CONFIG_SC_KERNEL_WD
+	SC_LOG_MSG_TO_BUFF("\n");
+#endif
 }
 
 #ifdef CONFIG_KALLSYMS
@@ -134,11 +157,20 @@ static void show_backtrace(struct task_struct *task, const struct pt_regs *regs)
 		return;
 	}
 	printk("Call Trace:\n");
+#ifdef CONFIG_SC_KERNEL_WD
+	SC_LOG_MSG_TO_BUFF("Call Trace:\n");
+#endif
 	do {
 		print_ip_sym(pc);
+#ifdef CONFIG_SC_KERNEL_WD
+		SC_LOG_MSG_TO_BUFF("[<%p>] %pS\n", (void *) pc, (void *) pc);
+#endif
 		pc = unwind_stack(task, &sp, pc, &ra);
 	} while (pc);
 	printk("\n");
+#ifdef CONFIG_SC_KERNEL_WD
+	SC_LOG_MSG_TO_BUFF("\n");
+#endif
 }
 
 /*
@@ -198,7 +230,38 @@ void show_stack(struct task_struct *task, unsigned long *sp)
 	}
 	show_stacktrace(task, &regs);
 }
+#ifdef CONFIG_SC_KERNEL_WD
+void copy_stack_to_ram(char * str_ptr,unsigned start, unsigned src_len,char *dst_addr,unsigned dst_len)
+{
+    int i = 0;	
+    unsigned addr_len = 0;
 
+    addr_len += sprintf(dst_addr + addr_len,"=====%s_start==\n",str_ptr);
+        for (i = 0; i < src_len  ; i++) {
+            dst_addr[addr_len++] = stack_log_buff[start + i];    
+        }
+
+    addr_len += sprintf(dst_addr + addr_len,"=====%s_end==\n",str_ptr);
+    dst_addr[dst_len - 2] = '=';
+	dst_addr[dst_len - 1] = '=';
+}
+
+void log_stack_to_ram(void)
+{
+    unsigned count = 0;
+    unsigned log_len = 0;
+
+    count = SC_STACK_LOG_SIZE-256;
+    log_len = strlen(stack_log_buff);
+
+    if(log_len < count){
+        count = log_len;
+    }
+    copy_stack_to_ram("stack",0,count,(char *)BOOT_STACK_ADDRESS,SC_STACK_LOG_SIZE);	
+    return ;
+}
+EXPORT_SYMBOL(log_stack_to_ram);
+#endif
 /*
  * The architecture-independent dump_stack generator
  */
@@ -208,6 +271,9 @@ void dump_stack(void)
 
 	prepare_frametrace(&regs);
 	show_backtrace(current, &regs);
+#ifdef CONFIG_SC_KERNEL_WD
+	log_stack_to_ram();	
+#endif
 }
 
 EXPORT_SYMBOL(dump_stack);
@@ -218,16 +284,24 @@ static void show_code(unsigned int __user *pc)
 	unsigned short __user *pc16 = NULL;
 
 	printk("\nCode:");
-
+#ifdef CONFIG_SC_KERNEL_WD
+	SC_LOG_MSG_TO_BUFF("\nCode:");
+#endif
 	if ((unsigned long)pc & 1)
 		pc16 = (unsigned short __user *)((unsigned long)pc & ~1);
 	for(i = -3 ; i < 6 ; i++) {
 		unsigned int insn;
 		if (pc16 ? __get_user(insn, pc16 + i) : __get_user(insn, pc + i)) {
 			printk(" (Bad address in epc)\n");
+#ifdef CONFIG_SC_KERNEL_WD
+			SC_LOG_MSG_TO_BUFF(" (Bad address in epc)\n");
+#endif
 			break;
 		}
 		printk("%c%0*x%c", (i?' ':'<'), pc16 ? 4 : 8, insn, (i?' ':'>'));
+#ifdef CONFIG_SC_KERNEL_WD
+		SC_LOG_MSG_TO_BUFF("%c%0*x%c", (i?' ':'<'), pc16 ? 4 : 8, insn, (i?' ':'>'));
+#endif
 	}
 }
 
@@ -273,7 +347,14 @@ static void __show_regs(const struct pt_regs *regs)
 	       (void *) regs->regs[31]);
 
 	printk("Status: %08x    ", (uint32_t) regs->cp0_status);
-
+#ifdef CONFIG_SC_KERNEL_WD
+	SC_LOG_MSG_TO_BUFF("epc   : %0*lx %pS\n", field, regs->cp0_epc,
+	       (void *) regs->cp0_epc);
+	SC_LOG_MSG_TO_BUFF("    %s\n", print_tainted());
+	SC_LOG_MSG_TO_BUFF("ra    : %0*lx %pS\n", field, regs->regs[31],
+	       (void *) regs->regs[31]);
+	SC_LOG_MSG_TO_BUFF("Status: %08x	", (uint32_t) regs->cp0_status);
+#endif
 	if (current_cpu_data.isa_level == MIPS_CPU_ISA_I) {
 		if (regs->cp0_status & ST0_KUO)
 			printk("KUo ");
@@ -318,7 +399,9 @@ static void __show_regs(const struct pt_regs *regs)
 	printk("\n");
 
 	printk("Cause : %08x\n", cause);
-
+#ifdef CONFIG_SC_KERNEL_WD
+	SC_LOG_MSG_TO_BUFF("\nCause : %08x\n", cause);
+#endif
 	cause = (cause & CAUSEF_EXCCODE) >> CAUSEB_EXCCODE;
 	if (1 <= cause && cause <= 5)
 		printk("BadVA : %0*lx\n", field, regs->cp0_badvaddr);
@@ -344,17 +427,30 @@ void show_registers(struct pt_regs *regs)
 	printk("Process %s (pid: %d, threadinfo=%p, task=%p, tls=%0*lx)\n",
 	       current->comm, current->pid, current_thread_info(), current,
 	      field, current_thread_info()->tp_value);
+#ifdef CONFIG_SC_KERNEL_WD
+	SC_LOG_MSG_TO_BUFF("Process %s (pid: %d, threadinfo=%p, task=%p, tls=%0*lx)\n",
+	       current->comm, current->pid, current_thread_info(), current,
+	      field, current_thread_info()->tp_value);
+#endif
 	if (cpu_has_userlocal) {
 		unsigned long tls;
 
 		tls = read_c0_userlocal();
 		if (tls != current_thread_info()->tp_value)
+		{
 			printk("*HwTLS: %0*lx\n", field, tls);
+#ifdef CONFIG_SC_KERNEL_WD
+			SC_LOG_MSG_TO_BUFF("*HwTLS: %0*lx\n", field, tls);
+#endif
+		}
 	}
 
 	show_stacktrace(current, regs);
 	show_code((unsigned int __user *) regs->cp0_epc);
 	printk("\n");
+#ifdef CONFIG_SC_KERNEL_WD
+	SC_LOG_MSG_TO_BUFF("\n");
+#endif
 }
 
 static int regs_to_trapnr(struct pt_regs *regs)
@@ -385,10 +481,16 @@ void __noreturn die(const char *str, struct pt_regs *regs)
 		sig = 0;
 
 	printk("%s[#%d]:\n", str, ++die_counter);
+#ifdef CONFIG_SC_KERNEL_WD
+	//store_curr_log_end();
+	SC_LOG_MSG_TO_BUFF("Call Trace:\n");
+#endif
 	show_registers(regs);
 	add_taint(TAINT_DIE);
 	spin_unlock_irq(&die_lock);
-
+#ifdef CONFIG_SC_KERNEL_WD
+	log_stack_to_ram();
+#endif
 	if (in_interrupt())
 		panic("Fatal exception in interrupt");
 

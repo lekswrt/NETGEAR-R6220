@@ -1386,3 +1386,24 @@ int sc_set_downloadmode(char *buf)
     return flash_set_str(buf, FT_DOWNLOAD_OFFSET, FT_DOWNLOAD_LEN, "downloadmode");
 }
 #endif
+
+char* sc_get_tc_new(char* buf, int len)
+{
+    return flash_get_str(buf, len, TC_NEW_OFFSET, TC_NEW_LEN);
+}
+
+int sc_set_tc_new(char *buf)
+{
+    return flash_set_str(buf, TC_NEW_OFFSET, TC_NEW_LEN, "tc_new");
+}
+
+char* sc_get_production_date(char* buf, int len)
+{
+    return flash_get_str(buf, len, PROD_DATE_OFFSET, PROD_DATE_LEN);
+}
+
+int sc_set_production_date(char *buf)
+{
+    return flash_set_str(buf, PROD_DATE_OFFSET, PROD_DATE_LEN, "production_date");
+}
+

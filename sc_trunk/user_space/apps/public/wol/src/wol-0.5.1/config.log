@@ -801,7 +801,7 @@ configure:5145: $? = 0
 configure:5145: result: yes
 configure:5145: checking for __argz_count
 configure:5145: mipsel-linux-gcc -o conftest -I/home/disk3/peter/RELEASE/sc_trunk/user_space/apps/public/nvram  -L/home/disk3/peter/RELEASE/sc_trunk/user_space/apps/public/nvram -lscnvram conftest.c  >&5
-/tmp/cc4NYXvh.o: In function `main':
+/tmp/cc0w5sM9.o: In function `main':
 conftest.c:(.text+0x1c): undefined reference to `__argz_count'
 conftest.c:(.text+0x28): undefined reference to `__argz_count'
 collect2: ld returned 1 exit status
@@ -902,7 +902,7 @@ configure: failed program was:
 configure:5145: result: no
 configure:5145: checking for __argz_stringify
 configure:5145: mipsel-linux-gcc -o conftest -I/home/disk3/peter/RELEASE/sc_trunk/user_space/apps/public/nvram  -L/home/disk3/peter/RELEASE/sc_trunk/user_space/apps/public/nvram -lscnvram conftest.c  >&5
-/tmp/ccTjq2ok.o: In function `main':
+/tmp/ccpfGG10.o: In function `main':
 conftest.c:(.text+0x1c): undefined reference to `__argz_stringify'
 conftest.c:(.text+0x28): undefined reference to `__argz_stringify'
 collect2: ld returned 1 exit status
@@ -1003,7 +1003,7 @@ configure: failed program was:
 configure:5145: result: no
 configure:5145: checking for __argz_next
 configure:5145: mipsel-linux-gcc -o conftest -I/home/disk3/peter/RELEASE/sc_trunk/user_space/apps/public/nvram  -L/home/disk3/peter/RELEASE/sc_trunk/user_space/apps/public/nvram -lscnvram conftest.c  >&5
-/tmp/cc0AMC2k.o: In function `main':
+/tmp/ccTkeMb3.o: In function `main':
 conftest.c:(.text+0x1c): undefined reference to `__argz_next'
 conftest.c:(.text+0x28): undefined reference to `__argz_next'
 collect2: ld returned 1 exit status

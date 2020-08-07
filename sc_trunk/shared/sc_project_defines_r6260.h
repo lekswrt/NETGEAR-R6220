@@ -172,6 +172,8 @@
 #define WPAKEY_OFFSET   0x120 /* WPAKEY_LEN is 64, next use 0x160*/
 #define PRODUCT_ID_OFFSET	0x160 /* PRODUCT_ID_LEN is 4,now not use */
 #define MODULE_ID_OFFSET	0x200 /* MODULE_ID_LEN is 2 */
+#define TC_NEW_OFFSET	0x210 /* TC_NEW_LEN is 1, next use 0x211 */
+#define PROD_DATE_OFFSET	0x211 /* PROD_DATE_LEN is 12, next use 0x220 */
 #define CAL_OFFSET      0x10000 /* CAL_LEN is 5 */
 
 
@@ -195,6 +197,8 @@
 #define PRODUCT_ID_LEN  4
 #define MODULE_ID_LEN   2
 #define CAL_LEN         5
+#define TC_NEW_LEN      1
+#define PROD_DATE_LEN      12
 
 //----------------------------------
 // defines that differents between projects 

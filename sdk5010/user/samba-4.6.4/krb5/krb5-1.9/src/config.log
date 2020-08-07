@@ -969,7 +969,7 @@ configure: failed program was:
 configure:6248: result: no
 configure:6124: checking whether pthreads work without any flags
 configure:6215: /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/bin/mipsel-linux-gcc -o conftest -O2 -fomit-frame-pointer -pipe  -Dlinux -D__linux__ -Dunix -DEMBED -I/home/disk3/peter/RELEASE/sdk5010/uClibc-0.9.33.2/app_headers/include -I/home/disk3/peter/RELEASE/sdk5010/lib/include -DCONFIG_UCLIBC_0_9_33_2  -I/home/disk3/peter/RELEASE/sdk5010    -Wl,--fatal-warnings -L/home/disk3/peter/RELEASE/sdk5010/uClibc-0.9.33.2/lib -L/home/disk3/peter/RELEASE/sdk5010/lib/lib -Wl,--fatal-warnings -L/home/disk3/peter/RELEASE/sdk5010/uClibc-0.9.33.2/lib -L/home/disk3/peter/RELEASE/sdk5010/lib/lib conftest.c  -lresolv  >&5
-/tmp/cc7ka2XA.o: In function `main':
+/tmp/ccL6XDhI.o: In function `main':
 conftest.c:(.text.startup+0x8): undefined reference to `pthread_join'
 conftest.c:(.text.startup+0x60): undefined reference to `__pthread_register_cancel'
 conftest.c:(.text.startup+0x7c): undefined reference to `pthread_create'
@@ -1204,9 +1204,9 @@ configure:6462: PTHREAD_CFLAGS = -pthread
 configure:6464: PTHREAD_LIBS = 
 configure:6517: checking for pthread_once
 configure:6574: /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/bin/mipsel-linux-gcc -o conftest -O2 -fomit-frame-pointer -pipe  -Dlinux -D__linux__ -Dunix -DEMBED -I/home/disk3/peter/RELEASE/sdk5010/uClibc-0.9.33.2/app_headers/include -I/home/disk3/peter/RELEASE/sdk5010/lib/include -DCONFIG_UCLIBC_0_9_33_2  -I/home/disk3/peter/RELEASE/sdk5010   -Wl,--fatal-warnings -L/home/disk3/peter/RELEASE/sdk5010/uClibc-0.9.33.2/lib -L/home/disk3/peter/RELEASE/sdk5010/lib/lib -Wl,--fatal-warnings -L/home/disk3/peter/RELEASE/sdk5010/uClibc-0.9.33.2/lib -L/home/disk3/peter/RELEASE/sdk5010/lib/lib conftest.c -lresolv  >&5
-/tmp/ccKmPCP4.o: In function `main':
+/tmp/ccXfsYc6.o: In function `main':
 conftest.c:(.text.startup+0x10): undefined reference to `pthread_once'
-/tmp/ccKmPCP4.o:(.data.rel+0x0): undefined reference to `pthread_once'
+/tmp/ccXfsYc6.o:(.data.rel+0x0): undefined reference to `pthread_once'
 collect2: ld returned 1 exit status
 configure:6580: $? = 1
 configure: failed program was:
@@ -1292,9 +1292,9 @@ configure: failed program was:
 configure:6605: result: no
 configure:6517: checking for pthread_rwlock_init
 configure:6574: /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/bin/mipsel-linux-gcc -o conftest -O2 -fomit-frame-pointer -pipe  -Dlinux -D__linux__ -Dunix -DEMBED -I/home/disk3/peter/RELEASE/sdk5010/uClibc-0.9.33.2/app_headers/include -I/home/disk3/peter/RELEASE/sdk5010/lib/include -DCONFIG_UCLIBC_0_9_33_2  -I/home/disk3/peter/RELEASE/sdk5010   -Wl,--fatal-warnings -L/home/disk3/peter/RELEASE/sdk5010/uClibc-0.9.33.2/lib -L/home/disk3/peter/RELEASE/sdk5010/lib/lib -Wl,--fatal-warnings -L/home/disk3/peter/RELEASE/sdk5010/uClibc-0.9.33.2/lib -L/home/disk3/peter/RELEASE/sdk5010/lib/lib conftest.c -lresolv  >&5
-/tmp/cc19rtt6.o: In function `main':
+/tmp/cc8gy9x6.o: In function `main':
 conftest.c:(.text.startup+0x10): undefined reference to `pthread_rwlock_init'
-/tmp/cc19rtt6.o:(.data.rel+0x0): undefined reference to `pthread_rwlock_init'
+/tmp/cc8gy9x6.o:(.data.rel+0x0): undefined reference to `pthread_rwlock_init'
 collect2: ld returned 1 exit status
 configure:6580: $? = 1
 configure: failed program was:
@@ -1390,7 +1390,7 @@ configure:6674: $? = 0
 configure:6687: result: yes
 configure:6704: checking for library containing dlopen
 configure:6734: /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/bin/mipsel-linux-gcc -o conftest -O2 -fomit-frame-pointer -pipe  -Dlinux -D__linux__ -Dunix -DEMBED -I/home/disk3/peter/RELEASE/sdk5010/uClibc-0.9.33.2/app_headers/include -I/home/disk3/peter/RELEASE/sdk5010/lib/include -DCONFIG_UCLIBC_0_9_33_2  -I/home/disk3/peter/RELEASE/sdk5010   -Wl,--fatal-warnings -L/home/disk3/peter/RELEASE/sdk5010/uClibc-0.9.33.2/lib -L/home/disk3/peter/RELEASE/sdk5010/lib/lib -Wl,--fatal-warnings -L/home/disk3/peter/RELEASE/sdk5010/uClibc-0.9.33.2/lib -L/home/disk3/peter/RELEASE/sdk5010/lib/lib conftest.c -lresolv  >&5
-/tmp/ccOacG4i.o: In function `main':
+/tmp/cc6xbwzh.o: In function `main':
 conftest.c:(.text.startup+0x8): undefined reference to `dlopen'
 conftest.c:(.text.startup+0x18): undefined reference to `dlopen'
 collect2: ld returned 1 exit status
@@ -2548,9 +2548,9 @@ configure:12500: $? = 0
 configure:12512: result: yes
 configure:12424: checking for bswap16
 configure:12481: /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/bin/mipsel-linux-gcc -o conftest -O2 -fomit-frame-pointer -pipe  -Dlinux -D__linux__ -Dunix -DEMBED -I/home/disk3/peter/RELEASE/sdk5010/uClibc-0.9.33.2/app_headers/include -I/home/disk3/peter/RELEASE/sdk5010/lib/include -DCONFIG_UCLIBC_0_9_33_2  -I/home/disk3/peter/RELEASE/sdk5010   -Wl,--fatal-warnings -L/home/disk3/peter/RELEASE/sdk5010/uClibc-0.9.33.2/lib -L/home/disk3/peter/RELEASE/sdk5010/lib/lib -Wl,--fatal-warnings -L/home/disk3/peter/RELEASE/sdk5010/uClibc-0.9.33.2/lib -L/home/disk3/peter/RELEASE/sdk5010/lib/lib conftest.c -lkeyutils -lresolv  >&5
-/tmp/ccni8Ezu.o: In function `main':
+/tmp/ccoNvz6Y.o: In function `main':
 conftest.c:(.text.startup+0x10): undefined reference to `bswap16'
-/tmp/ccni8Ezu.o:(.data.rel+0x0): undefined reference to `bswap16'
+/tmp/ccoNvz6Y.o:(.data.rel+0x0): undefined reference to `bswap16'
 collect2: ld returned 1 exit status
 configure:12487: $? = 1
 configure: failed program was:
@@ -2699,9 +2699,9 @@ configure: failed program was:
 configure:12512: result: no
 configure:12424: checking for bswap64
 configure:12481: /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/bin/mipsel-linux-gcc -o conftest -O2 -fomit-frame-pointer -pipe  -Dlinux -D__linux__ -Dunix -DEMBED -I/home/disk3/peter/RELEASE/sdk5010/uClibc-0.9.33.2/app_headers/include -I/home/disk3/peter/RELEASE/sdk5010/lib/include -DCONFIG_UCLIBC_0_9_33_2  -I/home/disk3/peter/RELEASE/sdk5010   -Wl,--fatal-warnings -L/home/disk3/peter/RELEASE/sdk5010/uClibc-0.9.33.2/lib -L/home/disk3/peter/RELEASE/sdk5010/lib/lib -Wl,--fatal-warnings -L/home/disk3/peter/RELEASE/sdk5010/uClibc-0.9.33.2/lib -L/home/disk3/peter/RELEASE/sdk5010/lib/lib conftest.c -lkeyutils -lresolv  >&5
-/tmp/ccizAyQy.o: In function `main':
+/tmp/ccDzcYI1.o: In function `main':
 conftest.c:(.text.startup+0x10): undefined reference to `bswap64'
-/tmp/ccizAyQy.o:(.data.rel+0x0): undefined reference to `bswap64'
+/tmp/ccDzcYI1.o:(.data.rel+0x0): undefined reference to `bswap64'
 collect2: ld returned 1 exit status
 configure:12487: $? = 1
 configure: failed program was:
@@ -3081,7 +3081,7 @@ configure: failed program was:
 configure:12824: result: no
 configure:12841: checking for sys_errlist in libc
 configure:12862: /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/bin/mipsel-linux-gcc -o conftest -O2 -fomit-frame-pointer -pipe  -Dlinux -D__linux__ -Dunix -DEMBED -I/home/disk3/peter/RELEASE/sdk5010/uClibc-0.9.33.2/app_headers/include -I/home/disk3/peter/RELEASE/sdk5010/lib/include -DCONFIG_UCLIBC_0_9_33_2  -I/home/disk3/peter/RELEASE/sdk5010   -Wl,--fatal-warnings -L/home/disk3/peter/RELEASE/sdk5010/uClibc-0.9.33.2/lib -L/home/disk3/peter/RELEASE/sdk5010/lib/lib -Wl,--fatal-warnings -L/home/disk3/peter/RELEASE/sdk5010/uClibc-0.9.33.2/lib -L/home/disk3/peter/RELEASE/sdk5010/lib/lib conftest.c -lkeyutils -lresolv  >&5
-/tmp/ccZ3LDzp.o: In function `main':
+/tmp/ccZwmCDJ.o: In function `main':
 conftest.c:(.text.startup+0x8): undefined reference to `sys_nerr'
 collect2: ld returned 1 exit status
 configure:12868: $? = 1
@@ -5909,9 +5909,9 @@ configure:14240: checking type of array argument to getgroups
 configure:14319: result: gid_t
 configure:14328: checking for sigsetjmp
 configure:14385: /opt/buildroot-gcc463_NPTLSHAREDLIBGCC/usr/bin/mipsel-linux-gcc -o conftest -O2 -fomit-frame-pointer -pipe  -Dlinux -D__linux__ -Dunix -DEMBED -I/home/disk3/peter/RELEASE/sdk5010/uClibc-0.9.33.2/app_headers/include -I/home/disk3/peter/RELEASE/sdk5010/lib/include -DCONFIG_UCLIBC_0_9_33_2  -I/home/disk3/peter/RELEASE/sdk5010   -Wl,--fatal-warnings -L/home/disk3/peter/RELEASE/sdk5010/uClibc-0.9.33.2/lib -L/home/disk3/peter/RELEASE/sdk5010/lib/lib -Wl,--fatal-warnings -L/home/disk3/peter/RELEASE/sdk5010/uClibc-0.9.33.2/lib -L/home/disk3/peter/RELEASE/sdk5010/lib/lib conftest.c -lkeyutils -lresolv  >&5
-/tmp/ccf6NVNk.o: In function `main':
+/tmp/cc3oZPry.o: In function `main':
 conftest.c:(.text.startup+0x10): undefined reference to `sigsetjmp'
-/tmp/ccf6NVNk.o:(.data.rel+0x0): undefined reference to `sigsetjmp'
+/tmp/cc3oZPry.o:(.data.rel+0x0): undefined reference to `sigsetjmp'
 collect2: ld returned 1 exit status
 configure:14391: $? = 1
 configure: failed program was:

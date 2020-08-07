@@ -434,6 +434,13 @@ void send_log(int login_success, char *remote_ip)
 	{
 		from_lan = 0;
 	}
+	
+	//ipv6 login, need re-judge.
+	if(strchr(remote_ip,':'))
+	{
+		if(check_lan_guest())
+			from_lan = 1;
+	}
 
 	if (!from_lan)
 	{
@@ -528,3 +535,106 @@ inline void save_manager(void)
 	__save_manager();
 	lock_leave();
 }
+
+int count_cgi()
+{
+    DIR *dir;
+    struct dirent *entry;
+    int n;
+    char *p;
+	char buf[1024];
+    char cmdline[64];
+    FILE *fp;
+    int pid;
+	int count_setupcgi = 0, count_setupwizardcgi = 0;
+	
+	memset(buf, 0, sizeof(buf));
+    dir = opendir("/proc");
+    if(!dir) 
+    {
+        return 0;
+    }
+ 
+    for(;;)
+    {
+        /* Get entry from dir /proc */
+        if((entry = readdir(dir)) == NULL) 
+        {
+            closedir(dir);
+            return (count_setupcgi + count_setupwizardcgi);
+        }
+        p = entry->d_name;
+        /* process must have pid as its dir name */
+        if (!(*p >= '0' && *p <= '9')) 
+        {
+            continue;
+        }
+        pid = atoi(p);
+ 
+        /* Get cmdline */
+        sprintf(cmdline, "/proc/%d/cmdline", pid);
+        if((fp = fopen(cmdline, "r")) == NULL) 
+        {
+            continue;
+        }
+        buf[0] = '\0';
+        if((n=fread(buf, 1, sizeof(buf)-1, fp)) > 0) 
+        {
+            if(buf[n-1]=='\n') 
+            {
+                buf[--n] = 0;
+            }
+            p = buf;
+            while(n) {
+                /* Get process name */
+                if(((unsigned char)*p) < ' ') 
+                {
+                    break;
+                }
+                p++;
+                n--;
+            }
+            *p = '\0';
+        }
+        fclose(fp);
+		
+#if 1
+        if(strstr(buf, "mini_httpd"))
+        {
+			count_setupcgi++;
+			//SC_CFPRINTF_EXIT("count_setupcgi: %d\n", count_setupcgi);
+        }
+#else		
+		//SC_CFPRINTF_EXIT("buf: %s\n", buf);
+        if(strstr(buf, "setup.cgi")) 
+        {
+			count_setupcgi++;
+			//SC_CFPRINTF_EXIT("count_setupcgi: %d\n", count_setupcgi);
+        }
+        if(strstr(buf, "setupwizard.cgi")) 
+        {
+			count_setupwizardcgi++;
+			//SC_CFPRINTF_EXIT("setupwizard.cgi: %d\n", count_setupwizardcgi);
+        }        
+#endif        
+    }
+    closedir(dir);
+    
+    return (count_setupcgi + count_setupwizardcgi);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

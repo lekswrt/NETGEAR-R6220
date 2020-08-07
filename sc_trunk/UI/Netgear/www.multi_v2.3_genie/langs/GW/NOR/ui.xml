@@ -1214,4 +1214,79 @@
 <translation>Hvis du er en avansert bruker som vet hvordan du kan konfigurere gatewayen din til å støtte noen av disse avanserte funksjonene, kan du klikke på knappen &lt;b&gt;Tilbake&lt;/b&gt; og konfigurere NETGEAR-ruteren i rutermodus.</translation>
 <variable>If you are advanced user and know how to configure your gateway to support some of these advanced functions, you can click the &lt;b&gt;Back&lt;/b&gt; button and configure the NETGEAR router in router mode.</variable>
 </message>
+<message>
+<tag_code>11010</tag_code>
+<translation>Automatisk fastvareoppdatering av ruter</translation>
+<variable>Router Auto Firmware Update</variable>
+</message>
+<message>
+<tag_code>11011</tag_code>
+<translation>Aktiver ruteren til automatisk å oppdatere til fremtidige fastvareversjoner. Dette holder ruteren oppdatert med de nyeste funksjonene og sikkerhetsoppdateringene.</translation>
+<variable>Enable router to automatically update to future firmware. This keeps your router up to date with the latest features and security fixes.</variable>
+</message>
+<message>
+<tag_code>11012</tag_code>
+<translation>Velg ett av følgende alternativer:</translation>
+<variable>Select one of the following options:</variable>
+</message>
+<message>
+<tag_code>11013</tag_code>
+<translation>Innhenting av analyseinformasjon fra ruteren </translation>
+<variable>Router Analytics Data Collection</variable>
+</message>
+<message>
+<tag_code>11014</tag_code>
+<translation>Aktiver innhenting av &lt;a href="#" onclick="window.open('BRS_data_detail.htm','name','width=600,height=400,scrollbars=1,resizable=1','blank')" style="color: rgb(000,000,255);text-decoration:underline"&gt; &lt;font size=""&gt;analytiske data for rutere&lt;/font&gt;&lt;/a&gt; for å hjelpe NETGEAR å forbedre produktene og tjenestene sine.</translation>
+<variable>Enable collection of router analytics data that will help NETGEAR improve our services and products.</variable>
+</message>
+<message>
+<tag_code>11015</tag_code>
+<translation>Personvernerklæring</translation>
+<variable>Privacy Policy</variable>
+</message>
+<message>
+<tag_code>11016</tag_code>
+<translation>Tjenestevilkår</translation>
+<variable>Terms of Services</variable>
+</message>
+<message>
+<tag_code>11017</tag_code>
+<translation>Foreta valg for begge funksjonene ovenfor for å fortsette.</translation>
+<variable>Please make your selection for both features above to continue.</variable>
+</message>
+<message>
+<tag_code>11018</tag_code>
+<translation>Jeg godtar</translation>
+<variable>I Agree</variable>
+</message>
+<message>
+<tag_code>11019</tag_code>
+<translation>Jeg godtar ikke</translation>
+<variable>I Disagree</variable>
+</message>
+<message>
+<tag_code>11020</tag_code>
+<translation>Tekniske data om funksjonene og bruken av ruterne våre og de tilhørende WiFi-nettverkene kan hjelpe oss med å isolere og feilsøke tekniske problemer raskt, forbedre ruterens funksjoner og funksjonalitet og forbedre ytelsen og brukervennligheten til ruterne.   Dataene kan inkludere informasjon om ruterens driftsstatus, antall enheter som er koblet til ruteren, typer tilkoblinger, LAN/WAN-status, WiFi-bånd og -kanaler, IP-adresser, MAC-adresser, serienummer og lignende tekniske data om funksjonene og bruken av ruteren og WiFi-nettverket.</translation>
+<variable>Technical data about the functioning and use of our routers and their WiFi network can help us to more quickly isolate and debug general technical issues, improve router features and functionality, and  improve the performance and usability of our routers.   Such data may include information regarding the router’s running status, number of devices connected to the router, types of connections, LAN/WAN status, WiFi bands and channels, IP address, MAC address, serial number, and similar technical data about the functioning and use of the router and its WiFi network.</variable>
+</message>
+<message>
+<tag_code>11021</tag_code>
+<translation>Ved å velge Jeg godtar samtykker du til at ruteren kan overføre dataene beskrevet ovenfor, til NETGEAR ved installasjon, og at NETGEAR kan bruke informasjonen til å forbedre produktene og tjenestene sine. Hvis du vil ha mer informasjon om beskyttelse av overført informasjon og hvordan den kan brukes, kan du se NETGEARs personvernerklæring.  NETGEAR bruker ikke denne informasjonen til å markedsføre produkter eller tjenester til deg, spore eller innhente nettstedene du besøker, eller innhente innhold fra trafikken på nettverket ditt.  Du kan trekke tilbake samtykket når som helst ved å gå til routerlogin.net Avansert > Administrasjon > Ruteroppdatering.</translation>
+<variable>By clicking "I Agree" you agree that upon installation, your router may transmit the data described above to NETGEAR, which may use the information to provide and improve its products and services. For additional information about the protection of your transmitted data and how it may be used see the NETGEAR Privacy Policy.  NETGEAR does not use this information to market products or services to you or to track or collect the websites you visit or collect the content of any traffic on your network.  You may withdraw this consent at any time by going to the routerlogin.net Advanced>Administration>Router Update.</variable>
+</message>
+<message>
+<tag_code>11022</tag_code>
+<translation>Noe grunnleggende informasjon kan likevel innhentes, for eksempel ruterens fastvareversjonnummer og modellnummer, og brukes til å overvåke utplasseringen av NETGEAR-produkter og -fastvareversjoner.   Vi kommer ikke til å knytte denne informasjonen til ruterens serienummer eller MAC-adresse, navnet ditt eller annen personlig informasjon.</translation>
+<variable>In addition, with or without the prior consent,  some basic information, such as the router’s firmware version number and model number, may still be collected and used to monitor deployment of  NETGEAR products and firmware versions.   We will not link such information to your router’s serial number or MAC address or your name or other personal information.</variable>
+</message>
+<message>
+<tag_code>11023</tag_code>
+<translation>13.03.2017 versjon 1.0</translation>
+<variable>2017.03.13 Version 1.0</variable>
+</message>
+<message>
+<tag_code>11024</tag_code>
+<translation>For å fullføre installeringen må du godta tjenestevilkårene.&lt;br&gt;Hvis du ikke godtar disse tjenestevilkårene, må du returnere NETGEAR-enheten.</translation>
+<variable>To complete the installation process, you must agree to the Terms of Services.&lt;br&gt;If you do not accept these Terms of Services, you must return Your NETGEAR device.</variable>
+</message>
 </tag_msg>

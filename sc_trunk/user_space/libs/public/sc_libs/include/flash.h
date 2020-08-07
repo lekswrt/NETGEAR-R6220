@@ -244,5 +244,10 @@ char *sc_get_downloadmode(char* buf, int len);
 int sc_set_downloadmode(char *buf);
 #endif
 
+char* sc_get_tc_new(char* buf, int len);
+int sc_set_tc_new(char *buf);
+char* sc_get_production_date(char* buf, int len);
+int sc_set_production_date(char *buf);
+
 int set_wireless_time_zone(char * language,char *wireless_apply,char *schedule_apply);
 #endif /*_LIBCOMM_SC_H_*/

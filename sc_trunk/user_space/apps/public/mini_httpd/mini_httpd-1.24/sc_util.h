@@ -41,6 +41,7 @@ unsigned long long get_uptime(char *time_file);
 int need_fakepath(char *path);
 void send_log(int login_success, char *remote_ip);
 int path_exist(char *path, char *paths[], char *method_str);
+int count_cgi();
 
 void lock_enter(void);
 void lock_leave(void);

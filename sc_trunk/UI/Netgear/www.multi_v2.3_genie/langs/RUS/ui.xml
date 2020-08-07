@@ -6609,4 +6609,84 @@
 <translation>Настройки NTP</translation>
 <variable>NTP Settings</variable>
 </message>
+<message>
+<tag_code>11000</tag_code>
+<translation>Настройки загрузчика</translation>
+<variable>Downloader Settings </variable>
+</message>
+<message>
+<tag_code>11010</tag_code>
+<translation>Автоматическое обновление микрокода роутера</translation>
+<variable>Router Auto Firmware Update</variable>
+</message>
+<message>
+<tag_code>11011</tag_code>
+<translation>Включить автоматическое обновление микрокода роутера. Этот параметр обеспечивает своевременную установку обновлений микрокода и исправлений системы безопасности.</translation>
+<variable>Enable router to automatically update to future firmware. This keeps your router up to date with the latest features and security fixes.</variable>
+</message>
+<message>
+<tag_code>11012</tag_code>
+<translation>Выберите один из следующих параметров:</translation>
+<variable>Select one of the following options:</variable>
+</message>
+<message>
+<tag_code>11013</tag_code>
+<translation>Сбор данных роутера для аналитики </translation>
+<variable>Router Analytics Data Collection</variable>
+</message>
+<message>
+<tag_code>11014</tag_code>
+<translation>Включить сбор &lt;a href="#" onclick="window.open('BRS_data_detail.htm','name','width=600,height=400,scrollbars=1,resizable=1','blank')" style="color: rgb(000,000,255);text-decoration:underline"&gt; &lt;font size=""&gt;аналитических данных роутера&lt;/font&gt;&lt;/a&gt;, которые помогут компании NETGEAR улучшить продукты и услуги.</translation>
+<variable>Enable collection of router analytics data that will help NETGEAR improve our services and products.</variable>
+</message>
+<message>
+<tag_code>11015</tag_code>
+<translation>Политика конфиденциальности</translation>
+<variable>Privacy Policy</variable>
+</message>
+<message>
+<tag_code>11016</tag_code>
+<translation>Условия предоставления услуг</translation>
+<variable>Terms of Services</variable>
+</message>
+<message>
+<tag_code>11017</tag_code>
+<translation>Для продолжения выберите один из вариантов для обоих параметров, указанных выше.</translation>
+<variable>Please make your selection for both features above to continue.</variable>
+</message>
+<message>
+<tag_code>11018</tag_code>
+<translation>Принимаю условия</translation>
+<variable>I Agree</variable>
+</message>
+<message>
+<tag_code>11019</tag_code>
+<translation>Не принимаю условия</translation>
+<variable>I Disagree</variable>
+</message>
+<message>
+<tag_code>11020</tag_code>
+<translation>Технические данные о функционировании и использовании наших роутеров и их сетей WiFi помогают нам быстрее выявлять и устранять общие технические проблемы, улучшать характеристики и функции роутеров и повышать их производительность.   К таким данным относятся, например, информация о рабочем состоянии роутера, количество устройств, подключенных к роутеру, типы соединений, статус локальной/глобальной сети, диапазоны и каналы WiFi, IP-адрес, MAC-адрес, серийный номер и другие подобные технические данные о функционировании и использовании роутера и его сети WiFi.</translation>
+<variable>Technical data about the functioning and use of our routers and their WiFi network can help us to more quickly isolate and debug general technical issues, improve router features and functionality, and  improve the performance and usability of our routers.   Such data may include information regarding the router’s running status, number of devices connected to the router, types of connections, LAN/WAN status, WiFi bands and channels, IP address, MAC address, serial number, and similar technical data about the functioning and use of the router and its WiFi network.</variable>
+</message>
+<message>
+<tag_code>11021</tag_code>
+<translation>Нажимая кнопку 'Принимаю условия', вы соглашаетесь с тем, что после установки роутер может передавать описанные выше данные в компанию NETGEAR, которая может использовать эту информацию для предоставления и улучшения своих продуктов и услуг. Подробная информация о защите передаваемых данных и способах их использования приведена в Политике конфиденциальности NETGEAR.  Компания NETGEAR не использует эту информацию для предложения вам продуктов или услуг, отслеживания или сбора информации о посещении вами веб-сайтов или для сбора содержимого трафика в вашей сети.  Вы имеете право в любой момент отозвать это согласие, перейдя на сайт routerlogin.net и выбрав пункт 'Дополнительно > Администрирование > Обновление роутера'.</translation>
+<variable>By clicking "I Agree" you agree that upon installation, your router may transmit the data described above to NETGEAR, which may use the information to provide and improve its products and services. For additional information about the protection of your transmitted data and how it may be used see the NETGEAR Privacy Policy.  NETGEAR does not use this information to market products or services to you or to track or collect the websites you visit or collect the content of any traffic on your network.  You may withdraw this consent at any time by going to the routerlogin.net Advanced>Administration>Router Update.</variable>
+</message>
+<message>
+<tag_code>11022</tag_code>
+<translation>Кроме того, независимо от наличия вашего предварительного согласия может продолжаться сбор некоторых основных сведений (например, сведений о номере версии микрокода и номере модели роутера), которые используются для регистрации продуктов NETGEAR и проверки версий микрокода.   Мы не привязываем эти сведения к серийному номеру или MAC-адресу вашего роутера или к иным персональным данным.</translation>
+<variable>In addition, with or without the prior consent,  some basic information, such as the router’s firmware version number and model number, may still be collected and used to monitor deployment of  NETGEAR products and firmware versions.   We will not link such information to your router’s serial number or MAC address or your name or other personal information.</variable>
+</message>
+<message>
+<tag_code>11023</tag_code>
+<translation>13.03.2017 Версия 1.0</translation>
+<variable>2017.03.13 Version 1.0</variable>
+</message>
+<message>
+<tag_code>11024</tag_code>
+<translation>Для завершения процесса установки необходимо принять условия предоставления услуг.&lt;br&gt;Если вы не принимаете условия предоставления услуг, вы обязаны вернуть устройство NETGEAR.</translation>
+<variable>To complete the installation process, you must agree to the Terms of Services.&lt;br&gt;If you do not accept these Terms of Services, you must return Your NETGEAR device.</variable>
+</message>
 </tag_msg>

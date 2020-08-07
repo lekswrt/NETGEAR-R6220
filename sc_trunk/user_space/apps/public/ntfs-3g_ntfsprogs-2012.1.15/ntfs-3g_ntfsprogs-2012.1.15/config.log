@@ -2642,7 +2642,7 @@ configure:23790: $? = 0
 configure:23808: result: yes
 configure:23815: checking for _doprnt
 configure:23871: mipsel-linux-gcc -o conftest -g -O2   conftest.c  >&5
-/tmp/ccBBVyTd.o: In function `main':
+/tmp/ccWTsvwx.o: In function `main':
 /home/disk3/peter/RELEASE/sc_trunk/user_space/apps/public/ntfs-3g_ntfsprogs-2012.1.15/ntfs-3g_ntfsprogs-2012.1.15/conftest.c:105: undefined reference to `_doprnt'
 /home/disk3/peter/RELEASE/sc_trunk/user_space/apps/public/ntfs-3g_ntfsprogs-2012.1.15/ntfs-3g_ntfsprogs-2012.1.15/conftest.c:105: undefined reference to `_doprnt'
 collect2: ld returned 1 exit status

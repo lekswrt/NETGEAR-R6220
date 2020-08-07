@@ -13,9 +13,10 @@
 #
 BOARD_ID=R6260
 HW_ID=CHJ
-VER=1.1.0.42
+VER=1.1.0.44
 SUB_VER=1.0.1
-GUI_VER=1.1.0.42
+GUI_VER=1.1.0.44
+NTGR_RAE_VER=1.0.0.4
 HW_TYPE=R6260
 PRODUCT_ID=A001
 REGION=WW
@@ -341,7 +342,8 @@ WIFI_SPATIAL_STREAMS=X3
 #
 # Enable RWFS your need to specify your mtdblock id and size for RWFS in project.h
 #
-RWFS=0
+RWFS=1
+RWFS_AS_NEEDED=0
 
 # Enable Watchdog
 WATCHDOG=1
@@ -355,9 +357,19 @@ GUEST_LEASE_TIME=0
 
 SUPPORT_UP21=1
 #Enable when U need make a ECC bin file
-ECC_BIN=1
+ECC_BIN=0
 #support NTP other server support in spec 14
 NTP_OTHER_SERVER_SUPPORT=1
 #-----------traffic meter block https--------
 TM_BLOCK_HTTPS=0
 HTTPSHJ_HTTPD=1
+#
+##-----------TC for new wizard page----
+#
+TC_SUPPORT=0
+# Netgear Router Analytics Engine (RA)
+# Refer user_space/apps/public/RAE/Readme.txt for more information about this feature!
+RAE=0
+AUTO_FORCE_UPGRADE_FW_ENABLE=0
+
+# Enable if need validate cgi post data

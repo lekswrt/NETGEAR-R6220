@@ -6045,4 +6045,84 @@
 <translation>NTP-beállítások</translation>
 <variable>NTP Settings</variable>
 </message>
+<message>
+<tag_code>11000</tag_code>
+<translation>Letöltő beállítások</translation>
+<variable>Downloader Settings </variable>
+</message>
+<message>
+<tag_code>11010</tag_code>
+<translation>A router automatikus firmware-frissítése</translation>
+<variable>Router Auto Firmware Update</variable>
+</message>
+<message>
+<tag_code>11011</tag_code>
+<translation>Engedélyezze, hogy a router automatikusan frissítést hajtson végre jövőbeli firmware-ekhez. Ezzel a router mindig naprakész állapotú lesz a legújabb funkciókat és biztonsági javításokat illetően.</translation>
+<variable>Enable router to automatically update to future firmware. This keeps your router up to date with the latest features and security fixes.</variable>
+</message>
+<message>
+<tag_code>11012</tag_code>
+<translation>Válasszon az alábbi lehetőségek közül:</translation>
+<variable>Select one of the following options:</variable>
+</message>
+<message>
+<tag_code>11013</tag_code>
+<translation>Routerelemzési adatgyűjtés </translation>
+<variable>Router Analytics Data Collection</variable>
+</message>
+<message>
+<tag_code>11014</tag_code>
+<translation>Azon &lt;a href="#" onclick="window.open('BRS_data_detail.htm','name','width=600,height=400,scrollbars=1,resizable=1','blank')" style="color: rgb(000,000,255);text-decoration:underline"&gt; &lt;font size=""&gt;routerelemzési adatok gyűjtésének lehetővé tétele&lt;/font&gt;&lt;/a&gt;, amelyek segítenek a NETGEAR vállalat számára szolgáltatásaink és termékeink fejlesztésében.</translation>
+<variable>Enable collection of router analytics data that will help NETGEAR improve our services and products.</variable>
+</message>
+<message>
+<tag_code>11015</tag_code>
+<translation>Adatvédelmi irányelvek</translation>
+<variable>Privacy Policy</variable>
+</message>
+<message>
+<tag_code>11016</tag_code>
+<translation>Használati feltételek</translation>
+<variable>Terms of Services</variable>
+</message>
+<message>
+<tag_code>11017</tag_code>
+<translation>Kérjük, a folytatás érdekében ügyeljen rá, hogy mindkét funkció esetében gondoskodjon a kiválasztott opcióról.</translation>
+<variable>Please make your selection for both features above to continue.</variable>
+</message>
+<message>
+<tag_code>11018</tag_code>
+<translation>Elfogadom</translation>
+<variable>I Agree</variable>
+</message>
+<message>
+<tag_code>11019</tag_code>
+<translation>Nem fogadom el</translation>
+<variable>I Disagree</variable>
+</message>
+<message>
+<tag_code>11020</tag_code>
+<translation>A routereink és WiFi-hálózatuk működésére és használatára vonatkozó műszaki adatok segítségével gyorsabban elkülöníthetjük és feltárhatjuk az általános műszaki problémákat, javíthatjuk a router funkcióit és működését, valamint javíthatjuk routereink teljesítményét és használhatóságát.   Ezen adatok körébe tartozhatnak a router futási állapotára, a routerhez csatlakoztatott eszközök számára, a kapcsolatok típusára, a LAN/WAN státuszra, a WiFi-sávokra és -csatornákra, IP-címekre, MAC címekre és sorozatszámokra vonatkozó információk, valamint a router és WiFi-hálózata működésére és használatára vonatkozó hasonló műszaki adatok.</translation>
+<variable>Technical data about the functioning and use of our routers and their WiFi network can help us to more quickly isolate and debug general technical issues, improve router features and functionality, and  improve the performance and usability of our routers.   Such data may include information regarding the router’s running status, number of devices connected to the router, types of connections, LAN/WAN status, WiFi bands and channels, IP address, MAC address, serial number, and similar technical data about the functioning and use of the router and its WiFi network.</variable>
+</message>
+<message>
+<tag_code>11021</tag_code>
+<translation>Az „Elfogadom” lehetőségre kattintással Ön hozzájárul, hogy a telepítéskor a router továbbíthatja a fenti adatokat a NETGEAR részére, amely felhasználhatja az adatokat termékei és szolgáltatási nyújtásához és fejlesztéséhez. A továbbított adatai védelmével és azok felhasználhatóságával kapcsolatos további tájékoztatásért olvassa el a NETGEAR Adatvédelmi szabályzatát.  A NETGEAR ezeket az adatokat nem használja termékek vagy szolgáltatások forgalmazásához, vagy a meglátogatott webhelyek nyomon követéséhez vagy összegyűjtéséhez, illetőleg a hálózati forgalom tartalmának kigyűjtéséhez.  Ezt a hozzájárulást bármikor visszavonhatja a routerlogin.net Speciális>Felügyelet>Router frissítése lehetőségnél.</translation>
+<variable>By clicking "I Agree" you agree that upon installation, your router may transmit the data described above to NETGEAR, which may use the information to provide and improve its products and services. For additional information about the protection of your transmitted data and how it may be used see the NETGEAR Privacy Policy.  NETGEAR does not use this information to market products or services to you or to track or collect the websites you visit or collect the content of any traffic on your network.  You may withdraw this consent at any time by going to the routerlogin.net Advanced>Administration>Router Update.</variable>
+</message>
+<message>
+<tag_code>11022</tag_code>
+<translation>Emellett előzetes hozzájárulás mellett vagy anélkül gyűjthetünk bizonyos alapvető adatokat, mint a router firmware-változat száma és modellszáma, amelyeket a NETGEAR termékek és firmware-változatok elterjedésének figyelemmel kíséréséhez használhatunk.   Ezeket az adatokat nem kapcsoljuk össze a felhasználó routerének sorozatszámával vagy MAC-címével, vagy a névvel vagy más személyes adattal.</translation>
+<variable>In addition, with or without the prior consent,  some basic information, such as the router’s firmware version number and model number, may still be collected and used to monitor deployment of  NETGEAR products and firmware versions.   We will not link such information to your router’s serial number or MAC address or your name or other personal information.</variable>
+</message>
+<message>
+<tag_code>11023</tag_code>
+<translation>2017. 03. 13. 1.0 verzió</translation>
+<variable>2017.03.13 Version 1.0</variable>
+</message>
+<message>
+<tag_code>11024</tag_code>
+<translation>A telepítési folyamat befejezéséhez el kell fogadnia a Használati feltételeket.&lt;br&gt;Ha a felhasználó a Használati feltételeket nem fogadja el, NETGEAR eszközét vissza kell adnia.</translation>
+<variable>To complete the installation process, you must agree to the Terms of Services.&lt;br&gt;If you do not accept these Terms of Services, you must return Your NETGEAR device.</variable>
+</message>
 </tag_msg>

@@ -6056,4 +6056,84 @@
 <translation>Setări NTP</translation>
 <variable>NTP Settings</variable>
 </message>
+<message>
+<tag_code>11000</tag_code>
+<translation>Setări downloader</translation>
+<variable>Downloader Settings </variable>
+</message>
+<message>
+<tag_code>11010</tag_code>
+<translation>Actualizare automată firmware router</translation>
+<variable>Router Auto Firmware Update</variable>
+</message>
+<message>
+<tag_code>11011</tag_code>
+<translation>Activaţi actualizarea automată a firmware-ului următor al routerului Astfel, routerul dvs. va fi actualizat la zi cu cele mai recente dotări şi remedieri de securitate.</translation>
+<variable>Enable router to automatically update to future firmware. This keeps your router up to date with the latest features and security fixes.</variable>
+</message>
+<message>
+<tag_code>11012</tag_code>
+<translation>Selectaţi una din următoarele opţiuni:</translation>
+<variable>Select one of the following options:</variable>
+</message>
+<message>
+<tag_code>11013</tag_code>
+<translation>Colectare date analitice router </translation>
+<variable>Router Analytics Data Collection</variable>
+</message>
+<message>
+<tag_code>11014</tag_code>
+<translation>Permiteţi colectarea &lt;a href="#" onclick="window.open('BRS_data_detail.htm','name','width=600,height=400,scrollbars=1,resizable=1','blank')" style="color: rgb(000,000,255);text-decoration:underline"&gt; &lt;font size=""&gt;datelor analitice ale routerului&lt;/font&gt;&lt;/a&gt; pentru a ajuta NETGEAR să îşi îmbunătăţească serviciile şi produsele.</translation>
+<variable>Enable collection of router analytics data that will help NETGEAR improve our services and products.</variable>
+</message>
+<message>
+<tag_code>11015</tag_code>
+<translation>Politică de confidențialitate</translation>
+<variable>Privacy Policy</variable>
+</message>
+<message>
+<tag_code>11016</tag_code>
+<translation>Termenii serviciilor</translation>
+<variable>Terms of Services</variable>
+</message>
+<message>
+<tag_code>11017</tag_code>
+<translation>Vă rugăm să selectaţi ambele funcţii pentru a continua.</translation>
+<variable>Please make your selection for both features above to continue.</variable>
+</message>
+<message>
+<tag_code>11018</tag_code>
+<translation>Sunt de acord</translation>
+<variable>I Agree</variable>
+</message>
+<message>
+<tag_code>11019</tag_code>
+<translation>Nu sunt de acord</translation>
+<variable>I Disagree</variable>
+</message>
+<message>
+<tag_code>11020</tag_code>
+<translation>Datele tehnice despre funcţionarea şi utilizarea routerelor noastre şi a reţelei WiFi ne pot ajuta să izolăm şi să depanăm probleme tehnice generale mai rapid, să îmbunătăţim caracteristicile şi funcţionalitatea routerului şi să îmbunătăţim performanţa şi utilitatea routerelor noastre.   Astfel de date pot include informaţii referitoare la starea de rulare a routerului, numărul de dispozitive conectate la router, tipurile de conexiuni, starea LAN/WAN, benzile şi canalele WiFi, adresa IP, adresa MAC, numărul de serie şi date tehnice similare despre funcţionarea şi utilizarea routerului şi a reţelei WiFi.</translation>
+<variable>Technical data about the functioning and use of our routers and their WiFi network can help us to more quickly isolate and debug general technical issues, improve router features and functionality, and  improve the performance and usability of our routers.   Such data may include information regarding the router’s running status, number of devices connected to the router, types of connections, LAN/WAN status, WiFi bands and channels, IP address, MAC address, serial number, and similar technical data about the functioning and use of the router and its WiFi network.</variable>
+</message>
+<message>
+<tag_code>11021</tag_code>
+<translation>Făcând clic pe "Sunt de acord", sunteţi de acord ca, după instalare, routerul să poată transmite datele descrise mai sus către NETGEAR, care poate utiliza informaţiile pentru a oferi şi a-şi îmbunătăţi produsele şi serviciile. Pentru informaţii suplimentare despre protecţia datelor dvs. transmise şi cum pot fi utilizate, consultaţi Politica de confidențialitate NETGEAR.  NETGEAR nu utilizează aceste informaţii pentru a vă vinde produse sau servicii sau pentru a urmări şi colecta site-urile web pe care le vizitaţi, sau colectează conţinutul oricărui trafic din reţeaua dvs.  Vă puteţi retrage acest consimţământ în orice moment accesând routerlogin.net Avansat>Administrare>Actualizare router.</translation>
+<variable>By clicking "I Agree" you agree that upon installation, your router may transmit the data described above to NETGEAR, which may use the information to provide and improve its products and services. For additional information about the protection of your transmitted data and how it may be used see the NETGEAR Privacy Policy.  NETGEAR does not use this information to market products or services to you or to track or collect the websites you visit or collect the content of any traffic on your network.  You may withdraw this consent at any time by going to the routerlogin.net Advanced>Administration>Router Update.</variable>
+</message>
+<message>
+<tag_code>11022</tag_code>
+<translation>În plus, cu sau fără consimţământul prealabil, unele informaţii de bază, precum numărul de versiune firmware şi numărul de model ale routerului, pot fi totuşi colectate şi utilizate pentru a monitoriza implementarea produselor NETGEAR şi versiunilor firmware.   Nu vom asocia astfel de informaţii cu numărul de serie al routerului dvs. sau adresa MAC sau numele dvs. sau orice alte informaţii personale.</translation>
+<variable>In addition, with or without the prior consent,  some basic information, such as the router’s firmware version number and model number, may still be collected and used to monitor deployment of  NETGEAR products and firmware versions.   We will not link such information to your router’s serial number or MAC address or your name or other personal information.</variable>
+</message>
+<message>
+<tag_code>11023</tag_code>
+<translation>2017.03.13 Versiunea 1.0</translation>
+<variable>2017.03.13 Version 1.0</variable>
+</message>
+<message>
+<tag_code>11024</tag_code>
+<translation>Pentru a finaliza procesul de instalare, trebuie să fiţi de acord cu termenii serviciilor.&lt;br&gt;Dacă nu acceptaţi aceşti Termeni ai serviciilor, trebuie să returnaţi dispozitivul dvs. NETGEAR.</translation>
+<variable>To complete the installation process, you must agree to the Terms of Services.&lt;br&gt;If you do not accept these Terms of Services, you must return Your NETGEAR device.</variable>
+</message>
 </tag_msg>

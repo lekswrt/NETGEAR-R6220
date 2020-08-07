@@ -1214,4 +1214,79 @@
 <translation>Ak ste pokročilý používateľ a viete, ako nakonfigurovať vašu bránu tak, aby podporovala niektoré z týchto rozšírených funkcií, môžete kliknúť na tlačidlo &lt;b&gt;Späť&lt;/b&gt; a nakonfigurovať smerovač NETGEAR v režime smerovača.</translation>
 <variable>If you are advanced user and know how to configure your gateway to support some of these advanced functions, you can click the &lt;b&gt;Back&lt;/b&gt; button and configure the NETGEAR router in router mode.</variable>
 </message>
+<message>
+<tag_code>11010</tag_code>
+<translation>Automatická aktualizácia firmvéru smerovača</translation>
+<variable>Router Auto Firmware Update</variable>
+</message>
+<message>
+<tag_code>11011</tag_code>
+<translation>Nastavte smerovač tak, aby sa automaticky aktualizoval najnovším firmvérom. Takto zachováte smerovač v aktualizovanom stave s najnovšími funkciami a opravami zabezpečenia.</translation>
+<variable>Enable router to automatically update to future firmware. This keeps your router up to date with the latest features and security fixes.</variable>
+</message>
+<message>
+<tag_code>11012</tag_code>
+<translation>vyberte jednu z nasledujúcich možností:</translation>
+<variable>Select one of the following options:</variable>
+</message>
+<message>
+<tag_code>11013</tag_code>
+<translation>Zhromažďovanie analytických údajov o smerovači </translation>
+<variable>Router Analytics Data Collection</variable>
+</message>
+<message>
+<tag_code>11014</tag_code>
+<translation>Povoľte zhromažďovanie &lt;a href="#" onclick="window.open('BRS_data_detail.htm','name','width=600,height=400,scrollbars=1,resizable=1','blank')" style="color: rgb(000,000,255);text-decoration:underline"&gt; &lt;font size=""&gt;analytických údajov smerovača&lt;/font&gt;&lt;/a&gt;, ktoré spoločnosti NETGEAR pomôžu zlepšiť služby a produkty.</translation>
+<variable>Enable collection of router analytics data that will help NETGEAR improve our services and products.</variable>
+</message>
+<message>
+<tag_code>11015</tag_code>
+<translation>Zásady ochrany osobných údajov</translation>
+<variable>Privacy Policy</variable>
+</message>
+<message>
+<tag_code>11016</tag_code>
+<translation>Podmienky používania</translation>
+<variable>Terms of Services</variable>
+</message>
+<message>
+<tag_code>11017</tag_code>
+<translation>Ak chcete pokračovať, vykonajte výber pre obe funkcie vyššie.</translation>
+<variable>Please make your selection for both features above to continue.</variable>
+</message>
+<message>
+<tag_code>11018</tag_code>
+<translation>Súhlasím</translation>
+<variable>I Agree</variable>
+</message>
+<message>
+<tag_code>11019</tag_code>
+<translation>Nesúhlasím</translation>
+<variable>I Disagree</variable>
+</message>
+<message>
+<tag_code>11020</tag_code>
+<translation>Technické údaje o fungovaní a využívaní našich smerovačov a sietí WiFi nám pomáhajú rýchlejšie identifikovať a riešiť všeobecné technické problémy, zlepšovať funkcie a funkčnosť smerovačov a zlepšovať výkonnosť a využiteľnosť našich smerovačov.   Tieto údaje môžu zahŕňať informácie týkajúce sa stavu smerovača, počtu zariadení pripojených k smerovaču, typov pripojení, stavu siete LAN/WAN, pásiem a kanálov siete WiFi, adresy IP, adresy MAC, výrobného čísla, a podobné technické údaje o fungovaní a používaní smerovača a príslušnej siete WiFi.</translation>
+<variable>Technical data about the functioning and use of our routers and their WiFi network can help us to more quickly isolate and debug general technical issues, improve router features and functionality, and  improve the performance and usability of our routers.   Such data may include information regarding the router’s running status, number of devices connected to the router, types of connections, LAN/WAN status, WiFi bands and channels, IP address, MAC address, serial number, and similar technical data about the functioning and use of the router and its WiFi network.</variable>
+</message>
+<message>
+<tag_code>11021</tag_code>
+<translation>Kliknutím na položku "Súhlasím" vyjadrujete svoj súhlas s tým, že po inštalácii môže smerovač odosielať spoločnosti NETGEAR údaje uvádzané vyššie, pričom táto spoločnosť môže tieto informácie používať na poskytovanie a zlepšovanie svojich produktov a služieb. Ďalšie informácie o ochrane odosielaných údajov a o tom, ako sa tieto údaje môžu používať, nájdete v časti Zásady spoločnosti NETGEAR o ochrane osobných údajov.  Spoločnosť NETGEAR nepoužije tieto informácie na predaj produktov alebo služieb vám ani na sledovanie alebo zhromažďovanie informácií o webových lokalitách, ktoré navštívite, a ani na zhromažďovanie obsahu akýchkoľvek prenosov vo vašej sieti.  Tento súhlas môžete kedykoľvek odvolať na stránke routerlogin.net, časť Rozšírené > Správa > Aktualizácia smerovača.</translation>
+<variable>By clicking "I Agree" you agree that upon installation, your router may transmit the data described above to NETGEAR, which may use the information to provide and improve its products and services. For additional information about the protection of your transmitted data and how it may be used see the NETGEAR Privacy Policy.  NETGEAR does not use this information to market products or services to you or to track or collect the websites you visit or collect the content of any traffic on your network.  You may withdraw this consent at any time by going to the routerlogin.net Advanced>Administration>Router Update.</variable>
+</message>
+<message>
+<tag_code>11022</tag_code>
+<translation>Okrem toho sa na základe predchádzajúceho súhlasu alebo bez neho môžu zhromažďovať niektoré základné informácie, ako napríklad číslo verzie firmvéru smerovača a číslo modelu, a tieto informácie sa môžu používať na monitorovanie nasadenia produktov a verzií firmvéru od spoločnosti NETGEAR.   Tieto informácie nebudú prepojené s výrobným číslom vášho smerovača, adresou MAC ani s inými osobnými údajmi.</translation>
+<variable>In addition, with or without the prior consent,  some basic information, such as the router’s firmware version number and model number, may still be collected and used to monitor deployment of  NETGEAR products and firmware versions.   We will not link such information to your router’s serial number or MAC address or your name or other personal information.</variable>
+</message>
+<message>
+<tag_code>11023</tag_code>
+<translation>13. 3. 2017, verzia 1.0</translation>
+<variable>2017.03.13 Version 1.0</variable>
+</message>
+<message>
+<tag_code>11024</tag_code>
+<translation>Ak chcete dokončiť proces inštalácie, je potrebné, aby ste vyjadrili svoj súhlas s podmienkami používania.&lt;br&gt;Ak s týmito podmienkami používania nesúhlasíte, zariadenie od spoločnosti NETGEAR je potrebné vrátiť.</translation>
+<variable>To complete the installation process, you must agree to the Terms of Services.&lt;br&gt;If you do not accept these Terms of Services, you must return Your NETGEAR device.</variable>
+</message>
 </tag_msg>

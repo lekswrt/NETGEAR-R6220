@@ -1214,4 +1214,79 @@
 <translation>고급 사용자이며 이들 고급 기능의 일부를 지원하도록 게이트웨이를 설정하는 방법을 알고 있는 경우 &lt;b&gt;뒤로&lt;/b&gt; 버튼을 클릭하고 NETGEAR 공유기를 공유기 모드에서 구성할 수 있습니다.</translation>
 <variable>If you are advanced user and know how to configure your gateway to support some of these advanced functions, you can click the &lt;b&gt;Back&lt;/b&gt; button and configure the NETGEAR router in router mode.</variable>
 </message>
+<message>
+<tag_code>11010</tag_code>
+<translation>공유기 자동 펌웨어 업데이트</translation>
+<variable>Router Auto Firmware Update</variable>
+</message>
+<message>
+<tag_code>11011</tag_code>
+<translation>공향후 펌웨어로 자동 업데이트되도록 공유기를 활성화합니다. 그러면 공유기가 최신 기능 및 보안 수정 내용으로 업데이트됩니다.</translation>
+<variable>Enable router to automatically update to future firmware. This keeps your router up to date with the latest features and security fixes.</variable>
+</message>
+<message>
+<tag_code>11012</tag_code>
+<translation>다음 중 하나를 선택합니다.</translation>
+<variable>Select one of the following options:</variable>
+</message>
+<message>
+<tag_code>11013</tag_code>
+<translation>공유기 분석 데이터 수집 </translation>
+<variable>Router Analytics Data Collection</variable>
+</message>
+<message>
+<tag_code>11014</tag_code>
+<translation>NETGEAR의 서비스 및 제품 개선에 도움이 되는 &lt;a href="#" onclick="window.open('BRS_data_detail.htm','name','width=600,height=400,scrollbars=1,resizable=1','blank')" style="color: rgb(000,000,255);text-decoration:underline"&gt; &lt;font size=""&gt;공유기 분석 데이터&lt;/font&gt;&lt;/a&gt; 수집을 활성화합니다.</translation>
+<variable>Enable collection of router analytics data that will help NETGEAR improve our services and products.</variable>
+</message>
+<message>
+<tag_code>11015</tag_code>
+<translation>개인 정보 보호 정책</translation>
+<variable>Privacy Policy</variable>
+</message>
+<message>
+<tag_code>11016</tag_code>
+<translation>서비스 약관</translation>
+<variable>Terms of Services</variable>
+</message>
+<message>
+<tag_code>11017</tag_code>
+<translation>계속하려면 위의 두 기능을 선택하십시오.</translation>
+<variable>Please make your selection for both features above to continue.</variable>
+</message>
+<message>
+<tag_code>11018</tag_code>
+<translation>동의합니다.</translation>
+<variable>I Agree</variable>
+</message>
+<message>
+<tag_code>11019</tag_code>
+<translation>동의하지 않습니다.</translation>
+<variable>I Disagree</variable>
+</message>
+<message>
+<tag_code>11020</tag_code>
+<translation>공유기와 해당 WiFi 네트워크의 작동 및 사용에 대한 기술 데이터는 NETGEAR에서 일반적인 기술 문제를 더 빠르게 격리 및 디버깅하고, 공유기 특성과 기능을 개선하고, NETGEAR 공유기의 성능과 유용성을 개선하는 데 도움이 될 수 있습니다.   해당 데이터에는 공유기의 실행 상태, 공유기에 연결된 장치 수, 연결 유형, LAN/WAN 상태, WiFi 대역과 채널, IP 주소, MAC 주소, 일련번호 및 공유기와 해당 WiFi 네트워크의 작동과 사용에 대한 이와 유사한 기술 데이터가 포함될 수 있습니다.</translation>
+<variable>Technical data about the functioning and use of our routers and their WiFi network can help us to more quickly isolate and debug general technical issues, improve router features and functionality, and  improve the performance and usability of our routers.   Such data may include information regarding the router’s running status, number of devices connected to the router, types of connections, LAN/WAN status, WiFi bands and channels, IP address, MAC address, serial number, and similar technical data about the functioning and use of the router and its WiFi network.</variable>
+</message>
+<message>
+<tag_code>11021</tag_code>
+<translation>"동의합니다"를 클릭하면 설치 시 위에서 설명한 데이터가 공유기에서 NETGEAR로 전송될 수 있으며, NETGEAR에서 제품과 서비스 제공 및 개선에 해당 정보를 사용할 수 있다는 것에 동의하게 됩니다. 전송한 데이터의 보호 및 사용되는 방법에 대한 자세한 내용은 NETGEAR 개인 정보 보호 정책을 참조하십시오.  NETGEAR에서는 이 정보를 사용하여 귀하에게 제품 또는 서비스를 마케팅하거나 귀하가 방문한 웹 사이트를 추적 또는 수집하거나 귀하의 네트워크 트래픽 내용을 수집하지 않습니다.  언제라도 routerlogin.net 고급>관리>공유기 업데이트로 이동하여 이 동의를 철회할 수 있습니다.</translation>
+<variable>By clicking "I Agree" you agree that upon installation, your router may transmit the data described above to NETGEAR, which may use the information to provide and improve its products and services. For additional information about the protection of your transmitted data and how it may be used see the NETGEAR Privacy Policy.  NETGEAR does not use this information to market products or services to you or to track or collect the websites you visit or collect the content of any traffic on your network.  You may withdraw this consent at any time by going to the routerlogin.net Advanced>Administration>Router Update.</variable>
+</message>
+<message>
+<tag_code>11022</tag_code>
+<translation>또한, 사전 동의와 관계없이 일부 기본 정보(예: 공유기의 펌웨어 버전 번호와 모델 번호)는 NETGEAR 제품 및 펌웨어 버전 배포 모니터링을 위해 계속 수집 및 사용될 수 있습니다.   NETGEAR에서는 그러한 정보를 사용자 공유기의 일련번호 또는 MAC 주소나 사용자 이름 또는 다른 개인 정보와 연결하지 않습니다.</translation>
+<variable>In addition, with or without the prior consent,  some basic information, such as the router’s firmware version number and model number, may still be collected and used to monitor deployment of  NETGEAR products and firmware versions.   We will not link such information to your router’s serial number or MAC address or your name or other personal information.</variable>
+</message>
+<message>
+<tag_code>11023</tag_code>
+<translation>2017년 3월13일 버전 1.0</translation>
+<variable>2017.03.13 Version 1.0</variable>
+</message>
+<message>
+<tag_code>11024</tag_code>
+<translation>설치 절차를 완료하려면 서비스 약관에 동의해야 합니다.&lt;br&gt;본 서비스 약관을 수락하지 않으면 NETGEAR 장치를 반환해야 합니다.</translation>
+<variable>To complete the installation process, you must agree to the Terms of Services.&lt;br&gt;If you do not accept these Terms of Services, you must return Your NETGEAR device.</variable>
+</message>
 </tag_msg>

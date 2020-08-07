@@ -3093,6 +3093,14 @@ int VirtualIF_open(struct net_device * dev)
 
     netif_start_queue(pPesueoAd->PseudoDev);
 
+#ifdef CONFIG_RAETH_HW_VLAN_TX
+#if LINUX_VERSION_CODE < KERNEL_VERSION(3,10,0)
+	dev->features |= NETIF_F_HW_VLAN_TX;
+#else
+	dev->features |= NETIF_F_HW_VLAN_CTAG_TX;
+#endif
+#endif
+
     return 0;
 }
 

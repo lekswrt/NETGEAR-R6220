@@ -17,8 +17,10 @@ int COMMAND(const char *format, ...);
 void get_all_assoc_wired_mac(char *assoc_wired_mac, int max_len);
 void get_all_brctl_filter_mac(char *filtered_mac, int max_len);
 int region_isNA(void);
+int region_isJP(void);
 int region_isPR_RU(void);
 int region_isRU(void);
+int region_isAU(void);
 int region_isGR(void);
 int region_isPR(void);
 int region_isPE(void);
@@ -48,6 +50,8 @@ int modelinfo_get_2g_stream();
 int modelinfo_get_5g_stream();
 int modelinfo_get_2g_ad_stream();
 int modelinfo_get_5g_ad_stream();
+#define modelinfo_get_wifi_spatial_stream_gui_2g modelinfo_get_2g_ad_stream
+#define modelinfo_get_wifi_spatial_stream_gui_5g modelinfo_get_5g_ad_stream
 
 enum
 {

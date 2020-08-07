@@ -193,7 +193,6 @@ dir_$(CONFIG_USER_TASKSET)                  += taskset
 dir_$(CONFIG_USER_UVC_STREAM)		    += uvc_stream
 dir_$(CONFIG_USER_UPNP_IGD)                 += linux-igd
 dir_$(CONFIG_USER_WIRELESS_TOOLS)           += wireless_tools
-dir_$(CONFIG_USER_WATCHDOG)           	    += watchdog-5.6
 dir_$(CONFIG_USER_WPA_SUPPLICANT)	    += wpa_supplicant-2.0
 dir_$(CONFIG_USER_WSC)			    += wsc_upnp
 dir_$(CONFIG_USER_BNDSTRG)			+= bndstrg
@@ -214,6 +213,7 @@ dir_$(CONFIG_USER_HOSTAPD)          += hostapd-2.2/hostapd
 
 endif
 
+dir_$(CONFIG_USER_WATCHDOG)           	    += watchdog-5.6
 #TEST
 dir_$(CONFIG_USER_HELLO_WORLD)		    += hello_world
 #--
