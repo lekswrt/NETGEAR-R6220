@@ -673,6 +673,7 @@
 
 
 
+
 		<err_code>158</err_code>
 		<translation>is ready, [NEL]then click OK to re-connect.</translation>
 		<variable>gsm_msg_bku_finish_2</variable>
@@ -2361,5 +2362,10 @@
 		<err_code>13725</err_code>
 		<translation>Schválená zařízení!</translation>
 		<variable>gsm_msg_usb_dup_apprv_device</variable>
+	</message>
+	<message>
+		<err_code>13733</err_code>
+		<translation>Varování: Router se nepřipojil k serveru NTP, zkontrolujte připojení k internetu nebo se zkuste připojit k jinému serveru NTP.</translation>
+		<variable>gsm_msg_ntp_sync_fail</variable>
 	</message>
 </error_msg>

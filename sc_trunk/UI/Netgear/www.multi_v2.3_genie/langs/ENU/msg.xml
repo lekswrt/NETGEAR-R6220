@@ -2416,4 +2416,44 @@
 		<translation>Approved Devices!</translation>
 		<variable>gsm_msg_usb_dup_apprv_device</variable>
 	</message>
-</error_msg>
+	<message>
+		<err_code>13726</err_code>
+		<translation>HTTPS currently not supported</translation>
+		<variable>gsm_msg_gd_https</variable>
+	</message>
+	<message>
+		<err_code>13727</err_code>
+		<translation>if you enable the VPN service on you router. your router's Internet connection mode will change from Dial on Demand to Always On. This change is required for a VPN client to connect to your router.Do you want to continue?</translation>
+		<variable>gsm_msg_openvpn_is_change_wan_connection_mode_from_Dial_to_always</variable>
+	</message>
+	<message>
+		<err_code>13728</err_code>
+		<translation>If you enable the VPN service on you router,you need to change your router's Internet connection mode from Manually Connect to Always On in order for a VPN client to connect to your router. Go to the Internet Setup page to make this change.</translation>
+		<variable>gsm_msg_openvpn_change_wan_connection_mode_from_Manually_to_always</variable>
+	</message>	
+	<message>
+		<err_code>13729</err_code>
+		<translation>If you register your router with ReadyCLOUD, your router's Internet connection mode will change from Dial on Demand to Always On. This change is required for ReadyCLOUD to remotely access the connected USB storage device. Do you want to continue?</translation>
+		<variable>gsm_msg_ReadyCLOUD_change_wan_mode</variable>
+	</message>
+	<message>
+		<err_code>13730</err_code>
+		<translation>If you register your router with ReadyCLOUD, you need to change your router's Internet connection mode from Manually Connect to Always On in order for ReadyCLOUD to remotely access the connected USB storage device. Go to the Internet Setup page to make this change.</translation>
+		<variable>gsm_msg_ReadyCLOUD_need_manually_change_wan_mode</variable>
+	</message>
+	<message>
+		<err_code>13731</err_code>
+		<translation>Your router or gateway is not connected to the Internet. You need an Internet connection in order to register your router or gateway with ReadyCLOUD. Connect your router or gateway to the Internet and try again.</translation>
+		<variable>gsm_msg_ReadyCLOUD_need_internet</variable>
+	</message>
+	<message>
+		<err_code>13732</err_code>
+		<translation>If your router's Internet connection mode is set to Dial on Demand or Manually Connect, some features that require remote access, such as genie remote access, might not work correctly. Do you want to continue?</translation>
+		<variable>gsm_msg_openvpn_change_wan_connection_mode_to_Dial</variable>
+	</message>
+	<message>
+		<err_code>13733</err_code>
+		<translation>Warning: Ther router is failed to connect to NTP server, please check your Internet connectivity or try another NTP server</translation>
+		<variable>gsm_msg_ntp_sync_fail</variable>
+	</message>
+	</error_msg>

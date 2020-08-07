@@ -442,6 +442,7 @@
 
 
 
+
 	<message>
 		<err_code>105</err_code>
 		<translation>This Keyword already exists</translation>
@@ -2364,5 +2365,10 @@
 		<err_code>13725</err_code>
 		<translation>Godkända enheter!</translation>
 		<variable>gsm_msg_usb_dup_apprv_device</variable>
+	</message>
+	<message>
+		<err_code>13733</err_code>
+		<translation>Varning: Routern kunde inte ansluta till NTP-servern. Kontrollera internetanslutningen eller prova med en annan NTP-server.</translation>
+		<variable>gsm_msg_ntp_sync_fail</variable>
 	</message>
 </error_msg>

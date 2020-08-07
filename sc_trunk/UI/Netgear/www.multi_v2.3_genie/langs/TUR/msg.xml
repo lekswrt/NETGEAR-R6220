@@ -2290,4 +2290,9 @@
 		<translation>Onaylanmış Aygıtlar!</translation>
 		<variable>gsm_msg_usb_dup_apprv_device</variable>
 	</message>
+	<message>
+		<err_code>13733</err_code>
+		<translation>Uyarı: Ther router, NTP sunucusuna bağlanamadı. Lütfen İnternet bağlantınızı kontrol edin veya başka bir NTP sunucusu deneyin</translation>
+		<variable>gsm_msg_ntp_sync_fail</variable>
+	</message>
 </error_msg>

@@ -1581,6 +1581,7 @@
 		<variable>11906</variable>
 	</message>
 
+
 	<message>
 		<err_code>12001</err_code>
 		<translation>선택한 무선 PC 카드의 이름을 입력하십시오.</translation>
@@ -2355,5 +2356,10 @@
 		<err_code>13725</err_code>
 		<translation>허용된 장치!</translation>
 		<variable>gsm_msg_usb_dup_apprv_device</variable>
+	</message>
+	<message>
+		<err_code>13733</err_code>
+		<translation>경고: 공유기가 NTP 서버에 연결하지 못했습니다. 인터넷 연결 상태를 확인하거나 다른 NTP 서버를 사용해보십시오.</translation>
+		<variable>gsm_msg_ntp_sync_fail</variable>
 	</message>
 </error_msg>

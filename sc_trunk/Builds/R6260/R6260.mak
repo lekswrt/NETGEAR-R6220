@@ -13,9 +13,9 @@
 #
 BOARD_ID=R6260
 HW_ID=CHJ
-VER=1.1.0.40
+VER=1.1.0.42
 SUB_VER=1.0.1
-GUI_VER=1.1.0.40
+GUI_VER=1.1.0.42
 HW_TYPE=R6260
 PRODUCT_ID=A001
 REGION=WW
@@ -358,3 +358,6 @@ SUPPORT_UP21=1
 ECC_BIN=1
 #support NTP other server support in spec 14
 NTP_OTHER_SERVER_SUPPORT=1
+#-----------traffic meter block https--------
+TM_BLOCK_HTTPS=0
+HTTPSHJ_HTTPD=1

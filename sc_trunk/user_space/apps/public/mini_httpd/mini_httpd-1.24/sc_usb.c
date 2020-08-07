@@ -224,12 +224,19 @@ int check_valid_request(void)
 int usb_session_check(void)
 {
 	char *pt;
-
-	pt = strstr(path, "/shares");
-	if (pt != NULL && (pt[7] == '/' || pt[7] == ' ' || pt[7] == '\t' || pt[7] == '\r' || pt[7] == '\n'))
-		return 1;
-	else
-		return 0;
+	
+	if (strncmp(path, "/shares", strlen("/shares")) == 0)
+	{
+		pt = strstr(path, "/shares");
+		if (pt != NULL && (pt[7] == '/' || pt[7] == ' ' || pt[7] == '\t' || pt[7] == '\r' || pt[7] == '\n'))
+			return 1;
+		else
+			return 0;
+	} else
+	{
+		return 0;	
+	}
+	
 }
 
 void usb_user_load(void)

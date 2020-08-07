@@ -922,6 +922,7 @@
 	</message>
 	<message>
 
+
 		<err_code>233</err_code>
 		<translation>Encapsulation mode on the Basic Settings page must be changed to PPPoE to enable PPPoE Relay.</translation>
 		<variable>gsm_msg_wan_sec_must_pppoe_mode</variable>
@@ -2251,5 +2252,10 @@
 		<err_code>13725</err_code>
 		<translation>Approved Devices!</translation>
 		<variable>gsm_msg_usb_dup_apprv_device</variable>
+	</message>
+	<message>
+		<err_code>13733</err_code>
+		<translation>Предупреждение: Неуспешно свързване на рутера с NTP сървър, моля, проверете интернет връзката си или опитайте с друг NTP сървър</translation>
+		<variable>gsm_msg_ntp_sync_fail</variable>
 	</message>
 </error_msg>

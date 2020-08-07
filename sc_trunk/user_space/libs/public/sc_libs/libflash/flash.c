@@ -573,6 +573,7 @@ struct region_related_s region_relateds[] = {
     {0x0000000a,    "English",      "Australia",        "+10b",       "AU",           "0","0","0","dhcpc","1500"},
     {0x0000000b,    "English",      "Canada",        "-5b",       "CA",           "0","0","0","dhcpc","1500"},
     {0x0000000c,    "English",      "United States",    "-8",     "US",           "0","0","0","dhcpc","1500"},
+    {0x0000000d,    "English",      "Hong Kong",         "+8a",     "APS",           "0","0","0","dhcpc","1500"},
     {0,         NULL,           NULL,               NULL,            NULL}
 #endif
 };

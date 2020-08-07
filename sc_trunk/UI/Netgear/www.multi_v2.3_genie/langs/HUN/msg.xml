@@ -2361,4 +2361,47 @@
 		<translation>Jóváhagyott eszközök!</translation>
 		<variable>gsm_msg_usb_dup_apprv_device</variable>
 	</message>
+	<message>
+		<err_code>13726</err_code>
+		<translation>A HTTPS jelenleg nem támogatott.</translation>
+		<variable>gsm_msg_gd_https</variable>
+	</message>
+	<message>
+		<err_code>13727</err_code>
+		<translation>	Ha engedélyezi a VPN  szolgáltatást a routerén, a router internet csatlakozási módja Igény szerinti tárcsázásról Mindig bekapcsolva állapotra változik. Ez a módosítás szükséges ahhoz, hogy egy VPN kliens csatlakozhasson a routerhez. Folytatja?</translation>
+		<variable>gsm_msg_openvpn_is_change_wan_connection_mode_from_Dial_to_always</variable>
+	</message>
+	<message>
+		<err_code>13728</err_code>
+		<translation>	Ha engedélyezi a VPN  szolgáltatást a routerén, a router internet csatlakozási módját Kézi csatlakoztatásról Mindig bekapcsolva állapotra kell változtatnia, hogy a VPN kliens csatlakozhasson az Ön routeréhez. A módosítás végrehajtásához ugorjon az internetbeállítás oldalára.</translation>
+		<variable>gsm_msg_openvpn_change_wan_connection_mode_from_Manually_to_always</variable>
+	</message>
+	<message>
+		<err_code>13729</err_code>
+		<translation>Ha regisztrálja routerét a ReadyCLOUD-on, a router internet csatlakozási módja Igény szerinti tárcsázásról Mindig bekapcsolva állapotra változik. Ez a módosítás szükséges ahhoz, hogy a ReadyCLOUD távoli elérési módban hozzáférhessen a csatlakoztatott USB tárolóeszközhöz. Folytatja?</translation>
+		<variable>gsm_msg_ReadyCLOUD_change_wan_mode</variable>
+
+
+
+	</message>
+	<message>
+		<err_code>13730</err_code>
+		<translation>Ha regisztrálja routerét a ReadyCLOUD-on, a router internet csatlakozási módját Kézi csatlakoztatásról Mindig bekapcsolva állapotra kell változtatnia, hogy a ReadyCLOUD távoli elérési módban hozzáférhessen a csatlakoztatott USB tárolóeszközhöz. A módosítás végrehajtásához ugorjon az internetbeállítás oldalára.</translation>
+		<variable>gsm_msg_ReadyCLOUD_need_manually_change_wan_mode</variable>
+	</message>
+	<message>
+		<err_code>13731</err_code>
+		<translation>A router vagy átjáró nem kapcsolódik az internethez. A router vagy átjáró regisztrálásához a ReadyCLOUD-on internetkapcsolatra van szükség. Csatlakoztassa a routert vagy átjárót az internethez, és próbálja újra.</translation>
+		<variable>gsm_msg_ReadyCLOUD_need_internet</variable>
+	</message>
+	<message>
+		<err_code>13732</err_code>
+		<translation>Ha a router internet csatlakozási módja Igény szerintire vagy Kézi csatlakoztatásra van beállítva, bizonyos távoli hozzáférést igénylő funkciók, például a genie távoli hozzáférés elégtelenül működhet. Folytatja?</translation>
+		<variable>gsm_msg_openvpn_change_wan_connection_mode_to_Dial</variable>
+	</message>
+	<message>
+		<err_code>13733</err_code>
+		<translation>Figyelmeztetés: A router csatlakoztatása az NTP-szerverhez sikertelen volt. Kérjük, ellenőrizze internetkapcsolatát vagy próbálja meg újra a csatlakoztatást egy másik NTP-szerverrel.</translation>
+		<variable>gsm_msg_ntp_sync_fail</variable>
+	</message>
 </error_msg>

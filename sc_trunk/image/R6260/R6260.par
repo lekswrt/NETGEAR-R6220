@@ -1,4 +1,4 @@
-:R6260_boot_v1200.bin					&00000000
+:R6260_boot_v1300.bin					&00000000
 :uImage.bin					 	&00200000
 :rootfs.bin					 	&00600000
 :ENU.pkg						&02e00000

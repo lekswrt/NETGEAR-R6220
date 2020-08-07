@@ -2361,4 +2361,9 @@
 		<translation>Εγκεκριμένες συσκευές!</translation>
 		<variable>gsm_msg_usb_dup_apprv_device</variable>
 	</message>
+	<message>
+		<err_code>13733</err_code>
+		<translation>Προειδοποίηση: Ο δρομολογητής δεν μπόρεσε να συνδεθεί στο διακομιστή NTP, ελέγξτε τη συνδεσιμότητά σας στο Διαδίκτυο ή δοκιμάστε άλλο διακομιστή NTP</translation>
+		<variable>gsm_msg_ntp_sync_fail</variable>
+	</message>
 </error_msg>

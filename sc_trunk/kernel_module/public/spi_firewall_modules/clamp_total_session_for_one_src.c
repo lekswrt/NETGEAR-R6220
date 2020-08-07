@@ -205,15 +205,13 @@ unsigned int __sc_detect_total_session_for_one_host_hook(struct sk_buff *skb, st
 
 		}
 		
-		write_unlock_bh(&clamp_hash_table_lock);
-		
 		/* new incoming session */
 		//this is a new session. find out the record, fill in hash talbe, and count it
-		
 			
 		if(list_empty(&dnat_free_queue))
 		{
 			// it should not be this case, because we have same size of conntrack count, Just in case.
+			write_unlock_bh(&clamp_hash_table_lock);
 			if(printk_ratelimit())
 				printk("clamp session queue is empty, why????? bug !!!!! total_entry used (%d)\n",atomic_read(&total_dnat));
 			goto end;
@@ -227,7 +225,6 @@ unsigned int __sc_detect_total_session_for_one_host_hook(struct sk_buff *skb, st
 		curr->src_addr.s_addr = addr.s_addr;
 		
 		/* insert it into the hash table */
-		write_lock_bh(&clamp_hash_table_lock);
 		head = &byremote_ip_hash_array[srchash];
 		curr->next = *head;
 		*head = curr;

@@ -2226,6 +2226,7 @@
 		<variable>gsm_msg_ddns_ngr_email2</variable>
 	</message>
 	<message>
+
 		<err_code>13700</err_code>
 		<translation>El servicio VPN necesita activar el DDNS o utilizar la dirección IP estática de su conexión a Internet</translation>
 		<variable>gsm_msg_openvpn_need_ddns_or_static_ip_1</variable>
@@ -2354,5 +2355,10 @@
 		<err_code>13725</err_code>
 		<translation>Dispositivos aprobados!</translation>
 		<variable>gsm_msg_usb_dup_apprv_device</variable>
+	</message>
+	<message>
+		<err_code>13733</err_code>
+		<translation>Advertencia: El router no ha podido conectarse al servidor NTP, compruebe su conexión a Internet o pruebe con otro servidor NTP</translation>
+		<variable>gsm_msg_ntp_sync_fail</variable>
 	</message>
 </error_msg>

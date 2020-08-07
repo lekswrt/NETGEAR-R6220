@@ -2255,4 +2255,9 @@
 		<translation>承認済みの機器!</translation>
 		<variable>gsm_msg_usb_dup_apprv_device</variable>
 	</message>
+	<message>
+		<err_code>13733</err_code>
+		<translation>警告: ルーターがNTPサーバーへの接続に失敗しました。インターネット接続を確認するか、別のNTPサーバーを試してください</translation>
+		<variable>gsm_msg_ntp_sync_fail</variable>
+	</message>
 </error_msg>

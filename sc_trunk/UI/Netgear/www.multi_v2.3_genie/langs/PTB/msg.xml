@@ -2370,4 +2370,9 @@
 		<translation>Dispositivos aprovados!</translation>
 		<variable>gsm_msg_usb_dup_apprv_device</variable>
 	</message>
+	<message>
+		<err_code>13733</err_code>
+		<translation>AVISO o router Orbi não conseguiu ligar ao servidor NTP. Verifique a sua ligação à Internet ou tente outro servidor NTP</translation>
+		<variable>gsm_msg_ntp_sync_fail</variable>
+	</message>
 </error_msg>

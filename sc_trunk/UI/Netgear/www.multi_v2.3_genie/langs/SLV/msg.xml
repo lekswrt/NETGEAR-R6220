@@ -2358,4 +2358,9 @@
 		<translation>Odobrene naprave!</translation>
 		<variable>gsm_msg_usb_dup_apprv_device</variable>
 	</message>
+	<message>
+		<err_code>13733</err_code>
+		<translation>Opozorilo: Usmerjevalnik ni mogel vzpostaviti povezave s strežnikom NTP. Preverite internetno povezavo ali poskusite z drugim strežnikom NTP.</translation>
+		<variable>gsm_msg_ntp_sync_fail</variable>
+	</message>
 </error_msg>

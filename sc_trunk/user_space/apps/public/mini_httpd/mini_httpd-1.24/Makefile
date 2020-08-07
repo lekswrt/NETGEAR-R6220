@@ -85,6 +85,10 @@ CFLAGS += -DSMART_LOGOUT
 
 CFLAGS += -DSC_BUILD
 
+ifeq ($(HTTPSHJ_HTTPD),1)
+CFLAGS += -DHTTPSHJ_HTTPD
+endif
+
 LDFLAGS =	-s
 LDFLAGS +=      -L../../nvram -lscnvram
 LDLIBS =	 $(SSL_LIBS) $(SYSV_LIBS) #$(CRYPT_LIB)

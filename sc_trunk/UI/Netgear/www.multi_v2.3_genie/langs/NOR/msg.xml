@@ -2356,4 +2356,9 @@
 		<translation>Godkjente enheter!</translation>
 		<variable>gsm_msg_usb_dup_apprv_device</variable>
 	</message>
+	<message>
+		<err_code>13733</err_code>
+		<translation>Advarsel: Ruteren kan ikke koble til NTP-serveren. Kontroller Internett-tilkoblingen, eller prøv en annen NTP-server.</translation>
+		<variable>gsm_msg_ntp_sync_fail</variable>
+	</message>
 </error_msg>

@@ -2355,4 +2355,9 @@
 		<translation>Dispozitive aprobate!</translation>
 		<variable>gsm_msg_usb_dup_apprv_device</variable>
 	</message>
+	<message>
+		<err_code>13733</err_code>
+		<translation>Avertisment: Routerul nu s-a putut conecta la serverul NTP, verificaţi conexiunea la Internet sau încercaţi alt server NTP</translation>
+		<variable>gsm_msg_ntp_sync_fail</variable>
+	</message>
 </error_msg>

@@ -2355,4 +2355,9 @@
 		<translation>Sallitut laitteet!</translation>
 		<variable>gsm_msg_usb_dup_apprv_device</variable>
 	</message>
+	<message>
+		<err_code>13733</err_code>
+		<translation>Varoitus: Reititin ei pystynyt muodostamaan yhteyttä NTP-palvelimeen. Tarkista Internet-yhteys tai kokeile toista NTP-palvelinta.</translation>
+		<variable>gsm_msg_ntp_sync_fail</variable>
+	</message>
 </error_msg>

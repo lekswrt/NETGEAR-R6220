@@ -2355,4 +2355,9 @@
 		<translation>Périphériques approuvés!</translation>
 		<variable>gsm_msg_usb_dup_apprv_device</variable>
 	</message>
+	<message>
+		<err_code>13733</err_code>
+		<translation>Avertissement : Le routeur n'a pas réussi à se connecter au serveur NTP. Vérifiez votre connexion Internet ou essayez d'utiliser un autre serveur NTP.</translation>
+		<variable>gsm_msg_ntp_sync_fail</variable>
+	</message>
 </error_msg>

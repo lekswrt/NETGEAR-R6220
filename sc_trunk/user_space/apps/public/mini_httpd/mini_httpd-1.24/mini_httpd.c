@@ -1788,13 +1788,15 @@ static void handle_request(void)
 		}
 		else if (!is_usb_session && !is_dut  && *nvram_get("config_state") == 's')
 		{
-			exit(1);
+			SC_CFPRINTF("should not do the exit since hijack like traffic meter will not working\n");
+			//exit(1);
 		}
 	}
 	if (*nvram_get("http_server_wan_enable") == '0' && *nvram_get("fw_remote") == '1' && *nvram_get("config_state") == 's')
 	{
 		if (is_usb_session && !is_dut)
 		{
+			system("/bin/echo drop request usb > /dev/console");
 			exit(1);
 		}
 	}
@@ -2322,7 +2324,7 @@ qqq
 			else
 			(void)snprintf(idx, sizeof(idx), "%s%s", file, index_names[i]);
 
-			if (stat(idx, &sb) >= 0)
+			if ((is_usb_session == 0) && (stat(idx, &sb) >= 0))
 			{
 				file = idx;
 				do_file();
@@ -4063,7 +4065,7 @@ static void add_headers(int s, char *title, char *extra_header, char *me, char *
 	bytes = b;
 	make_log_entry();
 	start_response();
-	(void)snprintf(buf, sizeof(buf), "%s %d %s\015\012", protocol, status, title);
+	(void)snprintf(buf, sizeof(buf), "%s %d %s\015\012", protocol?:"HTTP/1.0", status, title);
 	add_to_response(buf);
 #ifdef SC_BUILD			
 	{

@@ -2355,4 +2355,9 @@
 		<translation>Dozwolone urządzenia!</translation>
 		<variable>gsm_msg_usb_dup_apprv_device</variable>
 	</message>
+	<message>
+		<err_code>13733</err_code>
+		<translation>Ostrzeżenie: Router nie mógł połączyć się z serwerem NTP. Sprawdź połączenie z Internetem lub spróbuj połączyć się z innym serwerem NTP</translation>
+		<variable>gsm_msg_ntp_sync_fail</variable>
+	</message>
 </error_msg>

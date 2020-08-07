@@ -2355,4 +2355,9 @@
 		<translation>Schválené zariadenia!</translation>
 		<variable>gsm_msg_usb_dup_apprv_device</variable>
 	</message>
+	<message>
+		<err_code>13733</err_code>
+		<translation>Varovanie: Smerovaču sa nepodarilo pripojiť k serveru NTP. Skontrolujte pripojenie na internet alebo skúste iný server NTP.</translation>
+		<variable>gsm_msg_ntp_sync_fail</variable>
+	</message>
 </error_msg>

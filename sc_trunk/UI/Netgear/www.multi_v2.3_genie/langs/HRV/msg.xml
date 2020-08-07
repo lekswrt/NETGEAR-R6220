@@ -2253,4 +2253,46 @@
 		<translation>Approved Devices!</translation>
 		<variable>gsm_msg_usb_dup_apprv_device</variable>
 	</message>
+	<message>
+		<err_code>13726</err_code>
+		<translation>HTTPS trenutno nije podržan.</translation>
+		<variable>gsm_msg_gd_https</variable>
+	</message>
+	<message>
+		<err_code>13727</err_code>
+		<translation>Ako na usmjerivaču omogućite VPN uslugu, način uspostavljanja internetske veze na usmjerivaču promijenit će se s Biranje na zahtjev na Uvijek uključeno. Ta je promjena potrebna kako bi VPN klijent mogao uspostaviti vezu s vašim usmjerivačem. Želite li nastaviti?</translation>
+		<variable>gsm_msg_openvpn_is_change_wan_connection_mode_from_Dial_to_always</variable>
+	</message>
+	<message>
+		<err_code>13728</err_code>
+		<translation>	Ako na usmjerivaču omogućite VPN uslugu, način uspostavljanja internetske veze na usmjerivaču morat ćete promijeniti s Ručno povezivanje na Uvijek uključeno kako bi VPN klijent mogao uspostaviti vezu s vašim usmjerivačem. Otvorite stranicu Internetske postavke kako biste izvršili ovu promjenu.</translation>
+		<variable>gsm_msg_openvpn_change_wan_connection_mode_from_Manually_to_always</variable>
+
+
+	</message>
+	<message>
+		<err_code>13729</err_code>
+		<translation>Ako usmjerivač registrirate za ReadyCLOUD, način uspostavljanja internetske veze na usmjerivaču promijenit će se s Biranje na zahtjev na Uvijek uključeno. Ta je promjena potrebna kako bi ReadyCLOUD daljinski mogao pristupiti priključenoj USB memoriji. Želite li nastaviti?</translation>
+		<variable>gsm_msg_ReadyCLOUD_change_wan_mode</variable>
+	</message>
+	<message>
+		<err_code>13730</err_code>
+		<translation>Ako usmjerivač registrirate za ReadyCLOUD, način uspostavljanja internetske veze na usmjerivaču morat ćete promijeniti s Ručno povezivanje na Uvijek uključeno kako bi ReadyCLOUD daljinski mogao pristupiti priključenoj USB memoriji. Otvorite stranicu Internetske postavke kako biste izvršili ovu promjenu.</translation>
+		<variable>gsm_msg_ReadyCLOUD_need_manually_change_wan_mode</variable>
+	</message>
+	<message>
+		<err_code>13731</err_code>
+		<translation>Na vašem usmjerivaču ili pristupniku nije uspostavljena internetska veza. Ako usmjerivač ili pristupnik želite registrirati za ReadyCLOUD, potrebna je internetska veza. Na usmjerivaču ili pristupniku uspostavite internetsku vezu i pokušajte ponovo.</translation>
+		<variable>gsm_msg_ReadyCLOUD_need_internet</variable>
+	</message>
+	<message>
+		<err_code>13732</err_code>
+		<translation>Ako je način uspostavljanja internetske veze na usmjerivaču postavljen na Biranje na zahtjev ili Ručno povezivanje, neke značajke za koje je potreban daljinski pristup, primjerice genie daljinski pristup, možda neće ispravno raditi. Želite li nastaviti?</translation>
+		<variable>gsm_msg_openvpn_change_wan_connection_mode_to_Dial</variable>
+	</message>
+	<message>
+		<err_code>13733</err_code>
+		<translation>Upozorenje: Povezivanje usmjerivača s NTP poslužiteljem nije uspjelo, provjerite internetsku vezu ili pokušajte odabrati drugi NTP poslužitelj.</translation>
+		<variable>gsm_msg_ntp_sync_fail</variable>
+	</message>
 </error_msg>

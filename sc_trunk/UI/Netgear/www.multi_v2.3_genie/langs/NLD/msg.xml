@@ -2356,4 +2356,9 @@
 		<translation>Goedgekeurde apparaten!</translation>
 		<variable>gsm_msg_usb_dup_apprv_device</variable>
 	</message>
+	<message>
+		<err_code>13733</err_code>
+		<translation>Waarschuwing: De router kan geen verbinding maken met de NTP-server. Controleer uw internetverbinding of probeer een andere NTP-server</translation>
+		<variable>gsm_msg_ntp_sync_fail</variable>
+	</message>
 </error_msg>

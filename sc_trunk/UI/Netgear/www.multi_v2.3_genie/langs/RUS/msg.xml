@@ -2400,4 +2400,9 @@
 		<translation>Доверенные устройства!</translation>
 		<variable>gsm_msg_usb_dup_apprv_device</variable>
 	</message>
+	<message>
+		<err_code>13733</err_code>
+		<translation>Предупреждение. Роутеру Orbi не удалось подключиться к серверу NTP. Проверьте подключение к Интернету или попытайтесь подключиться к другому серверу NTP.</translation>
+		<variable>gsm_msg_ntp_sync_fail</variable>
+	</message>
 </error_msg>

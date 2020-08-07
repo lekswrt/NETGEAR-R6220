@@ -2446,4 +2446,9 @@
 		<translation>您的路由器或閘道器未連線至網際網路。 您需要網際網路連線才能在 ReadyCLOUD 註冊您的路由器或閘道器。 請將您的路由器或閘道器連線至網際網路，然後再試一次。</translation>
 		<variable>gsm_msg_ReadyCLOUD_need_internet</variable>
 	</message>
+	<message>
+		<err_code>13733</err_code>
+		<translation>警告：路由器無法連線至 NTP 伺服器，請檢查您的網際網路連線，或嘗試其他 NTP 伺服器</translation>
+		<variable>gsm_msg_ntp_sync_fail</variable>
+	</message>
 </error_msg>

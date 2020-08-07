@@ -2415,4 +2415,9 @@
 		<translation>经核准的设备!</translation>
 		<variable>gsm_msg_usb_dup_apprv_device</variable>
 	</message>
+	<message>
+		<err_code>13733</err_code>
+		<translation>警报：路由器无法连接到 NTP 服务器，请检查您的互联网连接或尝试其他 NTP 服务器</translation>
+		<variable>gsm_msg_ntp_sync_fail</variable>
+	</message>
 </error_msg>

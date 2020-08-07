@@ -6287,18 +6287,7 @@
 		<tag_code>4420</tag_code>
 		<translation>LED 控制設定</translation>
 	</message>
-	<message>
-		<tag_code>4421</tag_code>
-		<translation>關閉除電源 LED 之外的所有 LED </translation>
-	</message>
-	<message>
-		<tag_code>4422</tag_code>
-		<translation>發現新韌體版本。是否要立即升級到新版本？</translation>
-	</message>
-	<message>
-		<tag_code>4423</tag_code>
-		<translation>目前版本</translation>
-	</message>
+                                                                  
 	<message>
 		<tag_code>4430</tag_code>
 		<translation>使用與 IPv4 PPPoE 相同的登入資訊</translation>
@@ -6720,4 +6709,18 @@
 	<tag_code>11024</tag_code>
 	<translation>您必須同意服務條款，才能完成安裝程序。&lt;br&gt;若您不接受服務條款，即必須返還 NETGEAR 裝置。</translation>
 	</message>
+	<message>
+		<tag_code>4422</tag_code>
+		<translation>偵測到資料流量時，啟用網際網路 LED、LAN LED、無線 LED 和 USB LED 閃爍</translation>
+	</message>
+	<message>
+		<tag_code>4423</tag_code>
+		<translation>偵測到資料流量時，停用網際網路 LED、LAN LED、無線 LED 和 USB LED 閃爍</translation>
+	</message>
+	<message>
+		<tag_code>4421</tag_code>
+		<translation>關閉除電源 LED 之外的所有 LED</translation>
+	</message>
 </tag_msg>
+
+	

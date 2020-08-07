@@ -1684,6 +1684,7 @@
 	<message>
 		<err_code>12305</err_code>
 
+
 		<translation>لا يمكن إيقاف الجهاز الآن. حاول إيقافه مرة أخرى لاحقًا.</translation>
 		<variable>12305</variable>
 	</message>
@@ -2256,5 +2257,10 @@
 		<err_code>13725</err_code>
 		<translation>المعتمدة</translation>
 		<variable>gsm_msg_usb_dup_apprv_device</variable>
+	</message>
+	<message>
+		<err_code>13733</err_code>
+		<translation>تحذير: فشِل الموجّه بالاتصال بخادم NTP، يُرجى التحقق من الاتصال بالإنترنت أو استخدام خادم NTP آخر.</translation>
+		<variable>gsm_msg_ntp_sync_fail</variable>
 	</message>
 </error_msg>

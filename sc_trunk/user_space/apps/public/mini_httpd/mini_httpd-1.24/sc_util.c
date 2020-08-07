@@ -131,7 +131,21 @@ int check_lan_guest()
     // if access from lan, no ssl is needed! 
     // fix the bug: someone may access lan without NAT, which source ip is in different subnet.
     	
-    return (do_ssl == 0);
+    int is_lan_httpshijack = 0;
+
+#ifdef HTTPSHJ_HTTPD
+    if (do_ssl)
+    {
+    	unsigned long int lan_tmp, remote_tmp, mask_tmp;
+    	lan_tmp = inet_network(nvram_safe_get("lan_ipaddr"));
+	mask_tmp = inet_network(nvram_safe_get("lan_netmask"));
+	remote_tmp = inet_network(current_remote_ip);
+	if ((remote_tmp & mask_tmp) == (lan_tmp & mask_tmp) )
+		is_lan_httpshijack = 1;
+    }
+#endif    
+    		
+    return (do_ssl == 0 || is_lan_httpshijack);
 #else
 	/* Check if @remote_ip from LAN or WAN */
 	unsigned long int lan_tmp, remote_tmp, mask_tmp;

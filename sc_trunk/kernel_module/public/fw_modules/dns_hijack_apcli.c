@@ -322,6 +322,41 @@ static struct udphdr *get_udphdr_from_ipv6(struct sk_buff *skb, struct ipv6hdr *
 	return (struct udphdr *)(skb_network_header(skb) + offset);
 }
 
+
+#define DNS_SRCIP_FOR_ATTACHDEVICE_NUM 255
+unsigned int dns_srcip_for_attachdevice[DNS_SRCIP_FOR_ATTACHDEVICE_NUM] = {0};
+int dns_srcip_for_attachdevice_reading = 0;
+
+void dns_srcip_for_attachdevice_save(unsigned int srcip)
+{
+	if (srcip)
+	{
+		int i = 0;
+		for(i=0; i<DNS_SRCIP_FOR_ATTACHDEVICE_NUM; i++)
+		{
+			if (dns_srcip_for_attachdevice[i] == srcip)
+			{
+				//printk("dns ip 0x%x exist %d\n", srcip, i);
+				return;
+			} else
+			{
+				if (dns_srcip_for_attachdevice[i] == 0)
+				{
+					dns_srcip_for_attachdevice[i] = srcip;
+					printk("dns ip 0x%x %d\n", srcip, i);
+					return;
+				} else
+				{
+					if (i == (DNS_SRCIP_FOR_ATTACHDEVICE_NUM-1))
+					{
+						printk("save ip full 0x%x\n", srcip);
+					}
+				}
+			}
+		}
+	}
+}
+
 extern accessctl_listen_in_kernel accessctl_listen_forward_cb;
 
 static int dns_hijack_handle(struct sk_buff *skb)
@@ -372,6 +407,7 @@ static int dns_hijack_handle(struct sk_buff *skb)
 	  
 	if(recv_udphd)
 	{
+		
 		if(ntohs(recv_udphd->dest) == DNS_PORT)
 		{
 			data_csum = 0;
@@ -381,6 +417,14 @@ static int dns_hijack_handle(struct sk_buff *skb)
 			if((recv_udplen = ntohs(recv_udphd->len))<20) {
 				printk(KERN_ALERT "incorrect dns packet. \n");
 				return 0;
+			}
+			
+			if (dns_srcip_for_attachdevice_reading)
+			{
+				printk(KERN_ALERT "dns srcip for attachdevice reading, not save for this packet\n");
+			} else
+			{
+				dns_srcip_for_attachdevice_save(ntohl(recv_iphd->saddr));
 			}
 
 			recv_data = (unsigned char *) recv_udphd + UDPHEAD_LEN;
@@ -580,6 +624,38 @@ static ssize_t dns_hijack_read(struct file *flip, char __user *buf, size_t count
 		return -EFAULT;
 	}
 	*offp = len;
+
+	return len;
+}
+
+static ssize_t dns_srcip_for_attachdevice_read(struct file *flip, char __user *buf, size_t count, loff_t *offp)
+{
+	char data[100*11];
+	int len =0, i;
+	if(*offp>0)
+	return 0;
+	
+	dns_srcip_for_attachdevice_reading = 1;
+	memset(data, 0, sizeof(data));
+	for (i = 0; i < DNS_SRCIP_FOR_ATTACHDEVICE_NUM; i++) 
+	{
+		if (dns_srcip_for_attachdevice[i])
+		{
+			len += sprintf(data + len, "0x%x#", dns_srcip_for_attachdevice[i]);
+			if (len > (sizeof(data)-100))
+			{
+				printk("client ip many\n");
+				break;
+			}
+		}
+	}
+	dns_srcip_for_attachdevice_reading = 0;
+	
+	if(copy_to_user(buf, data, len)) {
+		return -EFAULT;
+	}
+	*offp = len;
+
 	return len;
 }
 
@@ -673,12 +749,35 @@ static ssize_t dns_hijack_write(struct file *filp, const char *buffer, size_t co
 	ret = count;
 	return ret;	
 }		
-	
+
+static ssize_t dns_srcip_for_attachdevice_write(struct file *filp, const char *buffer, size_t count, loff_t *offp)
+{
+	int ret;
+	char buf[256];
+
+	if (count > 255) {
+		printk(KERN_ALERT "Arguments too long\n");
+		return -EFAULT;
+	}
+	if(copy_from_user(buf, buffer, count)) {
+		printk(KERN_ALERT "Can't get dns ip\n");
+		return -EFAULT;
+	}
+
+	ret = count;
+	return ret;	
+}		
 
 static struct file_operations fops = {
 	.owner = THIS_MODULE,
 	.read = dns_hijack_read,
 	.write = dns_hijack_write,
+};
+
+static struct file_operations fops_dns_srcip_for_attachdevice = {
+	.owner = THIS_MODULE,
+	.read = dns_srcip_for_attachdevice_read,
+	.write = dns_srcip_for_attachdevice_write,
 };
 
 /*static struct notifier_block if_netdev_notifier = {
@@ -698,12 +797,23 @@ static int __init dns_hijack_init(void)
 		return -ENOMEM;
 	}
 
+#if LINUX_VERSION_CODE > KERNEL_VERSION(3,10,13)
+	if(!(proc_file = proc_create("dns_hijack_apcli_for_attachdevice", 0666, init_net.proc_net, &fops_dns_srcip_for_attachdevice)))
+#else
+	if(!(proc_file = proc_net_fops_create(&init_net, "dns_hijack_apcli_for_attachdevice", 0666, &fops_dns_srcip_for_attachdevice)))
+#endif
+	{
+		return -ENOMEM;
+	}
+
+
 	write_lock_bh(&sc_dns_hj_lock);
 	memset(dns_setting, 0, sizeof(dns_setting));
 	write_unlock_bh(&sc_dns_hj_lock);
 
 	dns_hijack_hook = dns_hijack_handle;
 	printk(KERN_ALERT "dns_hijack_module installed.\n");
+	
 	return 0;
 }
 static void __exit dns_hijack_cleanup(void)
@@ -714,6 +824,11 @@ static void __exit dns_hijack_cleanup(void)
 	remove_proc_entry("dns_hijack_apcli", init_net.proc_net /* parent dir */);
 #else
 	proc_net_remove(&init_net, "dns_hijack_apcli");
+#endif
+#if LINUX_VERSION_CODE > KERNEL_VERSION(3,10,13)
+	remove_proc_entry("dns_hijack_apcli_for_attachdevice", init_net.proc_net /* parent dir */);
+#else
+	proc_net_remove(&init_net, "dns_hijack_apcli_for_attachdevice");
 #endif
 	printk(KERN_ALERT "dns_hijack_module removed.\n");
 }
